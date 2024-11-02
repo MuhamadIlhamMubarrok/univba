@@ -101,7 +101,7 @@
     {{-- Navbar --}}
     @include('Frontend.Template.navbar')
 
-
+    <x-topBar title="Contact" />
     {{-- Page Content --}}
     @yield('content')
 
@@ -112,6 +112,7 @@
     @stack('prpend-script')
     @include('Frontend.Template.script')
     @stack('addon-script')
+
 </body>
 
 </html>

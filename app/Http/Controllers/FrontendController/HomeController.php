@@ -34,6 +34,54 @@ class HomeController extends Controller
         return view('Frontend.Success');
     }
  
+     public function showForm(Request $request)
+    {
+        // Ambil nilai "step" dari query string, default ke 1 jika tidak ada
+        $step = $request->query('step', 1);
+        $pilihan = '';
+        $mainMenus = Menu::where('submenu_id', 0)->orderBy('urutan', 'asc')->get();
+         $subMenus = Menu::where('submenu_id', '!=', 0)->get();
 
+        // Tentukan pilihan kelas jika "step" adalah 2
+        if ($step == 2) {
+            $kelas = $request->input('kelas');
+            switch ($kelas) {
+                case 'reguler':
+                    $pilihan = 'Kelas Reguler Pagi';
+                    break;
+                case 'sore':
+                    $pilihan = 'Kelas Reguler Sore';
+                    break;
+                case 'karyawan':
+                    $pilihan = 'Kelas Karyawan';
+                    break;
+                case 'rpl':
+                    $pilihan = 'Kelas RPL';
+                    break;
+                default:
+                    $pilihan = '';
+                    break;
+            }
+        }
+
+        // Kirim variabel $step dan $pilihan ke view
+        return view('Frontend.daftaronline', compact('step', 'pilihan', 'mainMenus', 'subMenus'));
+    }
+
+    public function storeRegistration(Request $request)
+    {
+        // Validasi dan simpan data pendaftaran di sini
+        $data = $request->validate([
+            'kelas' => 'required|string',
+            'nama' => 'required|string',
+            'jk' => 'required|string',
+            'kampus' => 'required|string',
+            // Tambahkan validasi untuk semua input yang diperlukan
+        ]);
+
+        // Lakukan penyimpanan ke database atau tindakan lain yang dibutuhkan
+
+        return redirect()->route('registration.show')->with('success', 'Pendaftaran berhasil.');
+    }
 
 }
