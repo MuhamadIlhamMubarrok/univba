@@ -1,0 +1,52 @@
+	.navbar ul.nav>li>a {
+		text-decoration: none;
+	}
+
+	#copyright {
+		padding: 10px 0px;
+		background: #000
+	}
+
+	#footer {
+		background: #6f0808
+	}
+
+	#top i {
+		font-size: 24px
+	}
+
+	#top .contact p {
+		font-size: 16px
+	}
+
+	#top .login a {
+		font-size: 14px
+	}
+
+	#footer .blog-entries .item {
+		border: none
+	}
+
+	@media only screen and (min-width: 768px) {
+		.dropdown:hover .dropdown-menu {
+			display: block
+		}
+	}
+
+	@media only screen and (max-width: 768px) {
+		.navbar-brand img {
+			width: 250px
+		}
+
+		#top .login {
+			width: 100%
+		}
+
+		#top i {
+			font-size: 18px
+		}
+	}
+
+	.nav>li>a {
+		padding: 10px 10px
+	}
