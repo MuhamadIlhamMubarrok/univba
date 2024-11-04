@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Berita;
 use App\Models\Beranda;
+use App\Models\Daftar;
 use App\Models\Menu;
 use App\Models\Images;
 use App\Models\Page;
@@ -105,32 +106,11 @@ class HomeController extends Controller
         $step = $request->query('step', 1);
         $pilihan = '';
         $mainMenus = Menu::where('submenu_id', 0)->orderBy('urutan', 'asc')->get();
-         $subMenus = Menu::where('submenu_id', '!=', 0)->get();
+        $subMenus = Menu::where('submenu_id', '!=', 0)->get();
 
-        // Tentukan pilihan kelas jika "step" adalah 2
-        if ($step == 2) {
-            $kelas = $request->input('kelas');
-            switch ($kelas) {
-                case 'reguler':
-                    $pilihan = 'Kelas Reguler Pagi';
-                    break;
-                case 'sore':
-                    $pilihan = 'Kelas Reguler Sore';
-                    break;
-                case 'karyawan':
-                    $pilihan = 'Kelas Karyawan';
-                    break;
-                case 'rpl':
-                    $pilihan = 'Kelas RPL';
-                    break;
-                default:
-                    $pilihan = '';
-                    break;
-            }
-        }
+        $kelas = $request->kelas;
 
-        // Kirim variabel $step dan $pilihan ke view
-        return view('Frontend.daftaronline', compact('step', 'pilihan', 'mainMenus', 'subMenus'));
+        return view('Frontend.daftaronline', compact('step', 'pilihan', 'mainMenus', 'subMenus', 'kelas'));
     }
 
     public function storeRegistration(Request $request)
@@ -143,6 +123,34 @@ class HomeController extends Controller
             'kampus' => 'required|string',
             // Tambahkan validasi untuk semua input yang diperlukan
         ]);
+
+        $data = [
+            'kelas' => $request->kelas,
+            'nama_leng' => $request->nama,
+            'kampus' => $request->kampus,
+            'al_ktp' => $request->alamat_ktp,
+            'al_dom' => $request->alamat_dom,
+            'j_kel' => $request->jk,
+            'tmpt_lahir' => $request->tmpt_lahir,
+            'no_ktp' => $request->ktp,
+            'jurusan' => $request->jurusan,
+            'no_hp' => $request->no_hp,
+            'no_wa' => $request->no_wa,
+            'email' => $request->email,
+            'agama' => $request->agama,
+            'ibu' => $request->ibu,
+            'ayah' => $request->ayah,
+            'jaket' => $request->jaket,
+            'lulusan' => $request->lulusan,
+            'biaya' => $request->biaya,
+            'info' => $request->info,
+            'kerja' => $request->kerja,
+            'jabatan' => $request->jabatan,
+            'al_kerja' => $request->al_kerja,
+            'no_kantor' => $request->no_kantor,
+        ];
+
+        Daftar::create($data);
 
         // Lakukan penyimpanan ke database atau tindakan lain yang dibutuhkan
 

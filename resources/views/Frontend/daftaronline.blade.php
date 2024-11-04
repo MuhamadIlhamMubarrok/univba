@@ -13,7 +13,8 @@
                                         <a href="#" class="nav-link"><i class="fa fa-check"></i><br>Pilihan Kelas</a>
                                     </li>
                                     <li class="nav-item disabled">
-                                        <a href="#" class="nav-link"><i class="fa fa-list"></i><br>Formulir Pendaftaran</a>
+                                        <a href="#" class="nav-link"><i class="fa fa-list"></i><br>Formulir
+                                            Pendaftaran</a>
                                     </li>
                                 </ul>
 
@@ -23,7 +24,8 @@
                                         @foreach (['Kelas Karyawan', 'Kelas Reguler Pagi'] as $kelas)
                                             <div class="form-group">
                                                 <label class="btn btn-primary w-100">
-                                                    <input type="radio" name="kelas" value="{{ $kelas }}" required>
+                                                    <input type="radio" name="kelas" value="{{ $kelas }}"
+                                                        required>
                                                     {{ $kelas }}
                                                 </label>
                                             </div>
@@ -40,8 +42,8 @@
                             </form>
                         </div>
                     </div>
-                
-                <!-- Step 2 -->
+
+                    <!-- Step 2 -->
                 @elseif ($step == 2)
                     <div class="col-12 col-md-12 clearfix" id="checkout">
                         <div class="box">
@@ -53,12 +55,14 @@
                                         <a href="#" class="nav-link"><i class="fa fa-check"></i><br>Pilihan Kelas</a>
                                     </li>
                                     <li class="nav-item active">
-                                        <a href="#" class="nav-link"><i class="fa fa-list"></i><br>Formulir Pendaftaran</a>
+                                        <a href="#" class="nav-link"><i class="fa fa-list"></i><br>Formulir
+                                            Pendaftaran</a>
                                     </li>
                                 </ul>
 
                                 <div class="content">
-                                    <label class="alert alert-info"><b>SILAHKAN ISI FORMULIR PENDAFTARAN BERIKUT</b></label><br>
+                                    <label class="alert alert-info"><b>SILAHKAN ISI FORMULIR PENDAFTARAN
+                                            BERIKUT</b></label><br>
 
                                     <!-- Form fields as defined before -->
                                     <!-- Example for Name and Gender fields -->
@@ -66,7 +70,8 @@
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label>Nama Lengkap</label>
-                                                <input type="text" name="nama" placeholder="Sesuai KTP" class="form-control" required>
+                                                <input type="text" name="nama" placeholder="Sesuai KTP"
+                                                    class="form-control" required>
                                             </div>
                                         </div>
                                         <div class="col-sm-6">
@@ -79,7 +84,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="row">
                                         <div class="col-sm-12">
                                             <div class="form-group">
@@ -93,7 +98,8 @@
                                         <div class="col-sm-12">
                                             <div class="form-group">
                                                 <label for="alamat_ktp">Alamat</label>
-                                                <input type="text" name="alamat_ktp" placeholder="Sesuai KTP" class="form-control" required>
+                                                <input type="text" name="alamat_ktp" placeholder="Sesuai KTP"
+                                                    class="form-control" required>
                                             </div>
                                         </div>
                                         <div class="col-sm-12">
@@ -104,7 +110,7 @@
                                         </div>
                                     </div>
                                     <!-- /.row -->
-    
+
                                     <div class="row">
                                         <div class="col-sm-6 col-md-3">
                                             <div class="form-group">
@@ -115,7 +121,8 @@
                                         <div class="col-sm-6 col-md-3">
                                             <div class="form-group">
                                                 <label for="tgl">Tanggal Lahir</label>
-                                                <input type="date" name="tgl_lahir" class="form-control" placeholder="12-12-2000" required>
+                                                <input type="date" name="tgl_lahir" class="form-control"
+                                                    placeholder="12-12-2000" required>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 col-md-6">
@@ -124,11 +131,11 @@
                                                 <input type="text" name="ktp" class="form-control" required>
                                             </div>
                                         </div>
-    
+
                                     </div>
-    
+
                                     <div class="row">
-    
+
                                         <div class="col-sm-6 col-md-3">
                                             <div class="form-group">
                                                 <label for="nowa">Nomor WhatsApp / HP</label>
@@ -175,9 +182,9 @@
                                                 <input type="text" name="ayah" class="form-control">
                                             </div>
                                         </div>
-    
+
                                     </div>
-    
+
                                     <div class="row">
                                         <div class="col-sm-6 col-md-3">
                                             <div class="form-group">
@@ -202,8 +209,8 @@
                                                     <option>S1 Akuntansi</option>
                                                     <option>S1 Pendidikan Bahasa Inggris</option>
                                                     <option>S1 Pendidikan Matematika</option>
-                                                
-                                                   
+
+
                                                 </select>
                                             </div>
                                         </div>
@@ -231,8 +238,10 @@
                                         <div class="col-sm-6 col-md-4">
                                             <div class="form-group">
                                                 <label for="lastname">Biaya kuliah</label>
-                                                <label class="form-control"><input type="radio" name="biaya" value="Bulanan" required> Bulanan
-                                                    <input type="radio" name="biaya" value="Semesteran" required> Semesteran</label>
+                                                <label class="form-control"><input type="radio" name="biaya"
+                                                        value="Bulanan" required> Bulanan
+                                                    <input type="radio" name="biaya" value="Semesteran" required>
+                                                    Semesteran</label>
                                             </div>
                                         </div>
                                         <div class="col-sm-5">
@@ -253,7 +262,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <label class="alert alert-info"><b>(KOSONGKAN FORMULIR DI BAWAH INI JIKA BELUM BEKERJA)</b></label>
+                                    <label class="alert alert-info"><b>(KOSONGKAN FORMULIR DI BAWAH INI JIKA BELUM
+                                            BEKERJA)</b></label>
                                     <div class="row">
                                         <div class="col-sm-6">
                                             <div class="form-group">
@@ -267,12 +277,12 @@
                                                 <input type="text" name="jabatan" class="form-control">
                                             </div>
                                         </div>
-                                        <!--<div class="col-sm-12">-->
-                                        <!--    <div class="form-group">-->
-                                        <!--        <label for="al_kerja">Alamat Perusahaan</label>-->
-                                        <!--        <input type="text" name="al_kerja" class="form-control">-->
-                                        <!--    </div>-->
-                                        <!--</div>-->
+                                        <div class="col-sm-12">
+                                            <div class="form-group">
+                                                <label for="al_kerja">Alamat Perusahaan</label>
+                                                <input type="text" name="al_kerja" class="form-control">
+                                            </div>
+                                        </div>
                                         <div class="col-sm-6">
                                             <div class="form-group">
                                                 <label for="no_kantor">Nomor Telepon Perusahaan</label>
@@ -284,10 +294,13 @@
                                 </div>
                                 <div class="box-footer">
                                     <div class="pull-left">
-                                        <a href="index.php?m=daftar&step=1" class="btn btn-primary" style="width: 150px"><i class="fa fa-chevron-left"></i>Kembali</a>
+                                        <a href="index.php?m=daftar&step=1" class="btn btn-primary"
+                                            style="width: 150px"><i class="fa fa-chevron-left"></i>Kembali</a>
                                     </div>
                                     <div class="pull-right">
-                                        <button type="submit" class="btn btn-success" style="width: 150px" onClick="return confirm('Anda yakin dengan data ini?')">Daftar<i class="fa fa-chevron-right"></i>
+                                        <button type="submit" class="btn btn-success" style="width: 150px"
+                                            onClick="return confirm('Anda yakin dengan data ini?')">Daftar<i
+                                                class="fa fa-chevron-right"></i>
                                         </button>
                                     </div>
                                 </div>
