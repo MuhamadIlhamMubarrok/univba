@@ -412,61 +412,67 @@
         <div class="top-menu-wrapper">
             <ul class="top-menu">
                 @foreach ($mainMenus as $menu)
-                    <li class="has-dropdown" style="font-weight: bold;">
-                        <a style="color: #000;" href="{{ $menu->url }}">
-                            {{ $menu->menu }}
-                            @php
-                                $subItems = $subMenus->where('submenu_id', $menu->menu_id);
-                            @endphp
-                            @if ($subItems->isNotEmpty())
-                                <i class="fas fa-chevron-down" style="margin-left: 5px;"></i>
-                            @endif
-                        </a>
+                <li class="has-dropdown" style="font-weight: bold;">
+                    @php
+                        // Determine the URL: if numeric, assume it's a page_id and construct "page/{page_id}", otherwise use the actual URL
+                        $url = is_numeric($menu->url) ? url('page/' . $menu->url) : url($menu->url);
+                        $subItems = $subMenus->where('submenu_id', $menu->menu_id);
+                    @endphp
+                    <a style="color: #000;" href="{{ $url }}">
+                        {{ $menu->menu }}
                         @if ($subItems->isNotEmpty())
-                            <ul class="dropdown-menu">
-                                @foreach ($subItems as $submenu)
-                                    <li style="font-weight: bold;">
-                                        <a href="{{ $submenu->url }}">{{ $submenu->menu }}</a>
-                                    </li>
-                                @endforeach
-                            </ul>
+                            <i class="fas fa-chevron-down" style="margin-left: 5px;"></i>
                         @endif
+                    </a>
+                        @if ($subItems->isNotEmpty())
+                        <ul class="dropdown-menu">
+                            @foreach ($subItems as $submenu)
+                                @php
+                                    // Apply the same logic for submenu URLs
+                                    $subUrl = is_numeric($submenu->url) ? url('page/' . $submenu->url) : $submenu->url;
+                                @endphp
+                                <li style="font-weight: bold;">
+                                    <a href="{{ $subUrl }}">{{ $submenu->menu }}</a>
+                                </li>
+                            @endforeach
+                        </ul>
+                    @endif
                     </li>
                 @endforeach
                 <li></li>
             </ul>
-
-            <script>
-                // JavaScript to show/hide dropdown on hover
-                document.querySelectorAll('.has-dropdown').forEach(function(menuItem) {
-                    menuItem.addEventListener('mouseenter', function() {
-                        const dropdown = menuItem.querySelector('.dropdown-menu');
-                        if (dropdown) dropdown.style.display = 'block';
-                    });
-                    menuItem.addEventListener('mouseleave', function() {
-                        const dropdown = menuItem.querySelector('.dropdown-menu');
-                        if (dropdown) dropdown.style.display = 'none';
-                    });
-                });
-            </script>
-
-            <script>
-                // JavaScript to show/hide dropdown on hover
-                document.querySelectorAll('.has-dropdown').forEach(function(menuItem) {
-                    menuItem.addEventListener('mouseenter', function() {
-                        const dropdown = menuItem.querySelector('.dropdown-menu');
-                        if (dropdown) dropdown.style.display = 'block';
-                    });
-                    menuItem.addEventListener('mouseleave', function() {
-                        const dropdown = menuItem.querySelector('.dropdown-menu');
-                        if (dropdown) dropdown.style.display = 'none';
-                    });
-                });
-            </script>
-
         </div>
     </nav>
 </header>
+
+
+<script>
+    // JavaScript to show/hide dropdown on hover
+    document.querySelectorAll('.has-dropdown').forEach(function(menuItem) {
+        menuItem.addEventListener('mouseenter', function() {
+            const dropdown = menuItem.querySelector('.dropdown-menu');
+            if (dropdown) dropdown.style.display = 'block';
+        });
+        menuItem.addEventListener('mouseleave', function() {
+            const dropdown = menuItem.querySelector('.dropdown-menu');
+            if (dropdown) dropdown.style.display = 'none';
+        });
+    });
+</script>
+
+<script>
+    // JavaScript to show/hide dropdown on hover
+    document.querySelectorAll('.has-dropdown').forEach(function(menuItem) {
+        menuItem.addEventListener('mouseenter', function() {
+            const dropdown = menuItem.querySelector('.dropdown-menu');
+            if (dropdown) dropdown.style.display = 'block';
+        });
+        menuItem.addEventListener('mouseleave', function() {
+            const dropdown = menuItem.querySelector('.dropdown-menu');
+            if (dropdown) dropdown.style.display = 'none';
+        });
+    });
+</script>
 
 <script>
     const pageHeader = document.querySelector(".page-header");
