@@ -1,0 +1,36 @@
+[33mcommit 6709f491e1e6b61ac28f383a54f2734e262ad3fa[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Abdillah Al Ghifari <abdillahghifari2@gmail.com>
+Date:   Mon Nov 4 11:17:29 2024 +0700
+
+    Fourth Commit
+
+[33mcommit 1c6799bb252f87e37a7f4671b79add94ccc07ad0[m
+Author: Abdillah Al Ghifari <abdillahghifari2@gmail.com>
+Date:   Mon Nov 4 10:38:18 2024 +0700
+
+    Third Commit
+
+[33mcommit df35342e2a459f2f90fd7f10e8866a4df4e0569f[m
+Merge: 2467fbe 718495d
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Sat Nov 2 17:04:23 2024 +0700
+
+    Merge branch 'main' of github.com:abdillahgfr/web-kampus
+
+[33mcommit 2467fbe99ffd9dfa094b40524dd74595af44df65[m
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Sat Nov 2 17:04:12 2024 +0700
+
+    fix : navbar & pendaftaran 40%
+
+[33mcommit 718495d19fe587454973688664b19906341c3e49[m
+Author: Abdillah Al Ghifari <abdillahghifari2@gmail.com>
+Date:   Sat Nov 2 14:44:33 2024 +0700
+
+    Second Commit Kampus
+
+[33mcommit 2a39d0839d9eb1c80f2bf839085490094122a2c7[m
+Author: Abdillah Al Ghifari <abdillahghifari2@gmail.com>
+Date:   Sat Nov 2 11:16:26 2024 +0700
+
+    First Commit Kampus
