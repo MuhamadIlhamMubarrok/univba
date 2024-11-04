@@ -8,6 +8,7 @@ use App\Models\Berita;
 use App\Models\Beranda;
 use App\Models\Menu;
 use App\Models\Images;
+use App\Models\Page;
 
 class HomeController extends Controller
 {
@@ -40,6 +41,62 @@ class HomeController extends Controller
     public function success(){
      
         return view('Frontend.Success');
+    }
+
+    public function sejarah(){
+
+        // Fetch main menu items (submenu_id=0)
+        $mainMenus = Menu::where('submenu_id', 0)->orderBy('urutan', 'asc')->get();
+
+        // Fetch all submenus
+        $subMenus = Menu::where('submenu_id', '!=', 0)->get();
+ 
+         return view('Frontend.sejarah', compact('mainMenus', 'subMenus'));
+    }
+
+    public function visimisi(){
+
+        // Fetch main menu items (submenu_id=0)
+        $mainMenus = Menu::where('submenu_id', 0)->orderBy('urutan', 'asc')->get();
+
+        // Fetch all submenus
+        $subMenus = Menu::where('submenu_id', '!=', 0)->get();
+ 
+         return view('Frontend.visimisi', compact('mainMenus', 'subMenus'));
+    }
+
+    public function strukturorganisasi(){
+
+        // Fetch main menu items (submenu_id=0)
+        $mainMenus = Menu::where('submenu_id', 0)->orderBy('urutan', 'asc')->get();
+
+        // Fetch all submenus
+        $subMenus = Menu::where('submenu_id', '!=', 0)->get();
+ 
+         return view('Frontend.struktur', compact('mainMenus', 'subMenus'));
+    }
+
+    public function kontak(){
+
+        // Fetch main menu items (submenu_id=0)
+        $mainMenus = Menu::where('submenu_id', 0)->orderBy('urutan', 'asc')->get();
+
+        // Fetch all submenus
+        $subMenus = Menu::where('submenu_id', '!=', 0)->get();
+ 
+         return view('Frontend.kontak', compact('mainMenus', 'subMenus'));
+    }
+
+    public function pageShow($id)
+    {
+        // Fetch main menu items (submenu_id=0)
+        $mainMenus = Menu::where('submenu_id', 0)->orderBy('urutan', 'asc')->get();
+
+        // Fetch all submenus
+        $subMenus = Menu::where('submenu_id', '!=', 0)->get();
+
+        $page = Page::findOrFail($id); // Fetch page by ID
+        return view('Frontend.page', compact('mainMenus', 'subMenus', 'page')); // Pass the data to the view
     }
  
      public function showForm(Request $request)

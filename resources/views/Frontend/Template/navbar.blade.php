@@ -433,7 +433,7 @@
                         @endif
                     </li>
                 @endforeach
-                <li><a style="color: #000;" href="/kontak">Kontak</a></li>
+                <li></li>
             </ul>
 
             <script>

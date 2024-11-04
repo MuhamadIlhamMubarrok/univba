@@ -101,7 +101,7 @@
     {{-- Navbar --}}
     @include('Frontend.Template.navbar')
 
-    <x-topBar title="Contact" />
+    <x-topBar title="Pendaftaran Online" />
     {{-- Page Content --}}
     @yield('content')
 

@@ -101,7 +101,6 @@
     {{-- Navbar --}}
     @include('Frontend.Template.navbar')
 
-
     {{-- Page Content --}}
     @yield('content')
 
