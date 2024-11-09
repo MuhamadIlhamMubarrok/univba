@@ -87,6 +87,17 @@ class HomeController extends Controller
         return view('Frontend.kontak', compact('mainMenus', 'subMenus'));
     }
 
+    public function brosur(){
+
+        // Fetch main menu items (submenu_id=0)
+        $mainMenus = Menu::where('submenu_id', 0)->orderBy('urutan', 'asc')->get();
+
+        // Fetch all submenus
+        $subMenus = Menu::where('submenu_id', '!=', 0)->get();
+ 
+         return view('Frontend.brosur', compact('mainMenus', 'subMenus'));
+    }
+
     public function pageShow($id)
     {
         // Fetch main menu items (submenu_id=0)
