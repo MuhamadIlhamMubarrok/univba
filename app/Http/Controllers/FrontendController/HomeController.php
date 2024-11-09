@@ -138,13 +138,13 @@ class HomeController extends Controller
                 'jurusan' => 'required|string|max:255',
                 'no_hp' => 'required|numeric|digits_between:10,13',
                 'no_wa' => 'nullable|numeric|digits_between:10,13',
-                'email' => 'required|email|max:255|unique:daftar,email',
+                'email' => 'required|email|max:255',
                 'agama' => 'nullable|string|max:50',
                 'ibu' => 'required|string|max:255',
                 'ayah' => 'required|string|max:255',
                 'jaket' => 'nullable|string|max:10',
                 'lulusan' => 'nullable|string|max:255',
-                'biaya' => 'nullable|numeric',
+                'biaya' => 'required',
                 'info' => 'nullable|string|max:255',
                 'kerja' => 'nullable|string|max:255',
                 'jabatan' => 'nullable|string|max:255',
@@ -186,6 +186,8 @@ class HomeController extends Controller
                 'jurusan.string' => 'Jurusan harus berupa teks.',
                 'jurusan.max' => 'Jurusan maksimal 255 karakter.',
 
+                'biaya.required' => 'Biaya wajib diisi.',
+
                 'no_hp.required' => 'Nomor HP wajib diisi.',
                 'no_hp.numeric' => 'Nomor HP harus berupa angka.',
                 'no_hp.digits_between' => 'Nomor HP harus antara 10 hingga 13 digit.',
@@ -196,7 +198,6 @@ class HomeController extends Controller
                 'email.required' => 'Alamat email wajib diisi.',
                 'email.email' => 'Format email tidak valid.',
                 'email.max' => 'Email maksimal 255 karakter.',
-                'email.unique' => 'Alamat email ini sudah terdaftar.',
 
                 'agama.string' => 'Agama harus berupa teks.',
                 'agama.max' => 'Agama maksimal 50 karakter.',
@@ -214,8 +215,6 @@ class HomeController extends Controller
 
                 'lulusan.string' => 'Lulusan harus berupa teks.',
                 'lulusan.max' => 'Lulusan maksimal 255 karakter.',
-
-                'biaya.numeric' => 'Biaya harus berupa angka.',
 
                 'info.string' => 'Informasi tambahan harus berupa teks.',
                 'info.max' => 'Informasi tambahan maksimal 255 karakter.',

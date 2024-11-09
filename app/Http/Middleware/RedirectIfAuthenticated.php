@@ -19,14 +19,10 @@ class RedirectIfAuthenticated
      */
     public function handle(Request $request, Closure $next, ...$guards)
     {
-        $guards = empty($guards) ? [null] : $guards;
-
-        foreach ($guards as $guard) {
-            if (Auth::guard($guard)->check()) {
-                return redirect(RouteServiceProvider::HOME);
-            }
+        // Memeriksa apakah user sudah login
+        if (isset(Auth::user()->id)) {
+            return redirect()->route('dashboard')->with('message', 'Kamu Sudah Dalam Keadaan Login')->with('alert-type', 'success');
         }
-
         return $next($request);
     }
 }
