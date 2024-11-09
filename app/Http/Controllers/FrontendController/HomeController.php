@@ -121,7 +121,34 @@ class HomeController extends Controller
             'nama' => 'required|string',
             'jk' => 'required|string',
             'kampus' => 'required|string',
+            'alamat_ktp' => 'required|string',
+            'alamat_dom' => 'required|string',
+            'tmpt_lahir' => 'required|string',
+            'ktp' => 'required|string',
+            'jurusan' => 'required|string',
+            'no_hp' => 'required|string',
+            'no_wa' => 'required|string',
+            'email' => 'required|email|string',
+            'agama' => 'required|string',
+            'ibu' => 'required|string',
+            'ayah' => 'required|string',
+            'jaket' => 'required|string',
+            'lulusan' => 'required|string',
+            'biaya' => 'required|string',
+            'info' => 'required|string',
+            'kerja' => 'required|string',
+            'jabatan' => 'required|string',
+            'al_kerja' => 'required|string',
+            'no_kantor' => 'required|string',
+            
+            
+            
+
             // Tambahkan validasi untuk semua input yang diperlukan
+        ],[
+ 
+            'email.required' => 'Email diperlukan.',
+            'email.email' => 'Format email tidak valid.',
         ]);
 
         $data = [

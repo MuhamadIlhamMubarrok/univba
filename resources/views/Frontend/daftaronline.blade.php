@@ -49,6 +49,7 @@
                         <div class="box">
                             <form method="post" action="{{ route('registration.store') }}">
                                 @csrf
+                                
                                 <input type="hidden" name="kelas" value="{{ request()->input('kelas', $pilihan) }}">
                                 <ul class="nav nav-pills nav-justified">
                                     <li class="nav-item disabled">
