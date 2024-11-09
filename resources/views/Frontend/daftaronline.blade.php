@@ -60,11 +60,18 @@
                                             Pendaftaran</a>
                                     </li>
                                 </ul>
-
+                                @if ($errors->any())
+                                    <div id="error-alert" class="alert alert-danger">
+                                        <ul>
+                                            @foreach ($errors->all() as $error)
+                                                <li>{{ $error }}</li>
+                                            @endforeach
+                                        </ul>
+                                    </div>
+                                @endif
                                 <div class="content">
                                     <label class="alert alert-info"><b>SILAHKAN ISI FORMULIR PENDAFTARAN
                                             BERIKUT</b></label><br>
-
                                     <!-- Form fields as defined before -->
                                     <!-- Example for Name and Gender fields -->
                                     <div class="row">
@@ -322,3 +329,17 @@
         }
     </style>
 @endsection
+
+@pushOnce('addon-script')
+    <script>
+        // Fungsi untuk menghilangkan alert error setelah 10 detik
+        document.addEventListener("DOMContentLoaded", function() {
+            const errorAlert = document.getElementById("error-alert");
+            if (errorAlert) {
+                setTimeout(() => {
+                    errorAlert.style.display = "none";
+                }, 10000); // 10 detik
+            }
+        });
+    </script>
+@endPushOnce
