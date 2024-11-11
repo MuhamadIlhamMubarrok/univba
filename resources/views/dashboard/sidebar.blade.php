@@ -1,8 +1,12 @@
 <nav class="sidebar">
     <div class="sidebar-header">
-        <a href="/">
+        <a href="/" class="d-flex justify-content-center align-items-center">
             <img src="https://kuliahkaryawan.net/assets/images/logok2-shadow.png" width="30" alt="Kuliah Karyawan">
+            <h5 class="mx-2">x</h5>
+            <img src="{{ $user->logo ? asset('storage/userImage/' . $user->logo) : 'https://kuliahkaryawan.net/assets/images/logok2-shadow.png' }}"
+                width="30" alt="Kuliah Karyawan">
         </a>
+
         <div class="sidebar-toggler not-active">
             <span></span>
             <span></span>

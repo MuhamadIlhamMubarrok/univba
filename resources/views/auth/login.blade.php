@@ -96,4 +96,15 @@
             }
         }, 1500); // Waktu tampil alert selama 1.5 detik
     </script>
+    <script>
+        // Menghapus alert setelah 1.5 detik dengan efek transisi
+        setTimeout(function() {
+            const alert = document.getElementById('error-alert');
+            if (alert) {
+                alert.style.transition = "opacity 0.5s ease"; // Efek transisi
+                alert.style.opacity = 0; // Mengurangi opasitas menjadi 0
+                setTimeout(() => alert.remove(), 2000); // Menghapus alert setelah transisi selesai
+            }
+        }, 1500); // Waktu tampil alert selama 1.5 detik
+    </script>
 @endpush

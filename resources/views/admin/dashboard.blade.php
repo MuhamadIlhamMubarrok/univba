@@ -1,6 +1,6 @@
 @extends('dashboard.app')
 
-@section('title', 'Certificate')
+@section('title', 'Dashboard')
 
 @section('content')
 
@@ -12,4 +12,3 @@
 
 
 @endsection
-

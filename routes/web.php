@@ -42,4 +42,8 @@ Route::middleware('guest')->group(function () {
 Route::middleware('auth')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/dashboard', [AuthController::class, 'dashboard'])->name('dashboard');
+    Route::get('/profile', [AuthController::class, 'profile'])->name('profile');
+    Route::put('/profile/update/{id}', [AuthController::class, 'updateProfile'])->name('profile.update');
+    Route::get('/change-password', [AuthController::class, 'changePassword'])->name('changePassword');
+    Route::post('/change-password', [AuthController::class, 'doChangePassword'])->name('change.password');
 });
