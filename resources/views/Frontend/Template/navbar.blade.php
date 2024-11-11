@@ -415,8 +415,8 @@
                     <li class="has-dropdown" style="font-weight: bold;">
                         @php
                             // Determine the URL: if numeric, assume it's a page_id and construct "page/{page_id}", otherwise use the actual URL
-$url = is_numeric($menu->url) ? url('page/' . $menu->url) : url($menu->url);
-$subItems = $subMenus->where('submenu_id', $menu->menu_id);
+                    $url = is_numeric($menu->url) ? url('page/' . $menu->url) : url($menu->url);
+                    $subItems = $subMenus->where('submenu_id', $menu->menu_id);
                         @endphp
                         <a style="color: #000;" href="{{ $url }}">
                             {{ $menu->menu }}

@@ -53,6 +53,9 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@3.0.9/dist/leaflet-search.src.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@2.4.0/Control.FullScreen.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+    
 
     <style>
         * {
@@ -81,6 +84,41 @@
 
         </div>
     </div>
+
+    <!-- DataTables JavaScript -->
+    <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="vendor/datatables-responsive/dataTables.responsive.js"></script>
+    <script src="/assets/js/bootstrap-datepicker.js"></script>
+
+    <script>
+        $( function() {
+          $( "#datepicker" ).datepicker({
+                  format:'dd-mm-yyyy',
+                  autoclose:true
+              }).on('changeDate', function(ev) {
+                  $(this).datepicker('hide');
+              });
+              $( "#datepicker1" ).datepicker({
+                  format:'dd-mm-yyyy',
+                  autoclose:true
+              }).on('changeDate', function(ev) {
+                  $(this).datepicker('hide');
+              });
+          });
+        </script>
+        <script type="text/javascript">
+            function cetak(url){
+              var tglawal = $('#datepicker').val();
+              var tglakhir = $('#datepicker1').val();
+              if(tglawal=='' || tglakhir==''){
+                  alert('Tanggal harus diisi'); 
+              } else {
+                  // alert('Bagus');
+                  window.location.replace(url+"?tglawal="+tglawal+"&tglakhir="+tglakhir);
+              }
+            }
+    </script>
 
     <!-- core:js -->
     <script src="{{ asset('../../../assets/vendors/core/core.js') }}"></script>

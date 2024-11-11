@@ -33,6 +33,11 @@ class AuthController extends Controller
     }
     function dashboard()
     {
-        return view('admin/dashboard');
+        $countPages = \DB::table('page')->count();
+        $countContacts = \DB::table('kontak')->count();
+        $countAdmins = \DB::table('useradmin')->count();
+        $countRegistrations = \DB::table('daftar')->count();
+    
+        return view('admin.dashboard', compact('countPages', 'countContacts', 'countAdmins', 'countRegistrations'));
     }
 }
