@@ -32,7 +32,7 @@ class AuthController extends Controller
     function profile(Request $request)
     {
         $user = auth()->user();
-        return view('admin/profile', compact('user'));
+        return view('admin/profile', compact('user') );
     }
 
     public function updateProfile(Request $request, string $id)
@@ -116,8 +116,8 @@ class AuthController extends Controller
     }
     function changePassword()
     {
-        $user = auth()->user();
-        return view('admin/changePassword', compact('user'));
+       
+        return view('admin/changePassword');
     }
 
     public function doChangePassword(Request $request)
@@ -157,9 +157,8 @@ class AuthController extends Controller
         $countContacts = \DB::table('kontak')->count();
         $countAdmins = \DB::table('useradmin')->count();
         $countRegistrations = \DB::table('daftar')->count();
-        $user = auth()->user();
 
-        return view('admin.dashboard', compact('countPages', 'countContacts', 'countAdmins', 'countRegistrations', 'user'));
+        return view('admin.dashboard', compact('countPages', 'countContacts', 'countAdmins', 'countRegistrations'));
        
     }
 }
