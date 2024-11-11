@@ -77,7 +77,6 @@
             @include('dashboard.header')
             <!-- partial -->
             @yield('content')
-
             <!-- partial:partials/_footer.html -->
             @include('dashboard.footer')
             <!-- partial -->

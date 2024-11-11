@@ -13,7 +13,8 @@ class BerandaController extends Controller
     public function index()
     {
         $berandas = Beranda::with('page')->get(); // Assuming Beranda has a relation with Page
-        return view('admin.beranda.index', compact('berandas'));
+        $user = auth()->user();
+        return view('admin.beranda.index', compact('berandas', 'user'));
     }
 
 

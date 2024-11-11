@@ -49,12 +49,8 @@
                         <div class="box">
                             <form method="post" action="{{ route('registration.store') }}">
                                 @csrf
-<<<<<<< HEAD
                                 <input type="hidden" name="kelas" value="{{ old('kelas', request()->input('kelas')) }}">
-=======
-                                
                                 <input type="hidden" name="kelas" value="{{ request()->input('kelas', $pilihan) }}">
->>>>>>> cd3228fc8170e025588313bb9398db6ed707be62
                                 <ul class="nav nav-pills nav-justified">
                                     <li class="nav-item disabled">
                                         <a href="#" class="nav-link"><i class="fa fa-check"></i><br>Pilihan Kelas</a>

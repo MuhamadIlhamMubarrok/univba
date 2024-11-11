@@ -9,18 +9,17 @@
 
     class POController extends Controller
     {
-        public function __construct()
-        {
-        }
 
         public function index()
         {
-            return view('admin/dashboard');
+            $user = auth()->user();
+            return view('admin/dashboard', compact('user'));
         }
 
         public function daftar() {
             $daftars = Daftar::all();
-            return view('admin.daftar', compact('daftars'));
+            $user = auth()->user();
+            return view('admin.daftar', compact('daftars', 'user'));
         }
         
         public function detil($id) {

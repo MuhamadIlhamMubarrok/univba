@@ -53,6 +53,10 @@ Route::middleware('auth')->group(function () {
     Route::post('/beranda', [App\Http\Controllers\BackendController\BerandaController::class, 'store'])->name('beranda.store');
     Route::get('beranda/edit', [App\Http\Controllers\BackendController\BerandaController::class, 'edit'])->name('beranda.edit');
     Route::delete('/beranda', [App\Http\Controllers\BackendController\BerandaController::class, 'destroy'])->name('beranda.destroy');
-    
+
+    Route::get('/profile', [AuthController::class, 'profile'])->name('profile');
+    Route::put('/profile/update/{id}', [AuthController::class, 'updateProfile'])->name('profile.update');
+    Route::get('/change-password', [AuthController::class, 'changePassword'])->name('changePassword');
+    Route::post('/change-password', [AuthController::class, 'doChangePassword'])->name('change.password');
 
 });
