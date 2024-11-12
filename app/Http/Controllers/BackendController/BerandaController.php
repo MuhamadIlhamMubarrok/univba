@@ -22,7 +22,8 @@ class BerandaController extends Controller
     {
         $pages = Page::orderBy('judul', 'ASC')->get();
         $token = rand(100000, 999999);
-        return view('admin.beranda.create', compact('pages', 'token'));
+        $user = auth()->user();
+        return view('admin.beranda.create', compact('pages', 'token', 'user'));
     }
 
     public function store(Request $request)

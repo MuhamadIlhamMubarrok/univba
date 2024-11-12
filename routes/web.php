@@ -57,6 +57,14 @@ Route::middleware('auth')->group(function () {
     Route::get('beranda/edit', [App\Http\Controllers\BackendController\BerandaController::class, 'edit'])->name('beranda.edit');
     Route::delete('/beranda', [App\Http\Controllers\BackendController\BerandaController::class, 'destroy'])->name('beranda.destroy');
 
+    Route::get('/menu', [App\Http\Controllers\BackendController\MenuController::class, 'index'])->name('menu');
+    Route::get('/menu/create', [App\Http\Controllers\BackendController\MenuController::class, 'create'])->name('menu.create');
+    Route::post('/menu', [App\Http\Controllers\BackendController\MenuController::class, 'store'])->name('menu.store');
+    Route::get('/menu/edit/{id}', [App\Http\Controllers\BackendController\MenuController::class, 'edit'])->name('menu.edit');
+    Route::put('/menu/{id}', [App\Http\Controllers\BackendController\MenuController::class, 'update'])->name('menu.update');
+    Route::delete('/menu/{id}', [App\Http\Controllers\BackendController\MenuController::class, 'destroy'])->name('menu.destroy');
+    Route::get('menu/toggle-active/{id}', [App\Http\Controllers\BackendController\MenuController::class, 'toggleActive'])->name('menu.toggle-active');
+
     Route::get('/profile', [AuthController::class, 'profile'])->name('profile');
     Route::put('/profile/update/{id}', [AuthController::class, 'updateProfile'])->name('profile.update');
     Route::get('/change-password', [AuthController::class, 'changePassword'])->name('changePassword');
