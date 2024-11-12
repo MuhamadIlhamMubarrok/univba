@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Images;
+use App\Models\Kontak;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Validator;
@@ -13,6 +14,12 @@ class galleryController extends Controller
     {
         $image = Images::paginate(8);
         return view('admin.gallery.index', compact('image'));
+    }
+
+    function kontak()
+    {
+        $messages = Kontak::paginate(8);
+        return view('admin.kontak.index', compact('messages'));
     }
 
     function create()
@@ -104,5 +111,13 @@ class galleryController extends Controller
         // Hapus data dataPenyakitDbd
         $image->delete();
         return redirect()->route('gallery.index')->with('message', 'Gambar berhasil dihapus !')->with('alert-type', 'success');
+    }
+
+    public function destroyKontak($id)
+    {
+        $kontak = Kontak::findOrFail($id);
+        // Hapus data dataPenyakitDbd
+        $kontak->delete();
+        return redirect()->route('kontak.index')->with('message', 'Kontak berhasil dihapus !')->with('alert-type', 'success');
     }
 }

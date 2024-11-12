@@ -51,6 +51,9 @@ Route::middleware('auth')->group(function () {
     Route::get('/gallery/{id}/edit', [GalleryController::class, 'show'])->name('gallery.edit');
     Route::put('/gallery/update-foto/{id}', [GalleryController::class, 'update'])->name('gallery.update');
 
+    Route::get('/kontak', [galleryController::class, 'kontak'])->name('kontak.index');
+    Route::delete('/kontak/{id}', [galleryController::class, 'destroyKontak'])->name('kontak.destroy');
+
     Route::get('/data-pendaftaran', [App\Http\Controllers\BackendController\POController::class, 'daftar'])->name('daftar');
     Route::get('/data-pendaftaran/detil/{id}', [App\Http\Controllers\BackendController\POController::class, 'detil'])->name('daftar.detil');
     Route::get('/daftar/{id}', [App\Http\Controllers\BackendController\POController::class, 'hapus'])->name('daftar.hapus');

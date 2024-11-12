@@ -51,8 +51,8 @@
                 <span class="link-title">Pengaturan Halaman</span>
             </a>
             </li>
-            <li class="nav-item {{ request()->routeIs('menu.*') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ route('menu') }}" aria-controls="emails">
+            <li class="nav-item {{ request()->routeIs('kontak.*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('kontak.index') }}" aria-controls="emails">
                     <i class="fa fa-address-book" aria-hidden="true"></i>
                     <span class="link-title">Pengaturan Kontak</span>
                 </a>
