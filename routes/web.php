@@ -72,7 +72,7 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/page', [App\Http\Controllers\BackendController\HalamanController::class, 'index'])->name('pages');
     Route::get('/page/create', [App\Http\Controllers\BackendController\HalamanController::class, 'create'])->name('pages.create');
-    Route::post('/page', [App\Http\Controllers\BackendController\HalamanController::class, 'store'])->name('pages.store');
+    Route::post('/page/create', [App\Http\Controllers\BackendController\HalamanController::class, 'store'])->name('pages.store');
     Route::get('page/edit', [App\Http\Controllers\BackendController\HalamanController::class, 'edit'])->name('pages.edit');
     Route::delete('/page', [App\Http\Controllers\BackendController\HalamanController::class, 'destroy'])->name('pages.destroy');
 
