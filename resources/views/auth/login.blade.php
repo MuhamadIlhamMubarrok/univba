@@ -10,7 +10,8 @@
             <div id="box1"
                 class="hidden md:flex flex-col bg-gradient-to-br from-green-400 to-blue-600 rounded-e-[100px] w-[50%] h-full transition-all duration-500 ease-in-out">
                 <div class="px-[30px] h-full flex flex-col justify-center items-center">
-                    <img src="https://kuliahkaryawan.net/assets/images/logok2-shadow.png" width="200" alt="">
+                    <img src="
+                    " width="200" alt="">
                     <h1 class="font-bold text-[24px] uppercase" id="box1-heading">Kuliah Karyawan</h1>
                 </div>
             </div>

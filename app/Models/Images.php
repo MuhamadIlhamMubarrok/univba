@@ -9,7 +9,9 @@ class Images extends Model
     //
      protected $table = "images";
      protected $primaryKey = 'image_id';
-     protected $fillable = ['kategori', 'file', 'path', 'active', 'created_at'];
+
+     public $timestamps = false;
+     protected $fillable = ['kategori', 'file', 'active', 'created_at'];
 
     
 }

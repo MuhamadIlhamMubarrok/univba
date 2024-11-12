@@ -43,14 +43,19 @@ Route::middleware('guest')->group(function () {
 Route::middleware('auth')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
     Route::get('/dashboard', [AuthController::class, 'dashboard'])->name('dashboard');
-    
-    Route::get('/gallery', [galleryController::class, 'index'])->name('daftar');
+
+    Route::get('/gallery', [galleryController::class, 'index'])->name('gallery.index');
+    Route::get('/gallery/tambah-foto', [galleryController::class, 'create'])->name('gallery.create');
+    Route::post('/gallery/tambah-foto', [galleryController::class, 'store'])->name('gallery.store');
+    Route::delete('/gallery/delete-foto/{id}', [galleryController::class, 'destroy'])->name('gallery.delete');
+    Route::get('/gallery/{id}/edit', [GalleryController::class, 'show'])->name('gallery.edit');
+    Route::put('/gallery/update-foto/{id}', [GalleryController::class, 'update'])->name('gallery.update');
 
     Route::get('/data-pendaftaran', [App\Http\Controllers\BackendController\POController::class, 'daftar'])->name('daftar');
     Route::get('/data-pendaftaran/detil/{id}', [App\Http\Controllers\BackendController\POController::class, 'detil'])->name('daftar.detil');
     Route::get('/daftar/{id}', [App\Http\Controllers\BackendController\POController::class, 'hapus'])->name('daftar.hapus');
     Route::get('/daftar/cetak', [App\Http\Controllers\BackendController\POController::class, 'cetak'])->name('daftar.cetak');
-    
+
     Route::get('/beranda', [App\Http\Controllers\BackendController\BerandaController::class, 'index'])->name('beranda');
     Route::get('/beranda/create', [App\Http\Controllers\BackendController\BerandaController::class, 'create'])->name('beranda.create');
     Route::post('/beranda', [App\Http\Controllers\BackendController\BerandaController::class, 'store'])->name('beranda.store');
@@ -69,5 +74,4 @@ Route::middleware('auth')->group(function () {
     Route::put('/profile/update/{id}', [AuthController::class, 'updateProfile'])->name('profile.update');
     Route::get('/change-password', [AuthController::class, 'changePassword'])->name('changePassword');
     Route::post('/change-password', [AuthController::class, 'doChangePassword'])->name('change.password');
-
 });
