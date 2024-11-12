@@ -62,6 +62,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/menu/{id}', [App\Http\Controllers\BackendController\MenuController::class, 'destroy'])->name('menu.destroy');
     Route::get('menu/toggle-active/{id}', [App\Http\Controllers\BackendController\MenuController::class, 'toggleActive'])->name('menu.toggle-active');
 
+    Route::get('/page', [App\Http\Controllers\BackendController\HalamanController::class, 'index'])->name('pages');
+    Route::get('/page/create', [App\Http\Controllers\BackendController\HalamanController::class, 'create'])->name('pages.create');
+    Route::post('/page', [App\Http\Controllers\BackendController\HalamanController::class, 'store'])->name('pages.store');
+    Route::get('page/edit', [App\Http\Controllers\BackendController\HalamanController::class, 'edit'])->name('pages.edit');
+    Route::delete('/page', [App\Http\Controllers\BackendController\HalamanController::class, 'destroy'])->name('pages.destroy');
+
     Route::get('/profile', [AuthController::class, 'profile'])->name('profile');
     Route::put('/profile/update/{id}', [AuthController::class, 'updateProfile'])->name('profile.update');
     Route::get('/change-password', [AuthController::class, 'changePassword'])->name('changePassword');
