@@ -1,0 +1,193 @@
+[33mcommit 2a765e9a607052dd4b6db66aae00203cd850db48[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: f8daad0 e4b1e7e
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Tue Nov 12 16:49:39 2024 +0700
+
+    Merge branch 'main' of github.com:abdillahgfr/web-kampus
+
+[33mcommit e4b1e7ea52ac8eb15fe5840edadcfcff280941e2[m
+Author: Abdillah Al Ghifari <abdillahghifari2@gmail.com>
+Date:   Tue Nov 12 16:49:10 2024 +0700
+
+    Updated Code
+
+[33mcommit f8daad00856d84ca6db2101fb24d63dc26cb0a0d[m
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Tue Nov 12 14:29:11 2024 +0700
+
+    fix : kontak
+
+[33mcommit 56f5574f38ff5c6b2e57037825c26e6890324b4f[m
+Merge: b1f6017 89da4c8
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Tue Nov 12 14:01:35 2024 +0700
+
+    fix : tambah foto
+
+[33mcommit 89da4c8f38ec3a9ef9a284df8fee9fedb2dadb6c[m
+Author: Abdillah Al Ghifari <abdillahghifari2@gmail.com>
+Date:   Tue Nov 12 13:57:55 2024 +0700
+
+    Halaman Admin CRUD
+
+[33mcommit b1f6017ba3d97bb6602c2ee212dfc392158f709b[m
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Tue Nov 12 13:49:00 2024 +0700
+
+    edit sidebar
+
+[33mcommit 111d429940b5ed2b15299500b56c054a3ed7d9fd[m
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Tue Nov 12 13:46:36 2024 +0700
+
+    fix : tambah gambar
+
+[33mcommit 0c656fd3f78a4d47f3a865490ccb6867670a8533[m
+Merge: 4e37402 ba24063
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Tue Nov 12 10:36:04 2024 +0700
+
+    mau pull aja
+
+[33mcommit 4e37402058407741dc16e8a1d10fb86c9c69f67a[m
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Tue Nov 12 10:30:05 2024 +0700
+
+    mau pull aja
+
+[33mcommit ba2406387119921c71a31482a37ffd6c3d3f5a99[m
+Author: Abdillah Al Ghifari <abdillahghifari2@gmail.com>
+Date:   Tue Nov 12 10:29:50 2024 +0700
+
+    Menu Updated
+
+[33mcommit d9e19d5539b6351aeff038296860eff0e821d4db[m
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Mon Nov 11 15:23:28 2024 +0700
+
+    fix : auth
+
+[33mcommit cee9176695ddad7383f124108c4edc7001a68a1f[m
+Merge: a8d222b 87776c7
+Author: Abdillah Al Ghifari <abdillahghifari2@gmail.com>
+Date:   Mon Nov 11 14:02:09 2024 +0700
+
+    Beranda & Menu Admin
+
+[33mcommit a8d222bda0bf5a62aa71e21eeec62f56a75ba9a5[m
+Author: Abdillah Al Ghifari <abdillahghifari2@gmail.com>
+Date:   Mon Nov 11 13:50:59 2024 +0700
+
+    Beranda & Menu Admin
+
+[33mcommit 87776c7e7b45e915a4db1e9d0ba711f5ed493d3e[m
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Mon Nov 11 13:43:03 2024 +0700
+
+    fix : change password & update profil
+
+[33mcommit e4d0d35bf6abbd388293b87bd2878bf0a19a22d6[m
+Merge: ae0d018 cd3228f
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Sat Nov 9 16:51:15 2024 +0700
+
+    fix auth, login
+
+[33mcommit ae0d0181780360da363356890eff0504aba394d1[m
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Sat Nov 9 16:46:44 2024 +0700
+
+    fix login, set up dashboard
+
+[33mcommit cd3228fc8170e025588313bb9398db6ed707be62[m
+Author: sahrulyo <yoyo.ptr@gmail.com>
+Date:   Sat Nov 9 10:09:28 2024 +0700
+
+    Resolved merge conflict in HomeController.php
+
+[33mcommit 2de8f34211f9e47688f3e010a986295b1f7ea407[m
+Merge: 8d0c7cd 5c98f9c
+Author: sahrulyo <yoyo.ptr@gmail.com>
+Date:   Sat Nov 9 09:35:30 2024 +0700
+
+    test
+
+[33mcommit 8d0c7cd4b337983aeedff4a123b919d88b2a2a1c[m
+Author: sahrulyo <yoyo.ptr@gmail.com>
+Date:   Sat Nov 9 09:30:46 2024 +0700
+
+    pesan
+
+[33mcommit 5c98f9cd05c66f965f8fc7346bd4d92de128656b[m
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Sat Nov 9 09:26:51 2024 +0700
+
+    validasi daftar
+
+[33mcommit 56cd3f19565c7933c98c9f4969c5bac3692a0e82[m
+Merge: e61de30 be2fb42
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Sat Nov 9 09:24:15 2024 +0700
+
+    Merge branch 'main' of github.com:abdillahgfr/web-kampus
+
+[33mcommit e61de3034117677e4088471afc59018128254045[m
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Sat Nov 9 09:24:02 2024 +0700
+
+    validasi dafter online
+
+[33mcommit be2fb42089b3f70444bf9df80d984f898654550d[m
+Author: Abdillah Al Ghifari <abdillahghifari2@gmail.com>
+Date:   Mon Nov 4 15:33:39 2024 +0700
+
+    Fifth Commit
+
+[33mcommit b2ad59b348c2f28eaf221c79a5a106a7a7e70dfb[m
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Mon Nov 4 13:41:05 2024 +0700
+
+    fix : pendaftaran
+
+[33mcommit f35847805446a4272f033f15e8c82239fcb4cecd[m
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Mon Nov 4 12:50:41 2024 +0700
+
+    fix : debug navbar
+
+[33mcommit 6709f491e1e6b61ac28f383a54f2734e262ad3fa[m
+Author: Abdillah Al Ghifari <abdillahghifari2@gmail.com>
+Date:   Mon Nov 4 11:17:29 2024 +0700
+
+    Fourth Commit
+
+[33mcommit 1c6799bb252f87e37a7f4671b79add94ccc07ad0[m
+Author: Abdillah Al Ghifari <abdillahghifari2@gmail.com>
+Date:   Mon Nov 4 10:38:18 2024 +0700
+
+    Third Commit
+
+[33mcommit df35342e2a459f2f90fd7f10e8866a4df4e0569f[m
+Merge: 2467fbe 718495d
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Sat Nov 2 17:04:23 2024 +0700
+
+    Merge branch 'main' of github.com:abdillahgfr/web-kampus
+
+[33mcommit 2467fbe99ffd9dfa094b40524dd74595af44df65[m
+Author: MuhamadIlhamMubarrok <milhammubarrok@gmail.com>
+Date:   Sat Nov 2 17:04:12 2024 +0700
+
+    fix : navbar & pendaftaran 40%
+
+[33mcommit 718495d19fe587454973688664b19906341c3e49[m
+Author: Abdillah Al Ghifari <abdillahghifari2@gmail.com>
+Date:   Sat Nov 2 14:44:33 2024 +0700
+
+    Second Commit Kampus
+
+[33mcommit 2a39d0839d9eb1c80f2bf839085490094122a2c7[m
+Author: Abdillah Al Ghifari <abdillahghifari2@gmail.com>
+Date:   Sat Nov 2 11:16:26 2024 +0700
+
+    First Commit Kampus
