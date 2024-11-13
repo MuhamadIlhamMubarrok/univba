@@ -79,12 +79,12 @@ Route::middleware('auth')->group(function () {
     Route::get('pages/edit', [App\Http\Controllers\BackendController\HalamanController::class, 'edit'])->name('pages.edit');
     Route::delete('/pages', [App\Http\Controllers\BackendController\HalamanController::class, 'destroy'])->name('pages.destroy');
 
-<<<<<<< HEAD
+
     Route::get('/table-user', [AuthController::class, 'index'])->name('user.index');
     Route::get('/create-user', [AuthController::class, 'create'])->name('user.create');
     Route::post('/create-user', [AuthController::class, 'store'])->name('user.store');
     Route::delete('/delete-user/{id}', [AuthController::class, 'delete'])->name('user.delete');
-=======
+
     Route::get('/settings', [App\Http\Controllers\BackendController\SettingController::class, 'index'])->name('settings');
     Route::get('/settings/create', [App\Http\Controllers\BackendController\SettingController::class, 'create'])->name('settings.create');
     Route::post('/settings', [App\Http\Controllers\BackendController\SettingController::class, 'store'])->name('settings.store');
@@ -100,7 +100,6 @@ Route::middleware('auth')->group(function () {
     Route::get('berita/{id}', [App\Http\Controllers\BackendController\BeritaController::class, 'update'])->name('berita.update');
     Route::delete('/berita', [App\Http\Controllers\BackendController\BeritaController::class, 'destroy'])->name('berita.destroy');
 
->>>>>>> 317bd9bfe7b7bb8c5e38db8c069835fbab8cc92f
     Route::get('/profile', [AuthController::class, 'profile'])->name('profile');
     Route::put('/profile/update/{id}', [AuthController::class, 'updateProfile'])->name('profile.update');
     Route::get('/change-password', [AuthController::class, 'changePassword'])->name('changePassword');
