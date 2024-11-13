@@ -79,6 +79,21 @@ Route::middleware('auth')->group(function () {
     Route::get('pages/edit', [App\Http\Controllers\BackendController\HalamanController::class, 'edit'])->name('pages.edit');
     Route::delete('/pages', [App\Http\Controllers\BackendController\HalamanController::class, 'destroy'])->name('pages.destroy');
 
+    Route::get('/settings', [App\Http\Controllers\BackendController\SettingController::class, 'index'])->name('settings');
+    Route::get('/settings/create', [App\Http\Controllers\BackendController\SettingController::class, 'create'])->name('settings.create');
+    Route::post('/settings', [App\Http\Controllers\BackendController\SettingController::class, 'store'])->name('settings.store');
+    Route::get('/settings/edit/{id}', [App\Http\Controllers\BackendController\SettingController::class, 'edit'])->name('settings.edit');
+    Route::put('/settings/{id}', [App\Http\Controllers\BackendController\SettingController::class, 'update'])->name('settings.update');
+    Route::delete('/settings/{id}', [App\Http\Controllers\BackendController\SettingController::class, 'destroy'])->name('settings.destroy');
+    Route::get('settings/{id}/toggle-status', [SettingController::class, 'toggleStatus'])->name('settings.toggleStatus');
+
+    Route::get('/berita', [App\Http\Controllers\BackendController\BeritaController::class, 'index'])->name('berita');
+    Route::get('/berita/create', [App\Http\Controllers\BackendController\BeritaController::class, 'create'])->name('berita.create');
+    Route::post('/berita/create', [App\Http\Controllers\BackendController\BeritaController::class, 'store'])->name('berita.store');
+    Route::get('berita/edit/{id}', [App\Http\Controllers\BackendController\BeritaController::class, 'edit'])->name('berita.edit');
+    Route::get('berita/{id}', [App\Http\Controllers\BackendController\BeritaController::class, 'update'])->name('berita.update');
+    Route::delete('/berita', [App\Http\Controllers\BackendController\BeritaController::class, 'destroy'])->name('berita.destroy');
+
     Route::get('/profile', [AuthController::class, 'profile'])->name('profile');
     Route::put('/profile/update/{id}', [AuthController::class, 'updateProfile'])->name('profile.update');
     Route::get('/change-password', [AuthController::class, 'changePassword'])->name('changePassword');
