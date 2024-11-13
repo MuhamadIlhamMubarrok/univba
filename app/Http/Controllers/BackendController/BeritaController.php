@@ -38,7 +38,7 @@ class BeritaController extends Controller
 
         // Konfigurasi HTMLPurifier untuk membersihkan konten
         $config = HTMLPurifier_Config::createDefault();
-        $config->set('HTML.Allowed', 'p,strong,em,a[href|title],ul,ol,li,br,img[src|alt|title]'); // Tag yang diizinkan
+        $config->set('HTML.Allowed', 'p,strong,em,a[href|title],ul,ol,li,br,img[src|alt|title]');
         $purifier = new HTMLPurifier($config);
 
         // Sanitasi konten CKEditor
