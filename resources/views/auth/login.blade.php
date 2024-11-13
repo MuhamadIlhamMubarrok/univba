@@ -3,26 +3,38 @@
 @section('title', 'LOGIN')
 
 @section('content')
-    <div
-        class="flex flex-row items-center justify-center min-h-screen py-8 px-4 md:px-8 lg:px-20 bg-slate-100 shadow-lg w-full mx-auto">
-        <div
-            class="flex justify-center flex-row md:w-[700px] w-full max-w-[700px] mx-auto bg-white rounded-xl shadow-md overflow-hidden transition-all duration-500 ease-in-out h-[500px]">
-            <div id="box1"
-                class="hidden md:flex flex-col bg-gradient-to-br from-green-400 to-blue-600 rounded-e-[100px] w-[50%] h-full transition-all duration-500 ease-in-out">
-                <div class="px-[30px] h-full flex flex-col justify-center items-center">
-                    <img src="
-                    " width="200" alt="">
-                    <h1 class="font-bold text-[24px] uppercase" id="box1-heading">Kuliah Karyawan</h1>
+    <div class="flex h-screen w-full">
+        <div class="hidden md:block w-[50%] h-full bg-[#8394AC]" style="clip-path: ellipse(80% 100% at 10% 50%);">
+            <div class="flex flex-col w-full h-full bg-[#00214E]" style="clip-path: ellipse(80% 90% at 10% 50%);">
+                {{-- logo --}}
+                <div class="flex flex-row items-center justify-start ms-[60px] my-[40px] gap-x-3">
+                    <img src="https://kuliahkaryawan.net/assets/images/logok2-shadow.png" class="w-[30px] h-[30px]"
+                        alt="">
+                    <h1 class="font-bold text-white" style="font-family: 'Poppins';">KULIAH KARYAWAN</h1>
+                </div>
+
+                {{-- tengah --}}
+                <div class="w-full ms-[20px] ms-[70px] mt-[50px]">
+                    <img class="w-[400px]" src="{{ asset('./images/illustration.svg') }}" alt="">
+                    <h1 class="text-[40px] text-white font-bold pe-[300px] mt-[23px]" style="font-family: 'Poppins';">A few
+                        more clicks to
+                        sign in to your account.</h1>
+                    <p class="text-[20px] text-[#C6CDD7] pe-[300px]" style="font-family: 'Poppins';">Manage all your collage
+                        in one place</p>
                 </div>
             </div>
+        </div>
+
+        <div class="flex-1 md:ps-[50px] ps-0 h-full bg-white">
             <div id="form-container"
-                class="md:w-[50%] w-[100%] flex flex-col justify-center items-center h-full pt-8 pb-12 px-6 transition-all duration-500 ease-in-out">
+                class="w-[100%] flex flex-col justify-center items-center h-full pt-8 pb-12 px-6 transition-all duration-500 ease-in-out">
                 <div id="login-form" class="w-full">
-                    <h1 class="text-[20px] text-center font-semibold uppercase">Sign In</h1>
+                    <h1 class="text-[20px] text-start font-bold text-[#7C828B] text-[35px]" style="font-family: 'Poppins';">
+                        Sign In</h1>
                     <form method="POST" action="{{ route('login.post') }}" class="w-full mt-4 space-y-4">
                         @if ($errors->any())
                             <div id="error-alert"
-                                class="flex items-center p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"
+                                class="flex items-center w-[450px] p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-gray-800 dark:text-red-400"
                                 role="alert">
                                 <svg class="flex-shrink-0 inline w-4 h-4 mr-3" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -36,7 +48,7 @@
 
                         @if (session('message'))
                             <div id="success-alert"
-                                class="flex items-center p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
+                                class="flex items-center w-[450px] p-4 mb-4 text-sm text-green-800 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400"
                                 role="alert">
                                 <svg class="flex-shrink-0 inline w-4 h-4 mr-3" aria-hidden="true"
                                     xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
@@ -53,7 +65,7 @@
                         <div class="mb-4">
                             <label for="email" class="block text-gray-700 mb-2 font-semibold">Email</label>
                             <input type="email" id="email" name="email"
-                                class="w-full max-w-xl p-2 border border-gray-300 rounded-lg pl-4" placeholder="Email"
+                                class="w-full max-w-[450px] p-2 border border-gray-300 rounded-lg pl-4" placeholder="Email"
                                 required value="{{ old('email') }}">
                             @error('email')
                                 <div class="text-red-500 mt-2 text-sm">{{ $message }}</div>
@@ -62,27 +74,26 @@
                         <div class="mb-4">
                             <label for="password" class="block text-gray-700 mb-2 font-semibold">Password</label>
                             <input type="password" id="password" name="password"
-                                class="w-full max-w-xl p-2 border border-gray-300 rounded-lg pl-4" placeholder="Password"
-                                required>
+                                class="w-full max-w-[450px] p-2 border border-gray-300 rounded-lg pl-4"
+                                placeholder="Password" required>
                             @error('password')
                                 <div class="text-red-500 mt-2 text-sm">{{ $message }}</div>
                             @enderror
                         </div>
 
                         <div class="flex items-center justify-between max-w-[300px] w-full">
-                            <button
-                                class="relative inline-flex items-center justify-center p-0.5 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
-                                <span
-                                    class="relative px-5 py-2 transition-all ease-in duration-75 bg-white dark:bg-gray-900 rounded-md group-hover:bg-opacity-0">
-                                    Sign In
-                                </span>
-                            </button>
+                            <button type="submit" style="font-family: 'Poppins';"
+                                class="text-white bg-blue-700 font-semibold hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-[40px] py-3 me-2 mb-2 dark:bg-[#00214E] dark:hover:bg-[#022E6B] focus:outline-none ">Login</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
+
+
+
 @endsection
 
 @push('scripts')

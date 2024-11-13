@@ -79,6 +79,10 @@ Route::middleware('auth')->group(function () {
     Route::get('pages/edit', [App\Http\Controllers\BackendController\HalamanController::class, 'edit'])->name('pages.edit');
     Route::delete('/pages', [App\Http\Controllers\BackendController\HalamanController::class, 'destroy'])->name('pages.destroy');
 
+    Route::get('/table-user', [AuthController::class, 'index'])->name('user.index');
+    Route::get('/create-user', [AuthController::class, 'create'])->name('user.create');
+    Route::post('/create-user', [AuthController::class, 'store'])->name('user.store');
+    Route::delete('/delete-user/{id}', [AuthController::class, 'delete'])->name('user.delete');
     Route::get('/profile', [AuthController::class, 'profile'])->name('profile');
     Route::put('/profile/update/{id}', [AuthController::class, 'updateProfile'])->name('profile.update');
     Route::get('/change-password', [AuthController::class, 'changePassword'])->name('changePassword');

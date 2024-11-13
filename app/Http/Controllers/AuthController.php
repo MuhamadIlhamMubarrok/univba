@@ -32,7 +32,7 @@ class AuthController extends Controller
     function profile(Request $request)
     {
         $user = auth()->user();
-        return view('admin/profile', compact('user') );
+        return view('admin/profile', compact('user'));
     }
 
     public function updateProfile(Request $request, string $id)
@@ -116,7 +116,6 @@ class AuthController extends Controller
     }
     function changePassword()
     {
-       
         return view('admin/changePassword');
     }
 
@@ -159,6 +158,74 @@ class AuthController extends Controller
         $countRegistrations = \DB::table('daftar')->count();
 
         return view('admin.dashboard', compact('countPages', 'countContacts', 'countAdmins', 'countRegistrations'));
-       
+    }
+
+    function index()
+    {
+        $user = User::paginate(10); // Ambil data kelurahan dengan pagination
+        return view('admin.user.index', compact('user'));
+    }
+
+    function create()
+    {
+        return view('admin.user.create');
+    }
+
+    public function delete(string $id)
+    {
+        $user = User::findOrFail($id);
+
+        // Cek apakah user yang dihapus adalah user yang sedang login
+        if (auth()->user()->id == $user->id) {
+            return redirect()->route('admin.user.index')->with('message', 'Anda tidak bisa menghapus akun Anda sendiri.')->with('alert-type', 'error');
+        }
+
+        $user->delete();
+
+        return redirect()->route('user.index')->with('message', 'User berhasil dihapus!')->with('alert-type', 'success');
+    }
+
+    public function store(Request $request)
+    {
+        // Validasi input pengguna
+        $request->validate(
+            [
+                'name' => 'required|string|max:255',
+                'email' => 'required|string|email|max:255|unique:users',
+                'password' => 'required|string|min:8',
+            ],
+            [
+                'name.required' => 'Nama wajib diisi.',
+                'name.string' => 'Nama harus berupa teks.',
+                'name.max' => 'Nama tidak boleh lebih dari 255 karakter.',
+
+                'email.required' => 'Email wajib diisi.',
+                'email.string' => 'Email harus berupa teks.',
+                'email.email' => 'Format email tidak valid.',
+                'email.max' => 'Email tidak boleh lebih dari 255 karakter.',
+                'email.unique' => 'Email sudah terdaftar, gunakan email lain.',
+
+                'password.required' => 'Password wajib diisi.',
+                'password.string' => 'Password harus berupa teks.',
+                'password.min' => 'Password harus terdiri dari minimal 8 karakter.',
+            ],
+        );
+
+        // Ambil logo dari user dengan id = 1
+        $defaultUser = User::find(1);
+        $defaultLogo = $defaultUser ? $defaultUser->logo : null;
+        $defaultKampus = $defaultUser ? $defaultUser->kampus : null;
+
+        // Buat pengguna baru dengan data dari form dan logo default
+        $user = new User();
+        $user->name = $request->name;
+        $user->email = $request->email;
+        $user->password = Hash::make($request->password);
+        $user->logo = $defaultLogo;
+        $user->kampus = $defaultKampus; 
+
+        // Simpan pengguna ke database
+        $user->save();
+        return redirect()->route('user.index')->with('message', 'User berhasil ditambahkan.')->with('alert-type', 'success');
     }
 }

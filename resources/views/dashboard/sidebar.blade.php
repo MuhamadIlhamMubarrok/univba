@@ -43,13 +43,11 @@
                     <span class="link-title">Pengaturan Menu</span>
                 </a>
             </li>
-            <li
-            class="nav-item {{ request()->routeIs('pages.*') ? 'active' : '' }}">
-            <a class="nav-link" href="{{ route('pages') }}"
-                aria-controls="emails">
-                <i class="fa fa-file-text" aria-hidden="true"></i>
-                <span class="link-title">Pengaturan Halaman</span>
-            </a>
+            <li class="nav-item {{ request()->routeIs('pages.*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('pages') }}" aria-controls="emails">
+                    <i class="fa fa-file-text" aria-hidden="true"></i>
+                    <span class="link-title">Pengaturan Halaman</span>
+                </a>
             </li>
             <li class="nav-item {{ request()->routeIs('kontak.*') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('kontak.index') }}" aria-controls="emails">
@@ -69,13 +67,11 @@
                     <span class="link-title">Pengaturan Umum</span>
                 </a>
             </li>
-            <li
-            class="nav-item {{ request()->routeIs('menu.*') ? 'active' : '' }}">
-            <a class="nav-link" href="{{ route('menu') }}"
-                aria-controls="emails">
-                <i class="fa fa-user-o" aria-hidden="true"></i>
-                <span class="link-title">Pengaturan Admin</span>
-            </a>
+            <li class="nav-item {{ request()->routeIs('user.*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('user.index') }}" aria-controls="emails">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                    <span class="link-title">Pengaturan Admin</span>
+                </a>
             </li>
             <li class="nav-item {{ request()->routeIs('menu.*') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('menu') }}" aria-controls="emails">
