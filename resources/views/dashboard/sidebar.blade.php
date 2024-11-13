@@ -61,8 +61,8 @@
                     <span class="link-title">Pengaturan Galeri Foto</span>
                 </a>
             </li>
-            <li class="nav-item {{ request()->routeIs('menu.*') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ route('menu') }}" aria-controls="emails">
+            <li class="nav-item {{ request()->routeIs('settings.*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('settings') }}" aria-controls="emails">
                     <i class="fa fa-server" aria-hidden="true"></i>
                     <span class="link-title">Pengaturan Umum</span>
                 </a>
@@ -73,8 +73,8 @@
                     <span class="link-title">Pengaturan Admin</span>
                 </a>
             </li>
-            <li class="nav-item {{ request()->routeIs('menu.*') ? 'active' : '' }}">
-                <a class="nav-link" href="{{ route('menu') }}" aria-controls="emails">
+            <li class="nav-item {{ request()->routeIs('berita.*') ? 'active' : '' }}">
+                <a class="nav-link" href="{{ route('berita') }}" aria-controls="emails">
                     <i class="fa fa-newspaper-o" aria-hidden="true"></i>
                     <span class="link-title">Berita Terkini</span>
                 </a>
