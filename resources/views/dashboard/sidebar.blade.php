@@ -19,31 +19,31 @@
     <div class="sidebar-body">
         <ul class="nav">
             <li class="nav-item nav-category">Menu</li>
-            <li class="nav-item {{ request()->routeIs('dashboard.*') ? 'active' : '' }}">
+            <li class="nav-item {{ request()->routeIs('dashboard') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('dashboard') }}" aria-controls="emails">
                     <i class="fa fa-id-card-o" aria-hidden="true"></i>
                     <span class="link-title">Dashboard</span>
                 </a>
             </li>
-            <li class="nav-item {{ request()->routeIs('daftar.*') ? 'active' : '' }}">
+            <li class="nav-item {{ request()->routeIs('daftar', 'daftar.*') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('daftar') }}" aria-controls="emails">
                     <i class="fa fa-book" aria-hidden="true"></i>
                     <span class="link-title">Data Pendaftaran</span>
                 </a>
             </li>
-            <li class="nav-item {{ request()->routeIs('beranda.*') ? 'active' : '' }}">
+            <li class="nav-item {{ request()->routeIs('beranda', 'beranda.*') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('beranda') }}" aria-controls="emails">
                     <i class="fa fa-sticky-note" aria-hidden="true"></i>
                     <span class="link-title">Pengaturan Beranda</span>
                 </a>
             </li>
-            <li class="nav-item {{ request()->routeIs('menu.*') ? 'active' : '' }}">
+            <li class="nav-item {{ request()->routeIs('menu', 'menu.*') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('menu') }}" aria-controls="emails">
                     <i class="fa fa-minus-square" aria-hidden="true"></i>
                     <span class="link-title">Pengaturan Menu</span>
                 </a>
             </li>
-            <li class="nav-item {{ request()->routeIs('pages.*') ? 'active' : '' }}">
+            <li class="nav-item {{ request()->routeIs('pages', 'pages.*') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('pages') }}" aria-controls="emails">
                     <i class="fa fa-file-text" aria-hidden="true"></i>
                     <span class="link-title">Pengaturan Halaman</span>
@@ -61,7 +61,7 @@
                     <span class="link-title">Pengaturan Galeri Foto</span>
                 </a>
             </li>
-            <li class="nav-item {{ request()->routeIs('settings.*') ? 'active' : '' }}">
+            <li class="nav-item {{ request()->routeIs('settings', 'settings.*') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('settings') }}" aria-controls="emails">
                     <i class="fa fa-server" aria-hidden="true"></i>
                     <span class="link-title">Pengaturan Umum</span>
@@ -73,7 +73,7 @@
                     <span class="link-title">Pengaturan Admin</span>
                 </a>
             </li>
-            <li class="nav-item {{ request()->routeIs('berita.*') ? 'active' : '' }}">
+            <li class="nav-item {{ request()->routeIs('berita', 'berita.*') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('berita') }}" aria-controls="emails">
                     <i class="fa fa-newspaper-o" aria-hidden="true"></i>
                     <span class="link-title">Berita Terkini</span>

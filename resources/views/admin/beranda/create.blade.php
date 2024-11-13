@@ -15,7 +15,7 @@
             <div class="stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Tambah Gambar Beranda</h4>
+                        <h4 class="card-title">Tambah Beranda</h4>
 
                         @if ($errors->any())
                             <div id="error-alert" class="alert alert-danger">
