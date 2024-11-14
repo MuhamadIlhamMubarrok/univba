@@ -62,7 +62,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/beranda', [App\Http\Controllers\BackendController\BerandaController::class, 'index'])->name('beranda');
     Route::get('/beranda/create', [App\Http\Controllers\BackendController\BerandaController::class, 'create'])->name('beranda.create');
     Route::post('/beranda', [App\Http\Controllers\BackendController\BerandaController::class, 'store'])->name('beranda.store');
-    Route::get('beranda/edit', [App\Http\Controllers\BackendController\BerandaController::class, 'edit'])->name('beranda.edit');
+    Route::get('beranda/edit/{id}', [App\Http\Controllers\BackendController\BerandaController::class, 'edit'])->name('beranda.edit');
     Route::delete('/beranda', [App\Http\Controllers\BackendController\BerandaController::class, 'destroy'])->name('beranda.destroy');
 
     Route::get('/menu', [App\Http\Controllers\BackendController\MenuController::class, 'index'])->name('menu');
@@ -75,9 +75,10 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/pages', [App\Http\Controllers\BackendController\HalamanController::class, 'index'])->name('pages');
     Route::get('/pages/create', [App\Http\Controllers\BackendController\HalamanController::class, 'create'])->name('pages.create');
-    Route::post('/pages/create', [App\Http\Controllers\BackendController\HalamanController::class, 'store'])->name('pages.store');
-    Route::get('pages/edit', [App\Http\Controllers\BackendController\HalamanController::class, 'edit'])->name('pages.edit');
-    Route::delete('/pages', [App\Http\Controllers\BackendController\HalamanController::class, 'destroy'])->name('pages.destroy');
+    Route::post('/pages', [App\Http\Controllers\BackendController\HalamanController::class, 'store'])->name('pages.store');
+    Route::get('pages/edit/{id}', [App\Http\Controllers\BackendController\HalamanController::class, 'edit'])->name('pages.edit');
+    Route::put('pages/{id}', [App\Http\Controllers\BackendController\HalamanController::class, 'update'])->name('pages.update');
+    Route::delete('/pages/{id}', [App\Http\Controllers\BackendController\HalamanController::class, 'destroy'])->name('pages.destroy');
 
 
     Route::get('/table-user', [AuthController::class, 'index'])->name('user.index');

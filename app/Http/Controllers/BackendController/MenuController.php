@@ -49,7 +49,7 @@
             $menu = Menu::findOrFail($id);
             $menu->update($request->all());
 
-            return redirect()->route('admin.menu.index')->with('success', 'Menu updated successfully.');
+            return redirect()->route('menu')->with('success', 'Menu updated successfully.');
         }
 
     
