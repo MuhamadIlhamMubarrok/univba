@@ -19,7 +19,7 @@
                             <div class="col-3">
                                 <i class="fa fa-comments fa-5x"></i>
                             </div>
-                            <div class="col-9 text-right">
+                            <div class="col-9 ps-4 text-right">
                                 <div class="huge">{{ $countContacts }}</div>
                                 <div>Kontak</div>
                             </div>
@@ -59,7 +59,7 @@
                             <div class="col-3">
                                 <i class="fa fa-users fa-5x"></i>
                             </div>
-                            <div class="col-9 text-right">
+                            <div class="col-9 ps-4 text-right">
                                 <div class="huge">{{ $countAdmins }}</div>
                                 <div>Admin</div>
                             </div>
@@ -79,7 +79,7 @@
                             <div class="col-3">
                                 <i class="fa fa-edit fa-5x"></i>
                             </div>
-                            <div class="col-9 text-right">
+                            <div class="col-9 ps-4 text-right">
                                 <div class="huge">{{ $countRegistrations }}</div>
                                 <div>Pendaftaran</div>
                             </div>
