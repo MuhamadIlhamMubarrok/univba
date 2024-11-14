@@ -15,7 +15,7 @@
 
                 {{-- tengah --}}
                 <div class="w-full ms-[20px] ms-[70px] mt-[50px]">
-                    <img class="w-[400px]" src="{{ asset('./images/illustration.svg') }}" alt="">
+                    <img class="w-[430px]" src="{{ asset('./images/illustration.svg') }}" alt="">
                     <h1 class="text-[40px] text-white font-bold pe-[300px] mt-[23px]" style="font-family: 'Poppins';">A few
                         more clicks to
                         sign in to your account.</h1>

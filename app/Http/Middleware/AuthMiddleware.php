@@ -18,7 +18,7 @@ class AuthMiddleware
     public function handle(Request $request, Closure $next)
     {
          if(isset(Auth::user()->id) == ''){
-            return redirect()->route('login')->withErrors("Silahkan Login Terlebih Dahulu");
+            return redirect()->route('login')->with('message',"Silahkan Login Terlebih Dahulu")->with('alert-type', 'error');
         }
         return $next($request);
     }

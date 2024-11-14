@@ -18,7 +18,7 @@ class GuestMiddleware
     public function handle(Request $request, Closure $next)
     {
          if(isset(Auth::user()->id) != '' ){
-            return redirect()->route("dashboard")->with("success", "Kamu Sudah Dalam Keadaan Login");
+            return redirect()->route("dashboard")->with("message", "Kamu Sudah Dalam Keadaan Login")->with('alert-type', 'success');
         }
         return $next($request);
     }
