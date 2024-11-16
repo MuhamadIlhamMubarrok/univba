@@ -8,6 +8,8 @@
     <meta name="description" content="AquaFlow">
     <meta name="author" content="AquaFlow">
 
+    <title>@yield('title') &mdash; Kuliah Karyawan</title>
+
     <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('assets/favicon/k2/apple-icon-57x57.png') }}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('assets/favicon/k2/apple-icon-60x60.png') }}">
     <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/favicon/k2/apple-icon-72x72.png') }}">
@@ -26,9 +28,6 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="{{ asset('assets/favicon/k2/ms-icon-144x144.png') }}">
     <meta name="theme-color" content="#ffffff">
-
-
-    <title>@yield('title') &mdash; Kuliah Karyawan</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,8 +78,6 @@
 
     <!-- DataTables CSS -->
     <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
-
-
 
     <style>
         * {

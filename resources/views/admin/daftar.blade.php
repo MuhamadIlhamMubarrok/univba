@@ -30,10 +30,12 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex justify-content-between align-items-center mb-3">
-                            <div>
-                                <input id="datepicker" placeholder="Tanggal Awal" class="form-control d-inline-block w-auto" /> s.d 
-                                <input id="datepicker1" placeholder="Tanggal Akhir" class="form-control d-inline-block w-auto" />
-
+                            <div class="d-flex align-items-center">
+                                <input id="datepicker" placeholder="Tanggal Awal"
+                                    class="form-control d-inline-block w-auto" />
+                                <p class="px-3">s.d </p>
+                                <input id="datepicker1" placeholder="Tanggal Akhir"
+                                    class="form-control d-inline-block w-auto" />
                             </div>
                             <a href="#" onclick="cetak('{{ route('daftar.cetak') }}')" class="btn btn-primary btn-sm">
                                 <i class="fa fa-print"></i> Cetak
@@ -65,10 +67,13 @@
                                             <td style="display: none;">{{ $daftar->kampus }}</td>
                                             <td style="display: none;">{{ $daftar->kelas }}</td>
                                             <td>
-                                                <a href="{{ route('daftar.detil', $daftar->daftar_id) }}" class="btn btn-primary btn-sm">
+                                                <a href="{{ route('daftar.detil', $daftar->daftar_id) }}"
+                                                    class="btn btn-primary btn-sm">
                                                     <i class="fa fa-info"></i>
                                                 </a>
-                                                <a href="{{ route('daftar.hapus', $daftar->daftar_id) }}" onclick="return confirm('Apa Anda yakin melakukan ini?')" class="btn btn-danger btn-sm">
+                                                <a href="{{ route('daftar.hapus', $daftar->daftar_id) }}"
+                                                    onclick="return confirm('Apa Anda yakin melakukan ini?')"
+                                                    class="btn btn-danger btn-sm">
                                                     <i class="fa fa-close"></i>
                                                 </a>
                                             </td>
