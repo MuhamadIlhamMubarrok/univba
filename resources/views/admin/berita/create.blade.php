@@ -6,7 +6,7 @@
         <nav class="page-breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a></li>
-                <li class="breadcrumb-item"><a href="{{ route('berita') }}">Berita</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('berita') }}">Berita Terkini</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Tambah Berita</li>
             </ol>
         </nav>
@@ -47,7 +47,8 @@
                             </div>
                             <div class="form-group mb-3">
                                 <label class="form-label">Foto (file .webp)</label>
-                                <input type="file" name="file_foto">
+                                <input type="file" name="file_foto"
+                                    class="form-control dropify @error('file') is-invalid @enderror">
                             </div>
                             <div class="form-group mb-3">
                                 <label class="form-label">Isi Halaman</label>
@@ -64,8 +65,19 @@
         </div>
     </div>
 
-    <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
-    <script>
-        CKEDITOR.replace('editor');
-    </script>
+
+    @push('script')
+        <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
+        <script>
+            CKEDITOR.replace('editor');
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"
+            integrity="sha512-8QFTrG0oeOiyWo/VM9Y8kgxdlCryqhIxVeRpWSezdRRAvarxVtwLnGroJgnVW9/XBRduxO/z1GblzPrMQoeuew=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $('.dropify').dropify();
+        </script>
+    @endpush
+
+
 @endsection

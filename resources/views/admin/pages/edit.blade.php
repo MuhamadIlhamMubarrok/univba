@@ -7,7 +7,7 @@
         <nav class="page-breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a></li>
-                <li class="breadcrumb-item"><a href="{{ route('pages') }}">Page</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('pages') }}">Data Pages</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Edit Page</li>
             </ol>
         </nav>
@@ -31,13 +31,14 @@
                         <form method="POST" action="{{ route('pages.update', $page->page_id) }}">
                             @csrf
                             @method('PUT')
-                            
+
                             <input type="hidden" name="token" value="{{ $token }}">
                             <input type="hidden" name="security" value="{{ md5($token . $secret_key) }}">
 
                             <div class="form-group">
                                 <label class="form-label">Judul</label>
-                                <input type="text" class="form-control mb-3" name="judul" value="{{ $page->judul }}" required>
+                                <input type="text" class="form-control mb-3" name="judul" value="{{ $page->judul }}"
+                                    required>
                             </div>
 
                             <div class="form-group">

@@ -4,11 +4,18 @@
 
 @section('content')
     <div class="page-content">
+        <nav class="page-breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data Gallery</li>
+            </ol>
+        </nav>
         <div class="row">
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
                         <div class="panel-heading mb-3">
+                            <h1 class="card-title">Data Gallery</h1>
                             <a href="{{ route('gallery.create') }}" class="btn btn-primary">
                                 <i class="fa fa-plus fa-fw"></i> Tambah Foto
                             </a>

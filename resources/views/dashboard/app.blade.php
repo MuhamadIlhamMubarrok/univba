@@ -8,6 +8,26 @@
     <meta name="description" content="AquaFlow">
     <meta name="author" content="AquaFlow">
 
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('assets/favicon/k2/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('assets/favicon/k2/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('assets/favicon/k2/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('assets/favicon/k2/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('assets/favicon/k2/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('assets/favicon/k2/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('assets/favicon/k2/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('assets/favicon/k2/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('assets/favicon/k2/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="{{ asset('assets/favicon/k2/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('assets/favicon/k2/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('assets/favicon/k2/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets/favicon/k2/favicon-16x16.png') }}">
+    <link rel="manifest" href="{{ asset('assets/favicon/k2/manifest.json') }}">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="{{ asset('assets/favicon/k2/ms-icon-144x144.png') }}">
+    <meta name="theme-color" content="#ffffff">
+
+
     <title>@yield('title') &mdash; Kuliah Karyawan</title>
 
     <!-- Fonts -->
@@ -54,8 +74,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-search@3.0.9/dist/leaflet-search.src.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.fullscreen@2.4.0/Control.FullScreen.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-   
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
     <!-- DataTables CSS -->
     <link href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 
@@ -104,32 +125,32 @@
     <script src="/assets/js/bootstrap-datepicker.js"></script>
 
     <script>
-        $( function() {
-          $( "#datepicker" ).datepicker({
-                  format:'dd-mm-yyyy',
-                  autoclose:true
-              }).on('changeDate', function(ev) {
-                  $(this).datepicker('hide');
-              });
-              $( "#datepicker1" ).datepicker({
-                  format:'dd-mm-yyyy',
-                  autoclose:true
-              }).on('changeDate', function(ev) {
-                  $(this).datepicker('hide');
-              });
-          });
-        </script>
-        <script type="text/javascript">
-            function cetak(url){
-              var tglawal = $('#datepicker').val();
-              var tglakhir = $('#datepicker1').val();
-              if(tglawal=='' || tglakhir==''){
-                  alert('Tanggal harus diisi'); 
-              } else {
-                  // alert('Bagus');
-                  window.location.replace(url+"?tglawal="+tglawal+"&tglakhir="+tglakhir);
-              }
+        $(function() {
+            $("#datepicker").datepicker({
+                format: 'dd-mm-yyyy',
+                autoclose: true
+            }).on('changeDate', function(ev) {
+                $(this).datepicker('hide');
+            });
+            $("#datepicker1").datepicker({
+                format: 'dd-mm-yyyy',
+                autoclose: true
+            }).on('changeDate', function(ev) {
+                $(this).datepicker('hide');
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        function cetak(url) {
+            var tglawal = $('#datepicker').val();
+            var tglakhir = $('#datepicker1').val();
+            if (tglawal == '' || tglakhir == '') {
+                alert('Tanggal harus diisi');
+            } else {
+                // alert('Bagus');
+                window.location.replace(url + "?tglawal=" + tglawal + "&tglakhir=" + tglakhir);
             }
+        }
     </script>
 
     <!-- core:js -->

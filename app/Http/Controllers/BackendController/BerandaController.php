@@ -41,7 +41,7 @@ class BerandaController extends Controller
             'active' => $request->has('active') ? 1 : 0,
         ]);
 
-        return redirect()->route('admin.beranda.index')->with('success', 'Beranda added successfully');
+        return redirect()->route('beranda')->with('success', 'Beranda added successfully');
     }
 
     public function edit($id)
@@ -68,7 +68,7 @@ class BerandaController extends Controller
             'active' => $request->has('active') ? 1 : 0,
         ]);
 
-        return redirect()->route('admin.beranda.index')->with('success', 'Beranda updated successfully');
+        return redirect()->route('beranda')->with('success', 'Beranda updated successfully');
     }
 
     public function destroy($id)
@@ -76,9 +76,9 @@ class BerandaController extends Controller
         $beranda = Beranda::findOrFail($id);
 
         if ($beranda->delete()) {
-            return redirect()->route('beranda.index')->with('success', 'Data berhasil dihapus.');
+            return redirect()->route('beranda')->with('success', 'Data berhasil dihapus.');
         } else {
-            return redirect()->route('beranda.index')->with('error', 'Data gagal dihapus.');
+            return redirect()->route('beranda')->with('error', 'Data gagal dihapus.');
         }
     }
 

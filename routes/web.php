@@ -1,6 +1,12 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BackendController\BerandaController;
+use App\Http\Controllers\BackendController\BeritaController;
+use App\Http\Controllers\BackendController\HalamanController;
+use App\Http\Controllers\BackendController\MenuController;
+use App\Http\Controllers\BackendController\POController;
+use App\Http\Controllers\BackendController\SettingController;
 use App\Http\Controllers\galleryController;
 use Illuminate\Support\Facades\Route;
 
@@ -54,31 +60,31 @@ Route::middleware('auth')->group(function () {
     Route::get('/kontak', [galleryController::class, 'kontak'])->name('kontak.index');
     Route::delete('/kontak/{id}', [galleryController::class, 'destroyKontak'])->name('kontak.destroy');
 
-    Route::get('/data-pendaftaran', [App\Http\Controllers\BackendController\POController::class, 'daftar'])->name('daftar');
-    Route::get('/data-pendaftaran/detil/{id}', [App\Http\Controllers\BackendController\POController::class, 'detil'])->name('daftar.detil');
-    Route::get('/daftar/{id}', [App\Http\Controllers\BackendController\POController::class, 'hapus'])->name('daftar.hapus');
-    Route::get('/daftar/cetak', [App\Http\Controllers\BackendController\POController::class, 'cetak'])->name('daftar.cetak');
+    Route::get('/data-pendaftaran', [POController::class, 'daftar'])->name('daftar');
+    Route::get('/data-pendaftaran/detil/{id}', [POController::class, 'detil'])->name('daftar.detil');
+    Route::get('/daftar/{id}', [POController::class, 'hapus'])->name('daftar.hapus');
+    Route::get('/daftar/cetak', [POController::class, 'cetak'])->name('daftar.cetak');
 
-    Route::get('/beranda', [App\Http\Controllers\BackendController\BerandaController::class, 'index'])->name('beranda');
-    Route::get('/beranda/create', [App\Http\Controllers\BackendController\BerandaController::class, 'create'])->name('beranda.create');
-    Route::post('/beranda', [App\Http\Controllers\BackendController\BerandaController::class, 'store'])->name('beranda.store');
-    Route::get('beranda/edit/{id}', [App\Http\Controllers\BackendController\BerandaController::class, 'edit'])->name('beranda.edit');
-    Route::delete('/beranda', [App\Http\Controllers\BackendController\BerandaController::class, 'destroy'])->name('beranda.destroy');
+    Route::get('/beranda', [BerandaController::class, 'index'])->name('beranda');
+    Route::get('/beranda/create', [BerandaController::class, 'create'])->name('beranda.create');
+    Route::post('/beranda', [BerandaController::class, 'store'])->name('beranda.store');
+    Route::get('beranda/edit/{id}', [BerandaController::class, 'edit'])->name('beranda.edit');
+    Route::delete('/beranda', [BerandaController::class, 'destroy'])->name('beranda.destroy');
 
-    Route::get('/menu', [App\Http\Controllers\BackendController\MenuController::class, 'index'])->name('menu');
-    Route::get('/menu/create', [App\Http\Controllers\BackendController\MenuController::class, 'create'])->name('menu.create');
-    Route::post('/menu', [App\Http\Controllers\BackendController\MenuController::class, 'store'])->name('menu.store');
-    Route::get('/menu/edit/{id}', [App\Http\Controllers\BackendController\MenuController::class, 'edit'])->name('menu.edit');
-    Route::put('/menu/{id}', [App\Http\Controllers\BackendController\MenuController::class, 'update'])->name('menu.update');
-    Route::delete('/menu/{id}', [App\Http\Controllers\BackendController\MenuController::class, 'destroy'])->name('menu.destroy');
-    Route::get('menu/toggle-active/{id}', [App\Http\Controllers\BackendController\MenuController::class, 'toggleActive'])->name('menu.toggle-active');
+    Route::get('/menu', [MenuController::class, 'index'])->name('menu');
+    Route::get('/menu/create', [MenuController::class, 'create'])->name('menu.create');
+    Route::post('/menu', [MenuController::class, 'store'])->name('menu.store');
+    Route::get('/menu/edit/{id}', [MenuController::class, 'edit'])->name('menu.edit');
+    Route::put('/menu/{id}', [MenuController::class, 'update'])->name('menu.update');
+    Route::delete('/menu/{id}', [MenuController::class, 'destroy'])->name('menu.destroy');
+    Route::get('menu/toggle-active/{id}', [MenuController::class, 'toggleActive'])->name('menu.toggle-active');
 
-    Route::get('/pages', [App\Http\Controllers\BackendController\HalamanController::class, 'index'])->name('pages');
-    Route::get('/pages/create', [App\Http\Controllers\BackendController\HalamanController::class, 'create'])->name('pages.create');
-    Route::post('/pages', [App\Http\Controllers\BackendController\HalamanController::class, 'store'])->name('pages.store');
-    Route::get('pages/edit/{id}', [App\Http\Controllers\BackendController\HalamanController::class, 'edit'])->name('pages.edit');
-    Route::put('pages/{id}', [App\Http\Controllers\BackendController\HalamanController::class, 'update'])->name('pages.update');
-    Route::delete('/pages/{id}', [App\Http\Controllers\BackendController\HalamanController::class, 'destroy'])->name('pages.destroy');
+    Route::get('/pages', [HalamanController::class, 'index'])->name('pages');
+    Route::get('/pages/create', [HalamanController::class, 'create'])->name('pages.create');
+    Route::post('/pages', [HalamanController::class, 'store'])->name('pages.store');
+    Route::get('pages/edit/{id}', [HalamanController::class, 'edit'])->name('pages.edit');
+    Route::put('pages/{id}', [HalamanController::class, 'update'])->name('pages.update');
+    Route::delete('/pages/{id}', [HalamanController::class, 'destroy'])->name('pages.destroy');
 
 
     Route::get('/table-user', [AuthController::class, 'index'])->name('user.index');
@@ -86,20 +92,20 @@ Route::middleware('auth')->group(function () {
     Route::post('/create-user', [AuthController::class, 'store'])->name('user.store');
     Route::delete('/delete-user/{id}', [AuthController::class, 'delete'])->name('user.delete');
 
-    Route::get('/settings', [App\Http\Controllers\BackendController\SettingController::class, 'index'])->name('settings');
-    Route::get('/settings/create', [App\Http\Controllers\BackendController\SettingController::class, 'create'])->name('settings.create');
-    Route::post('/settings', [App\Http\Controllers\BackendController\SettingController::class, 'store'])->name('settings.store');
-    Route::get('/settings/edit/{id}', [App\Http\Controllers\BackendController\SettingController::class, 'edit'])->name('settings.edit');
-    Route::put('/settings/{id}', [App\Http\Controllers\BackendController\SettingController::class, 'update'])->name('settings.update');
-    Route::delete('/settings/{id}', [App\Http\Controllers\BackendController\SettingController::class, 'destroy'])->name('settings.destroy');
+    Route::get('/settings', [SettingController::class, 'index'])->name('settings');
+    Route::get('/settings/create', [SettingController::class, 'create'])->name('settings.create');
+    Route::post('/settings', [SettingController::class, 'store'])->name('settings.store');
+    Route::get('/settings/edit/{id}', [SettingController::class, 'edit'])->name('settings.edit');
+    Route::put('/settings/{id}', [SettingController::class, 'update'])->name('settings.update');
+    Route::delete('/settings/{id}', [SettingController::class, 'destroy'])->name('settings.destroy');
     Route::get('settings/{id}/toggle-status', [SettingController::class, 'toggleStatus'])->name('settings.toggleStatus');
 
-    Route::get('/berita', [App\Http\Controllers\BackendController\BeritaController::class, 'index'])->name('berita');
-    Route::get('/berita/create', [App\Http\Controllers\BackendController\BeritaController::class, 'create'])->name('berita.create');
-    Route::post('/berita/create', [App\Http\Controllers\BackendController\BeritaController::class, 'store'])->name('berita.store');
-    Route::get('berita/edit/{id}', [App\Http\Controllers\BackendController\BeritaController::class, 'edit'])->name('berita.edit');
-    Route::get('berita/{id}', [App\Http\Controllers\BackendController\BeritaController::class, 'update'])->name('berita.update');
-    Route::delete('/berita', [App\Http\Controllers\BackendController\BeritaController::class, 'destroy'])->name('berita.destroy');
+    Route::get('/berita', [BeritaController::class, 'index'])->name('berita');
+    Route::get('/berita/create', [BeritaController::class, 'create'])->name('berita.create');
+    Route::post('/berita/create', [BeritaController::class, 'store'])->name('berita.store');
+    Route::get('berita/edit/{id}', [BeritaController::class, 'edit'])->name('berita.edit');
+    Route::get('berita/{id}', [BeritaController::class, 'update'])->name('berita.update');
+    Route::delete('/berita', [BeritaController::class, 'destroy'])->name('berita.destroy');
 
     Route::get('/profile', [AuthController::class, 'profile'])->name('profile');
     Route::put('/profile/update/{id}', [AuthController::class, 'updateProfile'])->name('profile.update');

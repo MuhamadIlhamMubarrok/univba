@@ -9,7 +9,7 @@
         <nav class="page-breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a></li>
-                <li class="breadcrumb-item"><a href="{{ route('user.index') }}">User</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('user.index') }}">Data User</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Tambah User</li>
             </ol>
         </nav>
@@ -18,7 +18,7 @@
             <div class="stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <h4 class="card-title">Tambah Gambar User</h4>
+                        <h4 class="card-title">Tambah User</h4>
 
                         @if ($errors->any())
                             <div id="error-alert" class="alert alert-danger">

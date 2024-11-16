@@ -12,7 +12,7 @@
         <nav class="page-breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="{{ route('dashboard') }}">Dashboard</a></li>
-                <li class="breadcrumb-item"><a href="{{ route('gallery.index') }}">Galeri</a></li>
+                <li class="breadcrumb-item"><a href="{{ route('gallery.index') }}">Data Gallery</a></li>
                 <li class="breadcrumb-item active" aria-current="page">Edit Gambar</li>
             </ol>
         </nav>

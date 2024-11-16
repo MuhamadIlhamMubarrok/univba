@@ -16,7 +16,7 @@ class SettingController extends Controller
 
     public function create()
     {
-        return view('admin.setting.create');
+        return view('setting.create');
     }
 
     public function store(Request $request)
@@ -31,7 +31,7 @@ class SettingController extends Controller
 
         Setting::create($validated);
 
-        return redirect()->route('admin.setting.index')->with('success', 'Pengaturan berhasil ditambahkan.');
+        return redirect()->route('settings')->with('success', 'Pengaturan berhasil ditambahkan.');
     }
 
     public function edit($id)
@@ -51,21 +51,22 @@ class SettingController extends Controller
         $setting = Setting::findOrFail($id);
         $setting->update($validated);
 
-        return redirect()->route('admin.setting.index')->with('success', 'Pengaturan berhasil diperbarui.');
+        return redirect()->route('settings')->with('success', 'Pengaturan berhasil diperbarui.');
     }
 
     public function destroy($id)
     {
         Setting::destroy($id);
-        return redirect()->route('admin.setting.index')->with('success', 'Pengaturan berhasil dihapus.');
+        return redirect()->route('settings')->with('success', 'Pengaturan berhasil dihapus.');
     }
 
     public function toggleStatus($id)
     {
+        // Cari data berdasarkan ID, dan toggle status active
         $setting = Setting::findOrFail($id);
-        $setting->active = !$setting->active;
-        $setting->save();
+        $setting->update(['active' => !$setting->active]);
 
-        return redirect()->route('admin.setting.index')->with('success', 'Status pengaturan berhasil diubah.');
+        // Redirect kembali ke halaman setting dengan pesan sukses
+        return redirect()->route('settings')->with('success', 'Status pengaturan berhasil diubah.');
     }
 }
