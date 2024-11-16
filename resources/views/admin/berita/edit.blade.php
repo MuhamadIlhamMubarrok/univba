@@ -52,7 +52,8 @@
                             <div class="form-group mb-3">
                                 <label class="form-label">Foto (file .webp)</label>
                                 <input type="file" name="file_foto"
-                                    class="form-control dropify @error('file') is-invalid @enderror">
+                                    class="form-control dropify @error('file') is-invalid @enderror"
+                                    data-default-file="{{ $berita->file_foto ? asset('storage/berita/' . $berita->file_foto) : '' }}">
                                 <small class="form-text text-muted">Biarkan kosong jika tidak ingin mengganti foto.</small>
                             </div>
                             <div class="form-group mb-3">

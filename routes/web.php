@@ -103,8 +103,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/berita/create', [BeritaController::class, 'create'])->name('berita.create');
     Route::post('/berita/create', [BeritaController::class, 'store'])->name('berita.store');
     Route::get('berita/edit/{id}', [BeritaController::class, 'edit'])->name('berita.edit');
-    Route::get('berita/{id}', [BeritaController::class, 'update'])->name('berita.update');
-    Route::delete('/berita', [BeritaController::class, 'destroy'])->name('berita.destroy');
+    Route::put('berita/{id}', [BeritaController::class, 'update'])->name('berita.update');
+    Route::delete('/berita/{id}', [BeritaController::class, 'destroy'])->name('berita.destroy');
 
     Route::get('/profile', [AuthController::class, 'profile'])->name('profile');
     Route::put('/profile/update/{id}', [AuthController::class, 'updateProfile'])->name('profile.update');
