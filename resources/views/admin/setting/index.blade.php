@@ -61,10 +61,6 @@
                                                             <i class="fa fa-trash"></i> Hapus
                                                         </button>
                                                     </form>
-                                                    <a href="{{ route('settings.toggleStatus', $setting->id_setting) }}"
-                                                        class="btn {{ $setting->active ? 'btn-success' : 'btn-secondary' }} btn-sm">
-                                                        {{ $setting->active ? 'Nonaktifkan' : 'Aktifkan' }}
-                                                    </a>
                                                 </div>
                                             </td>
                                         </tr>

@@ -33,15 +33,15 @@
                             @method('PUT')
                             <div class="form-group mb-3">
                                 <label class="form-label">Jenis Pengaturan</label>
-                                <input class="form-control" name="jenis" value="{{ $setting->jenis_set }}" required>
+                                <input class="form-control" name="jenis_set" value="{{ $setting->jenis_set }}" required>
                             </div>
                             <div class="form-group mb-3">
                                 <label class="form-label">Nama Pengaturan</label>
-                                <input class="form-control" name="nama" value="{{ $setting->nama_set }}" required>
+                                <input class="form-control" name="nama_set" value="{{ $setting->nama_set }}" required>
                             </div>
                             <div class="form-group mb-3">
                                 <label class="form-label">Nilai Pengaturan</label>
-                                <input class="form-control" name="nilai" value="{{ $setting->nilai_set }}">
+                                <input class="form-control" name="nilai_set" value="{{ $setting->nilai_set }}">
                             </div>
                             <button type="submit" class="btn btn-primary">Update</button>
                             <a href="{{ route('settings') }}" class="btn btn-secondary">Batal</a>

@@ -48,12 +48,10 @@
                                                 <td>{{ $menu->active ? 'Active' : 'Inactive' }}</td>
                                                 <td>
                                                     <div class="d-flex flex-wrap gap-2">
-                                                        <a href="{{ route('menu.toggle-active', $menu->menu_id) }}"
-                                                            class="btn btn-{{ $menu->active ? 'success' : 'primary' }} btn-sm">
-                                                            {{ $menu->active ? 'Deactivate' : 'Activate' }}
-                                                        </a>
+                                                        <!-- Edit Menu -->
                                                         <a href="{{ route('menu.edit', $menu->menu_id) }}"
                                                             class="btn btn-warning btn-sm">Edit</a>
+                                                        <!-- Delete Menu -->
                                                         <form action="{{ route('menu.destroy', $menu->menu_id) }}"
                                                             method="POST" style="display:inline;">
                                                             @csrf
@@ -64,6 +62,7 @@
                                                     </div>
                                                 </td>
                                             </tr>
+
                                             @foreach ($menu->submenus as $submenu)
                                                 <tr>
                                                     <td>-- {{ $submenu->urutan }}</td>
@@ -72,12 +71,11 @@
                                                     <td>{{ $submenu->active ? 'Active' : 'Inactive' }}</td>
                                                     <td>
                                                         <div class="d-flex flex-wrap gap-2">
-                                                            <a href="{{ route('menu.toggle-active', $submenu->menu_id) }}"
-                                                                class="btn btn-{{ $submenu->active ? 'success' : 'primary' }} btn-sm">
-                                                                {{ $submenu->active ? 'Deactivate' : 'Activate' }}
-                                                            </a>
+
+                                                            <!-- Edit Submenu -->
                                                             <a href="{{ route('menu.edit', $submenu->menu_id) }}"
                                                                 class="btn btn-warning btn-sm">Edit</a>
+                                                            <!-- Delete Submenu -->
                                                             <form action="{{ route('menu.destroy', $submenu->menu_id) }}"
                                                                 method="POST" style="display:inline;">
                                                                 @csrf

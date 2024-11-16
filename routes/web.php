@@ -77,7 +77,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/menu/edit/{id}', [MenuController::class, 'edit'])->name('menu.edit');
     Route::put('/menu/{id}', [MenuController::class, 'update'])->name('menu.update');
     Route::delete('/menu/{id}', [MenuController::class, 'destroy'])->name('menu.destroy');
-    Route::get('menu/toggle-active/{id}', [MenuController::class, 'toggleActive'])->name('menu.toggle-active');
 
     Route::get('/pages', [HalamanController::class, 'index'])->name('pages');
     Route::get('/pages/create', [HalamanController::class, 'create'])->name('pages.create');

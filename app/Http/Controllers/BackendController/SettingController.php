@@ -31,7 +31,7 @@ class SettingController extends Controller
 
         Setting::create($validated);
 
-        return redirect()->route('settings')->with('success', 'Pengaturan berhasil ditambahkan.');
+        return redirect()->route('settings')->with('message', 'Pengaturan berhasil ditambahkan.')->with("alert-type", 'success');
     }
 
     public function edit($id)
@@ -43,30 +43,21 @@ class SettingController extends Controller
     public function update(Request $request, $id)
     {
         $validated = $request->validate([
-            'jenis' => 'required|string|max:255',
-            'nama' => 'required|string|max:255',
-            'nilai' => 'nullable|string|max:255',
+            'jenis_set' => 'required|string|max:255',
+            'nama_set' => 'required|string|max:255',
+            'nilai_set' => 'nullable|string|max:255',
         ]);
-
+        
         $setting = Setting::findOrFail($id);
         $setting->update($validated);
 
-        return redirect()->route('settings')->with('success', 'Pengaturan berhasil diperbarui.');
+        return redirect()->route('settings')->with('message', 'Pengaturan berhasil diperbarui.')->with("alert-type", 'success');
     }
 
     public function destroy($id)
     {
         Setting::destroy($id);
-        return redirect()->route('settings')->with('success', 'Pengaturan berhasil dihapus.');
+        return redirect()->route('settings')->with('message', 'Pengaturan berhasil dihapus.')->with("alert-type", 'success');
     }
 
-    public function toggleStatus($id)
-    {
-        // Cari data berdasarkan ID, dan toggle status active
-        $setting = Setting::findOrFail($id);
-        $setting->update(['active' => !$setting->active]);
-
-        // Redirect kembali ke halaman setting dengan pesan sukses
-        return redirect()->route('settings')->with('success', 'Status pengaturan berhasil diubah.');
-    }
 }

@@ -11,6 +11,8 @@ class Page extends Model
      protected $primaryKey = 'page_id';
      protected $fillable = ['judul', 'slug', 'short', 'isi', 'image', 'link', 'created_at'];
 
+     public $timestamps = false;
+
     
 }
 

@@ -7,11 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 class Menu extends Model
 {
     //
-     protected $table = "menu";
-     protected $primaryKey = 'menu_id';
-     protected $fillable = ['submenu_id', 'menu', 'url', 'urutan'];
-    
-     /**
+    public $timestamps = false;
+    protected $table = 'menu';
+    protected $primaryKey = 'menu_id';
+    protected $fillable = ['submenu_id', 'menu', 'url', 'urutan', 'active'];
+
+    /**
      * Get the submenus for the menu.
      */
     public function submenus()
@@ -27,5 +28,3 @@ class Menu extends Model
         return $this->belongsTo(Menu::class, 'submenu_id', 'menu_id');
     }
 }
-
- 
