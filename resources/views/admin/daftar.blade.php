@@ -29,15 +29,12 @@
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <div class="d-flex justify-content-between align-items-center mb-3">
-                            <div class="d-flex align-items-center">
-                                <input id="datepicker" placeholder="Tanggal Awal"
-                                    class="form-control d-inline-block w-auto" />
-                                <p class="px-3">s.d </p>
-                                <input id="datepicker1" placeholder="Tanggal Akhir"
-                                    class="form-control d-inline-block w-auto" />
-                            </div>
-                            <a href="#" onclick="cetak('{{ route('daftar.cetak') }}')" class="btn btn-primary btn-sm">
+                        <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+                            <input id="datepicker" placeholder="Tanggal Awal" class="form-control w-auto" />
+                            <span>s.d</span>
+                            <input id="datepicker1" placeholder="Tanggal Akhir" class="form-control w-auto" />
+                            <a href="#" onclick="cetak('{{ route('daftar.cetak') }}')"
+                                class="btn btn-primary btn-sm mt-2 mt-md-0">
                                 <i class="fa fa-print"></i> Cetak
                             </a>
                         </div>
@@ -81,6 +78,9 @@
                                     @endforeach
                                 </tbody>
                             </table>
+                            <div class="d-flex justify-content-start mt-4">
+                                {{ $daftars->links('vendor.pagination.simple-bootstrap-5') }}
+                            </div>
                         </div>
 
                         <div class="mt-3">

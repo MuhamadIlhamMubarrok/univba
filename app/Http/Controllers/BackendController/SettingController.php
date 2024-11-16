@@ -10,7 +10,7 @@ class SettingController extends Controller
 {
     public function index()
     {
-        $settings = Setting::orderBy('nama_set', 'ASC')->get();
+        $settings = Setting::orderBy('nama_set', 'ASC')->paginate(5);
         return view('admin.setting.index', compact('settings'));
     }
 

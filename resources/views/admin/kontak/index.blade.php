@@ -16,9 +16,8 @@
                 <div class="card">
                     <div class="card-body">
                         <h6 class="card-title">Messages</h6>
-                        <!-- Search Form -->
                         <div class="table-responsive">
-                            <table class="table table-bordered">
+                            <table class="table table-bordered table-striped">
                                 <thead>
                                     <tr>
                                         <th>No</th>
@@ -42,24 +41,32 @@
                                             <td>{{ Str::limit($message->pesan, 50) }}..</td>
                                             <td>{{ $message->created_at }}</td>
                                             <td>
-                                                <button class="btn btn-info btn-detail" data-nama="{{ $message->nama }}"
-                                                    data-no_telp="{{ $message->no_telp }}"
-                                                    data-alamat="{{ $message->alamat }}"
-                                                    data-email="{{ $message->email }}" data-pesan="{{ $message->pesan }}"
-                                                    data-date="{{ $message->created_at }}">Detail</button>
-                                                <form action="{{ route('kontak.destroy', $message->kontak_id) }}"
-                                                    method="POST" style="display:inline;">
-                                                    @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger">Delete</button>
-                                                </form>
+                                                <div class="d-flex flex-wrap gap-2">
+                                                    <button class="btn btn-info btn-sm btn-detail"
+                                                        data-nama="{{ $message->nama }}"
+                                                        data-no_telp="{{ $message->no_telp }}"
+                                                        data-alamat="{{ $message->alamat }}"
+                                                        data-email="{{ $message->email }}"
+                                                        data-pesan="{{ $message->pesan }}"
+                                                        data-date="{{ $message->created_at }}">
+                                                        <i class="fa fa-eye"></i> Detail
+                                                    </button>
+                                                    <form action="{{ route('kontak.destroy', $message->kontak_id) }}"
+                                                        method="POST" style="display:inline;">
+                                                        @csrf
+                                                        @method('DELETE')
+                                                        <button type="submit" class="btn btn-danger btn-sm">
+                                                            <i class="fa fa-trash"></i> Delete
+                                                        </button>
+                                                    </form>
+                                                </div>
                                             </td>
                                         </tr>
                                     @endforeach
                                 </tbody>
                             </table>
-                            <div class="d-flex justify-content-center mt-4">
-                                {{ $messages->links('vendor.pagination.bootstrap-5') }}
+                            <div class="d-flex justify-content-start mt-4">
+                                {{ $messages->links('vendor.pagination.simple-bootstrap-5') }}
                             </div>
                         </div>
                     </div>
@@ -73,11 +80,9 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title">Message Detail</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body custom-modal-body">
+                    <div class="modal-body">
                         <p><strong>From:</strong> <span id="fromName"></span></p>
                         <p><strong>Email:</strong> <span id="fromEmail"></span></p>
                         <p><strong>No Telpon:</strong> <span id="fromTelp"></span></p>
@@ -94,34 +99,22 @@
 @endsection
 
 @push('script')
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
         $(document).ready(function() {
-            // Fungsi untuk menampilkan detail pesan pada modal
             $('.btn-detail').on('click', function() {
-                var nama = $(this).data('nama');
-                var noTelp = $(this).data('no_telp');
-                var alamat = $(this).data('alamat');
-                var email = $(this).data('email');
-                var message = $(this).data('pesan');
-                var createdAt = $(this).data('date'); // Tanggal pesan
+                const nama = $(this).data('nama');
+                const noTelp = $(this).data('no_telp');
+                const alamat = $(this).data('alamat');
+                const email = $(this).data('email');
+                const message = $(this).data('pesan');
 
-                // Menampilkan data pada modal
                 $('#fromName').text(nama);
                 $('#fromEmail').text(email);
                 $('#fromTelp').text(noTelp);
                 $('#fromAddress').text(alamat);
                 $('#detailMessage').text(message);
-                $('#warmRegards').text(nama);
 
-                // Menampilkan modal
                 $('#messageDetailModal').modal('show');
-            });
-
-            // Menutup modal ketika klik pada close atau area modal
-            $('.close, .modal').on('click', function() {
-                $('#messageDetailModal').modal('hide');
             });
         });
     </script>

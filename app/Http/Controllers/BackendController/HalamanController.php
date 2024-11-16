@@ -11,7 +11,7 @@
     {
             public function index()
             {
-                $pages = Page::all(); // Ambil semua data dari model Page
+                $pages = Page::paginate(5); // Ambil semua data dari model Page
                 $user = auth()->user();
                 return view('admin.pages.index', compact('pages', 'user'));
             }

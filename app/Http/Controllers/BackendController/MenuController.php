@@ -10,7 +10,7 @@
     {
         public function index()
         {
-            $menus = Menu::where('submenu_id', 0)->with('submenus')->orderBy('urutan')->get();
+            $menus = Menu::where('submenu_id', 0)->with('submenus')->orderBy('urutan')->paginate(2);
             $user = auth()->user();
             return view('admin.menu.index', compact('menus','user'));
         }

@@ -17,7 +17,7 @@
         }
 
         public function daftar() {
-            $daftars = Daftar::all();
+            $daftars = Daftar::paginate(5);;
             $user = auth()->user();
             return view('admin.daftar', compact('daftars', 'user'));
         }

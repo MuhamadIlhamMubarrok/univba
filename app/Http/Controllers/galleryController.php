@@ -18,7 +18,7 @@ class galleryController extends Controller
 
     function kontak()
     {
-        $messages = Kontak::paginate(8);
+        $messages = Kontak::paginate(5);
         return view('admin.kontak.index', compact('messages'));
     }
 
