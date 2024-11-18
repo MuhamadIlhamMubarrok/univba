@@ -28,16 +28,6 @@ class POController extends Controller
         return view('admin.detil', compact('daftar'));
     }
 
-    public function hapus($id)
-    {
-        try {
-            Daftar::findOrFail($id)->delete();
-            return redirect()->route('daftar')->with('success', 'Data berhasil dihapus.');
-        } catch (\Exception $e) {
-            return redirect()->route('daftar')->with('error', 'Data gagal dihapus.');
-        }
-    }
-
     public function cetak(Request $request)
     {
         // Bersihkan session error sebelumnya
@@ -51,9 +41,17 @@ class POController extends Controller
             $query->whereBetween('created_at', [$request->start_date, $request->end_date]);
         }
 
-        $daftars = $query->get();
-
-        $pdf = Pdf::loadView('admin.cetak', compact('daftars'));
+        $pdf = PDF::loadView('admin.cetak', compact('daftars'));
         return $pdf->download('laporan_pendaftar.pdf');
+    }
+
+    public function hapus($id)
+    {
+        try {
+            Daftar::findOrFail($id)->delete();
+            return redirect()->route('daftar')->with('success', 'Data berhasil dihapus.');
+        } catch (\Exception $e) {
+            return redirect()->route('daftar')->with('error', 'Data gagal dihapus.');
+        }
     }
 }
