@@ -30,13 +30,16 @@
                 <div class="card">
                     <div class="card-body">
                         <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
-                            <input id="datepicker" placeholder="Tanggal Awal" class="form-control w-auto" />
+                            <input id="datepicker" type="date" placeholder="Tanggal Awal" class="form-control w-auto" />
                             <span>s.d</span>
-                            <input id="datepicker1" placeholder="Tanggal Akhir" class="form-control w-auto" />
-                            <a href="#" onclick="cetak('{{ route('daftar.cetak') }}')"
-                                class="btn btn-primary btn-sm mt-2 mt-md-0">
-                                <i class="fa fa-print"></i> Cetak
-                            </a>
+                            <input id="datepicker1" type="date" placeholder="Tanggal Akhir"
+                                class="form-control w-auto" />
+                            <button onclick="cetak('{{ route('daftar.cetak') }}')" class="btn btn-primary btn-sm">
+                                <i class="fa fa-print"></i> Cetak PDF
+                            </button>
+                            <button onclick="exportData()" class="btn btn-success btn-sm">
+                                <i class="fa fa-file-excel"></i> Export to Excel
+                            </button>
                         </div>
 
                         <div class="table-responsive">
@@ -48,8 +51,8 @@
                                         <th>No</th>
                                         <th>Email</th>
                                         <th>JK</th>
-                                        <th style="display: none;">Kota</th>
-                                        <th style="display: none;">Kelas</th>
+                                        <th>Kota</th>
+                                        <th>Kelas</th>
                                         <th>Aksi</th>
                                     </tr>
                                 </thead>
@@ -61,8 +64,8 @@
                                             <td>{{ $daftar->no_hp }}</td>
                                             <td>{{ $daftar->email }}</td>
                                             <td>{{ $daftar->j_kel }}</td>
-                                            <td style="display: none;">{{ $daftar->kampus }}</td>
-                                            <td style="display: none;">{{ $daftar->kelas }}</td>
+                                            <td>{{ $daftar->kampus }}</td>
+                                            <td>{{ $daftar->kelas }}</td>
                                             <td>
                                                 <a href="{{ route('daftar.detil', $daftar->daftar_id) }}"
                                                     class="btn btn-primary btn-sm">
@@ -78,13 +81,9 @@
                                     @endforeach
                                 </tbody>
                             </table>
-                            <div class="d-flex justify-content-start mt-4">
-                                {{ $daftars->links('vendor.pagination.simple-bootstrap-5') }}
-                            </div>
                         </div>
-
-                        <div class="mt-3">
-                            <button onclick="exportData()" class="btn btn-success btn-sm">Export to Excel</button>
+                        <div class="d-flex justify-content-start mt-4">
+                            {{ $daftars->links('vendor.pagination.simple-bootstrap-5') }}
                         </div>
                     </div>
                 </div>
@@ -94,43 +93,56 @@
 @endsection
 
 @push('scripts')
+    <!-- Include DataTables -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.3.4/css/buttons.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.4/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.3.4/js/buttons.html5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
     <script>
         $(document).ready(function() {
+            // Initialize datepicker
             $("#datepicker, #datepicker1").datepicker({
                 format: 'yyyy-mm-dd',
                 autoclose: true
             });
+
+            // Initialize DataTables
+            $('#dataTables-example').DataTable({
+                dom: 'Bfrtip',
+                buttons: [{
+                        extend: 'excelHtml5',
+                        text: '<i class="fa fa-file-excel"></i> Export Excel',
+                        className: 'btn btn-success btn-sm'
+                    },
+                    {
+                        extend: 'pdfHtml5',
+                        text: '<i class="fa fa-file-pdf"></i> Export PDF',
+                        className: 'btn btn-danger btn-sm'
+                    }
+                ],
+                ordering: true,
+                paging: true,
+                searching: true
+            });
         });
-    </script>
-    <script>
+
         function cetak(url) {
-            window.location.href = url;
+            const startDate = document.getElementById('datepicker').value;
+            const endDate = document.getElementById('datepicker1').value;
+            const query = `?start_date=${startDate}&end_date=${endDate}`;
+            window.location.href = url + query;
         }
 
         function exportData() {
             var table = document.getElementById("dataTables-example");
-            var rows = [];
-            for (var i = 0, row; row = table.rows[i]; i++) {
-                var columns = [];
-                for (var j = 0; j < row.cells.length; j++) {
-                    columns.push(row.cells[j].innerText);
-                }
-                rows.push(columns);
-            }
-            var csvContent = "data:text/csv;charset=utf-8," + rows.map(e => e.join(",")).join("\n");
-            var link = document.createElement("a");
-            link.setAttribute("href", encodeURI(csvContent));
-            link.setAttribute("download", "Data_Pendaftaran.csv");
-            document.body.appendChild(link);
-            link.click();
+            var wb = XLSX.utils.table_to_book(table, {
+                sheet: "DataPendaftaran"
+            });
+            XLSX.writeFile(wb, "Data_Pendaftaran.xlsx");
         }
-
-        setTimeout(function() {
-            let alertElement = document.querySelector('.alert');
-            if (alertElement) {
-                alertElement.classList.remove('show');
-                alertElement.classList.add('fade');
-            }
-        }, 3000);
     </script>
 @endpush
