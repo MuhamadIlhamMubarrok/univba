@@ -108,6 +108,60 @@
 
     <script src="https://cdn.ckeditor.com/4.21.0/standard/ckeditor.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const exportButton = document.getElementById('exportButton');
+
+            if (!exportButton) {
+                console.error("Export button not found.");
+                return;
+            }
+
+            console.log("Export button found, adding event listener.");
+            exportButton.addEventListener('click', function () {
+                console.log("Export button clicked.");
+                exportData();
+            });
+
+            function exportData() {
+                console.log("Exporting data...");
+                var table = document.getElementById("dataTables-example");
+
+                if (!table) {
+                    console.error("Table not found.");
+                    return;
+                }
+
+                var rows = [];
+                var headers = [];
+
+                for (var i = 0; i < table.rows[0].cells.length; i++) {
+                    if (table.rows[0].cells[i].style.display !== 'none') {
+                        headers.push(table.rows[0].cells[i].innerText);
+                    }
+                }
+                rows.push(headers);
+
+                for (var i = 1, row; row = table.rows[i]; i++) {
+                    var rowData = [];
+                    for (var j = 0; j < row.cells.length; j++) {
+                        if (row.cells[j].style.display !== 'none') {
+                            rowData.push(row.cells[j].innerText);
+                        }
+                    }
+                    rows.push(rowData);
+                }
+
+                var ws = XLSX.utils.aoa_to_sheet(rows);
+                var wb = XLSX.utils.book_new();
+                XLSX.utils.book_append_sheet(wb, ws, "Data Pendaftaran");
+
+                XLSX.writeFile(wb, "Data_Pendaftaran.xlsx");
+                console.log("Export completed.");
+            }
+        });
+    </script>
 
     <!-- DataTables Scripts -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

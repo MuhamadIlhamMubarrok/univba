@@ -62,8 +62,8 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/data-pendaftaran', [POController::class, 'daftar'])->name('daftar');
     Route::get('/data-pendaftaran/detil/{id}', [POController::class, 'detil'])->name('daftar.detil');
-    Route::get('/daftar/{id}', [POController::class, 'hapus'])->name('daftar.hapus');
-    Route::get('/daftar/cetak', [POController::class, 'cetak'])->name('daftar.cetak');
+    Route::get('/data-pendaftaran/{id}', [POController::class, 'hapus'])->name('daftar.hapus');
+    Route::get('/data-pendaftaran/cetak', [POController::class, 'cetak'])->name('daftar.cetak');
 
     Route::get('/beranda', [BerandaController::class, 'index'])->name('beranda');
     Route::get('/beranda/create', [BerandaController::class, 'create'])->name('beranda.create');

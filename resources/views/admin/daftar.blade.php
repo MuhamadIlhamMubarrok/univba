@@ -29,7 +29,7 @@
             <div class="col-md-12 grid-margin stretch-card">
                 <div class="card">
                     <div class="card-body">
-                        <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
+                        {{-- <div class="d-flex flex-wrap align-items-center gap-2 mb-3">
                             <input id="datepicker" placeholder="Tanggal Awal" class="form-control w-auto" />
                             <span>s.d</span>
                             <input id="datepicker1" placeholder="Tanggal Akhir" class="form-control w-auto" />
@@ -37,7 +37,7 @@
                                 class="btn btn-primary btn-sm mt-2 mt-md-0">
                                 <i class="fa fa-print"></i> Cetak
                             </a>
-                        </div>
+                        </div> --}}
 
                         <div class="table-responsive">
                             <table class="table table-hover" id="dataTables-example">
@@ -84,8 +84,9 @@
                         </div>
 
                         <div class="mt-3">
-                            <button onclick="exportData()" class="btn btn-success btn-sm">Export to Excel</button>
+                            <button id="exportButton" class="btn btn-success btn-sm">Export to Excel</button>
                         </div>
+                        
                     </div>
                 </div>
             </div>
@@ -93,44 +94,3 @@
     </div>
 @endsection
 
-@push('scripts')
-    <script>
-        $(document).ready(function() {
-            $("#datepicker, #datepicker1").datepicker({
-                format: 'yyyy-mm-dd',
-                autoclose: true
-            });
-        });
-    </script>
-    <script>
-        function cetak(url) {
-            window.location.href = url;
-        }
-
-        function exportData() {
-            var table = document.getElementById("dataTables-example");
-            var rows = [];
-            for (var i = 0, row; row = table.rows[i]; i++) {
-                var columns = [];
-                for (var j = 0; j < row.cells.length; j++) {
-                    columns.push(row.cells[j].innerText);
-                }
-                rows.push(columns);
-            }
-            var csvContent = "data:text/csv;charset=utf-8," + rows.map(e => e.join(",")).join("\n");
-            var link = document.createElement("a");
-            link.setAttribute("href", encodeURI(csvContent));
-            link.setAttribute("download", "Data_Pendaftaran.csv");
-            document.body.appendChild(link);
-            link.click();
-        }
-
-        setTimeout(function() {
-            let alertElement = document.querySelector('.alert');
-            if (alertElement) {
-                alertElement.classList.remove('show');
-                alertElement.classList.add('fade');
-            }
-        }, 3000);
-    </script>
-@endpush
