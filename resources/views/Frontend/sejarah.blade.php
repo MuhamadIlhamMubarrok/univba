@@ -2,12 +2,12 @@
 @section('content')
     <x-header-section-page title="Sejarah UPY" breadcrumb-home="Home" breadcrumb-current="Sejarah Singkat" />
 
-    <div class=" flex flex-col my-6 md:my-10 px-4 md:px-20 lg:px-32 xl:px-60">
+    <div data-aos="fade-up" class=" flex flex-col my-6 md:my-10 px-4 md:px-20 lg:px-32 xl:px-60">
         <!-- Gambar -->
-        <img src="{{ asset('./images/sambutan/petinggi.png') }}" class=" mb-5 w-full" alt="">
+        <img src="{{ asset('./images/sambutan/petinggi.png') }}" data-aos="fade-up" class=" mb-5 w-full" alt="">
 
         <!-- Konten Teks -->
-        <div class="flex flex-col space-y-4 text-justify font-dmsans text-[14px] md:text-[16px]">
+        <div data-aos="fade-up" class="flex flex-col space-y-4 text-justify font-dmsans text-[14px] md:text-[16px]">
             <p>
                 Semula Universitas PGRI Yogyakarta (UPY) berbentuk institut (IKIP PGRI Yogyakarta) yang berdiri tanggal 11
                 desember 1962 berdasarkan Surat Keputusan Menteri Perguruan Tinggi Dan Ilmu Pengetahuan RI Nomor 44/Swt/P/62
@@ -39,10 +39,11 @@
         </div>
 
         <!-- Bagian Ajakan -->
-        <div class="flex items-center flex-col pt-10">
-            <div class="w-full h-[1px] bg-blue-900 my-4"></div>
-            <h1 class="text-center font-poppins text-[20px] md:text-[30px] font-bold text-primary">DAFTAR SEKARANG</h1>
-            <p class="text-center mb-5 text-[12px] md:text-[14px] lg:text-[16px]">
+        <div data-aos="fade-up" class="flex items-center flex-col pt-10">
+            <div data-aos="fade-up" class="w-full h-[1px] bg-blue-900 my-4"></div>
+            <h1 data-aos="fade-up" class="text-center font-poppins text-[20px] md:text-[30px] font-bold text-primary">DAFTAR
+                SEKARANG</h1>
+            <p data-aos="fade-up" class="text-center mb-5 text-[12px] md:text-[14px] lg:text-[16px]">
                 Raih masa depan gemilang dengan pendidikan berkualitas dari universitas yang telah dipercaya selama
                 bertahun-tahun. UPY menghadirkan program studi unggulan, dosen berpengalaman, dan fasilitas modern untuk
                 mendukung perjalanan akademik Anda.

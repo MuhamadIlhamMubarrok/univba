@@ -57,6 +57,8 @@
     <link href="./css/app.css" rel="stylesheet">
     {{-- swiper --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    {{-- data-aos --}}
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
     {{-- Style --}}
     @stack('prpend-style')
@@ -74,7 +76,7 @@
     <div class="fixed flex-row items-center bottom-4 right-4 z-50 md:bottom-10 md:right-10 flex ">
         <!-- Animated WhatsApp Button -->
         <div
-            class="slide-text whatsapp-button overflow-hidden transition-all duration-500 ease-in-out bg-[#40C351] h-[40px] py-2 px-4 font-poppins text-white rounded-full mb-2">
+            class="slide-text whatsapp-button overflow-hidden shadow-2xl transition-all duration-500 ease-in-out bg-[#40C351] h-[40px] py-2 px-4 font-poppins text-white rounded-full mb-2">
             <h1 class="whatsapp-button-text ">ingin bertanya ? yuk di click !</h1>
         </div>
 
@@ -91,6 +93,9 @@
     @stack('prpend-script')
     @stack('addon-script')
     </script>
+    {{-- data-aos --}}
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    {{-- flowbite --}}
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>

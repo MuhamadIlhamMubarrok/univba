@@ -1,4 +1,4 @@
-<div class="flex flex-col justify-center items-center">
+<div data-aos="fade-up" class="flex flex-col justify-center items-center">
     <!-- Logo -->
     <img src="{{ asset('./images/logo/logo1.png') }}" class="w-[100px] h-[100px]" alt="Logo">
 

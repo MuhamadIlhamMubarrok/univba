@@ -2063,6 +2063,11 @@ module.exports = {
 __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 __webpack_require__(/*! ./navbar.js */ "./resources/js/navbar.js");
 __webpack_require__(/*! ./swiper.js */ "./resources/js/swiper.js");
+AOS.init({
+  easing: "ease-in-out",
+  // Jenis easing animasi
+  duration: 1000 // Durasi animasi dalam milidetik
+});
 
 /***/ }),
 

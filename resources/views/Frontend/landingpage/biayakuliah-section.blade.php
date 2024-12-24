@@ -117,7 +117,7 @@
             <div class="swiper-pagination"></div>
         </div>
         <div class="mt-5 ">
-            <h1 class="font-poppins font-semibold text-primary text-[30px] mb-4">NOTE:</h1>
+            <h1 class="font-poppins font-semibold text-primary text-[25px] mb-4">NOTE:</h1>
             <div class="flex flex-col md:flex-row md:w-[1000px] md:space-x-5 space-y-5 md:space-y-0">
                 <div class="bg-white border-2 border-dashed border-primary pl-6 pr-10 py-6 rounded-lg shadow-lg">
                     <h1 class="font-semibold font-dmsans text-[20px] mb-2">Biaya Pendaftaran Rp. 250.000,-</h1>
