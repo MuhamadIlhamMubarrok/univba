@@ -28,7 +28,7 @@
                             Daftar Sekarang
                         </a>
                         <a href="/page/14"
-                            class="bg-yellow-400 hover:bg-yellow-500 text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">
+                            class="bg-yellow-400 hover:bg-accent text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">
                             Info Lanjut
                         </a>
                     </div>
@@ -54,7 +54,7 @@
                             Daftar Sekarang
                         </a>
                         <a href="/page/14"
-                            class="bg-yellow-400 hover:bg-yellow-500 text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">
+                            class="bg-yellow-400 hover:bg-accent text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">
                             Info Lanjut
                         </a>
                     </div>
@@ -80,7 +80,7 @@
                             Daftar Sekarang
                         </a>
                         <a href="/page/14"
-                            class="bg-yellow-400 hover:bg-yellow-500 text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">
+                            class="bg-yellow-400 hover:bg-accent text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">
                             Info Lanjut
                         </a>
                     </div>
@@ -106,7 +106,7 @@
                             Daftar Sekarang
                         </a>
                         <a href="/page/14"
-                            class="bg-yellow-400 hover:bg-yellow-500 text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">
+                            class="bg-yellow-400 hover:bg-accent text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">
                             Info Lanjut
                         </a>
                     </div>

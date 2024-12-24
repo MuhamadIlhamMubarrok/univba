@@ -59,7 +59,7 @@
                                         @endphp
                                         <li>
                                             <a href="{{ $subUrl }}"
-                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-yellow-500 dark:hover:text-white font-poppins {{ $isSubActive ? 'bg-yellow-500 text-white' : '' }}">
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-accent dark:hover:text-white font-poppins {{ $isSubActive ? 'bg-accent text-white' : '' }}">
                                                 {{ $submenu->menu }}
                                             </a>
                                         </li>
@@ -78,7 +78,7 @@
 
                 <li class="my-3 ml-1 md:my-0 md:pl-[100px]">
                     <a href="/kontak-form"
-                        class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded-full text-center font-poppins">
+                        class="bg-yellow-400 hover:bg-accent text-white font-bold py-2 px-4 rounded-full text-center font-poppins">
                         Contact Us
                     </a>
                 </li>

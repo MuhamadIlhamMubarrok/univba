@@ -25,7 +25,7 @@
                                     {{ Str::limit(strip_tags($project->content), 150) }}...</p>
                                 <div class="my-3 flex justify-start">
                                     <a href=""
-                                        class="text-accent hover:text-white w-[140px] text-[9px] md:text-[11px] duration-200 md:w-[150px] border border-[2px] border-accent hover:border hover:border-[#F9F9F9]/15 hover:rounded-full hover:border-[2px] font-Anek hover:bg-yellow-500 hover:border-yellow-500 font-bold rounded-full  px-4 md:px-2 md:py-[7px] py-2.5 text-center me-2 mb-4 md:mb-2">
+                                        class="text-accent hover:text-white w-[140px] text-[9px] md:text-[11px] duration-200 md:w-[150px] border border-[2px] border-accent hover:border hover:border-[#F9F9F9]/15 hover:rounded-full hover:border-[2px] font-Anek hover:bg-accent hover:border-accent font-bold rounded-full  px-4 md:px-2 md:py-[7px] py-2.5 text-center me-2 mb-4 md:mb-2">
                                         BACA SELENGKAPNYA
                                     </a>
                                 </div>

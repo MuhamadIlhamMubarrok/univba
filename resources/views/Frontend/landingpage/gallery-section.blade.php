@@ -6,33 +6,11 @@
         <x-header-section subtext="GALLERY" subtext-color="#6b7280" title="EVENT KAMPUS UPY" title-color="#222764" />
         <div class=" swiper mySwiper mb-3">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                </div>
-                <div class="swiper-slide">
-                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                </div>
+                @foreach ($images as $index => $image)
+                    <div class="swiper-slide">
+                        <img src="{{ asset('./storage/galleryFoto/' . $image->file) }}" />
+                    </div>
+                @endforeach
             </div>
             <div class="swiper-pagination"></div>
         </div>

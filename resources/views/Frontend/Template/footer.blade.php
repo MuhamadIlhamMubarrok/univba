@@ -1,26 +1,29 @@
-<div class="h-auto w-full bg-cover bg-center bg-no-repeat flex flex-col md:flex-row px-4 py-6 md:px-8 md:py-10 lg:px-20 lg:py-15 gap-y-4"
+<div data-aos="fade-up"
+    class="h-auto w-full bg-cover bg-center bg-no-repeat flex flex-col md:flex-row px-4 py-6 md:px-8 md:py-10 lg:px-20 lg:py-15 gap-y-4 border-accent border-t-[5px]"
     style="background-image: url('{{ asset('./images/background/footer1.png') }}');">
-    <div class="md:w-[60%] flex flex-col gap-y-5">
-        <img src="{{ asset('./images/logo/logo1.png') }}" alt="logo aing" class="h-[100px] w-[100px]">
-        <div class="flex flex-col md:flex-row text-white gap-y-5 md:gap-x-[200px]">
-            <div class="text-start">
-                <h1 class="font-bold font-Anek text-base md:text-lg lg:text-xl">UNIVERSITAS PGRI YOGYAKARTA</h1>
-                <p class="w-full md:w-[400px] text-sm md:text-base lg:text-lg">Jl. IKIP PGRI I Sonosewu No.117, Sonosewu,
+    <div data-aos="fade-up" class="md:w-[60%] flex flex-col gap-y-5">
+        <img src="{{ asset('./images/logo/logo1.png') }}" alt="logo aing" data-aos="fade-up" class="h-[100px] w-[100px]">
+        <div data-aos="fade-up" class="flex flex-col md:flex-row text-white gap-y-5 md:gap-x-[200px]">
+            <div data-aos="fade-up" class="text-start">
+                <h1 data-aos="fade-up" class="font-bold font-Anek text-base md:text-lg lg:text-xl">UNIVERSITAS PGRI
+                    YOGYAKARTA</h1>
+                <p data-aos="fade-up" class="w-full md:w-[400px] text-sm md:text-base lg:text-lg">Jl. IKIP PGRI I
+                    Sonosewu No.117, Sonosewu,
                     Ngestiharjo, Kec. Kasihan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55182</p>
             </div>
         </div>
-        <div class="flex flex-col md:flex-row text-white gap-y-5 md:gap-x-10">
-            <div class="text-start">
-                <h1 class="font-bold font-Anek text-base md:text-lg lg:text-xl">Telephone</h1>
-                <p class="text-sm md:text-base lg:text-lg">08312213123</p>
+        <div data-aos="fade-up" class="flex flex-col md:flex-row text-white gap-y-5 md:gap-x-10">
+            <div data-aos="fade-up" class="text-start">
+                <h1 data-aos="fade-up" class="font-bold font-Anek text-base md:text-lg lg:text-xl">Telephone</h1>
+                <p data-aos="fade-up" class="text-sm md:text-base lg:text-lg">08312213123</p>
             </div>
             <div>
-                <h1 class="font-bold font-Anek text-base md:text-lg lg:text-xl">WhatsApp</h1>
-                <p class="text-sm md:text-base lg:text-lg">08312213123</p>
+                <h1 data-aos="fade-up" class="font-bold font-Anek text-base md:text-lg lg:text-xl">WhatsApp</h1>
+                <p data-aos="fade-up" class="text-sm md:text-base lg:text-lg">08312213123</p>
             </div>
             <div>
-                <h1 class="font-bold font-Anek text-base md:text-lg lg:text-xl">Email</h1>
-                <p class="text-sm md:text-base lg:text-lg">milhammubarrok@gmail.com</p>
+                <h1 data-aos="fade-up" class="font-bold font-Anek text-base md:text-lg lg:text-xl">Email</h1>
+                <p data-aos="fade-up" class="text-sm md:text-base lg:text-lg">milhammubarrok@gmail.com</p>
             </div>
         </div>
         <div class="flex flex-col text-white gap-y-4">
@@ -73,7 +76,7 @@
             </div>
         </div>
     </div>
-    <div class="flex flex-col md:items-end md:justify-end items-start justify-center pb-2">
+    <div data-aos="fade-up" class="flex flex-col md:items-end md:justify-end items-start justify-center pb-2">
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7905.688416942032!2d110.340988!3d-7.806312!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57fac27e70db%3A0x6ac4a4807ca11460!2sUniversitas%20PGRI%20Yogyakarta!5e0!3m2!1sen!2sid!4v1734600648977!5m2!1sen!2sid"
             class="hidden md:block md:w-[600px] h-[300px]" style="border:0;" allowfullscreen="" loading="lazy"

@@ -45,7 +45,7 @@
             <!-- Bagian Unduh Semua -->
             <div class="flex justify-center mt-12">
                 <button onclick="downloadAllBrosur()"
-                    class="bg-accent text-white py-3 px-6 rounded-md font-poppins font-bold hover:bg-yellow-500 transition">
+                    class="bg-accent text-white py-3 px-6 rounded-md font-poppins font-bold hover:bg-accent transition">
                     <i class="fas fa-download mr-2"></i>Unduh Semua Brosur
                 </button>
             </div>
