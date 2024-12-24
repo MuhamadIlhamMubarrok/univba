@@ -1,38 +1,26 @@
-@extends('Frontend.Layouts.app')
+@extends('Frontend.Layouts.app2')
 @section('content')
+    <x-header-section-page title="Struktur Organisasi UPY" breadcrumb-home="Home" breadcrumb-current="Struktur Organisasi" />
 
-        <div id="heading-breadcrumbs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <h1 style="color: #fff;">Struktur Organisasi</h1>
-                    </div>
-                    <div class="col-md-5">
-                        <ul class="breadcrumb">
-                            <li style="color: #fff;"><a href="./">Home</a>
-                            </li>
-                            <li style="color: #fff;">Struktur Organisasi</li>
-                        </ul>
+    <div class=" py-16 mt-8 ">
+        <div class="container mx-auto px-4 lg:px-20">
 
-                    </div>
-                </div>
+            <!-- Image Section -->
+            <div class="flex justify-center">
+                <img src="{{ asset('./images/image/upy.png') }}" alt="Struktur Organisasi UPY"
+                    class="shadow-lg rounded-lg w-full md:w-3/4 lg:w-1/2 shadow-xl">
+            </div>
+
+            <!-- Description Section -->
+            <div class="mt-12 text-center px md:px-[300px] space-y-4 flex justify-center items-center flex-col">
+                <div class="w-full h-[1px] bg-blue-900 my-4"></div>
+                <p class="text-gray-700 font-dmsans leading-relaxed text-center ">
+                    Struktur organisasi Universitas PGRI Yogyakarta dirancang untuk menciptakan sinergi antar unit,
+                    menjamin tata kelola yang transparan, dan mendukung pencapaian visi UPY untuk menjadi perguruan tinggi
+                    unggul.
+                </p>
+                <x-button url="/pendaftaran">DAFTAR SEKARANG</x-button>
             </div>
         </div>
-
-          <div id="content">
-            <div class="container">
-
-               <div class="row">
-                  <div style="min-width: 50%;" class="col-md-8 col-sm-6 col-xs-12">
-                    <h2>Struktur Organisasi Institut Az Zuhra</h2>
-                    <hr style="border: 1px solid #00000026; width: 15%; margin-left: 0;"><br>
-
-                   <div style="min-width: 50%;" class="col-md-12 col-sm-6 col-xs-12">
-                       <img src="assets/img/struktur-organisasi-azzuhra.png" style="margin-bottom: 20px;">
-                    </div>
-            </div>
-            <!-- /.container -->
-            </div>
-        </div>
-
+    </div>
 @endsection

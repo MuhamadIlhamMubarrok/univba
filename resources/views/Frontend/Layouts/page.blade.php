@@ -91,7 +91,6 @@
 
     {{-- Style --}}
     @stack('prpend-style')
-    @include('Frontend.Template.style')
     @stack('addon-style')
 
 </head>
@@ -110,7 +109,6 @@
 
     {{-- Script --}}
     @stack('prpend-script')
-    @include('Frontend.Template.script')
     @stack('addon-script')
 
 </body>

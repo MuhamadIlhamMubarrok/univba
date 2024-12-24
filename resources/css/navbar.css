@@ -1,0 +1,19 @@
+/* Navbar default */
+#navbar {
+    background-color: #0c1246; /* Default warna navbar */
+    transition: background-color 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Transparan hanya di halaman root (/) */
+#navbar.transparent {
+    background-color: transparent;
+}
+
+/* Warna navbar saat di-scroll */
+#navbar.scrolled {
+    background-color: #0d1444; /* Warna saat di-scroll */
+}

@@ -30,16 +30,23 @@ Route::get('/clear', function () {
 
 Route::namespace('Home')->group(function () {
     Route::get('/', [App\Http\Controllers\FrontendController\HomeController::class, 'index'])->name('fe-home');
+    Route::get('/event-kampus', [App\Http\Controllers\FrontendController\HomeController::class, 'eventKampus'])->name('fe-event-kampus');
+    Route::get('/kegiatan-mahasiswa', [App\Http\Controllers\FrontendController\HomeController::class, 'kegiatanKampus'])->name('fe-kegiatan-kampus');
+    Route::get('/fasilitas-kampus', [App\Http\Controllers\FrontendController\HomeController::class, 'fasilitasKampus'])->name('fe-fasilitas-kampus');
     Route::get('/sejarah-singkat', [App\Http\Controllers\FrontendController\HomeController::class, 'sejarah'])->name('fe-sejarah');
     Route::get('/visi-misi', [App\Http\Controllers\FrontendController\HomeController::class, 'visimisi'])->name('fe-visimisi');
     Route::get('/struktur-organisasi', [App\Http\Controllers\FrontendController\HomeController::class, 'strukturorganisasi'])->name('fe-strukturorganisasi');
     Route::get('/page/{id}', [App\Http\Controllers\FrontendController\HomeController::class, 'pageShow'])->name('fe-page');
     Route::get('/brosur', [App\Http\Controllers\FrontendController\HomeController::class, 'brosur'])->name('fe-brosur');
 
-    Route::get('/kontak', [App\Http\Controllers\FrontendController\HomeController::class, 'kontak'])->name('fe-kontak');
+    Route::get('/kontak-form', [App\Http\Controllers\FrontendController\HomeController::class, 'kontak'])->name('fe-kontak');
 
     Route::get('/pendaftaran', [App\Http\Controllers\FrontendController\HomeController::class, 'showForm'])->name('registration.show');
     Route::post('/pendaftaran/simpan', [App\Http\Controllers\FrontendController\HomeController::class, 'storeRegistration'])->name('registration.store');
+    Route::get('/pendaftaran/success/{no_daftar}', [App\Http\Controllers\FrontendController\HomeController::class, 'showSuccessPage'])->name('registration.success');
+
+    Route::get('/pendaftaran/cetak/{no_daftar}', [App\Http\Controllers\FrontendController\HomeController::class, 'cetak'])->name('cetak.confirm');
+
 });
 
 Route::middleware('guest')->group(function () {

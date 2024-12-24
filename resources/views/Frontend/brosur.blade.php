@@ -1,87 +1,72 @@
-@extends('Frontend.Layouts.app')
-@section('content')
+@extends('Frontend.Layouts.app2')
 
-<style>
-    .btn {
-      background-color: #e53b3b;
-      border: none;
-      color: white;
-      padding: 12px 30px;
-      cursor: pointer;
-      font-size: 20px;
-      border-radius: 12px;
-    }
-    
-    /* Darker background on mouse-over */
-    .btn:hover {
-      background-color: RoyalBlue;
-    }
-</style>
-            <div id="heading-breadcrumbs">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-7">
-                            <h1>Brosur</h1>
-                        </div>
-                        <div class="col-md-5">
-                            <ul class="breadcrumb">
-                                <li><a style="color: #ffffff;" href="./">Home</a>
-                                </li>
-                                <li>Brosur</li>
-                            </ul>
-    
-                        </div>
+@section('content')
+    <x-header-section-page title="Brosur UPY" breadcrumb-home="Home" breadcrumb-current="Brosur" />
+
+    <div class="py-16">
+        <div class="container mx-auto px-4 lg:px-16">
+            <!-- Heading -->
+            <div class="text-center mb-12">
+                <p class="text-gray-600 font-dmsans text-lg">
+                    Unduh brosur lengkap Universitas PGRI Yogyakarta untuk mendapatkan informasi mengenai program studi,
+                    fasilitas, dan layanan terbaik yang kami tawarkan.
+                </p>
+            </div>
+
+            <!-- Brosur Gallery -->
+            <div class="flex flex-wrap justify-center gap-8">
+                <!-- Brosur Item 1 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center">
+                    <img src="{{ asset('images/brosur/brosur1.jpg') }}" alt="Brosur UPY" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-poppins font-bold text-primary mb-2">Brosur UPY 2023</h3>
+                        <p class="text-sm text-gray-600 mb-4">Format JPG</p>
+                        <a href="{{ asset('images/brosur/brosur1.jpg') }}" download
+                            class="bg-primary text-white py-2 px-4 rounded-md hover:bg-accent transition">
+                            <i class="fas fa-download mr-2"></i>Download
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Brosur Item 2 -->
+                <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center">
+                    <img src="{{ asset('images/brosur/brosur2.jpg') }}" alt="Brosur UPY" class="w-full h-64 object-cover">
+                    <div class="p-6 text-center">
+                        <h3 class="text-lg font-poppins font-bold text-primary mb-2">Brosur UPY 2023</h3>
+                        <p class="text-sm text-gray-600 mb-4">Format JPG</p>
+                        <a href="{{ asset('images/brosur/brosur2.jpg') }}" download
+                            class="bg-primary text-white py-2 px-4 rounded-md hover:bg-accent transition">
+                            <i class="fas fa-download mr-2"></i>Download
+                        </a>
                     </div>
                 </div>
             </div>
-    
-              <div id="content">
-                <div class="container">
-    
-                   <div class="row">
-                        <div style="min-width: 50%;" class="col-md-8 col-sm-6 col-xs-12">
-                        <h2>Brosur Institut Az Zuhra</h2>
-                        <hr style="border: 1px solid #00000026; width: 15%; margin-left:0;"><br>
-    
-                      <div class="col-md-10 col-sm-6 col-xs-12">
-                        <img width="100%" style="margin-right: 15px; border-radius: 10px;" src="/assets/brosur/">
-                        
-                        <p style="padding-top: 5px; font-size: 11px; color: #00000059;">Photo by <a style="color: #00000059; text-decoration: none;" href="">Institut Az Zuhra</a></p>
-                      </div>
-                      <div class="col-md-2 col-sm-6 col-xs-12">
-                        <button onclick="downloadAll(window.links)" class="btn"><i class="fa fa-download"></i> Download</button>
-                        <p style="padding-top: 5px; font-size: 11px; color: #00000059;"><a style="color: #00000059; text-decoration: none;" href="">Format JPG</a></p>
-                      </div>
-                      <div class="col-md-10 col-sm-6 col-xs-12">
-                        <img width="100%" style="margin-right: 15px; border-radius: 10px;" src="/assets/brosur/">
-                        <p style="padding-top: 5px; font-size: 11px; color: #00000059;">Photo by <a style="color: #00000059; text-decoration: none;" href="">Institut Az Zuhra</a></p>
-                      </div>
-                </div>
-                <!-- /.container -->
-                </div>
-            </div>
-            
-            
-<script>
-    var links = [
-        'assets/brosur/'
-    ];
-    
-    function downloadAll(urls) {
-        var link = document.createElement('a');
-    
-        link.setAttribute('download', "Brosur Institut Az Zuhra" ,null);
-        link.style.display = 'none';
-    
-        document.body.appendChild(link);
-    
-        for (let i = 0; i < urls.length; i++) {
-        link.setAttribute('href', urls[i]);
-        link.click();
-        }
-    
-        document.body.removeChild(link);
-    }
-</script>
 
+            <!-- Bagian Unduh Semua -->
+            <div class="flex justify-center mt-12">
+                <button onclick="downloadAllBrosur()"
+                    class="bg-accent text-white py-3 px-6 rounded-md font-poppins font-bold hover:bg-yellow-500 transition">
+                    <i class="fas fa-download mr-2"></i>Unduh Semua Brosur
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function downloadAllBrosur() {
+            const urls = [
+                '{{ asset('images/brosur/brosur1.jpg') }}',
+                '{{ asset('images/brosur/brosur2.jpg') }}'
+            ];
+
+            urls.forEach(url => {
+                const link = document.createElement('a');
+                link.href = url;
+                link.setAttribute('download', '');
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+            });
+        }
+    </script>
 @endsection

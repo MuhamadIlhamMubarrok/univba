@@ -1,516 +1,89 @@
-<style>
-    :root {
-        --purple-1: #a99f9f;
-        --purple-2: #da4d4d;
-        --white: #fff;
-        --black: #221f1f;
-        --red: #b62327;
-        --lightgray: #cfcfcf;
-        --overlay: rgba(0, 0, 0, 0.5);
-    }
-
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        outline: none;
-    }
-
-
-    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
-
-    body {
-        font-family: 'Poppins', sans-serif;
-    }
-
-
-    html {
-        font-size: 62.5%;
-    }
-
-    button {
-        background: transparent;
-        border: none;
-        cursor: pointer;
-    }
-
-    ul {
-        list-style: none;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-    }
-
-    a,
-    button {
-        color: inherit;
-    }
-
-    .no-transition {
-        transition: none !important;
-    }
-
-
-    /* HEADER
-    –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .page-header {
-        position: relative;
-        padding: 1.5rem 3rem;
-        background: #f3f3f3;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
-    }
-
-    .page-header nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .page-header .horizontal-logo,
-    .page-header .search span {
-        display: none;
-    }
-
-    .page-header .vertical-logo {
-        max-width: 18.5rem;
-    }
-
-    .page-header .top-menu-wrapper {
-        color: var(--black);
-    }
-
-    .page-header .top-menu-wrapper::before {
-        content: "";
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: -1;
-        transition: background 0.5s;
-    }
-
-    .page-header .search {
-        color: var(--white);
-    }
-
-    .page-header .panel,
-    .page-header .top-menu {
-        position: fixed;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        z-index: 2;
-        transform: translate3d(-100%, 0, 0);
-        transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-    }
-
-    .page-header .panel1 {
-        width: 100%;
-        background: var(--purple-1);
-        transition-delay: 0.3s;
-    }
-
-    .page-header .panel2 {
-        width: calc(100% - 3rem);
-        background: var(--red);
-        transition-delay: 0.1s;
-    }
-
-    .page-header .top-menu {
-        display: flex;
-        flex-direction: column;
-        width: calc(100% - 6rem);
-        overflow-y: auto;
-        padding: 2rem;
-        background: var(--white);
-    }
-
-    .page-header .top-menu-wrapper.show-offcanvas::before {
-        background: var(--overlay);
-        z-index: 1;
-    }
-
-    .page-header .top-menu-wrapper.show-offcanvas .panel,
-    .page-header .top-menu-wrapper.show-offcanvas .top-menu {
-        transform: translate3d(0, 0, 0);
-        transition-duration: 0.7s;
-    }
-
-    .page-header .top-menu-wrapper.show-offcanvas .panel1 {
-        transition-delay: 0s;
-    }
-
-    .page-header .top-menu-wrapper.show-offcanvas .panel2 {
-        transition-delay: 0.2s;
-    }
-
-    .page-header .top-menu-wrapper.show-offcanvas .top-menu {
-        transition-delay: 0.4s;
-        box-shadow: rgba(0, 0, 0, 0.25) 0 0 4rem 0.5rem;
-    }
-
-    /* FORM
-    –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .page-header .search-form {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        visibility: hidden;
-        opacity: 0;
-        padding: 1rem 0;
-        background: var(--purple-2);
-        transition: all 0.2s;
-    }
-
-    .page-header .search-form.is-visible {
-        visibility: visible;
-        opacity: 1;
-    }
-
-    .page-header .search-form div {
-        position: relative;
-        width: 90%;
-        max-width: 1000px;
-        margin: 0 auto;
-    }
-
-    .page-header .search-form input {
-        width: 100%;
-        font-size: 2rem;
-        height: 4rem;
-        padding: 0 2rem;
-    }
-
-    .page-header .search-form button {
-        position: absolute;
-        right: 2rem;
-        top: 50%;
-        transform: translateY(-50%);
-        color: var(--purple-1);
-    }
-
-    /* TOP MENU
-    –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    .page-header .top-menu li+li {
-        margin-top: 1.5rem;
-    }
-
-    .page-header .top-menu>li:last-child {
-        margin-top: auto;
-    }
-
-    .page-header ul a {
-        font-family: 'Poppins', sans-serif;
-        display: inline-block;
-        font-size: 1.3rem;
-        text-transform: uppercase;
-        transition: color 0.35s ease-out;
-    }
-
-    .page-header ul a:hover {
-        color: var(--red);
-    }
-
-    .page-header .has-dropdown i {
-        display: none;
-    }
-
-    .page-header .sub-menu {
-        padding: 1.5rem 2rem 0;
-    }
-
-    .page-header .top-menu .mob-block {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 3rem;
-    }
-
-    .page-header .top-menu .mob-block i {
-        color: var(--lightgray);
-    }
-
-    .page-header .socials {
-        display: flex;
-        margin-top: 3rem;
-
-        margin-bottom: 1rem;
-    }
-
-    .page-header .socials li+li {
-        margin-top: 0;
-    }
-
-    .page-header .socials .fa-stack {
-        font-size: 1.7rem;
-    }
-
-    .page-header .socials .fab {
-        font-size: 1.2rem;
-    }
-
-    /* MQ
-    –––––––––––––––––––––––––––––––––––––––––––––––––– */
-    @media screen and (min-width: 550px) {
-        .page-header .panel1 {
-            width: 60%;
-        }
-
-        .page-header .panel2 {
-            width: calc(60% - 3rem);
-        }
-
-        .page-header .top-menu {
-            width: calc(60% - 6rem);
-        }
-    }
-
-    @media screen and (min-width: 768px) {
-        .page-header .top-menu {
-            padding: 4rem;
-        }
-
-        .page-header ul a {
-            font-size: 1.6rem;
-        }
-
-        .page-header .search-form input {
-            font-size: 2.4rem;
-            height: 5rem;
-            line-height: 5rem;
-        }
-    }
-
-    @media screen and (min-width: 995px) {
-        .page-header {
-            border-radius: 15px;
-            padding: 0 10rem;
-        }
-
-        .page-header .panel,
-        .page-header .open-mobile-menu,
-        .page-header .vertical-logo,
-        .page-header .top-menu .mob-block,
-        .page-header .top-menu>li:last-child,
-        .page-header .top-menu-wrapper::before {
-            display: none;
-        }
-
-        .page-header .horizontal-logo {
-            display: block;
-        }
-
-        .page-header .top-menu-wrapper {
-            margin-top: 20px;
-            display: flex;
-            align-items: center;
-            color: var(--white);
-        }
-
-        .page-header .top-menu {
-            flex-direction: row;
-            position: static;
-            width: auto;
-            background: transparent;
-            transform: none;
-            padding: 0;
-            overflow-y: visible;
-            box-shadow: none !important;
-        }
-
-        .page-header .top-menu li+li {
-            margin-top: 0;
-        }
-
-        .page-header .top-menu>li:not(:nth-last-child(2)) {
-            margin-right: 3rem;
-        }
-
-        .page-header .top-menu>li>a {
-            padding: 3rem 0.5rem;
-        }
-
-        .page-header ul a {
-            font-size: 1.5rem;
-        }
-
-        .page-header .has-dropdown i {
-            display: inline-block;
-        }
-
-        .page-header .sub-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%);
-            padding: 1.5rem 2rem;
-            background: var(--purple-2);
-        }
-
-        .page-header .sub-menu li+li {
-            margin-top: 1.2rem;
-        }
-
-        .page-header .sub-menu a {
-            padding: 0.5rem 1rem;
-            white-space: nowrap;
-        }
-
-        .page-header .has-dropdown {
-            position: relative;
-        }
-
-        .page-header .has-dropdown:hover .sub-menu {
-            display: block;
-        }
-
-        .page-header .search {
-            display: flex;
-            align-items: center;
-            margin-left: 3rem;
-        }
-    }
-
-    @media screen and (min-width: 1200px) {
-        .page-header .search {
-            margin-left: 5rem;
-        }
-
-        .page-header .search i {
-            margin-right: 1.5rem;
-        }
-
-        .page-header .search span {
-            display: block;
-            font-weight: 500;
-            font-size: 1.6rem;
-        }
-    }
-</style>
-
-<header class="page-header" style="margin: 10px 20px 10px;">
-    <nav>
-        <button aria-label="Open Mobile Menu" class="open-mobile-menu fa-lg">
-            <i class="fas fa-bars" aria-hidden="true"></i>
-        </button>
-        <a href="/">
-            <img class="logo horizontal-logo" style="width: 200px; margin-top: 5px;" src="/images/logo/header-azzuhra.png"
-                alt="Institut Az Zuhra Kuliah Karyawan">
-            <img class="logo vertical-logo" style="width: 250px;" src="/images/logo/header-azzuhra.png"
-                alt="Institut Az Zuhra Kuliah Karyawan">
+<nav id="navbar" class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 transparent">
+    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <!-- Logo -->
+        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="{{ asset('./images/logo/logo2.png') }}" class="h-8" alt="Flowbite Logo" />
         </a>
-        <div class="top-menu-wrapper">
-            <ul class="top-menu">
+
+        <!-- Mobile Menu Button -->
+        <button data-collapse-toggle="navbar-dropdown" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                viewBox="0 0 17 14">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+        </button>
+
+        <!-- Navbar Menu -->
+        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul
+                class="flex flex-col font-medium p-4 md:p-0 mt-4 border  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 bg-[#0D1444] md:bg-transparent">
+                <!-- Looping Main Menus -->
                 @foreach ($mainMenus as $menu)
-                    <li class="has-dropdown" style="font-weight: bold;">
-                        @php
-                            // Determine the URL: if numeric, assume it's a page_id and construct "page/{page_id}", otherwise use the actual URL
-                    $url = is_numeric($menu->url) ? url('page/' . $menu->url) : url($menu->url);
-                    $subItems = $subMenus->where('submenu_id', $menu->menu_id);
-                        @endphp
-                        <a style="color: #000;" href="{{ $url }}">
-                            {{ $menu->menu }}
-                            @if ($subItems->isNotEmpty())
-                                <i class="fas fa-chevron-down" style="margin-left: 5px;"></i>
-                            @endif
-                        </a>
+                    @php
+                        // URL for the current menu item
+                        $url = is_numeric($menu->url) ? url('page/' . $menu->url) : url($menu->url);
+                        // Check if the current URL matches the menu URL
+                        $isActive = Request::is(trim(parse_url($url, PHP_URL_PATH), '/')) || url()->current() == $url;
+                        $subItems = $subMenus->where('submenu_id', $menu->menu_id);
+                    @endphp
+                    <li class="relative">
                         @if ($subItems->isNotEmpty())
-                            <ul class="dropdown-menu">
-                                @foreach ($subItems as $submenu)
-                                    @php
-                                        // Apply the same logic for submenu URLs
-                                        $subUrl = is_numeric($submenu->url)
-                                            ? url('page/' . $submenu->url)
-                                            : url($submenu->url);
-                                    @endphp
-                                    <li style="font-weight: bold;">
-                                        <a href="{{ $subUrl }}">{{ $submenu->menu }}</a>
-                                    </li>
-                                @endforeach
-                            </ul>
+                            <!-- Dropdown Button -->
+                            <button id="dropdownNavbarLink-{{ $menu->menu_id }}"
+                                data-dropdown-toggle="dropdownNavbar-{{ $menu->menu_id }}"
+                                class="flex font-poppins items-center justify-between w-full py-2 px-3 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 hover:text-yellow-400 md:p-0 md:w-auto text-white  dark:border-gray-700 dark:hover:bg-gray-700 md:dark:hover:bg-transparent {{ $isActive ? 'text-accent' : '' }}">
+                                {{ $menu->menu }}
+                                <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                    fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
+
+                            <!-- Dropdown Menu -->
+                            <div id="dropdownNavbar-{{ $menu->menu_id }}"
+                                class="z-10 hidden font-normal bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-[#0D1444] dark:divide-gray-600">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-400">
+                                    @foreach ($subItems as $submenu)
+                                        @php
+                                            $subUrl = is_numeric($submenu->url)
+                                                ? url('page/' . $submenu->url)
+                                                : url($submenu->url);
+                                            $isSubActive =
+                                                Request::is(trim(parse_url($subUrl, PHP_URL_PATH), '/')) ||
+                                                url()->current() == $subUrl;
+                                        @endphp
+                                        <li>
+                                            <a href="{{ $subUrl }}"
+                                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-yellow-500 dark:hover:text-white font-poppins {{ $isSubActive ? 'bg-yellow-500 text-white' : '' }}">
+                                                {{ $submenu->menu }}
+                                            </a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        @else
+                            <!-- Menu Without Dropdown -->
+                            <a href="{{ $url }}"
+                                class="block font-poppins py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0  md:p-0 text-white hover:text-yellow-400 dark:hover:bg-gray-700  md:dark:hover:bg-transparent {{ $isActive ? 'bg-yellow-400 md:px-2 md:rounded-full text-primary' : '' }}">
+                                {{ $menu->menu }}
+                            </a>
                         @endif
                     </li>
                 @endforeach
-                <li></li>
+
+                <li class="my-3 ml-1 md:my-0 md:pl-[100px]">
+                    <a href="/kontak-form"
+                        class="bg-yellow-400 hover:bg-yellow-500 text-white font-bold py-2 px-4 rounded-full text-center font-poppins">
+                        Contact Us
+                    </a>
+                </li>
+
             </ul>
         </div>
-    </nav>
-</header>
-
-
-<script>
-    // JavaScript to show/hide dropdown on hover
-    document.querySelectorAll('.has-dropdown').forEach(function(menuItem) {
-        menuItem.addEventListener('mouseenter', function() {
-            const dropdown = menuItem.querySelector('.dropdown-menu');
-            if (dropdown) dropdown.style.display = 'block';
-        });
-        menuItem.addEventListener('mouseleave', function() {
-            const dropdown = menuItem.querySelector('.dropdown-menu');
-            if (dropdown) dropdown.style.display = 'none';
-        });
-    });
-</script>
-
-<script>
-    // JavaScript to show/hide dropdown on hover
-    document.querySelectorAll('.has-dropdown').forEach(function(menuItem) {
-        menuItem.addEventListener('mouseenter', function() {
-            const dropdown = menuItem.querySelector('.dropdown-menu');
-            if (dropdown) dropdown.style.display = 'block';
-        });
-        menuItem.addEventListener('mouseleave', function() {
-            const dropdown = menuItem.querySelector('.dropdown-menu');
-            if (dropdown) dropdown.style.display = 'none';
-        });
-    });
-</script>
-
-<script>
-    const pageHeader = document.querySelector(".page-header");
-    const openMobMenu = document.querySelector(".open-mobile-menu");
-    const closeMobMenu = document.querySelector(".close-mobile-menu");
-    const toggleSearchForm = document.querySelector(".search");
-    const searchForm = document.querySelector(".page-header form");
-    const topMenuWrapper = document.querySelector(".top-menu-wrapper");
-    const isVisible = "is-visible";
-    const showOffCanvas = "show-offcanvas";
-    const noTransition = "no-transition";
-    let resize;
-
-    openMobMenu.addEventListener("click", () => {
-        topMenuWrapper.classList.add(showOffCanvas);
-    });
-
-    closeMobMenu.addEventListener("click", () => {
-        topMenuWrapper.classList.remove(showOffCanvas);
-    });
-
-    // toggleSearchForm.addEventListener("click", () => {
-    //   searchForm.classList.toggle(isVisible);
-    // });
-
-    window.addEventListener("resize", () => {
-        pageHeader.querySelectorAll("*").forEach(function(el) {
-            el.classList.add(noTransition);
-        });
-        clearTimeout(resize);
-        resize = setTimeout(resizingComplete, 500);
-    });
-
-    function resizingComplete() {
-        pageHeader.querySelectorAll("*").forEach(function(el) {
-            el.classList.remove(noTransition);
-        });
-    }
-</script>
+    </div>
+</nav>

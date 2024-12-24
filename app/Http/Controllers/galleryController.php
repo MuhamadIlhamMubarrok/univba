@@ -52,8 +52,9 @@ class galleryController extends Controller
         Images::create([
             'kategori' => $request->kategori,
             'file' => $gambar,
-            'active' => $request->has('active') ? 1 : 0,
+            'active' => $request->has('active') ? '1' : '0',
             'created_at' => now(),
+            'path' => "istigfar wahai hacker"
         ]);
 
         return redirect()->route('gallery.index')->with('message', 'Gambar berhasil ditambahkan ke galeri!')->with('alert-type', 'success');

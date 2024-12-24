@@ -1,22 +1,20 @@
 <?php
 
-    namespace App\Http\Controllers\BackendController;
+namespace App\Http\Controllers\BackendController;
 
-    use App\Http\Controllers\Controller;
-    use Illuminate\Http\Request;
-    use App\Models\Page;
-    use App\Models\Beranda;
+use App\Http\Controllers\Controller;
+use Illuminate\Http\Request;
+use App\Models\Page;
+use App\Models\Beranda;
 
 class BerandaController extends Controller
 {
-
     public function index()
     {
         $berandas = Beranda::with('page')->paginate(5); // Assuming Beranda has a relation with Page
         $user = auth()->user();
         return view('admin.beranda.index', compact('berandas', 'user'));
     }
-
 
     public function create()
     {
@@ -81,6 +79,4 @@ class BerandaController extends Controller
             return redirect()->route('beranda')->with('error', 'Data gagal dihapus.');
         }
     }
-
-
 }

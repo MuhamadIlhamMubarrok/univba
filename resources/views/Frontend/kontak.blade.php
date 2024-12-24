@@ -1,119 +1,84 @@
-@extends('Frontend.Layouts.app')
+@extends('Frontend.Layouts.app2')
 @section('content')
+    <x-header-section-page title="Contact UPY" breadcrumb-home="Home" breadcrumb-current="Contact Us" />
 
-<div id="heading-breadcrumbs">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <h1>Contact</h1>
-            </div>
-            <div class="col-md-5">
-                <ul class="breadcrumb">
-                    <li><a href="./">Home</a>
-                    </li>
-                    <li>Contact</li>
-                </ul>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="content">
-    <div class="container" id="contact">
-
-        <div class="row">
-            <div class="col-md-8">
-
-                <section>
-
-                    <div class="heading">
-                        <h2>Form Kontak Informasi</h2>
-                    </div>
-
-                    <form action="index.php?m=simpan_kontak" method="POST">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="nama">Nama Lengkap</label>
-                                    <input type="text" class="form-control" name="nama" required>
-                                </div>
+    <div class="py-10 bg-gray-50 shadow-xl mt-10">
+        <div class="container mx-auto px-4 lg:px-16">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Form Kontak -->
+                <div>
+                    <h2 class="text-2xl font-poppins font-bold text-blue-900 mb-6">Form Kontak Informasi</h2>
+                    <form action="index.php?m=simpan_kontak" method="POST" class="space-y-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="form-group">
+                                <label for="nama" class="block text-sm font-medium text-gray-700 font-poppins">Nama
+                                    Lengkap</label>
+                                <input type="text" id="nama" name="nama"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                    required>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="no_telp">Nomor HP</label>
-                                    <input type="text" class="form-control" name="no_hp" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="text" class="form-control" name="email" required>
-                                </div>
-                            </div>
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <label for="alamat">Alamat</label>
-                                    <input type="text" class="form-control" name="alamat">
-                                </div>
-                            </div>
-                            <div class="col-sm-12">
-                                <div class="form-group">
-                                    <label for="message">Pesan/Saran</label>
-                                    <textarea name="pesan" rows="5" class="form-control" required></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group col-sm-12 text-center">
-                                <label></label>
-                                <br>
-                                <div class="form-group col-sm-12 text-center">
-
-                                    <div class="g-recaptcha" data-sitekey="6LdVXBQqAAAAAI7s_5HdkCmMIvc5obksttcqDR0k"></div>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 text-center">
-                                <button type="submit" class="btn btn-template-main" style="width: 300px" onClick="return confirm('Anda yakin melakukan ini?')"><i class="fa fa-envelope-o"></i> Kirim Pesan</button>
-
+                            <div class="form-group">
+                                <label for="no_hp" class="block text-sm font-medium text-gray-700 font-poppins">Nomor
+                                    HP</label>
+                                <input type="text" id="no_hp" name="no_hp"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                    required>
                             </div>
                         </div>
-                        <!-- /.row -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="form-group">
+                                <label for="email"
+                                    class="block text-sm font-medium text-gray-700 font-poppins">Email</label>
+                                <input type="email" id="email" name="email"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                    required>
+                            </div>
+                            <div class="form-group">
+                                <label for="alamat"
+                                    class="block text-sm font-medium text-gray-700 font-poppins">Alamat</label>
+                                <input type="text" id="alamat" name="alamat"
+                                    class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pesan"
+                                class="block text-sm font-medium text-gray-700 font-poppins">Pesan/Saran</label>
+                            <textarea id="pesan" name="pesan" rows="5"
+                                class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
+                                required></textarea>
+                        </div>
+                        <div class="form-group text-center">
+                            <div class="g-recaptcha" data-sitekey="6LdVXBQqAAAAAI7s_5HdkCmMIvc5obksttcqDR0k"></div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit"
+                                class="w-full sm:w-1/2 bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
+                                <i class="fa fa-envelope-o"></i> Kirim Pesan
+                            </button>
+                        </div>
                     </form>
+                </div>
 
-                </section>
-
-            </div>
-
-            <div class="col-md-4">
-
-                <section>
-
-                    <h3 class="text-uppercase">Alamat Kampus & Sekretariat</h3>
-
-                    <p> JL. Melati No.16, Simpang Baru, Kec. Tampan, Kota Pekanbaru, Riau 28292
+                <!-- Informasi Kontak -->
+                <div class="bg-white shadow-md rounded-lg p-6">
+                    <h3 class="text-xl font-semibold text-blue-900 mb-4 font-poppins">Alamat Kampus & Sekretariat</h3>
+                    <p class="text-gray-600 mb-6 font-dmsans">JL. Melati No.16, Simpang Baru, Kec. Tampan, Kota Pekanbaru,
+                        Riau 28292
                     </p>
-
-                    <h3 class="text-uppercase">Call & SMS center</h3>
-
-                    <p>
-                    Telepon : <strong>0878-9019-8284</strong><br>
-                    Whatsapp : <strong>087818000395</strong>
+                    <h3 class="text-xl font-semibold text-blue-900 mb-4 font-poppins">Call & SMS Center</h3>
+                    <p class="text-gray-600 font-dmsans">
+                        <span class="font-semibold font-poppins">Telepon :</span> 0878-9019-8284<br>
+                        <span class="font-semibold font-poppins">Whatsapp :</span> 087818000395
                     </p>
-
-                </section>
-
+                </div>
             </div>
-
+            <!-- Google Maps -->
+            <div class="mt-10">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.670467423746!2d101.37127177363834!3d0.49326166373303937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5aea4794b82b5%3A0xf42c622db0b7fd94!2sAMIK%20Tri%20Dharma%20Pekanbaru!5e0!3m2!1sen!2sus!4v1721459371906!5m2!1sen!2sus"
+                    width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" class="rounded-lg shadow-md"></iframe>
+            </div>
         </div>
-        <!-- /.row -->
-        <div class="row">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.670467423746!2d101.37127177363834!3d0.49326166373303937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5aea4794b82b5%3A0xf42c622db0b7fd94!2sAMIK%20Tri%20Dharma%20Pekanbaru!5e0!3m2!1sen!2sus!4v1721459371906!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-
     </div>
-    <!-- /#contact.container -->
-</div>
-<!-- /#content -->
-
-
-
 @endsection

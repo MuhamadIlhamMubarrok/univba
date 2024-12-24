@@ -1,89 +1,53 @@
-@extends('Frontend.Layouts.app')
+@extends('Frontend.Layouts.app2')
 @section('content')
+    <x-header-section-page title="Sejarah UPY" breadcrumb-home="Home" breadcrumb-current="Sejarah Singkat" />
 
-<style>
-    h1, h2, h3, h4, h5, h6 {
-        font-family: 'Poppins', sans-serif;
-    }
+    <div class=" flex flex-col my-6 md:my-10 px-4 md:px-20 lg:px-32 xl:px-60">
+        <!-- Gambar -->
+        <img src="{{ asset('./images/sambutan/petinggi.png') }}" class=" mb-5 w-full" alt="">
 
-    p, a, li, ul {
-        font-family: 'Poppins', sans-serif;
-        letter-spacing: .02em;
-    }
-
-    .btn-sections {
-        font-family: 'Poppins', sans-serif;
-        background-color: #ffffff00;
-        border-width: 1px;
-        display: inline-block;
-        padding: 8px 20px;
-        margin: 0;
-        width: auto;
-        line-height: 1.42;
-        font-weight: bold;
-        text-decoration: none;
-        text-align: center;
-        vertical-align: middle;
-        white-space: normal;
-        cursor: pointer;
-        border: 2px solid #000000;
-        min-width: 125px;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        border-radius: 2px;
-        box-shadow: inset 0 0 0 0 black;
-        transition: .75s;
-    }
-</style>
-
-        <div id="heading-breadcrumbs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <h1 style="color: #fff;">Sejarah Singkat</h1>
-                    </div>
-                    <div class="col-md-5">
-                        <ul class="breadcrumb">
-                            <li style="color: #fff;"><a href="./">Home</a>
-                            </li>
-                            <li style="color: #fff;">Sejarah Singkat</li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
+        <!-- Konten Teks -->
+        <div class="flex flex-col space-y-4 text-justify font-dmsans text-[14px] md:text-[16px]">
+            <p>
+                Semula Universitas PGRI Yogyakarta (UPY) berbentuk institut (IKIP PGRI Yogyakarta) yang berdiri tanggal 11
+                desember 1962 berdasarkan Surat Keputusan Menteri Perguruan Tinggi Dan Ilmu Pengetahuan RI Nomor 44/Swt/P/62
+                dalam bentuk Fakultas Keguruan dan Ilmu Pendidikan meliputi jurusan Ilmu Mendidik dan Jurusan Sejarah yang
+                berlokasi di SGA Stelladuce (Menumpang) yang berada di kompleks Lapangan Trenggono, Klitren kidul
+                Yogyakarta.
+                Mulai tahun 1964 kampus FKIP PGRI Yogyakarta (cikal bakal IKIP PGRI Yogyakarta) pindah di SD ungaran,
+                kotabaru
+                Yogyakarta (Sekarang menjadi SDN Ungaran 2) sampai tahun 1980. Selanjutnya pada tahun 1981 berpindah lagi ke
+                kompleks SGPLB di Jl. Wates, Kalibayem Yogyakarta.
+            </p>
+            <p>
+                Berdasarkan Keputusan Menteri Pendidikan dan kebudayaan RI Nomor : 029/0/1981 tanggal 22 januari 1981
+                tentang Penetapan Kembali Status Terdaftar bagi PTS di Kopertis Wilayah IV yang menetapkan kembali status
+                Terdaftar bagi IKIP PGRI Yogyakarta yang meliputi: Fakultas Ilmu Pendidikan jurusan Teori Dan Sejarah
+                Pendidikan dan Fakultas Keguruan Ilmu Sosial jurusan Ilmu Sejarah. Disamping itu juga mengembangkan jurusan
+                baru pada Fakultas Ilmu Pendidikan dan membuka jurusan Psikologi Pendidikan dan Bimbingan yang mendapat
+                status Terdaftar Berdasarkan Keputusan Menteri Pendidikan dan Kebudayaan Nomor: 0109/O/1984 Tanggal 9 Maret
+                1984.
+            </p>
+            <p>
+                Setelah sebelumnya selalu menumpang dengan instansi lain, mulai tahun 1984 dapat menempati kampus milik
+                sendiri di kawasan Sonosewu, Ngestiharjo Kasihan Bantul sampai sekarang. Dalam rangka pemenuhan tuntutan
+                akan kebutuhan pembangunan, perkembangan ilmu pengetahuan dan teknologi, serta memperhatikan prospek masa
+                depan maka sejak tahun 1995 dirilis alih bentuk, dari bentuk Institut Menjadi Universitas dengan Surat
+                keputusan dengan nomor : 180/DIKTI/KEP/1997, tertanggal 25 juli 1997, IKIP PGRI Yogyakarta menjadi
+                Universitas PGRI Yogyakarta (UPY).
+            </p>
         </div>
 
-        <div id="content">
-            <div class="container">
-                    <div class="col-md-8 col-sm-8 col-xs-12">
-                        <h2>Sejarah Singkat Institut Az Zuhra</h2>
-                        <hr style="border: 1px solid #00000026; width: 25%; margin-left:0;"><br>
-                        <p class="text-justify">
-                          Ide pendirian kampus AMIK Tri Dharma Pekanbaru dicetus pada bulan April 2002. Mereka sepakat untuk mendirikan Perguruan Tinggi yang bergerak di bidang komputer. Ide ini diwujudkan dengan terlebih dahulu membentuk Yayasan Perguruan Tinggi Riau. Setelah itu pada tahun yang sama, dilanjutkan dengan pengurusan izin pendirian Akademi Manjemen Informatika dan Komputer (AMIK) Tri Dharma Pekanbaru ke Dirjen Dikti di Jakarta. Saat itu izin yang diperoleh sesuai SK Mendiknas No: 249/D/O/2002 dengan 2 Program Studi yaitu :
-                          <br>
-                          1. Manajemen Informatika<br>
-                            2. Teknik Komputer
-                        </p>
-                        
-                        <p class="text-justify">
-                          AMIK Tri Dharma Pekanbaru mulai beroperasi menerima Mahasiswa baru pada Bulan September 2003, setelah terlebih dahulu melakukan sosialisasi kampus ke sekolah-sekolah yang ada di Provinsi Riau. Pada Tahun 2011, Program Studi Manajemen Informatika telah terakreditasi oleh Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT) dengan No SK:005/BAN-PT/Ak-XI/Dpl-III/VIII/2011 yang berakhir pada tahun 2016. Lalu, pada tahun 2013, Program Studi Teknik Komputer juga telah terakreditasi oleh Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT) dengan No SK: 209/SK/BAN-PT/Ak-XIII/Dpl-III/2013 yang berakhir pada tahun 2018.
-                        </p>
-                        <p class="text-justify">
-                         Kemudian, Pada tahun 2015, AMIK Tri Dharma Pekanbaru mengajukan Borang Akreditasi Institusi, dan Alhamdulillah juga telah terakreditasi oleh Badan Akreditasi Nasional Perguruan Tinggi (BAN-PT) dengan No SK:813/SK/BAN-PT/Akred/PT/VIII/2015 yang berakhir pada tahun 2020. Dan, Pada tahun 2016, Seiring dengan akan berakhirnya status akreditasi untuk Program Studi Manajemen Informatika, maka AMIK Tri Dharma Pekanbaru kembali mengajukan Borang Reakreditasi untuk Program Studi Manajemen Informatika pada bulan februari 2017, dan hasilnya status Akreditasi Program Studi Manajemen Informatika telah diperpanjang sampai tahun 2021 oleh BAN-PT dengan No.SK:0898/SK/BAN-PT/Akred/Dipl-III/2016.
-                        </p>
-                      
-                    </div>
-                  <div class="col-md-4 col-sm-4 col-xs-12">
-                    <img width="90%" style="margin-right: 15px; border-radius: 10px;" src="/images/logo/logo-azzuhra.png"; text-decoration: none; href="">Institut Azzuhra</a></p>
-                  </div>
-                  <div class="col-md-12 col-sm-12 col-xs-12">
-                    <div style="height: auto; background: #44295C; margin-bottom: 20px; border-radius: 15px;">
-                      <h4 style="line-height: 40px; text-align: center; padding: 30px 20px 30px 20px; color: #ffffff;">Adab Dulu Baru Ilmu </i></h4>
-                    </div>
-                </div>
-            <!-- /.container -->
-            </div>
+        <!-- Bagian Ajakan -->
+        <div class="flex items-center flex-col pt-10">
+            <div class="w-full h-[1px] bg-blue-900 my-4"></div>
+            <h1 class="text-center font-poppins text-[20px] md:text-[30px] font-bold text-primary">DAFTAR SEKARANG</h1>
+            <p class="text-center mb-5 text-[12px] md:text-[14px] lg:text-[16px]">
+                Raih masa depan gemilang dengan pendidikan berkualitas dari universitas yang telah dipercaya selama
+                bertahun-tahun. UPY menghadirkan program studi unggulan, dosen berpengalaman, dan fasilitas modern untuk
+                mendukung perjalanan akademik Anda.
+            </p>
+            <x-button url="/pendaftaran">DAFTAR SEKARANG</x-button>
         </div>
-
+    </div>
 @endsection

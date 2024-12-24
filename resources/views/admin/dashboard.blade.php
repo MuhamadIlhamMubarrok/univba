@@ -25,7 +25,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="" class="card-footer text-white clearfix small z-1">
+                    <a href="{{ route('kontak.index') }}" class="card-footer text-white clearfix small z-1">
                         <span class="float-start">View Details</span>
                         <span class="float-end"><i class="fa fa-arrow-circle-right"></i></span>
                     </a>
@@ -45,7 +45,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="" class="card-footer text-white clearfix small z-1">
+                    <a href="{{ route('pages') }}" class="card-footer text-white clearfix small z-1">
                         <span class="float-start">View Details</span>
                         <span class="float-end"><i class="fa fa-arrow-circle-right"></i></span>
                     </a>
@@ -65,7 +65,7 @@
                             </div>
                         </div>
                     </div>
-                    <a href="" class="card-footer text-white clearfix small z-1">
+                    <a href="{{ route('user.index') }}" class="card-footer text-white clearfix small z-1">
                         <span class="float-start">View Details</span>
                         <span class="float-end"><i class="fa fa-arrow-circle-right"></i></span>
                     </a>

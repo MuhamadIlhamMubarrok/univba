@@ -52,7 +52,10 @@ class BeritaController extends Controller
 
         // Proses upload file jika ada
         if ($request->hasFile('file_foto')) {
-            $data['file_foto'] = $request->file('file_foto')->store('images/berita', 'public');
+            $file = $request->file('file_foto');
+            $file->storeAs('public/berita', $file->hashName());
+            $gambar = $file->hashName(); // Simpan nama hash dari file
+            $data['file_foto'] = $gambar;
         }
 
         // Simpan data ke dalam model Berita

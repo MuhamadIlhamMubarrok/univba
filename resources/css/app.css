@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./navbar.css";
+@import "./hero.css";
+@import "./swiper.css";
+@import "./wa.css";

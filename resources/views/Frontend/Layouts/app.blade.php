@@ -51,47 +51,15 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/images/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-
-    <script>
-        var url = '{{ url('Frontend/js/widgetWhatsApp.js') }}';
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = url;
-        var options = {
-            "enabled": true,
-            "chatButtonSetting": {
-                "backgroundColor": "#4dc247",
-                "ctaText": "Kontak Kami",
-                "borderRadius": "25",
-                "marginLeft": "0",
-                "marginBottom": "30",
-                "marginRight": "50",
-                "position": "right"
-            },
-            "brandSetting": {
-                "brandName": "Insan Tera Semenjana",
-                "brandSubTitle": "Yayasan Insan Tera Semenjana",
-                "brandImg": "assets/apple-touch-icon.png",
-                "welcomeText": "Halo ! Ada yang bisa admin bantu ?",
-                "messageText": "Halo Kak, Saya Mau Bertanya, Sumber : Website Insan Tera Semenjana",
-                "backgroundColor": "#166f63",
-                "ctaText": "Start Chat",
-                "borderRadius": "25",
-                "autoShow": false,
-                "phoneNumber": "6287717173410"
-            }
-        };
-        s.onload = function() {
-            CreateWhatsappChatWidget(options);
-        };
-        var x = document.getElementsByTagName('script')[0];
-        x.parentNode.insertBefore(s, x);
-    </script>
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=DM+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="./css/app.css" rel="stylesheet">
+    {{-- swiper --}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
     {{-- Style --}}
     @stack('prpend-style')
-    @include('Frontend.Template.style')
     @stack('addon-style')
 
 </head>
@@ -103,14 +71,29 @@
 
     {{-- Page Content --}}
     @yield('content')
+    <div class="fixed flex-row items-center bottom-4 right-4 z-50 md:bottom-10 md:right-10 flex ">
+        <!-- Animated WhatsApp Button -->
+        <div
+            class="slide-text whatsapp-button overflow-hidden transition-all duration-500 ease-in-out bg-[#40C351] h-[40px] py-2 px-4 font-poppins text-white rounded-full mb-2">
+            <h1 class="whatsapp-button-text ">ingin bertanya ? yuk di click !</h1>
+        </div>
+
+        <!-- WhatsApp Icon -->
+        <a href="https://wa.me/6287890198284" target="_blank" rel="noopener noreferrer">
+            <img src="{{ asset('images/logo/wa.jpg') }}" alt="WhatsApp" class="w-12 h-12 md:w-[70px] md:h-[70px]">
+        </a>
+    </div>
 
     {{-- Footer --}}
     @include('Frontend.Template.footer')
 
     {{-- Script --}}
     @stack('prpend-script')
-    @include('Frontend.Template.script')
     @stack('addon-script')
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 
 </html>

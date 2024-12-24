@@ -1,0 +1,10 @@
+.bg-hero {
+    background-image: url("/images/background/hero1.png");
+}
+
+/* Gambar untuk perangkat dengan ukuran layar kecil (HP) */
+@media (max-width: 768px) {
+    .bg-hero {
+        background-image: url("/images/background/hero2.png");
+    }
+}

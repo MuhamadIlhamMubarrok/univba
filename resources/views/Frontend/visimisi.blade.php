@@ -1,111 +1,57 @@
-@extends('Frontend.Layouts.app')
+@extends('Frontend.Layouts.app2')
 @section('content')
+    <x-header-section-page title="Visi Misi UPY" breadcrumb-home="Home" breadcrumb-current="Visi Misi" />
 
-<style>
-    h1, h2, h3, h4, h5, h6 {
-    font-family: 'Poppins', sans-serif;
-    }
+    <!-- Content Section -->
+    <div class=" py-10 ">
+        <div class="container mx-auto px-4 lg:px-16 space-y-12">
+            <!-- Visi -->
+            <div class="bg-white shadow-xl shadow rounded-lg p-6">
+                <h2 class="text-xl font-poppins font-semibold text-primary mb-3">Visi</h2>
+                <p class="text-gray-700 font-dmsans">
+                    Pada tahun 2043 UPY menjadi perguruan tinggi unggul, menghasilkan lulusan yang bertaqwa,
+                    profesional, inovatif, memiliki komitmen nasional, dan berwawasan global.
+                </p>
+            </div>
 
-    p, a, li, ul {
-    font-family: 'Poppins', sans-serif;
-    letter-spacing: .02em;
-    }
-
-    .custom-counter {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    }
-
-    .custom-counter li {
-    counter-increment: step-counter;
-    margin-bottom: 20px;
-    }
-
-    .custom-counter li::before {
-    content: counter(step-counter);
-    margin-right: 5px;
-    font-size: 80%;
-    background-color: #8F0000;
-    color: white;
-    font-weight: bold;
-    padding: 2px 7px;
-    border-radius: 3px;
-    }
-
-
-    .btn-sections {
-    font-family: 'Poppins', sans-serif;
-    background-color: #ffffff00;
-    border-width: 1px;
-    display: inline-block;
-    padding: 8px 20px;
-    margin: 0;
-    width: auto;
-    line-height: 1.42;
-    font-weight: bold;
-    text-decoration: none;
-    text-align: center;
-    vertical-align: middle;
-    white-space: normal;
-    cursor: pointer;
-    border: 2px solid #000000;
-    min-width: 125px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    border-radius: 2px;
-    box-shadow: inset 0 0 0 0 black;
-    transition: .75s;
-    }
-</style>
-        <div id="heading-breadcrumbs">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-7">
-                        <h1 style="color: #fff;">Visi dan Misi</h1>
-                    </div>
-                    <div class="col-md-5">
-                        <ul class="breadcrumb">
-                            <li style="color: #fff;"><a href="./">Home</a>
+            <!-- Misi -->
+            <div class="bg-white shadow-xl shadow rounded-lg p-6">
+                <h2 class="text-xl font-poppins font-semibold text-primary mb-3">Misi</h2>
+                <ul class="list-disc pl-5 space-y-3 text-gray-700 font-dmsans">
+                    <li>
+                        Mengembangkan tata kelola kelembagaan yang efektif, efisien, demokratis, transparan, dan akuntabel
+                        untuk mewujudkan organisasi yang sehat, otonom, dan mempunyai daya saing yang tinggi.
+                    </li>
+                    <li>
+                        Mengoptimalkan pendayagunaan sumberdaya untuk mendukung:
+                        <ul class="list-decimal ml-6 mt-2 space-y-2">
+                            <li>
+                                Penyelenggaraan pendidikan yang menghasilkan lulusan bertaqwa, profesional, inovatif,
+                                memiliki
+                                komitmen nasional, dan berwawasan global.
                             </li>
-                            <li style="color: #fff;">Visi Misi</li>
+                            <li>
+                                Penyelenggaraan penelitian untuk mengembangkan ilmu pengetahuan, teknologi, dan seni.
+                            </li>
+                            <li>
+                                Penyelenggaraan kegiatan pengabdian kepada masyarakat untuk kesejahteraan umat.
+                            </li>
                         </ul>
+                    </li>
+                </ul>
+            </div>
 
-                    </div>
+            <!-- Call to Action -->
+            <div class="text-center shadow-xl">
+                <div class="bg-accent py-8 rounded-lg">
+                    <h2 class="text-xl font-poppins font-bold text-white mb-3">Bergabunglah Bersama UPY</h2>
+                    <p class="text-white font-dmsans mb-5">Ciptakan masa depan gemilang dengan UPY.</p>
+                    <a href="/pendaftaran"
+                        class="bg-white text-primary font-poppins font-medium py-2 px-6 rounded-full shadow-md hover:bg-gray-100 transition">
+                        Daftar Sekarang
+                    </a>
                 </div>
             </div>
         </div>
-
-        <div id="content">
-            <div class="container">
-
-               <div class="row">
-                  <div style="min-width: 50%;" class="col-md-8 col-sm-6 col-xs-12">
-                    <h2>Visi</h2>
-                    <hr style="border: 1px solid #00000026; width: 15%; margin-left:0;"><br>
-                    <p class="text-justify">“Menjadi Perguruan Tinggi yang menhasilkan Programmer di bidang Teknologi Informasi yang kompetitif dan berkulitas serta berperan nyata dalam bidang pengajaran, penelitian dan pengabdian masyarakat di Provinsi Riau Tahun 2025.”
-                    </p><hr></div>
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                    <img width="80%" style="margin-right: 15px; border-radius: 10px;" src="/images/logo/logo-azzuhra.png">
-                    <p style="padding-top: 5px; font-size: 11px; color: #00000059;">Photo by <a style="color: #00000059; text-decoration: none;" href="">Institut Az zhura</a></p>
-                  </div>
-                      <div style="min-width: 50%;" class="col-md-12 col-sm-6 col-xs-12">
-                        <h2>Misi</h2>
-                        <hr style="border: 1px solid #00000026; width: 15%; margin-left:0;"><br>
-                        <p>
-                        <ol class="custom-counter">
-                            <li>Menyelenggarakan Tri Dharma Perguruan Tinggi.</li>
-                            <li>Menyelenggarakan Program Diploma tiga yang berbasiskan Teknologi Informasi Meningkatkan Sumber Daya Manusia.</li>
-                            <li>Menyelenggarakan Evaluasi Kurikulum secara berkelanjutan untuk menghasilkan Programer yang kompetitif dan berkulitas.</li>
-                            <li>Menyediakan sarana dan prasarana yang memadai dalam rangka mendukung proses pembelajaran.</li>
-                            <li>Melaksanakan Tata Kelola Perguruan Tinggi secara efektif dan efisien dalam menyikapi perubahan yang terjadi.</li>
-                            <li>Menjalin kerja sama dengan berbagai Stakeholder di Provinsi Riau.</li>
-                        </ol>
-                        <hr></p>
-                    </div>
-            </div>
-            <!-- /.container -->
-            </div>
-        </div>
-
+    </div>
 @endsection

@@ -1,57 +1,31 @@
-@extends('Frontend.Layouts.app')
+@extends('Frontend.Layouts.app2')
 @section('content')
+    <x-header-section-page title="{{ $page->judul }}" breadcrumb-home="Home" breadcrumb-current="{{ $page->judul }}" />
 
-<div id="heading-breadcrumbs">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <h1 style="color: #fff;">{{ $page->judul }}</h1>
-            </div>
-            <div class="col-md-5">
-                <ul class="breadcrumb">
-                    <li style="color: #fff;"><a href="{{ url('/') }}">Home</a></li>
-                    <li style="color: #fff;">{{ $page->judul }}</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="content">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-9 clearfix">
-                <section>
-                    <div id="text-page">
-                        {!! $page->isi !!} <!-- Render the 'isi' content as HTML -->
-                    </div>
-                </section>
-            </div>
-            <!-- /.col-md-9 -->
-
-            <div class="col-sm-3">
-                <div class="panel panel-default sidebar-menu">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Info Lain</h3>
-                    </div>
-                    <div class="panel-body">
-                        <ul class="nav nav-pills nav-stacked">
-                            <li><a href="{{ url('index.php?m=daftar') }}">Pendaftaran Online</a></li>
-                            <li><a href="{{ url('index.php?m=galeri') }}">Galeri Foto</a></li>
-                            <li><a href="{{ url('index.php?m=kontak') }}">Kontak</a></li>
-                        </ul>
-                    </div>
+    <!-- Content Section -->
+    <div class=" py-12 mt-8">
+        <div class="container mx-auto px-4 lg:px-16">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Main Content -->
+                <div class="md:col-span-2 bg-white shadow-xl rounded-lg p-6">
+                    <section>
+                        <div id="text-page" class="text-gray-700 font-dmsans leading-relaxed">
+                            {!! $page->isi !!} <!-- Render the 'isi' content as HTML -->
+                        </div>
+                    </section>
                 </div>
-                <!-- /.sidebar-menu -->
 
-                <div class="banner"></div>
-                <!-- /.banner -->
+                <!-- Sidebar (Optional) -->
+                <div class="hidden md:block bg-white shadow-xl rounded-lg p-6">
+                    <h3 class="text-xl font-poppins font-bold text-primary mb-4">Informasi Lainnya</h3>
+                    <ul class="space-y-2 text-gray-600 font-dmsans">
+                        <li><a href="/sejarah-singkat" class="hover:text-accent">Tentang UPY</a></li>
+                        <li><a href="/page/14" class="hover:text-accent">Program Studi</a></li>
+                        <li><a href="/pendaftaran" class="hover:text-accent">Pendaftaran</a></li>
+                        <li><a href="/kontak-form" class="hover:text-accent">Kontak Kami</a></li>
+                    </ul>
+                </div>
             </div>
-            <!-- /.col-md-3 -->
         </div>
-        <!-- /.row -->
     </div>
-    <!-- /.container -->
-</div>
-<!-- /#content -->
 @endsection
