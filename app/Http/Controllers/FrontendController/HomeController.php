@@ -4,6 +4,7 @@ namespace App\Http\Controllers\FrontendController;
 
 use App\Http\Controllers\Controller;
 use App\Mail\RegistrationMail;
+use App\Models\Kontak;
 use Illuminate\Http\Request;
 use App\Models\Berita;
 use App\Models\Beranda;
@@ -12,6 +13,7 @@ use App\Models\Menu;
 use App\Models\Images;
 use App\Models\Page;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
@@ -41,9 +43,206 @@ class HomeController extends Controller
         return view('Frontend.home', compact('berita', 'beranda', 'mainMenus', 'subMenus', 'images', 'galleryImages'));
     }
 
+    public function detailberita($id){
+        $mainMenus = Menu::where('submenu_id', 0)->orderBy('urutan', 'asc')->get();
+        $subMenus = Menu::where('submenu_id', '!=', 0)->get();
+
+        $berita = Berita::findOrFail($id);
+        
+
+        return view('Frontend.detail-berita', compact("mainMenus", "subMenus", "berita"));
+
+
+    }
+
     public function success()
     {
         return view('Frontend.Success');
+    }
+
+    public function biayajurusan()
+    {
+        $mainMenus = Menu::where('submenu_id', 0)->orderBy('urutan', 'asc')->get();
+
+        // Fetch all submenus
+        $subMenus = Menu::where('submenu_id', '!=', 0)->get();
+        $data = [
+            'form_fee' => 200000,
+            'initial_fee' => [
+                'S1' => 700000,
+                'S2' => 1250000,
+            ],
+            's1_fees' => [
+                [
+                    'jurusan' => 'S1 Teknologi Hasil Pertanian, S1 Hukum Bisnis, S1 Sistem Informasi',
+                    'gel1' => '1.500.000',
+                    'gel2' => '2.000.000',
+                    'gel3' => '2.500.000',
+                    'semester' => '6.000.000',
+                ],
+                [
+                    'jurusan' => 'S1 Bisnis Digital, S1 Pendidikan Guru PAUD',
+                    'gel1' => '1.500.000',
+                    'gel2' => '2.000.000',
+                    'gel3' => '2.500.000',
+                    'semester' => '6.100.000',
+                ],
+                [
+                    'jurusan' => 'S1 Pendidikan Vokasional Teknologi Otomotif',
+                    'gel1' => '1.500.000',
+                    'gel2' => '2.000.000',
+                    'gel3' => '2.500.000',
+                    'semester' => '6.200.000',
+                ],
+                [
+                    'jurusan' => 'S1 Ilmu Keolahragaan, S1 Pendidikan Luar Biasa',
+                    'gel1' => '1.500.000',
+                    'gel2' => '2.000.000',
+                    'gel3' => '2.500.000',
+                    'semester' => '6.500.000',
+                ],
+                [
+                    'jurusan' => 'S1 Akuntansi, S1 Manajemen, S1 Arsitektur',
+                    'gel1' => '1.500.000',
+                    'gel2' => '2.000.000',
+                    'gel3' => '2.500.000',
+                    'semester' => '6.800.000',
+                ],
+                [
+                    'jurusan' => 'S1 Pendidikan Matematika',
+                    'gel1' => '1.500.000',
+                    'gel2' => '2.000.000',
+                    'gel3' => '2.500.000',
+                    'semester' => '6.350.000',
+                ],
+                [
+                    'jurusan' => 'S1 Pendidikan Bahasa dan Sastra Indonesia, S1 Pendidikan Sejarah, S1 Pendidikan Bahasa Inggris',
+                    'gel1' => '1.500.000',
+                    'gel2' => '2.000.000',
+                    'gel3' => '2.500.000',
+                    'semester' => '6.450.000',
+                ],
+                [
+                    'jurusan' => 'S1 Teknik Industri',
+                    'gel1' => '1.500.000',
+                    'gel2' => '2.000.000',
+                    'gel3' => '2.500.000',
+                    'semester' => '6.300.000',
+                ],
+                [
+                    'jurusan' => 'S1 Agroteknologi',
+                    'gel1' => '1.500.000',
+                    'gel2' => '2.000.000',
+                    'gel3' => '2.500.000',
+                    'semester' => '6.100.000',
+                ],
+                [
+                    'jurusan' => 'S1 Informatika',
+                    'gel1' => '1.500.000',
+                    'gel2' => '2.000.000',
+                    'gel3' => '2.500.000',
+                    'semester' => '6.600.000',
+                ],
+                [
+                    'jurusan' => 'S1 Bimbingan dan Konseling, S1 Pendidikan PKN',
+                    'gel1' => '1.500.000',
+                    'gel2' => '2.000.000',
+                    'gel3' => '2.500.000',
+                    'semester' => '7.100.000',
+                ],
+                [
+                    'jurusan' => 'S1 Gizi, S1 Teknologi Rekayasa Elektro-Medis',
+                    'gel1' => '1.500.000',
+                    'gel2' => '2.000.000',
+                    'gel3' => '2.500.000',
+                    'semester' => '7.000.000',
+                ],
+                [
+                    'jurusan' => 'S1 Ilmu Keolahragaan, S1 Pendidikan Luar Biasa',
+                    'gel1' => '1.500.000',
+                    'gel2' => '2.000.000',
+                    'gel3' => '2.500.000',
+                    'semester' => '7.600.000',
+                ],
+                [
+                    'jurusan' => 'S1 Pendidikan Guru Sekolah Dasar',
+                    'gel1' => '1.500.000',
+                    'gel2' => '2.000.000',
+                    'gel3' => '2.500.000',
+                    'semester' => '8.000.000',
+                ],
+                [
+                    'jurusan' => 'S1 Teknik Biomedis',
+                    'gel1' => '1.500.000',
+                    'gel2' => '2.000.000',
+                    'gel3' => '2.500.000',
+                    'semester' => '7.400.000',
+                ],
+                [
+                    'jurusan' => 'S1 Farmasi',
+                    'gel1' => '1.500.000',
+                    'gel2' => '2.000.000',
+                    'gel3' => '2.500.000',
+                    'semester' => '11.700.000',
+                ],
+
+            ],
+            's2_fees' => [
+                [
+                    'jurusan' => 'S2 Manajemen',
+                    'semester' => '5.000.000',
+                ],
+                [
+                    'jurusan' => 'S2 Pendidikan Ilmu Pengetahuan Sosial',
+                    'semester' => '6.800.000',
+                ],
+                [
+                    'jurusan' => 'S2 Pendidikan Dasar',
+                    'semester' => '7.000.000',
+                ],
+            ],
+        ];
+
+        return view('Frontend.allbiayajurusan', compact('data', 'mainMenus', 'subMenus'));
+    }
+
+    public function storeKontak(Request $request)
+    {
+        $request->validate(
+            [
+                'nama' => 'required|string|max:255',
+                'no_telp' => 'required|numeric|digits_between:10,15',
+                'email' => 'required|email|max:255',
+                'alamat' => 'nullable|string|max:255',
+                'pesan' => 'required|string|max:500',
+                'g-recaptcha-response' => 'required', // Validasi reCAPTCHA
+            ],
+            [
+                'g-recaptcha-response.required' => 'Captcha wajib diisi.',
+            ],
+        );
+
+        // Verifikasi reCAPTCHA
+        $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
+            'secret' => 'your-secret-key',
+            'response' => $request->input('g-recaptcha-response'),
+        ]);
+
+        if (!$response->json('success')) {
+            return back()->withErrors(['captcha' => 'Captcha tidak valid.']);
+        }
+
+        // Simpan data ke database
+        Kontak::create([
+            'nama' => $request->nama,
+            'no_telp' => $request->no_telp,
+            'email' => $request->email,
+            'alamat' => $request->alamat,
+            'pesan' => $request->pesan,
+        ]);
+
+        // Redirect dengan pesan sukses
+        return redirect()->back()->with('success', 'Pesan Anda telah berhasil dikirim. Terima kasih atas informasinya.');
     }
 
     public function sejarah()
@@ -153,6 +352,7 @@ class HomeController extends Controller
                 'jabatan' => 'nullable|string|max:255',
                 'al_kerja' => 'nullable|string|max:255',
                 'no_kantor' => 'nullable|numeric|digits_between:10,13',
+                'g-recaptcha-response' => 'required',
             ],
             [
                 // Pesan error untuk validasi setiap field
@@ -227,6 +427,8 @@ class HomeController extends Controller
 
                 'al_kerja.string' => 'Alamat kerja harus berupa teks.',
                 'al_kerja.max' => 'Alamat kerja maksimal 255 karakter.',
+
+                'g-recaptcha-response.required' => 'Captcha wajib diisi.',
             ],
         );
 
@@ -261,7 +463,14 @@ class HomeController extends Controller
             'al_kerja' => $request->al_kerja,
         ];
 
-        // @dd($request->all());
+        $response = Http::asForm()->post('https://www.google.com/recaptcha/api/siteverify', [
+            'secret' => 'your-secret-key', // Ganti dengan Secret Key Anda
+            'response' => $request->input('g-recaptcha-response'),
+        ]);
+
+        if (!$response->json('success')) {
+            return back()->withErrors(['captcha' => 'Captcha tidak valid.']);
+        }
 
         $dataForEmail = $request->only(['kelas', 'nama', 'jk', 'kampus', 'jurusan', 'no_hp', 'email', 'ibu', 'ayah']);
 
@@ -306,9 +515,9 @@ class HomeController extends Controller
 
     public function kegiatanKampus()
     {
-         $status = [
-            "title" => "Kegiatan Kampus UPY",
-            "current" => "Kegiatan Kampus",
+        $status = [
+            'title' => 'Kegiatan Kampus UPY',
+            'current' => 'Kegiatan Kampus',
         ];
         $mainMenus = Menu::where('submenu_id', 0)->orderBy('urutan', 'asc')->get();
 
@@ -317,7 +526,6 @@ class HomeController extends Controller
         $events = DB::table('images')->where('kategori', 'Kegiatan Mahasiswa')->paginate(5);
         // Kirim data ke view
         return view('Frontend.gallery', compact('events', 'mainMenus', 'subMenus', 'status'));
-
     }
 
     public function eventKampus()
@@ -328,17 +536,17 @@ class HomeController extends Controller
         $subMenus = Menu::where('submenu_id', '!=', 0)->get();
         $events = Images::where('kategori', 'Event Kampus')->paginate(5);
         $status = [
-            "title" => "Event Kampus UPY",
-            "current" => "Event Kampus",
+            'title' => 'Event Kampus UPY',
+            'current' => 'Event Kampus',
         ];
         // Kirim data ke view
         return view('Frontend.gallery', compact('events', 'mainMenus', 'subMenus', 'status'));
     }
     public function fasilitasKampus()
     {
-         $status = [
-            "title" => "Fasilitas Kampus UPY",
-            "current" => "Fasilitas Kampus",
+        $status = [
+            'title' => 'Fasilitas Kampus UPY',
+            'current' => 'Fasilitas Kampus',
         ];
         $mainMenus = Menu::where('submenu_id', 0)->orderBy('urutan', 'asc')->get();
 
@@ -365,5 +573,3 @@ class HomeController extends Controller
         return view('Frontend.cetak', compact('data', 'mainMenus', 'subMenus'));
     }
 }
-
-

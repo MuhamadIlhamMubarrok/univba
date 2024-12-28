@@ -7,6 +7,7 @@ use App\Http\Controllers\BackendController\HalamanController;
 use App\Http\Controllers\BackendController\MenuController;
 use App\Http\Controllers\BackendController\POController;
 use App\Http\Controllers\BackendController\SettingController;
+use App\Http\Controllers\FrontendController\HomeController;
 use App\Http\Controllers\galleryController;
 use Illuminate\Support\Facades\Route;
 
@@ -38,6 +39,11 @@ Route::namespace('Home')->group(function () {
     Route::get('/struktur-organisasi', [App\Http\Controllers\FrontendController\HomeController::class, 'strukturorganisasi'])->name('fe-strukturorganisasi');
     Route::get('/page/{id}', [App\Http\Controllers\FrontendController\HomeController::class, 'pageShow'])->name('fe-page');
     Route::get('/brosur', [App\Http\Controllers\FrontendController\HomeController::class, 'brosur'])->name('fe-brosur');
+    Route::post('/kontak-form', [App\Http\Controllers\FrontendController\HomeController::class, 'storeKontak'])->name('store.fe-kontak');
+    Route::get('/biaya-jurusan', [App\Http\Controllers\FrontendController\HomeController::class, 'biayajurusan'])->name('fe.biayajurusan');
+
+    Route::get('/detail-berit/{id}', [HomeController::class, 'detailberita'])->name('fe-detailberita');
+
 
     Route::get('/kontak-form', [App\Http\Controllers\FrontendController\HomeController::class, 'kontak'])->name('fe-kontak');
 

@@ -15,22 +15,22 @@
         <div data-aos="fade-up" class="flex flex-col md:flex-row text-white gap-y-5 md:gap-x-10">
             <div data-aos="fade-up" class="text-start">
                 <h1 data-aos="fade-up" class="font-bold font-Anek text-base md:text-lg lg:text-xl">Telephone</h1>
-                <p data-aos="fade-up" class="text-sm md:text-base lg:text-lg">08312213123</p>
+                <p data-aos="fade-up" class="text-sm md:text-base lg:text-lg">+62 878-9019-8284</p>
             </div>
             <div>
                 <h1 data-aos="fade-up" class="font-bold font-Anek text-base md:text-lg lg:text-xl">WhatsApp</h1>
-                <p data-aos="fade-up" class="text-sm md:text-base lg:text-lg">08312213123</p>
+                <p data-aos="fade-up" class="text-sm md:text-base lg:text-lg">+62 878-9019-8284</p>
             </div>
             <div>
                 <h1 data-aos="fade-up" class="font-bold font-Anek text-base md:text-lg lg:text-xl">Email</h1>
-                <p data-aos="fade-up" class="text-sm md:text-base lg:text-lg">milhammubarrok@gmail.com</p>
+                <p data-aos="fade-up" class="text-sm md:text-base lg:text-lg">kuliahkaryawan@gmail.com</p>
             </div>
         </div>
         <div class="flex flex-col text-white gap-y-4">
             <h1 class="font-semibold text-base md:text-lg lg:text-xl">Sosial Media</h1>
             <div class="flex flex-row justify-center md:justify-start items-center gap-x-4 mb-6">
                 {{-- IG --}}
-                <a href="https://www.instagram.com/milhamm._/" target="_blank">
+                <a href="https://www.instagram.com/k2.upy/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="hover:animate-pulse" width="35" height="35"
                         viewBox="0 0 24 24">
                         <path fill="#FFC324"
@@ -38,7 +38,7 @@
                     </svg>
                 </a>
                 {{-- TWITTER --}}
-                <a href="" target="_blank">
+                <a href="https://x.com/_kuliahkaryawan?mx=2" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="hover:animate-pulse" width="35" height="35"
                         viewBox="-2 -2 24 24">
                         <g fill="#FFC324">
@@ -50,7 +50,7 @@
                     </svg>
                 </a>
                 {{-- LINKEDIN --}}
-                <a href="https://www.linkedin.com/in/muhamad-ilham-mubarrok-ab67462a0/" target="_blank">
+                <a href="https://www.linkedin.com/company/kuliah-karyawan" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="hover:animate-pulse" width="35" height="35"
                         viewBox="-2 -2 24 24">
                         <g fill="#FFC324">
@@ -62,7 +62,7 @@
                     </svg>
                 </a>
                 {{-- FACEBOOK --}}
-                <a href="" target="_blank">
+                <a href="https://www.facebook.com/people/Universitas-PGRI-Yogyakarta/61561012645217/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="hover:animate-pulse" width="35" height="35"
                         viewBox="-2 -2 24 24">
                         <g fill="#FFC324">

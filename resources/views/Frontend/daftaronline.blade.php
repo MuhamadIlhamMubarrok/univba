@@ -39,10 +39,10 @@
                                     </div>
                                 </label>
 
-                                <!-- Kelas Reguler Pagi -->
+                                <!-- Kelas RPL -->
                                 <label data-aos="fade-up"
                                     class="relative block p-4 border border-primary rounded-lg shadow-md hover:shadow-lg transition cursor-pointer peer-checked:ring-2 peer-checked:ring-accent peer-checked:ring-offset-2">
-                                    <input type="radio" name="kelas" value="Kelas Reguler Pagi" data-aos="fade-up"
+                                    <input type="radio" name="kelas" value="Kelas RPL" data-aos="fade-up"
                                         class="hidden peer" required>
                                     <!-- Checklist Icon -->
                                     <div data-aos="fade-up"
@@ -51,12 +51,12 @@
                                     </div>
                                     <div data-aos="fade-up" class="text-center">
                                         <h3 data-aos="fade-up"
-                                            class="text-lg font-poppins text-primary peer-checked:text-accent">Kelas
-                                            Reguler Pagi</h3>
+                                            class="text-lg font-poppins text-primary peer-checked:text-accent">Kelas RPL
+                                        </h3>
                                         <p data-aos="fade-up"
                                             class="text-sm text-gray-500 peer-checked:text-gray-700 font-poppins font-dmsans">
                                             Pilihan
-                                            kelas reguler untuk mahasiswa baru.</p>
+                                            kelas RPL untuk mahasiswa baru.</p>
                                     </div>
                                 </label>
                             </div>
@@ -143,9 +143,9 @@
                                     class="mt-1 p-3 border border-gray-300 rounded-lg w-full focus:ring-primary focus:border-primary"
                                     required>
                                     <option value="">-- Pilih Kampus --</option>
-                                    <option value="Kampus A" {{ old('kampus') == 'Kampus A' ? 'selected' : '' }}>Kampus A
-                                    </option>
-                                    <option value="Kampus B" {{ old('kampus') == 'Kampus B' ? 'selected' : '' }}>Kampus B
+                                    <option value="UNIVERSITAS PGRI YOGYAKARTA"
+                                        {{ old('kampus') == 'UNIVERSITAS PGRI YOGYAKARTA' ? 'selected' : '' }}>UNIVERSITAS
+                                        PGRI YOGYAKARTA
                                     </option>
                                 </select>
                             </div>
@@ -234,6 +234,19 @@
                                     <option value="Islam" {{ old('agama') == 'Islam' ? 'selected' : '' }}>Islam</option>
                                     <option value="Kristen" {{ old('agama') == 'Kristen' ? 'selected' : '' }}>Kristen
                                     </option>
+                                    <option value="Katolik" {{ old('agama') == 'Katolik' ? 'selected' : '' }}>Katolik
+                                    </option>
+                                    <option value="Hindu" {{ old('agama') == 'Hindu' ? 'selected' : '' }}>Hindu</option>
+                                    <option value="Buddha" {{ old('agama') == 'Buddha' ? 'selected' : '' }}>Buddha
+                                    </option>
+                                    <option value="Konghucu" {{ old('agama') == 'Konghucu' ? 'selected' : '' }}>Konghucu
+                                    </option>
+                                    <option value="Protestan" {{ old('agama') == 'Protestan' ? 'selected' : '' }}>
+                                        Protestan</option>
+                                    <option value="Kepercayaan" {{ old('agama') == 'Kepercayaan' ? 'selected' : '' }}>
+                                        Kepercayaan</option>
+                                    <option value="Lainnya" {{ old('agama') == 'Lainnya' ? 'selected' : '' }}>Lainnya
+                                    </option>
                                 </select>
                             </div>
 
@@ -275,6 +288,85 @@
                                         <option value="">-- Pilih Jurusan --</option>
                                         <option value="S1 Manajemen"
                                             {{ old('jurusan') == 'S1 Manajemen' ? 'selected' : '' }}>S1 Manajemen</option>
+                                        <option value="S1 Teknologi Hasil Pertanian"
+                                            {{ old('jurusan') == 'S1 Teknologi Hasil Pertanian' ? 'selected' : '' }}>S1
+                                            Teknologi Hasil Pertanian</option>
+                                        <option value="S1 Hukum Bisnis"
+                                            {{ old('jurusan') == 'S1 Hukum Bisnis' ? 'selected' : '' }}>S1 Hukum Bisnis
+                                        </option>
+                                        <option value="S1 Sistem Informasi"
+                                            {{ old('jurusan') == 'S1 Sistem Informasi' ? 'selected' : '' }}>S1 Sistem
+                                            Informasi</option>
+                                        <option value="S1 Bisnis Digital"
+                                            {{ old('jurusan') == 'S1 Bisnis Digital' ? 'selected' : '' }}>S1 Bisnis Digital
+                                        </option>
+                                        <option value="S1 Pendidikan Guru PAUD"
+                                            {{ old('jurusan') == 'S1 Pendidikan Guru PAUD' ? 'selected' : '' }}>S1
+                                            Pendidikan Guru PAUD</option>
+                                        <option value="S1 Pendidikan Vokasional Teknologi Otomotif"
+                                            {{ old('jurusan') == 'S1 Pendidikan Vokasional Teknologi Otomotif' ? 'selected' : '' }}>
+                                            S1 Pendidikan Vokasional Teknologi Otomotif</option>
+                                        <option value="S1 Ilmu Keolahragaan"
+                                            {{ old('jurusan') == 'S1 Ilmu Keolahragaan' ? 'selected' : '' }}>S1 Ilmu
+                                            Keolahragaan</option>
+                                        <option value="S1 Pendidikan Luar Biasa"
+                                            {{ old('jurusan') == 'S1 Pendidikan Luar Biasa' ? 'selected' : '' }}>S1
+                                            Pendidikan Luar Biasa</option>
+                                        <option value="S1 Akuntansi"
+                                            {{ old('jurusan') == 'S1 Akuntansi' ? 'selected' : '' }}>S1 Akuntansi</option>
+                                        <option value="S1 Manajemen"
+                                            {{ old('jurusan') == 'S1 Manajemen' ? 'selected' : '' }}>S1 Manajemen</option>
+                                        <option value="S1 Arsitektur"
+                                            {{ old('jurusan') == 'S1 Arsitektur' ? 'selected' : '' }}>S1 Arsitektur
+                                        </option>
+                                        <option value="S1 Pendidikan Matematika"
+                                            {{ old('jurusan') == 'S1 Pendidikan Matematika' ? 'selected' : '' }}>S1
+                                            Pendidikan Matematika</option>
+                                        <option value="S1 Pendidikan Bahasa dan Sastra Indonesia"
+                                            {{ old('jurusan') == 'S1 Pendidikan Bahasa dan Sastra Indonesia' ? 'selected' : '' }}>
+                                            S1 Pendidikan Bahasa dan Sastra Indonesia</option>
+                                        <option value="S1 Pendidikan Sejarah"
+                                            {{ old('jurusan') == 'S1 Pendidikan Sejarah' ? 'selected' : '' }}>S1 Pendidikan
+                                            Sejarah</option>
+                                        <option value="S1 Pendidikan Bahasa Inggris"
+                                            {{ old('jurusan') == 'S1 Pendidikan Bahasa Inggris' ? 'selected' : '' }}>S1
+                                            Pendidikan Bahasa Inggris</option>
+                                        <option value="S1 Teknik Industri"
+                                            {{ old('jurusan') == 'S1 Teknik Industri' ? 'selected' : '' }}>S1 Teknik
+                                            Industri</option>
+                                        <option value="S1 Agroteknologi"
+                                            {{ old('jurusan') == 'S1 Agroteknologi' ? 'selected' : '' }}>S1 Agroteknologi
+                                        </option>
+                                        <option value="S1 Informatika"
+                                            {{ old('jurusan') == 'S1 Informatika' ? 'selected' : '' }}>S1 Informatika
+                                        </option>
+                                        <option value="S1 Bimbingan dan Konseling"
+                                            {{ old('jurusan') == 'S1 Bimbingan dan Konseling' ? 'selected' : '' }}>S1
+                                            Bimbingan dan Konseling</option>
+                                        <option value="S1 Pendidikan PKN"
+                                            {{ old('jurusan') == 'S1 Pendidikan PKN' ? 'selected' : '' }}>S1 Pendidikan PKN
+                                        </option>
+                                        <option value="S1 Gizi" {{ old('jurusan') == 'S1 Gizi' ? 'selected' : '' }}>S1
+                                            Gizi</option>
+                                        <option value="S1 Teknologi Rekayasa Elektro-Medis"
+                                            {{ old('jurusan') == 'S1 Teknologi Rekayasa Elektro-Medis' ? 'selected' : '' }}>
+                                            S1 Teknologi Rekayasa Elektro-Medis</option>
+                                        <option value="S1 Pendidikan Guru Sekolah Dasar"
+                                            {{ old('jurusan') == 'S1 Pendidikan Guru Sekolah Dasar' ? 'selected' : '' }}>S1
+                                            Pendidikan Guru Sekolah Dasar</option>
+                                        <option value="S1 Teknik Biomedis"
+                                            {{ old('jurusan') == 'S1 Teknik Biomedis' ? 'selected' : '' }}>S1 Teknik
+                                            Biomedis</option>
+                                        <option value="S1 Farmasi" {{ old('jurusan') == 'S1 Farmasi' ? 'selected' : '' }}>
+                                            S1 Farmasi</option>
+                                        <option value="S2 Manajemen"
+                                            {{ old('jurusan') == 'S2 Manajemen' ? 'selected' : '' }}>S2 Manajemen</option>
+                                        <option value="S2 Pendidikan Ilmu Pengetahuan Sosial"
+                                            {{ old('jurusan') == 'S2 Pendidikan Ilmu Pengetahuan Sosial' ? 'selected' : '' }}>
+                                            S2 Pendidikan Ilmu Pengetahuan Sosial</option>
+                                        <option value="S2 Pendidikan Dasar"
+                                            {{ old('jurusan') == 'S2 Pendidikan Dasar' ? 'selected' : '' }}>S2 Pendidikan
+                                            Dasar</option>
                                     </select>
                                 </div>
                             </div>
@@ -316,6 +408,8 @@
                                     <option value="S" {{ old('jaket') == 'S' ? 'selected' : '' }}>S</option>
                                     <option value="M" {{ old('jaket') == 'M' ? 'selected' : '' }}>M</option>
                                     <option value="L" {{ old('jaket') == 'L' ? 'selected' : '' }}>L</option>
+                                    <option value="XL" {{ old('jaket') == 'XL' ? 'selected' : '' }}>XL</option>
+                                    <option value="XXL" {{ old('jaket') == 'XXL' ? 'selected' : '' }}>XXL</option>
                                 </select>
                             </div>
 
@@ -343,16 +437,29 @@
                             <div data-aos="fade-up" class="mt-6">
                                 <label data-aos="fade-up"
                                     class="block text-sm font-medium text-gray-700 font-poppins">Sumber Informasi
-                                    Mengetahui
-                                    Kampus</label>
+                                    Mengetahui Kampus</label>
                                 <select name="info" data-aos="fade-up"
                                     class="mt-1 p-3 border border-gray-300 rounded-lg w-full focus:ring-primary focus:border-primary"
                                     required>
                                     <option value="">-- Pilih Info --</option>
-                                    <option value="Teman" {{ old('info') == 'Teman' ? 'selected' : '' }}>Teman</option>
+                                    <option value="Facebook" {{ old('info') == 'Facebook' ? 'selected' : '' }}>Facebook
+                                    </option>
+                                    <option value="Instagram" {{ old('info') == 'Instagram' ? 'selected' : '' }}>Instagram
+                                    </option>
+                                    <option value="Tiktok" {{ old('info') == 'Tiktok' ? 'selected' : '' }}>Tiktok</option>
                                     <option value="Google" {{ old('info') == 'Google' ? 'selected' : '' }}>Google</option>
+                                    <option value="Brosur" {{ old('info') == 'Brosur' ? 'selected' : '' }}>Brosur</option>
+                                    <option value="Datang Langsung"
+                                        {{ old('info') == 'Datang Langsung' ? 'selected' : '' }}>Datang Langsung</option>
+                                    <option value="Teman/Keluarga"
+                                        {{ old('info') == 'Teman/Keluarga' ? 'selected' : '' }}>Teman/Keluarga</option>
+                                    <option value="SGS (Student Get Student)"
+                                        {{ old('info') == 'SGS (Student Get Student)' ? 'selected' : '' }}>
+                                        SGS (Student Get Student)</option>
+                                    <option value="Agency" {{ old('info') == 'Agency' ? 'selected' : '' }}>Agency</option>
                                 </select>
                             </div>
+
 
                             <div data-aos="fade-up"
                                 class="p-4 bg-accent/20 border-l-4 border-accent text-secondary rounded-lg mt-4">
@@ -383,6 +490,13 @@
                                 </div>
                             </div>
 
+                            <div class="form-group text-center mt-6">
+                                <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+                                @error('g-recaptcha-response')
+                                    <p class="text-red-500 text-sm mt-1">{{ $message }}</p>
+                                @enderror
+                            </div>
+
                             <!-- Submit Button -->
                             <div data-aos="fade-up" class="mt-8 text-center">
                                 <button type="submit" data-aos="fade-up"
@@ -391,7 +505,6 @@
                                 </button>
                             </div>
                         </form>
-
                     </div>
                 </div>
             </div>

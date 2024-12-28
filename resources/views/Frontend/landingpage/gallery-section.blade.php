@@ -4,7 +4,7 @@
         data-aos="fade-up">
 
         <x-header-section subtext="GALLERY" subtext-color="#6b7280" title="EVENT KAMPUS UPY" title-color="#222764" />
-        <div class=" swiper mySwiper mb-3">
+        <div class=" swiper mySwiper mb-3 mb-[50px] md:w-[1300px] w-full">
             <div class="swiper-wrapper">
                 @foreach ($images as $index => $image)
                     <div class="swiper-slide">

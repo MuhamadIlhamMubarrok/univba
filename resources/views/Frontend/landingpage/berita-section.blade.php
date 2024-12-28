@@ -4,11 +4,11 @@
         data-aos="fade-up">
 
         <x-header-section subtext="BERITA" subtext-color="#6b7280" title="BERITA TENTANG UPY" title-color="#222764" />
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper space-x-[10px] px-8 pb-8">
+        <div class="swiper mySwiper my-[50px] md:w-[1300px] w-full">
+            <div class="swiper-wrapper md:space-x-[10px] px-8 pb-8">
                 @foreach ($berita as $index => $project)
                     <div class="swiper-slide">
-                        <div class="relative bg-[#F9F9F9]/30 shadow-xl rounded-lg  w-full sm:w-[300px] md:w-[350px]">
+                        <div class="relative bg-[#F9F9F9]/30 shadow-xl rounded-lg  w-[400px] sm:w-[300px] md:w-[350px]">
                             <img src="{{ asset('./storage/berita/' . $project->file_foto) }}"
                                 class=" rounded-t-lg h-[175px] w-full object-cover object-center" alt="">
                             <h1
@@ -24,7 +24,7 @@
                                 <p class="font-dmsans text-black font-light text-start">
                                     {{ Str::limit(strip_tags($project->content), 150) }}...</p>
                                 <div class="my-3 flex justify-start">
-                                    <a href=""
+                                    <a href="{{ route('fe-detailberita', $project->id_berita) }}"
                                         class="text-accent hover:text-white w-[140px] text-[9px] md:text-[11px] duration-200 md:w-[150px] border border-[2px] border-accent hover:border hover:border-[#F9F9F9]/15 hover:rounded-full hover:border-[2px] font-Anek hover:bg-accent hover:border-accent font-bold rounded-full  px-4 md:px-2 md:py-[7px] py-2.5 text-center me-2 mb-4 md:mb-2">
                                         BACA SELENGKAPNYA
                                     </a>

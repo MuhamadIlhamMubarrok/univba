@@ -9,58 +9,57 @@
                 <div>
                     <h2 data-aos="fade-up" class="text-2xl font-poppins font-bold text-blue-900 mb-6">Form Kontak Informasi
                     </h2>
-                    <form action="index.php?m=simpan_kontak" method="POST" data-aos="fade-up" class="space-y-4">
+                    <form action="{{ route('store.fe-kontak') }}" method="POST" data-aos="fade-up" class="space-y-4">
+                        @csrf
                         <div data-aos="fade-up" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div data-aos="fade-up" class="form-group">
-                                <label for="nama" data-aos="fade-up"
-                                    class="block text-sm font-medium text-gray-700 font-poppins">Nama
+                            <div class="form-group">
+                                <label for="nama" class="block text-sm font-medium text-gray-700 font-poppins">Nama
                                     Lengkap</label>
-                                <input type="text" id="nama" name="nama" data-aos="fade-up"
+                                <input type="text" id="nama" name="nama"
                                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                     required>
                             </div>
-                            <div data-aos="fade-up" class="form-group">
-                                <label for="no_hp" data-aos="fade-up"
-                                    class="block text-sm font-medium text-gray-700 font-poppins">Nomor
+                            <div class="form-group">
+                                <label for="no_telp" class="block text-sm font-medium text-gray-700 font-poppins">Nomor
                                     HP</label>
-                                <input type="text" id="no_hp" name="no_hp" data-aos="fade-up"
+                                <input type="text" id="no_telp" name="no_telp"
                                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                     required>
                             </div>
                         </div>
-                        <div data-aos="fade-up" class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                            <div data-aos="fade-up" class="form-group">
-                                <label for="email" data-aos="fade-up"
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div class="form-group">
+                                <label for="email"
                                     class="block text-sm font-medium text-gray-700 font-poppins">Email</label>
-                                <input type="email" id="email" name="email" data-aos="fade-up"
+                                <input type="email" id="email" name="email"
                                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                     required>
                             </div>
-                            <div data-aos="fade-up" class="form-group">
-                                <label for="alamat" data-aos="fade-up"
+                            <div class="form-group">
+                                <label for="alamat"
                                     class="block text-sm font-medium text-gray-700 font-poppins">Alamat</label>
-                                <input type="text" id="alamat" name="alamat" data-aos="fade-up"
+                                <input type="text" id="alamat" name="alamat"
                                     class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
                             </div>
                         </div>
-                        <div data-aos="fade-up" class="form-group">
-                            <label for="pesan" data-aos="fade-up"
+                        <div class="form-group">
+                            <label for="pesan"
                                 class="block text-sm font-medium text-gray-700 font-poppins">Pesan/Saran</label>
-                            <textarea id="pesan" name="pesan" rows="5" data-aos="fade-up"
+                            <textarea id="pesan" name="pesan" rows="5"
                                 class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 sm:text-sm"
                                 required></textarea>
                         </div>
-                        <div data-aos="fade-up" class="form-group text-center">
-                            <div data-aos="fade-up" class="g-recaptcha"
-                                data-sitekey="6LdVXBQqAAAAAI7s_5HdkCmMIvc5obksttcqDR0k"></div>
+                        <div class="form-group text-center">
+                            <div class="g-recaptcha" data-sitekey="your-site-key" data-theme="dark"></div>
                         </div>
-                        <div data-aos="fade-up" class="text-center">
-                            <button type="submit" data-aos="fade-up"
+                        <div class="text-center">
+                            <button type="submit"
                                 class="w-full sm:w-1/2 bg-blue-900 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500">
-                                <i data-aos="fade-up" class="fa fa-envelope-o"></i> Kirim Pesan
+                                <i class="fa fa-envelope-o"></i> Kirim Pesan
                             </button>
                         </div>
                     </form>
+
                 </div>
 
                 <!-- Informasi Kontak -->

@@ -1,13 +1,23 @@
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 3,
-    spaceBetween: 30,
+    spaceBetween: 20,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
     },
-    autoplay: {
-        delay: 1500, // Durasi antara pergeseran slide dalam milidetik (misalnya, 2500 ms = 2.5 detik)
-        disableOnInteraction: false, // Slide tidak akan berhenti saat pengguna berinteraksi
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 15,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+        },
     },
 });
 

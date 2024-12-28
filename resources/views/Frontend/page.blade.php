@@ -3,7 +3,7 @@
     <x-header-section-page title="{{ $page->judul }}" breadcrumb-home="Home" breadcrumb-current="{{ $page->judul }}" />
 
     <!-- Content Section -->
-    <div data-aos="fade-up" class=" py-12 mt-8">
+    <div data-aos="fade-up" class="py-12 mt-8">
         <div data-aos="fade-up" class="container mx-auto px-4 lg:px-16">
             <div data-aos="fade-up" class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Main Content -->
@@ -26,6 +26,24 @@
                     </ul>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- Call-to-Action Section -->
+    <div data-aos="fade-up" class="bg-gray-100 py-8">
+        <div class="container mx-auto px-4 lg:px-16 text-center">
+            <div data-aos="fade-up" class="w-full h-[2px] bg-primary mb-6 mx-auto"></div>
+            <h1 data-aos="fade-up" class="font-poppins text-[22px] md:text-[28px] font-semibold text-primary">
+                Bergabunglah Bersama Kami
+            </h1>
+            <p data-aos="fade-up" class="text-gray-700 mt-4 text-[14px] md:text-[16px] mb-6">
+                Pilih UPY sebagai langkah awal menuju masa depan yang lebih cerah. Nikmati program pendidikan terbaik,
+                fasilitas unggulan, dan pengalaman belajar yang luar biasa bersama kami.
+            </p>
+            <x-button url="/pendaftaran"
+                class="mt-6 bg-blue-800 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded-lg">
+                Daftar Sekarang
+            </x-button>
         </div>
     </div>
 @endsection

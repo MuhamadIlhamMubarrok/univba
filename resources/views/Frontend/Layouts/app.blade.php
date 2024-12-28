@@ -2,55 +2,52 @@
 <html lang="id">
 
 <head>
-    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="description"
-        content="Institut Az Zuhra atau yang biasa dikenal IAZ Pekanbaru salah satu Perguruan Tinggi Swasta Terbaik di Pekanbaru, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 600.000/Bulan dengan jurusan D3 Manajemen Informatika, D3 Teknik Komputer, S1 Manajemen, S1 Akuntansi, S1 Pendidikan Bahasa Inggris, Pendidikan Matematika" />
+        content="Universitas PGRI Yogyakarta atau yang biasa dikenal UPY salah satu Perguruan Tinggi Swasta Terbaik di Yogyakarta, tersedia kelas karyawan dengan biaya murah dan terjangkau nulai dari  Rp 1.000.000/Bulan dengan jurusan  S1 Pendidikan Guru Sekolah Dasar, S1 Bimbingan dan Konseling, S1 PPKN, S1 Pendidikan Guru Paud, S1 Pendidikan Luar Biasa, S1 Pendidikan Matematika, S1 Pendidikan Bahasa dan Sastra Indonesia, S1 Pendidikan Sejarah, S1 Pendidikan B.Inggris, S1 Pendidikan Vokasional Teknologi Otomotif" />
     <meta name="keywords"
-        content="Kelas karyawan, Kuliah karyawan, Institut Az Zuhra, kampus IAZ Pekanbaru, biaya kuliah kampus IAZ Pekanbaru, IAZ Pekanbaru, biaya kuliah, kelas sabtu, akreditasi IAZ Pekanbaru, kelas karyawan terjangkau Pekanbaru, D3 Manajemen Informatika, D3 Teknik Komputer, S1 Manajemen, S1 Akuntansi, S1 Pendidikan Bahasa Inggris, Pendidikan Matematika, kampus murah, kampus Pekanbaru, kampus Pekanbaru." />
+        content="Kelas karyawan, Kuliah karyawan, Universitas PGRI Yogyakarta, kampus UPY, biaya kuliah kampus UPY, UPY, biaya kuliah, kelas sabtu, akreditasi UPY, S1 Pendidikan Guru Sekolah Dasar, S1 Bimbingan dan Konseling, S1 PPKN, S1 Pendidikan Guru Paud, S1 Pendidikan Luar Biasa, S1 Pendidikan Matematika, S1 Pendidikan Bahasa dan Sastra Indonesia, S1 Pendidikan Sejarah, S1 Pendidikan B.Inggris, S1 Pendidikan Vokasional Teknologi Otomotif, kampus murah, kampus Yogyakarta, kampus Yogyakarta." />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="google-site-verification" content="oDvjTYHgQz18vzKMDJ7qNyH2uJ2GO481tEECPbcW978" />
+    <meta name="google-site-verification" content="cYk75UAqQazvmINnhBZmGS7FNTQJwDab3ugNvSxp1cs" />
 
-    <title>Institut Az Zuhra (Kelas Karyawan)</title>
-    <meta property="og:title" content="Institut Az Zuhra (Kelas Karyawan)">
+    <title>Universitas PGRI Yogyakarta (Kelas Karyawan)</title>
+    <meta property="og:title" content="Universitas PGRI Yogyakarta (Kelas Karyawan)">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://institutazzuhra.info">
-    <meta property="og:image" content="https://institutazzuhra.info/images/banner-slider/Baner-Azzuhra.png">
+    <meta property="og:url" content="https://www.upy.my.id/">
+    <meta property="og:image" content="images/banner-slider/Baner-upy.png">
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:description"
-        content="Institut Az Zuhra atau yang biasa dikenal IAZ Pekanbaru salah satu Perguruan Tinggi Swasta Terbaik di Pekanbaru, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 600.000/Bulan dengan jurusan D3 Manajemen Informatika, D3 Teknik Komputer, S1 Manajemen, S1 Akuntansi, S1 Pendidikan Bahasa Inggris, Pendidikan Matematika">
+        content="Universitas PGRI Yogyakarta atau yang biasa dikenal UPY salah satu Perguruan Tinggi Swasta Terbaik di Yogyakarta, tersedia kelas karyawan dengan biaya murah dan terjangkau cukup Rp 1.000.000/Bulan dengan jurusan S1 Pendidikan Guru Sekolah Dasar, S1 Bimbingan dan Konseling, S1 PPKN, S1 Pendidikan Guru Paud, S1 Pendidikan Luar Biasa, S1 Pendidikan Matematika, S1 Pendidikan Bahasa dan Sastra Indonesia, S1 Pendidikan Sejarah, S1 Pendidikan B.Inggris, S1 Pendidikan Vokasional Teknologi Otomotif">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@_kuliahkaryawan">
     <meta name="twitter:site" content="@_kuliahkaryawan">
-    <meta name="twitter:title" content="Institut Az Zuhra (Kelas Karyawan)">
+    <meta name="twitter:title" content="Universitas PGRI Yogyakarta (Kelas Karyawan)">
     <meta name="twitter:description"
-        content="Institut Az Zuhra atau yang biasa dikenal IAZ Pekanbaru salah satu Perguruan Tinggi Swasta Terbaik di Pekanbaru, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 600.000/Bulan dengan jurusan D3 Manajemen Informatika, D3 Teknik Komputer, S1 Manajemen, S1 Akuntansi, S1 Pendidikan Bahasa Inggris, Pendidikan Matematika">
-    <meta name="twitter:domain" content="https://institutazzuhra.info">
-    <meta name="twitter:image:src" content="https://institutazzuhra.info/images/banner-slider/Baner-Azzuhra.png">
-    <meta name="author" content="Kuliah Karyawan Team" />
-    <meta http-equiv="cache-control" content="public" />
-    <meta name="application-name" content="Institut Az Zuhra | Kuliah Karyawan (K2)" />
+        content="Universitas PGRI Yogyakarta atau yang biasa dikenal UPY salah satu Perguruan Tinggi Swasta Terbaik di Yogyakarta, tersedia kelas karyawan dengan biaya murah dan terjangkau cukup Rp 1.000.000/Bulan dengan jurusan S1 Pendidikan Guru Sekolah Dasar, S1 Bimbingan dan Konseling, S1 PPKN, S1 Pendidikan Guru Paud, S1 Pendidikan Luar Biasa, S1 Pendidikan Matematika, S1 Pendidikan Bahasa dan Sastra Indonesia, S1 Pendidikan Sejarah, S1 Pendidikan B.Inggris, S1 Pendidikan Vokasional Teknologi Otomotif">
+    <meta name="twitter:domain" content="https://upy.my.id">
+    <meta name="twitter:image:src" content="images/banner-slider/Baner-upy.png">
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/images/favicons/manifest.json">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/favicon/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/favicon/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/favicon/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/favicon/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('images/favicon/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('images/favicon/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('images/favicon/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('images/favicon/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/favicon/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('images/favicon/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/favicon/favicon-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicon/favicon-16x16.png') }}">
+    <link rel="manifest" href="images/favicon/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/images/favicons/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
+
+
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=DM+Sans:wght@400;700&display=swap"
         rel="stylesheet">

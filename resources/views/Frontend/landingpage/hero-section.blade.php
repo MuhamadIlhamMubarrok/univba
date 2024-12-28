@@ -1,4 +1,4 @@
-<div class="relative h-[1080px] bg-cover bg-no-repeat flex flex-col items-center justify-center overflow-hidden bg-hero"
+<div class="relative h-[1080px] bg-center bg-cover bg-no-repeat flex flex-col items-center justify-center overflow-hidden bg-hero"
     style="background-color: #002147;" data-aos="fade-up">
 </div>
 
