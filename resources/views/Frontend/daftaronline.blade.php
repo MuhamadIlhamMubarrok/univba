@@ -1,7 +1,7 @@
 @extends('Frontend.Layouts.app2')
 
 @section('content')
-    <x-header-section-page title="Daftar Online UPY" breadcrumb-home="Home" breadcrumb-current="Daftar Online" />
+    <x-header-section-page title="Daftar Online Mulia Darma Pratama" breadcrumb-home="Home" breadcrumb-current="Daftar Online" />
 
     <!-- Step 1 -->
     @if ($step == 1)
@@ -143,11 +143,11 @@
                                     class="mt-1 p-3 border border-gray-300 rounded-lg w-full focus:ring-primary focus:border-primary"
                                     required>
                                     <option value="">-- Pilih Kampus --</option>
-                                    <option value="AKUBANK Mulia Darma"
-                                        {{ old('kampus') == 'AKUBANK Mulia Darma' ? 'selected' : '' }}>AKUBANK Mulia Darma
+                                    <option value="STIE Muliadarma Pratama"
+                                        {{ old('kampus') == 'STIE Muliadarma Pratama' ? 'selected' : '' }}>STIE Muliadarma Pratama
                                     </option>
-                                    <option value="STIE Mulia Darma"
-                                        {{ old('kampus') == 'STIE Mulia Darma' ? 'selected' : '' }}>STIE Mulia Darma
+                                    <option value="AKUBANK Muliadarma Pratama"
+                                        {{ old('kampus') == 'AKUBANK Muliadarma Pratama' ? 'selected' : '' }}>AKUBANK Muliadarma Pratama
                                     </option>
                                 </select>
                             </div>
@@ -245,8 +245,6 @@
                                     </option>
                                     <option value="Protestan" {{ old('agama') == 'Protestan' ? 'selected' : '' }}>
                                         Protestan</option>
-                                    <option value="Kepercayaan" {{ old('agama') == 'Kepercayaan' ? 'selected' : '' }}>
-                                        Kepercayaan</option>
                                     <option value="Lainnya" {{ old('agama') == 'Lainnya' ? 'selected' : '' }}>Lainnya
                                     </option>
                                 </select>
@@ -288,12 +286,14 @@
                                         class="mt-1 p-3 border border-gray-300 rounded-lg w-full focus:ring-primary focus:border-primary"
                                         required>
                                         <option value="">-- Pilih Jurusan --</option>
-                                        <option value="D3 Keuangan & Perbankan"
-                                            {{ old('jurusan') == 'D3 Keuangan & Perbankan' ? 'selected' : '' }}>D3 Keuangan & Perbankan</option>
-                                        <option value="S1 Management"
-                                            {{ old('jurusan') == 'S1 Management' ? 'selected' : '' }}>S1 Management</option>
-                                        <option value="S1 Akutansi"
-                                            {{ old('jurusan') == 'S1 Akutansi' ? 'selected' : '' }}>S1 Akutansi</option>
+                                        <option value="D3 Keuangan dan Perbankan"
+                                            {{ old('jurusan') == 'D3 Keuangan dan Perbankan' ? 'selected' : '' }}>D3 Keuangan dan Perbankan
+                                        </option>
+                                        
+                                        <option value="S1 Manajemen"
+                                            {{ old('jurusan') == 'S1 Manajemen' ? 'selected' : '' }}>S1 Manajemen</option>
+                                        <option value="S1 Akuntansi"
+                                            {{ old('jurusan') == 'S1 Akuntansi' ? 'selected' : '' }}>S1 Akuntansi</option>
                                         
                                     </select>
                                 </div>

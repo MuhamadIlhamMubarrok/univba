@@ -19,7 +19,7 @@
                 <div data-aos="fade-up" class="hidden md:block bg-white shadow-xl rounded-lg p-6">
                     <h3 data-aos="fade-up" class="text-xl font-poppins font-bold text-primary mb-4">Informasi Lainnya</h3>
                     <ul data-aos="fade-up" class="space-y-2 text-gray-600 font-dmsans">
-                        <li><a href="/sejarah-singkat" data-aos="fade-up" class="hover:text-accent">Tentang UPY</a></li>
+                        <li><a href="/sejarah-singkat" data-aos="fade-up" class="hover:text-accent">Tentang MDP</a></li>
                         <li><a href="/page/14" data-aos="fade-up" class="hover:text-accent">Program Studi</a></li>
                         <li><a href="/pendaftaran" data-aos="fade-up" class="hover:text-accent">Pendaftaran</a></li>
                         <li><a href="/kontak-form" data-aos="fade-up" class="hover:text-accent">Kontak Kami</a></li>
@@ -37,7 +37,7 @@
                 Bergabunglah Bersama Kami
             </h1>
             <p data-aos="fade-up" class="text-gray-700 mt-4 text-[14px] md:text-[16px] mb-6">
-                Pilih UPY sebagai langkah awal menuju masa depan yang lebih cerah. Nikmati program pendidikan terbaik,
+                Pilih MDP sebagai langkah awal menuju masa depan yang lebih cerah. Nikmati program pendidikan terbaik,
                 fasilitas unggulan, dan pengalaman belajar yang luar biasa bersama kami.
             </p>
             <x-button url="/pendaftaran"

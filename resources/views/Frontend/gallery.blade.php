@@ -38,7 +38,7 @@
                         Jadilah Bagian dari Perjalanan Kami
                     </h1>
                     <p data-aos="fade-up" class="text-gray-700 mt-4 text-[14px] md:text-[16px] mb-6">
-                        UPY menghadirkan pengalaman belajar yang menginspirasi, dosen terbaik, dan fasilitas modern untuk
+                        MDP menghadirkan pengalaman belajar yang menginspirasi, dosen terbaik, dan fasilitas modern untuk
                         mendukung
                         cita-cita besar Anda.
                     </p>

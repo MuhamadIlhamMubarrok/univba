@@ -2,14 +2,12 @@
     class="h-auto w-full bg-cover bg-center bg-no-repeat flex flex-col md:flex-row px-4 py-6 md:px-8 md:py-10 lg:px-20 lg:py-15 gap-y-4 border-accent border-t-[5px]"
     style="background-image: url('{{ asset('./images/background/footer1.png') }}');">
     <div data-aos="fade-up" class="md:w-[60%] flex flex-col gap-y-5">
-        <img src="{{ asset('./images/logo/logo1.png') }}" alt="logo aing" data-aos="fade-up" class="h-[100px] w-[100px]">
+        <img src="{{ asset('./images/logo/footer-muliadarma.png') }}" alt="logo aing" data-aos="fade-up" class="w-[300px]">
         <div data-aos="fade-up" class="flex flex-col md:flex-row text-white gap-y-5 md:gap-x-[200px]">
             <div data-aos="fade-up" class="text-start">
-                <h1 data-aos="fade-up" class="font-bold font-Anek text-base md:text-lg lg:text-xl">UNIVERSITAS PGRI
-                    YOGYAKARTA</h1>
-                <p data-aos="fade-up" class="w-full md:w-[400px] text-sm md:text-base lg:text-lg">Jl. IKIP PGRI I
-                    Sonosewu No.117, Sonosewu,
-                    Ngestiharjo, Kec. Kasihan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55182</p>
+                <h1 data-aos="fade-up" class="font-bold font-Anek text-base md:text-lg lg:text-xl">MULIA DARMA PRATAMA</h1>
+                <p data-aos="fade-up" class="w-full md:w-[400px] text-sm md:text-base lg:text-lg">Jl. Jenderal Ahmad Yani No.No, 13 Ulu, Kecamatan Seberang Ulu I, Kota Palembang, Sumatera Selatan 30252
+                    </p>
             </div>
         </div>
         <div data-aos="fade-up" class="flex flex-col md:flex-row text-white gap-y-5 md:gap-x-10">
@@ -30,7 +28,7 @@
             <h1 class="font-semibold text-base md:text-lg lg:text-xl">Sosial Media</h1>
             <div class="flex flex-row justify-center md:justify-start items-center gap-x-4 mb-6">
                 {{-- IG --}}
-                <a href="https://www.instagram.com/k2.upy/" target="_blank">
+                <a href="https://www.instagram.com/k2.stieakubank/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="hover:animate-pulse" width="35" height="35"
                         viewBox="0 0 24 24">
                         <path fill="#FFC324"
@@ -62,7 +60,7 @@
                     </svg>
                 </a>
                 {{-- FACEBOOK --}}
-                <a href="https://www.facebook.com/people/Universitas-PGRI-Yogyakarta/61561012645217/" target="_blank">
+                <a href="https://www.facebook.com/people/STIE-Akubank-Mulia-Darma-Pratama/61569745497533/?locale=id_ID" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="hover:animate-pulse" width="35" height="35"
                         viewBox="-2 -2 24 24">
                         <g fill="#FFC324">
@@ -78,7 +76,7 @@
     </div>
     <div data-aos="fade-up" class="flex flex-col md:items-end md:justify-end items-start justify-center pb-2">
         <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7905.688416942032!2d110.340988!3d-7.806312!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57fac27e70db%3A0x6ac4a4807ca11460!2sUniversitas%20PGRI%20Yogyakarta!5e0!3m2!1sen!2sid!4v1734600648977!5m2!1sen!2sid"
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15937.47287626423!2d104.7789293!3d-2.9951102!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b76207b8e09f5%3A0x515992fe6c741220!2sSTIE%20-%20Akubank%20Mulia%20Darma%20Pratama!5e0!3m2!1sen!2sid!4v1735613144758!5m2!1sen!2sid"
             class="hidden md:block md:w-[600px] h-[300px]" style="border:0;" allowfullscreen="" loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p class="text-white text-xs md:text-sm lg:text-base text-center">Copyright © 2024 - Muhamad Ilham Mubarrok</p>

@@ -2,7 +2,7 @@
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <!-- Logo -->
         <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img src="{{ asset('./images/logo/logo2.png') }}" class="h-8" alt="Flowbite Logo" />
+            <img src="{{ asset('./images/logo/HEADER-MULIADARMA.png') }}" class="h-8" alt="Flowbite Logo" />
         </a>
 
         <!-- Mobile Menu Button -->
