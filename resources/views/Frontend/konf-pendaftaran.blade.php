@@ -51,7 +51,7 @@
                             <p class="text-sm font-medium mt-2">2. Pilih salah satu cara konfirmasi:</p>
                             <ul class="list-disc list-inside mt-2 text-sm">
                                 <li>
-                                    <a href="https://api.whatsapp.com/send?phone=6287890198284&text=Halo%20Admin%20Saya%20Sudah%20Daftar%20Online%20di%20UMIBA."
+                                    <a href="https://api.whatsapp.com/send?phone=6287890198284&text=Halo%20Admin%20Saya%20Sudah%20Daftar%20Online%20di%20UPY."
                                         target="_blank" class="text-accent hover:underline font-semibold">
                                         Konfirmasi Via WhatsApp
                                     </a>
@@ -88,7 +88,7 @@
 
                 <!-- Footer -->
                 <div class="bg-gray-100 p-6 text-center">
-                    <img src="{{ asset('./images/logo/logo1.png') }}" alt="UMIBA" class="mx-auto w-32 mb-4">
+                    <img src="{{ asset('./images/logo/logo1.png') }}" alt="UPY" class="mx-auto w-32 mb-4">
                     <p class="text-sm font-poppins text-gray-600">Universitas UPY Yogyakarta</p>
                 </div>
             </div>

@@ -70,7 +70,7 @@
     <div class="bg-gray-50 py-10">
         <div class="container mx-auto max-w-screen-lg bg-white shadow-lg rounded-lg p-8">
             <div class="text-center border-b-4 border-primary pb-4">
-                <img class="w-20 mx-auto mb-4" src="{{ asset('./images/logo/logo1.png') }}" alt="UMIBA Logo">
+                <img class="w-20 mx-auto mb-4" src="{{ asset('./images/logo/logo1.png') }}" alt="UPY Logo">
                 <h2 class="text-2xl font-poppins font-bold text-primary">
                     FORMULIR PENDAFTARAN
                     <br>CALON MAHASISWA BARU UPY

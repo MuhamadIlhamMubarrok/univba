@@ -1,7 +1,7 @@
 <nav id="navbar" class="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700 transparent">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
         <!-- Logo -->
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
             <img src="{{ asset('./images/logo/logo2.png') }}" class="h-8" alt="Flowbite Logo" />
         </a>
 

@@ -5,7 +5,7 @@
 
         <x-header-section subtext="BIAYA & JURUSAN" subtext-color="#6b7280" title="Biaya dan Jurusan UPY ( kelas umum )"
             title-color="#222764" />
-        <div class="swiper mySwiper md:w-[1200px] w-full">
+        <div class="swiper mySwiper md:w-[1300px] w-full">
             <div class="swiper-wrapper space-x-[10px] pb-[20px] md:ps-[20px]">
                 <div
                     class="swiper-slide bg-white shadow-lg rounded-lg p-5 w-full sm:w-[280px] md:w-[320px] flex flex-col space-y-4">

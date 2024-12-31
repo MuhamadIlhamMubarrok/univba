@@ -81,7 +81,7 @@
             <!-- Google Maps -->
             <div data-aos="fade-up" class="mt-10">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.670467423746!2d101.37127177363834!3d0.49326166373303937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31d5aea4794b82b5%3A0xf42c622db0b7fd94!2sAMIK%20Tri%20Dharma%20Pekanbaru!5e0!3m2!1sen!2sus!4v1721459371906!5m2!1sen!2sus"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1976.4221177574923!2d110.33969775627388!3d-7.806309140690242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57fac27e70db%3A0x6ac4a4807ca11460!2sUniversitas%20PGRI%20Yogyakarta%20(Kampus%20Pusat)!5e0!3m2!1sid!2sid!4v1735358301788!5m2!1sid!2sid"
                     width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade" data-aos="fade-up" class="rounded-lg shadow-md"></iframe>
             </div>

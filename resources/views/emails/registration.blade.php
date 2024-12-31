@@ -23,7 +23,7 @@
         <li>No HP/WA: {{ $data['no_hp'] }}</li>
     </ul>
     <p>Setelah melakukan pembayaran, konfirmasi dapat dilakukan melalui WA ke: <a
-            href="https://api.whatsapp.com/send?phone=6287890198284&text=Halo%20Admin%20Saya%20Sudah%20Daftar%20Online%20di%20UMIBA.">6287890198284</a>.
+            href="https://api.whatsapp.com/send?phone=6287890198284&text=Halo%20Admin%20Saya%20Sudah%20Daftar%20Online%20di%20UPY.">6287890198284</a>.
     </p>
 </body>
 

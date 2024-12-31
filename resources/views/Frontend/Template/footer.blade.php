@@ -23,7 +23,7 @@
             </div>
             <div>
                 <h1 data-aos="fade-up" class="font-bold font-Anek text-base md:text-lg lg:text-xl">Email</h1>
-                <p data-aos="fade-up" class="text-sm md:text-base lg:text-lg">kuliahkaryawan@gmail.com</p>
+                <p data-aos="fade-up" class="text-sm md:text-base lg:text-lg">info@kuliahkaryawan.net</p>
             </div>
         </div>
         <div class="flex flex-col text-white gap-y-4">

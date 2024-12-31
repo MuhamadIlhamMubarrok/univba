@@ -1,2 +1,66 @@
+# Robots.txt for securing website access and controlling web crawlers
+
+# Mengizinkan semua crawler yang sah untuk mengakses situs
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Mediapartners-Google
+Allow: /
+
+User-agent: msnbot
+Allow: /
+
+User-agent: msnbot-media
+Allow: /
+
+User-agent: Yahoo! Slurp
+Allow: /
+
+User-agent: Yahoo!-AdCrawler
+Allow: /
+
+User-agent: yahoo-blogs/v3.9
+Allow: /
+
+User-agent: yahoo-mmcrawler
+Allow: /
+
+User-agent: YahooSeeker
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+# Membatasi akses ke direktori sensitif atau file penting
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /private/
+Disallow: /config/
+Disallow: /login/
+Disallow: /user/
+
+# Memblokir bot jahat atau bot yang tidak diinginkan
+User-agent: BadBot
+Disallow: /
+
+User-agent: EvilBot
+Disallow: /
+
+# Menyediakan sitemap untuk crawler yang sah
+Sitemap: http://www.upy.web.id/sitemap-upy.xml
+
+# Menyediakan instruksi untuk crawler yang sah agar tidak mengindeks file atau direktori yang tidak diinginkan
+User-agent: *
+Disallow: /tmp/
+Disallow: /cgi-bin/
+Disallow: /checkout/
+
+# Membolehkan bot yang sah untuk mengindeks semua halaman
+User-agent: *
+Allow: /

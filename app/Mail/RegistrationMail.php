@@ -30,7 +30,7 @@ class RegistrationMail extends Mailable
     public function build()
     {
         return $this->view('emails.registration')
-            ->subject('Konfirmasi Pendaftaran UMIBA')
+            ->subject('Konfirmasi Pendaftaran UPY')
             ->with('data', $this->data);
     }
 }

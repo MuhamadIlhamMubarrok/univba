@@ -1030,6 +1030,12 @@ video {
 .max-w-\[330px\] {
   max-width: 330px;
 }
+.max-w-\[1500px\] {
+  max-width: 1500px;
+}
+.max-w-2xl {
+  max-width: 42rem;
+}
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -2153,6 +2159,22 @@ video {
 
   .md\:w-auto {
     width: auto;
+  }
+
+  .md\:w-\[1500px\] {
+    width: 1500px;
+  }
+
+  .md\:max-w-\[1200px\] {
+    max-width: 1200px;
+  }
+
+  .md\:max-w-\[100px\] {
+    max-width: 100px;
+  }
+
+  .md\:max-w-\[1500px\] {
+    max-width: 1500px;
   }
 
   .md\:grid-cols-2 {

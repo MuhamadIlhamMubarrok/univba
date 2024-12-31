@@ -82,7 +82,8 @@
         </div>
 
         <!-- WhatsApp Icon -->
-        <a href="https://wa.me/6287890198284" target="_blank" rel="noopener noreferrer">
+        <a href="https://wa.me/6287890198284?text=Halo%20Admin%2C%20saya%20mau%20bertanya%20%0ASumber%20%3A%20{{ url()->current() }}"
+            target="_blank" rel="noopener noreferrer">
             <img src="{{ asset('images/logo/wa.jpg') }}" alt="WhatsApp" class="w-12 h-12 md:w-[70px] md:h-[70px]">
         </a>
     </div>

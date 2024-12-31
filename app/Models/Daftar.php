@@ -25,7 +25,7 @@ class Daftar extends Model
         'no_ktp', 'jurusan', 'no_hp', 'no_wa', 
         'email', 'agama', 'ibu', 'ayah', 'jaket', 
         'lulusan', 'biaya', 'info', 'kerja', 'jabatan', 
-        'al_kerja', 'no_kantor'
+        'al_kerja', 'no_kantor', 'sekolah', 'tgl_lahir'
     ];
 
     // Nonaktifkan timestamp
