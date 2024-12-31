@@ -61,16 +61,18 @@
                         <div class="mb-6">
                             <h3 class="text-lg font-semibold font-poppins">Cetak Formulir Pendaftaran:</h3>
                             <div class="bg-gray-100 p-4 rounded-lg mt-2">
-                                <form method="POST" action="app/formulir.php" class="flex items-center justify-between">
-                                    @csrf
-                                    <input type="hidden" name="id" value="{{ $registration->daftar_id }}">
-                                    <p class="text-sm font-medium">Klik tombol di bawah ini untuk mencetak formulir
-                                        pendaftaran Anda.</p>
-                                    <a
-                                        class="bg-primary text-white text-sm font-poppins py-2 px-4 rounded-lg shadow-md hover:bg-accent transition">
-                                        Cetak Formulir
-                                    </a>
-                                </form>
+                                <form method="POST" action="app/formulir.php" data-aos="fade-up"
+                                class="flex items-center justify-between">
+                                @csrf
+                                <input type="hidden" name="id" value="{{ $registration->daftar_id }}">
+                                <p data-aos="fade-up" class="text-sm font-medium">Klik tombol di bawah ini untuk
+                                    mencetak formulir
+                                    pendaftaran Anda.</p>
+                                <a href="{{ route('cetak.confirm', $registration->daftar_id) }}" data-aos="fade-up"
+                                    class="bg-primary text-white text-sm font-poppins py-2 px-4 rounded-lg shadow-md hover:bg-accent transition">
+                                    Cetak Formulir
+                                </a>
+                            </form>
                             </div>
                         </div>
 
