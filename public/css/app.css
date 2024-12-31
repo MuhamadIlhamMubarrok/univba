@@ -15,11 +15,11 @@
 
 /* Warna navbar saat di-scroll */
 #navbar.scrolled {
-    background-color: #0d1444; /* Warna saat di-scroll */
+    background-color: #078070; /* Warna saat di-scroll */
 }
 
 .bg-hero {
-    background-image: url("/images/background/.png");
+    background-image: url("/images/background/hero1.png");
 }
 
 /* Gambar untuk perangkat dengan ukuran layar kecil (HP) */
@@ -1336,6 +1336,10 @@ video {
 .bg-yellow-400 {
   --tw-bg-opacity: 1;
   background-color: rgb(250 204 21 / var(--tw-bg-opacity, 1));
+}
+.bg-blue-600 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity, 1));
 }
 .bg-opacity-30 {
   --tw-bg-opacity: 0.3;
