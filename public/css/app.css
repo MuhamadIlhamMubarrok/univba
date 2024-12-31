@@ -994,6 +994,9 @@ video {
 .w-full {
   width: 100%;
 }
+.w-40 {
+  width: 10rem;
+}
 .max-w-6xl {
   max-width: 72rem;
 }
