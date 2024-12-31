@@ -14,10 +14,10 @@
 
                     <!-- Detail Biaya -->
                     <div class="text-sm font-dmsans text-gray-600 space-y-1">
-                        <p>Biaya Pendaftaran: <span class="text-accent font-medium">Rp. 150.000</span></p>
-                        <p>Biaya Awal: <span class="text-accent font-medium">Rp. 800.000</span></p>
+                        <p>Biaya Pendaftaran: <span class="text-primary font-medium">Rp. 150.000</span></p>
+                        <p>Biaya Awal: <span class="text-primary font-medium">Rp. 800.000</span></p>
                         <p>Biaya Bulanan: <span class="text-accent font-medium">Rp. 510.000</span></p>
-                        
+
                     </div>
 
                     <!-- Tombol -->
@@ -30,53 +30,53 @@
                             Lanjut</a>
                     </div>
                 </div>
-            <div
-                class="swiper-slide bg-white shadow-lg rounded-lg p-5 w-full sm:w-[280px] md:w-[320px] flex flex-col space-y-4">
-                <!-- Judul -->
-                <h3 class="text-lg font-semibold text-primary font-poppins">S1 Manajemen</h3>
+                <div
+                    class="swiper-slide bg-white shadow-lg rounded-lg p-5 w-full sm:w-[280px] md:w-[320px] flex flex-col space-y-4">
+                    <!-- Judul -->
+                    <h3 class="text-lg font-semibold text-primary font-poppins">S1 Manajemen</h3>
 
-                <!-- Detail Biaya -->
-                <div class="text-sm font-dmsans text-gray-600 space-y-1">
-                    <p>Biaya Pendaftaran: <span class="text-accent font-medium">Rp. 150.000</span></p>
-                    <p>Biaya Awal: <span class="text-accent font-medium">Rp. 800.000</span></p>
-                    <p>Biaya Bulanan: <span class="text-accent font-medium">Rp. 510.000</span></p>
-                    
+                    <!-- Detail Biaya -->
+                    <div class="text-sm font-dmsans text-gray-600 space-y-1">
+                        <p>Biaya Pendaftaran: <span class="text-primary font-medium">Rp. 150.000</span></p>
+                        <p>Biaya Awal: <span class="text-primary font-medium">Rp. 800.000</span></p>
+                        <p>Biaya Bulanan: <span class="text-accent font-medium">Rp. 510.000</span></p>
+
+                    </div>
+
+                    <!-- Tombol -->
+                    <div class="flex justify-between items-center mt-3 gap-3">
+                        <a href="/pendaftaran"
+                            class="bg-primary hover:bg-secondary text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">Daftar
+                            Sekarang</a>
+                        <a href="/page/14"
+                            class="bg-yellow-400 hover:bg-accent text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">Info
+                            Lanjut</a>
+                    </div>
+                </div>
+                <div
+                    class="swiper-slide bg-white shadow-lg rounded-lg p-5 w-full sm:w-[280px] md:w-[320px] flex flex-col space-y-4">
+                    <!-- Judul -->
+                    <h3 class="text-lg font-semibold text-primary font-poppins">S1 Akuntansi</h3>
+
+                    <!-- Detail Biaya -->
+                    <div class="text-sm font-dmsans text-gray-600 space-y-1">
+                        <p>Biaya Pendaftaran: <span class="text-primary font-medium">Rp. 150.000</span></p>
+                        <p>Biaya Awal: <span class="text-primary font-medium">Rp. 800.000</span></p>
+                        <p>Biaya Bulanan: <span class="text-accent font-medium">Rp. 510.000</span></p>
+
+                    </div>
+
+                    <!-- Tombol -->
+                    <div class="flex justify-between items-center mt-3 gap-3">
+                        <a href="/pendaftaran"
+                            class="bg-primary hover:bg-secondary text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">Daftar
+                            Sekarang</a>
+                        <a href="/page/14"
+                            class="bg-yellow-400 hover:bg-accent text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">Info
+                            Lanjut</a>
+                    </div>
                 </div>
 
-                <!-- Tombol -->
-                <div class="flex justify-between items-center mt-3 gap-3">
-                    <a href="/pendaftaran"
-                        class="bg-primary hover:bg-secondary text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">Daftar
-                        Sekarang</a>
-                    <a href="/page/14"
-                        class="bg-yellow-400 hover:bg-accent text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">Info
-                        Lanjut</a>
-                </div>
-            </div>
-            <div
-                class="swiper-slide bg-white shadow-lg rounded-lg p-5 w-full sm:w-[280px] md:w-[320px] flex flex-col space-y-4">
-                <!-- Judul -->
-                <h3 class="text-lg font-semibold text-primary font-poppins">S1 Akuntansi</h3>
-
-                <!-- Detail Biaya -->
-                <div class="text-sm font-dmsans text-gray-600 space-y-1">
-                    <p>Biaya Pendaftaran: <span class="text-accent font-medium">Rp. 150.000</span></p>
-                    <p>Biaya Awal: <span class="text-accent font-medium">Rp. 800.000</span></p>
-                    <p>Biaya Bulanan: <span class="text-accent font-medium">Rp. 510.000</span></p>
-                    
-                </div>
-
-                <!-- Tombol -->
-                <div class="flex justify-between items-center mt-3 gap-3">
-                    <a href="/pendaftaran"
-                        class="bg-primary hover:bg-secondary text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">Daftar
-                        Sekarang</a>
-                    <a href="/page/14"
-                        class="bg-yellow-400 hover:bg-accent text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">Info
-                        Lanjut</a>
-                </div>
-            </div>
-               
             </div>
             <div class="swiper-pagination"></div>
         </div>
@@ -87,7 +87,8 @@
             <div data-aos="fade-up" class="w-full h-[1px] bg-blue-900 my-4"></div>
             <p data-aos="fade-up"
                 class="text-center md:text-start mb-5 text-[14px] font-dmsans md:text-[14px] lg:text-[16px]">
-                Pilih Mulia Darma Pratama untuk masa depan cerah. Program unggulan, dosen terbaik, fasilitas modern mendukung kesuksesan
+                Pilih Mulia Darma Pratama untuk masa depan cerah. Program unggulan, dosen terbaik, fasilitas modern
+                mendukung kesuksesan
                 kariermu!
             </p>
 
