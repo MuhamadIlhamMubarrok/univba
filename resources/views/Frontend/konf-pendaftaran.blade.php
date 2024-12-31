@@ -1,7 +1,7 @@
 @extends('Frontend.Layouts.app2')
 
 @section('content')
-    <x-header-section-page title="Konfirmasi Pendaftaran UPY" breadcrumb-home="Home"
+    <x-header-section-page title="Konfirmasi Pendaftaran Mulia Darma" breadcrumb-home="Home"
         breadcrumb-current="Konfirmasi Pendaftaran" />
 
     <div class="bg-gray-50 py-10">
@@ -27,9 +27,8 @@
                     <div class="mb-6">
                         <h3 class="text-lg font-semibold font-poppins">Informasi Biaya Pendaftaran:</h3>
                         <ul class="list-disc list-inside text-sm mt-2">
-                            <li><strong>S1:</strong> Rp. 200.000,-</li>
-                            <li><strong>S2:</strong> Rp. 200.000,-</li>
-                            <li><strong>S1 RPL:</strong> Rp. 200.000,-</li>
+                            <li><strong>D3:</strong> Rp. 150.000,-</li>
+                            <li><strong>S1:</strong> Rp. 150.000,-</li>
                         </ul>
                     </div>
 

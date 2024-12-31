@@ -9,9 +9,8 @@
         content="Kelas karyawan, Kuliah karyawan, Universitas PGRI Yogyakarta, kampus UPY, biaya kuliah kampus UPY, UPY, biaya kuliah, kelas sabtu, akreditasi UPY, S1 Pendidikan Guru Sekolah Dasar, S1 Bimbingan dan Konseling, S1 PPKN, S1 Pendidikan Guru Paud, S1 Pendidikan Luar Biasa, S1 Pendidikan Matematika, S1 Pendidikan Bahasa dan Sastra Indonesia, S1 Pendidikan Sejarah, S1 Pendidikan B.Inggris, S1 Pendidikan Vokasional Teknologi Otomotif, kampus murah, kampus Yogyakarta, kampus Yogyakarta." />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="google-site-verification" content="cYk75UAqQazvmINnhBZmGS7FNTQJwDab3ugNvSxp1cs" />
 
-    <title>Universitas PGRI Yogyakarta (Kelas Karyawan)</title>
+    <title>Mulia Darma Pratama (Kelas Karyawan)</title>
     <meta property="og:title" content="Universitas PGRI Yogyakarta (Kelas Karyawan)">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.upy.web.id/">

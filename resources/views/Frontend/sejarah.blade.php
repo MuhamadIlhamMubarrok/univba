@@ -9,32 +9,10 @@
         <!-- Konten Teks -->
         <div data-aos="fade-up" class="flex flex-col space-y-4 text-justify font-dmsans text-[14px] md:text-[16px]">
             <p>
-                Semula Universitas PGRI Yogyakarta (UPY) berbentuk institut (IKIP PGRI Yogyakarta) yang berdiri tanggal 11
-                desember 1962 berdasarkan Surat Keputusan Menteri Perguruan Tinggi Dan Ilmu Pengetahuan RI Nomor 44/Swt/P/62
-                dalam bentuk Fakultas Keguruan dan Ilmu Pendidikan meliputi jurusan Ilmu Mendidik dan Jurusan Sejarah yang
-                berlokasi di SGA Stelladuce (Menumpang) yang berada di kompleks Lapangan Trenggono, Klitren kidul
-                Yogyakarta.
-                Mulai tahun 1964 kampus FKIP PGRI Yogyakarta (cikal bakal IKIP PGRI Yogyakarta) pindah di SD ungaran,
-                kotabaru
-                Yogyakarta (Sekarang menjadi SDN Ungaran 2) sampai tahun 1980. Selanjutnya pada tahun 1981 berpindah lagi ke
-                kompleks SGPLB di Jl. Wates, Kalibayem Yogyakarta.
+                Pada tanggal 03 Pebruari 1997 telah didirikan Yayasan Mulia Darma dengan Akte Notaris Alia Ghani, SH, No.02 dan Akte Yayasan Mulia Darma Pratama Palembang, No.12 Tahun 2014 yang disahkan oleh Keputusan Menkumhan R.I Nomor:AHU-2978.AH.01.04 Tahun 2014. Maksud dan tujuan didirikannya Yayasan ini antara lain untuk turut serta secara aktif membantu Pemerintah dalam melaksanakan program pembangunan nasional, khususnya dibidang Pendidikan Tinggi, dalam rangka mewujudkan cita-cita nasional yaitu masyarakat adil dan makmur berdasarkan Pancasila dan UUD 1945. Mengingat sarana dan prasarana yang dimiliki Yayasan Mulia Darma Palembang sudah cukup memadai untuk menyelenggarakan suatu program pendidikan tinggi di Sumatera Selatan, maka didirikanlah Sekolah Tinggi Ilmu Ekonomi (STIE) Mulia Darma Pratama berdasarkan SK. MENDIKBUD RI, Nomor: 097/D/0/1999 tanggal 01 Juni 1999, dengan mendapat status “TERDAFTAR” untuk kedua Program Studi Manajemen (S-1), serta Program Studi Akuntansi (D3) dan pada tahun 2009 telah dibuka program studi Akuntansi (S-1) melalui Surat DIRJEN DIKTI Nomor : 900/D/T/2009 tanggal 11 Juni 2009.
             </p>
             <p>
-                Berdasarkan Keputusan Menteri Pendidikan dan kebudayaan RI Nomor : 029/0/1981 tanggal 22 januari 1981
-                tentang Penetapan Kembali Status Terdaftar bagi PTS di Kopertis Wilayah IV yang menetapkan kembali status
-                Terdaftar bagi IKIP PGRI Yogyakarta yang meliputi: Fakultas Ilmu Pendidikan jurusan Teori Dan Sejarah
-                Pendidikan dan Fakultas Keguruan Ilmu Sosial jurusan Ilmu Sejarah. Disamping itu juga mengembangkan jurusan
-                baru pada Fakultas Ilmu Pendidikan dan membuka jurusan Psikologi Pendidikan dan Bimbingan yang mendapat
-                status Terdaftar Berdasarkan Keputusan Menteri Pendidikan dan Kebudayaan Nomor: 0109/O/1984 Tanggal 9 Maret
-                1984.
-            </p>
-            <p>
-                Setelah sebelumnya selalu menumpang dengan instansi lain, mulai tahun 1984 dapat menempati kampus milik
-                sendiri di kawasan Sonosewu, Ngestiharjo Kasihan Bantul sampai sekarang. Dalam rangka pemenuhan tuntutan
-                akan kebutuhan pembangunan, perkembangan ilmu pengetahuan dan teknologi, serta memperhatikan prospek masa
-                depan maka sejak tahun 1995 dirilis alih bentuk, dari bentuk Institut Menjadi Universitas dengan Surat
-                keputusan dengan nomor : 180/DIKTI/KEP/1997, tertanggal 25 juli 1997, IKIP PGRI Yogyakarta menjadi
-                Universitas PGRI Yogyakarta (UPY).
+                SEJARAH SINGKAT AKADEMI KEUANGAN DAN PERBANKAN MULIA DARMA PRATAMA Pada tanggal 03 Pebruari 1997 telah didirikan Yayasan Mulia Darma dengan Akte Notaris Alia Ghani, SH, No.02. Maksud dan tujuan didirikannya Yayasan ini antara lain untuk turut serta secara aktif membantu Pemerintah dalam melaksanakan program pembangunan nasional, khususnya dibidang Pendidikan Tinggi, dalam rangka mewujudkan cita-cita nasional yaitu masyarakat adil dan makmur berdasarkan Pancasila dan UUD 1945. Mengingat sarana dan prasarana yang dimiliki yayasan sudah cukup memadai untuk menyelenggarakan suatu program pendidikan tinggi di Sumatera Selatan, maka didirikanlah Akademi Keuangan dan Perbankan (AKUBANK) Mulia Darma Pratama berdasarkan SK. MENDIKBUD RI, Nomor : 031/D/0/1997 tanggal 03 Juni 1997, dengan mendapat status “TERDAFTAR” untuk kedua program studi Keuangan dan Perbankan, Akuntansi Perbankan.
             </p>
         </div>
 
@@ -45,7 +23,7 @@
                 SEKARANG</h1>
             <p data-aos="fade-up" class="text-center mb-5 text-[12px] md:text-[14px] lg:text-[16px]">
                 Raih masa depan gemilang dengan pendidikan berkualitas dari universitas yang telah dipercaya selama
-                bertahun-tahun. UPY menghadirkan program studi unggulan, dosen berpengalaman, dan fasilitas modern untuk
+                bertahun-tahun. Muliadarma menghadirkan program studi unggulan, dosen berpengalaman, dan fasilitas modern untuk
                 mendukung perjalanan akademik Anda.
             </p>
             <x-button url="/pendaftaran">DAFTAR SEKARANG</x-button>

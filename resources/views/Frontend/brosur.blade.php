@@ -1,14 +1,14 @@
 @extends('Frontend.Layouts.app2')
 
 @section('content')
-    <x-header-section-page title="Brosur UPY" breadcrumb-home="Home" breadcrumb-current="Brosur" />
+    <x-header-section-page title="Brosur MDP" breadcrumb-home="Home" breadcrumb-current="Brosur" />
 
     <div class="py-16">
         <div class="container mx-auto px-4 lg:px-16">
             <!-- Heading -->
             <div class="text-center mb-12">
                 <p class="text-gray-600 font-dmsans text-lg">
-                    Unduh brosur lengkap Universitas PGRI Yogyakarta untuk mendapatkan informasi mengenai program studi,
+                    Unduh brosur lengkap Mulia Darma Pratama untuk mendapatkan informasi mengenai program studi,
                     fasilitas, dan layanan terbaik yang kami tawarkan.
                 </p>
             </div>
@@ -17,11 +17,11 @@
             <div class="flex flex-wrap justify-center gap-8">
                 <!-- Brosur Item 1 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center">
-                    <img src="{{ asset('images/brosur/brosur1.jpg') }}" alt="Brosur UPY" class="w-full h-64 object-cover">
+                    <img src="{{ asset('images/brosur/') }}" alt="Brosur UPY" class="w-full h-64 object-cover">
                     <div class="p-6 text-center">
-                        <h3 class="text-lg font-poppins font-bold text-primary mb-2">Brosur UPY 2023</h3>
+                        <h3 class="text-lg font-poppins font-bold text-primary mb-2">Brosur MDP 2023</h3>
                         <p class="text-sm text-gray-600 mb-4">Format JPG</p>
-                        <a href="{{ asset('images/brosur/brosur1.jpg') }}" download
+                        <a href="{{ asset('images/brosur/') }}" download
                             class="bg-primary text-white py-2 px-4 rounded-md hover:bg-accent transition">
                             <i class="fas fa-download mr-2"></i>Download
                         </a>
@@ -30,11 +30,11 @@
 
                 <!-- Brosur Item 2 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center">
-                    <img src="{{ asset('images/brosur/brosur2.jpg') }}" alt="Brosur UPY" class="w-full h-64 object-cover">
+                    <img src="{{ asset('images/brosur/') }}" alt="Brosur UPY" class="w-full h-64 object-cover">
                     <div class="p-6 text-center">
-                        <h3 class="text-lg font-poppins font-bold text-primary mb-2">Brosur UPY 2023</h3>
+                        <h3 class="text-lg font-poppins font-bold text-primary mb-2">Brosur MDP 2023</h3>
                         <p class="text-sm text-gray-600 mb-4">Format JPG</p>
-                        <a href="{{ asset('images/brosur/brosur2.jpg') }}" download
+                        <a href="{{ asset('images/brosur/') }}" download
                             class="bg-primary text-white py-2 px-4 rounded-md hover:bg-accent transition">
                             <i class="fas fa-download mr-2"></i>Download
                         </a>
@@ -55,8 +55,8 @@
     <script>
         function downloadAllBrosur() {
             const urls = [
-                '{{ asset('images/brosur/brosur1.jpg') }}',
-                '{{ asset('images/brosur/brosur2.jpg') }}'
+                '{{ asset('images/brosur/') }}',
+                '{{ asset('images/brosur/') }}'
             ];
 
             urls.forEach(url => {

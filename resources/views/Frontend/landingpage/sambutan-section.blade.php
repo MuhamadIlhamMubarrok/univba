@@ -1,7 +1,7 @@
 <div class="md:h-[827px] h-auto flex flex-col items-center md:flex-row justify-center md:gap-x-[100px] py-[100px] md:py-[100px] px-4 md:px-0 bg-cover bg-no-repeat bg-right md:bg-center"
     style="background-image: url('{{ asset('./images/background/biayajurusan.png') }}');">
     <div class="flex justify-center md:justify-start w-full md:w-auto">
-        <img src="{{ asset('./images/sambutan/rektor.png') }}" data-aos="fade-up"
+        <img src="{{ asset('./images/sambutan/REKTOR-UPY.png') }}" data-aos="fade-up"
             class="h-auto md:w-[1000px] w-[300px] md:h-[500px] max-w-[450px]" alt="">
     </div>
     <div class="flex flex-col md:items-start justify-center items-center w-full md:w-[40%] w-[100%] mt-4 md:mt-0"
