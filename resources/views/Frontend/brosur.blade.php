@@ -17,7 +17,7 @@
             <div class="flex flex-wrap justify-center gap-8">
                 <!-- Brosur Item 1 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center">
-                    <img src="{{ asset('images/brosur/') }}" alt="Brosur UPY" class="w-full h-64 object-cover">
+                    <img src="{{ asset('images/brosur/') }}" alt="Brosur MDP" class="w-full h-64 object-cover">
                     <div class="p-6 text-center">
                         <h3 class="text-lg font-poppins font-bold text-primary mb-2">Brosur MDP 2023</h3>
                         <p class="text-sm text-gray-600 mb-4">Format JPG</p>
@@ -30,7 +30,7 @@
 
                 <!-- Brosur Item 2 -->
                 <div class="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col items-center">
-                    <img src="{{ asset('images/brosur/') }}" alt="Brosur UPY" class="w-full h-64 object-cover">
+                    <img src="{{ asset('images/brosur/') }}" alt="Brosur MDP" class="w-full h-64 object-cover">
                     <div class="p-6 text-center">
                         <h3 class="text-lg font-poppins font-bold text-primary mb-2">Brosur MDP 2023</h3>
                         <p class="text-sm text-gray-600 mb-4">Format JPG</p>

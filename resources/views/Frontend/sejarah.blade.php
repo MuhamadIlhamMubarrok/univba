@@ -1,10 +1,10 @@
 @extends('Frontend.Layouts.app2')
 @section('content')
-    <x-header-section-page title="Sejarah UPY" breadcrumb-home="Home" breadcrumb-current="Sejarah Singkat" />
+    <x-header-section-page title="Sejarah Mulia Darma Pratama" breadcrumb-home="Home" breadcrumb-current="Sejarah Singkat" />
 
     <div data-aos="fade-up" class=" flex flex-col my-6 md:my-10 px-4 md:px-20 lg:px-32 xl:px-60">
         <!-- Gambar -->
-        <img src="{{ asset('./images/sambutan/petinggi.png') }}" data-aos="fade-up" class=" mb-5 w-full" alt="">
+        {{-- <img src="{{ asset('./images/sambutan/petinggi.png') }}" data-aos="fade-up" class=" mb-5 w-full" alt=""> --}}
 
         <!-- Konten Teks -->
         <div data-aos="fade-up" class="flex flex-col space-y-4 text-justify font-dmsans text-[14px] md:text-[16px]">

@@ -4,53 +4,31 @@
 <head>
     <!-- Meta tags -->
     <meta charset="utf-8">
-    <meta name="description"
-        content="Institut Az Zuhra atau yang biasa dikenal IAZ Pekanbaru salah satu Perguruan Tinggi Swasta Terbaik di Pekanbaru, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 600.000/Bulan dengan jurusan D3 Manajemen Informatika, D3 Teknik Komputer, S1 Manajemen, S1 Akuntansi, S1 Pendidikan Bahasa Inggris, Pendidikan Matematika" />
-    <meta name="keywords"
-        content="Kelas karyawan, Kuliah karyawan, Institut Az Zuhra, kampus IAZ Pekanbaru, biaya kuliah kampus IAZ Pekanbaru, IAZ Pekanbaru, biaya kuliah, kelas sabtu, akreditasi IAZ Pekanbaru, kelas karyawan terjangkau Pekanbaru, D3 Manajemen Informatika, D3 Teknik Komputer, S1 Manajemen, S1 Akuntansi, S1 Pendidikan Bahasa Inggris, Pendidikan Matematika, kampus murah, kampus Pekanbaru, kampus Pekanbaru." />
+    <meta name="description" content="Mulia Darma Pratama Pratama atau yang biasa dikenal AkuBank MDP salah satu Perguruan Tinggi Swasta Terbaik di Palembang, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 600.000/Bulan dengan jurusan S1 Manajemen dan S1 Akuntansi" />
+    <meta name="keywords" content="Kelas karyawan, Kuliah karyawan, Mulia Darma Pratama Pratama, kampus Mulia Darma Pratama Pratama Palembang, biaya kuliah kampus AkuBank MDP Palembang, biaya kuliah, kelas sabtu, akreditasi AkuBank MDP Palembang, kelas karyawan terjangkau Pekanbaru, S1 Manajemen, S1 Akuntansi, kampus murah, kampus palembang." />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="google-site-verification" content="oDvjTYHgQz18vzKMDJ7qNyH2uJ2GO481tEECPbcW978" />
-
-    <title>Institut Az Zuhra (Kelas Karyawan)</title>
-    <meta property="og:title" content="Institut Az Zuhra (Kelas Karyawan)">
+    
+    <title>Mulia Darma Pratama Pratama (Kelas Karyawan)</title>
+    <meta property="og:title" content="Mulia Darma Pratama Pratama (Kelas Karyawan)">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://institutazzuhra.info">
-    <meta property="og:image" content="https://institutazzuhra.info/images/banner-slider/Baner-Azzuhra.png">
+    <meta property="og:url" content="https://muliadarma.info">
+    <meta property="og:image" content="https://muliadarma.info/images/banner-slider/Banner-AkuBankmuliadarma.png">
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:description"
-        content="Institut Az Zuhra atau yang biasa dikenal IAZ Pekanbaru salah satu Perguruan Tinggi Swasta Terbaik di Pekanbaru, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 600.000/Bulan dengan jurusan D3 Manajemen Informatika, D3 Teknik Komputer, S1 Manajemen, S1 Akuntansi, S1 Pendidikan Bahasa Inggris, Pendidikan Matematika">
+    <meta property="og:description" content="Mulia Darma Pratama Pratama atau yang biasa dikenal AkuBank MDP salah satu Perguruan Tinggi Swasta Terbaik di Palembang, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 600.000/Bulan dengan jurusan S1 Manajemen dan S1 Akuntansi">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@_kuliahkaryawan">
     <meta name="twitter:site" content="@_kuliahkaryawan">
-    <meta name="twitter:title" content="Institut Az Zuhra (Kelas Karyawan)">
-    <meta name="twitter:description"
-        content="Institut Az Zuhra atau yang biasa dikenal IAZ Pekanbaru salah satu Perguruan Tinggi Swasta Terbaik di Pekanbaru, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 600.000/Bulan dengan jurusan D3 Manajemen Informatika, D3 Teknik Komputer, S1 Manajemen, S1 Akuntansi, S1 Pendidikan Bahasa Inggris, Pendidikan Matematika">
-    <meta name="twitter:domain" content="https://institutazzuhra.info">
-    <meta name="twitter:image:src" content="https://institutazzuhra.info/images/banner-slider/Baner-Azzuhra.png">
+    <meta name="twitter:title" content="Mulia Darma Pratama Pratama (Kelas Karyawan)">
+    <meta name="twitter:description" content="Mulia Darma Pratama Pratama atau yang biasa dikenal AkuBank MDP salah satu Perguruan Tinggi Swasta Terbaik di Palembang, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 600.000/Bulan dengan jurusan S1 Manajemen dan S1 Akuntansi">
+    <meta name="twitter:domain" content="muliadarma.info">
+    <meta name="twitter:image:src" content="https://muliadarma.info/images/banner-slider/Banner-AkuBankmuliadarma.png">
     <meta name="author" content="Kuliah Karyawan Team" />
     <meta http-equiv="cache-control" content="public" />
-    <meta name="application-name" content="Institut Az Zuhra | Kuliah Karyawan (K2)" />
+    <meta name="application-name" content="Mulia Darma Pratama Pratama | Kuliah Karyawan (K2)" />
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/images/favicons/manifest.json">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/images/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=DM+Sans:wght@400;700&display=swap"
         rel="stylesheet">
@@ -70,10 +48,10 @@
     <div class="bg-gray-50 py-10">
         <div class="container mx-auto max-w-screen-lg bg-white shadow-lg rounded-lg p-8">
             <div class="text-center border-b-4 border-primary pb-4">
-                <img class="w-20 mx-auto mb-4" src="{{ asset('./images/logo/logo1.png') }}" alt="UPY Logo">
+                <img class="w-40 mx-auto mb-4" src="{{ asset('./images/logo/footer-muliadarma.png') }}" alt="Mulia Darma Pratama Logo">
                 <h2 class="text-2xl font-poppins font-bold text-primary">
                     FORMULIR PENDAFTARAN
-                    <br>CALON MAHASISWA BARU UPY
+                    <br>CALON MAHASISWA BARU Mulia Darma Pratama
                 </h2>
             </div>
 
@@ -88,7 +66,7 @@
                     <tr>
                         <td class="py-2 font-medium">Perguruan Tinggi</td>
                         <td>:</td>
-                        <td>Universitas Mitra Bangsa</td>
+                        <td>Mulia Darma Pratama</td>
                     </tr>
                     <tr>
                         <td class="py-2 font-medium">Jurusan</td>
@@ -198,7 +176,7 @@
 
             <div class="flex justify-between items-center mt-12">
                 <div>
-                    <p class="font-medium">UPY</p>
+                    <p class="font-medium">Mulia Darma Pratama</p>
                     <img class="w-24 mt-2" src="{{ asset('images/ttd_cap_fix.png') }}" alt="TTD Cap">
                     <p class="mt-2 font-medium">STAFF PMB</p>
                 </div>

@@ -516,7 +516,7 @@ class HomeController extends Controller
     public function kegiatanKampus()
     {
         $status = [
-            'title' => 'Kegiatan Kampus UPY',
+            'title' => 'Kegiatan Kampus Mulia Darma Pratama',
             'current' => 'Kegiatan Kampus',
         ];
         $mainMenus = Menu::where('submenu_id', 0)->orderBy('urutan', 'asc')->get();
@@ -536,7 +536,7 @@ class HomeController extends Controller
         $subMenus = Menu::where('submenu_id', '!=', 0)->get();
         $events = Images::where('kategori', 'Event Kampus')->paginate(5);
         $status = [
-            'title' => 'Event Kampus UPY',
+            'title' => 'Event Kampus Mulia Darma Pratama',
             'current' => 'Event Kampus',
         ];
         // Kirim data ke view
@@ -545,7 +545,7 @@ class HomeController extends Controller
     public function fasilitasKampus()
     {
         $status = [
-            'title' => 'Fasilitas Kampus UPY',
+            'title' => 'Fasilitas Kampus Mulia Darma Pratama',
             'current' => 'Fasilitas Kampus',
         ];
         $mainMenus = Menu::where('submenu_id', 0)->orderBy('urutan', 'asc')->get();
