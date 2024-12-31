@@ -143,9 +143,11 @@
                                     class="mt-1 p-3 border border-gray-300 rounded-lg w-full focus:ring-primary focus:border-primary"
                                     required>
                                     <option value="">-- Pilih Kampus --</option>
-                                    <option value="UNIVERSITAS PGRI YOGYAKARTA"
-                                        {{ old('kampus') == 'UNIVERSITAS PGRI YOGYAKARTA' ? 'selected' : '' }}>UNIVERSITAS
-                                        PGRI YOGYAKARTA
+                                    <option value="AKUBANK Mulia Darma"
+                                        {{ old('kampus') == 'AKUBANK Mulia Darma' ? 'selected' : '' }}>AKUBANK Mulia Darma
+                                    </option>
+                                    <option value="STIE Mulia Darma"
+                                        {{ old('kampus') == 'STIE Mulia Darma' ? 'selected' : '' }}>STIE Mulia Darma
                                     </option>
                                 </select>
                             </div>
@@ -286,87 +288,13 @@
                                         class="mt-1 p-3 border border-gray-300 rounded-lg w-full focus:ring-primary focus:border-primary"
                                         required>
                                         <option value="">-- Pilih Jurusan --</option>
-                                        <option value="S1 Manajemen"
-                                            {{ old('jurusan') == 'S1 Manajemen' ? 'selected' : '' }}>S1 Manajemen</option>
-                                        <option value="S1 Teknologi Hasil Pertanian"
-                                            {{ old('jurusan') == 'S1 Teknologi Hasil Pertanian' ? 'selected' : '' }}>S1
-                                            Teknologi Hasil Pertanian</option>
-                                        <option value="S1 Hukum Bisnis"
-                                            {{ old('jurusan') == 'S1 Hukum Bisnis' ? 'selected' : '' }}>S1 Hukum Bisnis
-                                        </option>
-                                        <option value="S1 Sistem Informasi"
-                                            {{ old('jurusan') == 'S1 Sistem Informasi' ? 'selected' : '' }}>S1 Sistem
-                                            Informasi</option>
-                                        <option value="S1 Bisnis Digital"
-                                            {{ old('jurusan') == 'S1 Bisnis Digital' ? 'selected' : '' }}>S1 Bisnis Digital
-                                        </option>
-                                        <option value="S1 Pendidikan Guru PAUD"
-                                            {{ old('jurusan') == 'S1 Pendidikan Guru PAUD' ? 'selected' : '' }}>S1
-                                            Pendidikan Guru PAUD</option>
-                                        <option value="S1 Pendidikan Vokasional Teknologi Otomotif"
-                                            {{ old('jurusan') == 'S1 Pendidikan Vokasional Teknologi Otomotif' ? 'selected' : '' }}>
-                                            S1 Pendidikan Vokasional Teknologi Otomotif</option>
-                                        <option value="S1 Ilmu Keolahragaan"
-                                            {{ old('jurusan') == 'S1 Ilmu Keolahragaan' ? 'selected' : '' }}>S1 Ilmu
-                                            Keolahragaan</option>
-                                        <option value="S1 Pendidikan Luar Biasa"
-                                            {{ old('jurusan') == 'S1 Pendidikan Luar Biasa' ? 'selected' : '' }}>S1
-                                            Pendidikan Luar Biasa</option>
-                                        <option value="S1 Akuntansi"
-                                            {{ old('jurusan') == 'S1 Akuntansi' ? 'selected' : '' }}>S1 Akuntansi</option>
-                                        <option value="S1 Manajemen"
-                                            {{ old('jurusan') == 'S1 Manajemen' ? 'selected' : '' }}>S1 Manajemen</option>
-                                        <option value="S1 Arsitektur"
-                                            {{ old('jurusan') == 'S1 Arsitektur' ? 'selected' : '' }}>S1 Arsitektur
-                                        </option>
-                                        <option value="S1 Pendidikan Matematika"
-                                            {{ old('jurusan') == 'S1 Pendidikan Matematika' ? 'selected' : '' }}>S1
-                                            Pendidikan Matematika</option>
-                                        <option value="S1 Pendidikan Bahasa dan Sastra Indonesia"
-                                            {{ old('jurusan') == 'S1 Pendidikan Bahasa dan Sastra Indonesia' ? 'selected' : '' }}>
-                                            S1 Pendidikan Bahasa dan Sastra Indonesia</option>
-                                        <option value="S1 Pendidikan Sejarah"
-                                            {{ old('jurusan') == 'S1 Pendidikan Sejarah' ? 'selected' : '' }}>S1 Pendidikan
-                                            Sejarah</option>
-                                        <option value="S1 Pendidikan Bahasa Inggris"
-                                            {{ old('jurusan') == 'S1 Pendidikan Bahasa Inggris' ? 'selected' : '' }}>S1
-                                            Pendidikan Bahasa Inggris</option>
-                                        <option value="S1 Teknik Industri"
-                                            {{ old('jurusan') == 'S1 Teknik Industri' ? 'selected' : '' }}>S1 Teknik
-                                            Industri</option>
-                                        <option value="S1 Agroteknologi"
-                                            {{ old('jurusan') == 'S1 Agroteknologi' ? 'selected' : '' }}>S1 Agroteknologi
-                                        </option>
-                                        <option value="S1 Informatika"
-                                            {{ old('jurusan') == 'S1 Informatika' ? 'selected' : '' }}>S1 Informatika
-                                        </option>
-                                        <option value="S1 Bimbingan dan Konseling"
-                                            {{ old('jurusan') == 'S1 Bimbingan dan Konseling' ? 'selected' : '' }}>S1
-                                            Bimbingan dan Konseling</option>
-                                        <option value="S1 Pendidikan PKN"
-                                            {{ old('jurusan') == 'S1 Pendidikan PKN' ? 'selected' : '' }}>S1 Pendidikan PKN
-                                        </option>
-                                        <option value="S1 Gizi" {{ old('jurusan') == 'S1 Gizi' ? 'selected' : '' }}>S1
-                                            Gizi</option>
-                                        <option value="S1 Teknologi Rekayasa Elektro-Medis"
-                                            {{ old('jurusan') == 'S1 Teknologi Rekayasa Elektro-Medis' ? 'selected' : '' }}>
-                                            S1 Teknologi Rekayasa Elektro-Medis</option>
-                                        <option value="S1 Pendidikan Guru Sekolah Dasar"
-                                            {{ old('jurusan') == 'S1 Pendidikan Guru Sekolah Dasar' ? 'selected' : '' }}>S1
-                                            Pendidikan Guru Sekolah Dasar</option>
-                                        <option value="S1 Teknik Biomedis"
-                                            {{ old('jurusan') == 'S1 Teknik Biomedis' ? 'selected' : '' }}>S1 Teknik
-                                            Biomedis</option>
-                                        <option value="S1 Farmasi" {{ old('jurusan') == 'S1 Farmasi' ? 'selected' : '' }}>
-                                            S1 Farmasi</option>
-                                        <option value="S2 Manajemen"
-                                            {{ old('jurusan') == 'S2 Manajemen' ? 'selected' : '' }}>S2 Manajemen</option>
-                                        <option value="S2 Pendidikan Ilmu Pengetahuan Sosial"
-                                            {{ old('jurusan') == 'S2 Pendidikan Ilmu Pengetahuan Sosial' ? 'selected' : '' }}>
-                                            S2 Pendidikan Ilmu Pengetahuan Sosial</option>
-                                        <option value="S2 Pendidikan Dasar"
-                                            {{ old('jurusan') == 'S2 Pendidikan Dasar' ? 'selected' : '' }}>S2 Pendidikan
-                                            Dasar</option>
+                                        <option value="D3 Keuangan & Perbankan"
+                                            {{ old('jurusan') == 'D3 Keuangan & Perbankan' ? 'selected' : '' }}>D3 Keuangan & Perbankan</option>
+                                        <option value="S1 Management"
+                                            {{ old('jurusan') == 'S1 Management' ? 'selected' : '' }}>S1 Management</option>
+                                        <option value="S1 Akutansi"
+                                            {{ old('jurusan') == 'S1 Akutansi' ? 'selected' : '' }}>S1 Akutansi</option>
+                                        
                                     </select>
                                 </div>
                             </div>
