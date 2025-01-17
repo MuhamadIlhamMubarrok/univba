@@ -1,21 +1,45 @@
 <IfModule mod_rewrite.c>
-    <IfModule mod_negotiation.c>
-        Options -MultiViews -Indexes
-    </IfModule>
-
+    # Pastikan mod_rewrite diaktifkan
     RewriteEngine On
-
+    
+    # Redirect HTTP ke HTTPS
+    RewriteCond %{HTTPS} off
+    RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+    
+    # Blok akses langsung ke file .htaccess
+    <Files .htaccess>
+        Order Allow,Deny
+        Deny from all
+    </Files>
+    
     # Handle Authorization Header
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-
-    # Redirect Trailing Slashes If Not A Folder...
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteCond %{REQUEST_URI} (.+)/$
-    RewriteRule ^ %1 [L,R=301]
-
-    # Send Requests To Front Controller...
+    
+    # Jika file atau folder tidak ditemukan, arahkan ke index.php
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteRule ^ index.php [L]
+    
+    # Blok akses ke file PHP di folder tertentu
+    RewriteCond %{REQUEST_URI} ^/image/berita-terkini/.*\.php$ [NC]
+    RewriteRule ^ - [F,L]
+    RewriteCond %{REQUEST_URI} ^/assets/img/.*\.php$ [NC]
+    RewriteRule ^ - [F,L]
+    
+    # Izinkan akses ke folder "storage"
+    RewriteCond %{REQUEST_URI} ^/storage/ [NC]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ - [L]
+    
+    # Blok folder seperti "config" atau lainnya jika perlu
+    RewriteCond %{REQUEST_URI} ^/config/ [NC]
+    RewriteRule ^ - [F,L]
+    
+    # Cache Control (Opsional)
+    <IfModule mod_headers.c>
+        <FilesMatch "\.(html|htm|js|css|json|xml|png|jpg|jpeg|gif|ico|woff|woff2|ttf|eot|svg)$">
+            Header set Cache-Control "max-age=2592000, public"
+        </FilesMatch>
+    </IfModule>
 </IfModule>

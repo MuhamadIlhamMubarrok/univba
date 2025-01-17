@@ -8,9 +8,9 @@ module.exports = {
     theme: {
         extend: {
             colors: {
-                primary: "#078070", // Warna utama
-                secondary: "#1D296D", // Warna sekunder
-                accent: "#00FFDD", // Warna aksen
+                primary: "#F96D1E", // Warna utama
+                secondary: "#FEAE01", // Warna sekunder
+                accent: "#F9F51A", // Warna aksen
             },
             fontFamily: {
                 poppins: ["Poppins", "sans-serif"], // Font Poppins

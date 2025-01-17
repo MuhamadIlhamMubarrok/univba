@@ -1,6 +1,11 @@
 @extends('dashboard.app')
 
 @section('title', 'Detail Data Pendaftaran')
+<?php
+ $no_wa = $daftar->no_wa ; // Ambil nilai dari array $res
+        $no_wa_replaced = preg_replace('/^08/', '628', $no_wa); // Ganti "08" hanya di awal string
+        echo $no_wa_replaced;
+?>
 
 @section('content')
     <div class="page-content">
@@ -33,6 +38,10 @@
                                     <tr>
                                         <td>Jurusan yang diambil</td>
                                         <td>{{ $daftar->jurusan }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Almamater</td>
+                                        <td>{{ $daftar->jaket }}</td>
                                     </tr>
                                     <tr>
                                         <td>Lulusan</td>
@@ -105,9 +114,9 @@
                             <p class="mb-2">untuk semua marketing dapat memfollow up langsung pendaftar melalu button wa
                                 di bawah ini :
                             </p>
-                            <a href="https://wa.me/{{ $daftar->no_wa }}?text={{ urlencode('Terimakasih sudah melakukan pendaftaran online di ' . $daftar->kampus . ' atas nama ' . $daftar->nama_leng . ' dengan nomor PO ' . $daftar->no_ktp . ', data sudah kami terima. Kapan dapat melakukan biaya pendaftaran?') }}"
+                            <a href="https://wa.me/{{ $no_wa_replaced }}?text={{ urlencode('Terimakasih sudah melakukan pendaftaran online di ' . $daftar->kampus . ' atas nama ' . $daftar->nama_leng . ' dengan nomor PO ' . $daftar->daftar_id . ', data sudah kami terima.') }}"
                                 target="_blank" rel="noopener noreferrer" class="btn btn-info">
-                                Follow Up Cok !
+                                Follow Up Ya !
                             </a>
 
                         </div>

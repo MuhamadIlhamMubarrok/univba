@@ -1,7 +1,7 @@
+@section('title', 'Confirm Pendaftaran')
 @extends('Frontend.Layouts.app2')
-
 @section('content')
-    <x-header-section-page title="Konfirmasi Pendaftaran Mulia Darma" breadcrumb-home="Home"
+    <x-header-section-page title="Konfirmasi Pendaftaran Universitas Kepanjen" breadcrumb-home="Home"
         breadcrumb-current="Konfirmasi Pendaftaran" />
 
     <div class="bg-gray-50 py-10">
@@ -50,7 +50,7 @@
                             <p class="text-sm font-medium mt-2">2. Pilih salah satu cara konfirmasi:</p>
                             <ul class="list-disc list-inside mt-2 text-sm">
                                 <li>
-                                    <a href="https://api.whatsapp.com/send?phone=6287890198284&text=Halo%20Admin%20Saya%20Sudah%20Daftar%20Online%20di%20Mulia Darma Pratama."
+                                    <a href="https://api.whatsapp.com/send?phone=6287890198284&text=Halo%20Admin%20Saya%20Sudah%20Daftar%20Online%20di%20Universitas Kepanjen."
                                         target="_blank" class="text-accent hover:underline font-semibold">
                                         Konfirmasi Via WhatsApp
                                     </a>
@@ -62,17 +62,17 @@
                             <h3 class="text-lg font-semibold font-poppins">Cetak Formulir Pendaftaran:</h3>
                             <div class="bg-gray-100 p-4 rounded-lg mt-2">
                                 <form method="POST" action="app/formulir.php" data-aos="fade-up"
-                                class="flex items-center justify-between">
-                                @csrf
-                                <input type="hidden" name="id" value="{{ $registration->daftar_id }}">
-                                <p data-aos="fade-up" class="text-sm font-medium">Klik tombol di bawah ini untuk
-                                    mencetak formulir
-                                    pendaftaran Anda.</p>
-                                <a href="{{ route('cetak.confirm', $registration->daftar_id) }}" data-aos="fade-up"
-                                    class="bg-primary text-white text-sm font-poppins py-2 px-4 rounded-lg shadow-md hover:bg-accent transition">
-                                    Cetak Formulir
-                                </a>
-                            </form>
+                                    class="flex items-center justify-between">
+                                    @csrf
+                                    <input type="hidden" name="id" value="{{ $registration->daftar_id }}">
+                                    <p data-aos="fade-up" class="text-sm font-medium">Klik tombol di bawah ini untuk
+                                        mencetak formulir
+                                        pendaftaran Anda.</p>
+                                    <a href="{{ route('cetak.confirm', $registration->daftar_id) }}" data-aos="fade-up"
+                                        class="bg-primary text-white text-sm font-poppins py-2 px-4 rounded-lg shadow-md hover:bg-accent transition">
+                                        Cetak Formulir
+                                    </a>
+                                </form>
                             </div>
                         </div>
 
@@ -89,8 +89,8 @@
 
                 <!-- Footer -->
                 <div class="bg-gray-100 p-6 text-center">
-                    <img src="{{ asset('./images/logo/footer-muliadarma.png') }}" alt="Mulia Darma Pratama" class="mx-auto w-32 mb-4">
-                    <p class="text-sm font-poppins text-gray-600">Mulia Darma Pratama</p>
+                    <img src="{{ asset('./images/logo/logo1.png') }}" alt="Universitas Kepanjen" class="mx-auto w-32 mb-4">
+                    <p class="text-sm font-poppins text-gray-600">Universitas Kepanjen</p>
                 </div>
             </div>
         </div>

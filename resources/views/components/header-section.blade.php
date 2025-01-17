@@ -3,7 +3,7 @@
     </div>
     <h1 class="font-dmsans text-xl font" style="color: {{ $subtextColor }};">{{ $subtext }}</h1>
 </div>
-<h1 class="font-Anek text-[18px] md:text-[32px] font-semibold mb-4 uppercase text-center font-poppins md:text-start w-[700px]"
+<h1 class="font-Anek text-[18px] md:text-[32px] font-semibold mb-4 uppercase text-center font-poppins md:text-start"
     style="color: {{ $titleColor }};">
     {{ $title }}
 </h1>

@@ -2,30 +2,63 @@
 <html lang="id">
 
 <head>
+    <!-- Meta tags -->
     <meta charset="utf-8">
-    <meta name="description" content="Mulia Darma Pratama atau yang biasa dikenalz MDP salah satu Perguruan Tinggi Swasta Terbaik di Palembang, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 510.000/Bulan dengan jurusan D3 Keuangan dan Perbankan, S1 Manajemen dan S1 Akuntansi" />
-    <meta name="keywords" content="Kelas karyawan, Kuliah karyawan, Mulia Darma Pratama, kampus Mulia Darma Pratama Palembang, biaya kuliah kampus STIE MDP Palembang, biaya kuliah, kelas sabtu, akreditasi STIE MDP Palembang, kelas karyawan terjangkau Pekanbaru, S1 Manajemen, S1 Akuntansi, D3 Keuangan dan Perbankan kampus murah, kampus palembang,AkuBank Mulia Darma Pratama, kampus AkuBank Mulia Darma Pratama Palembang, biaya kuliah kampus AkuBank MDP Palembang, biaya kuliah, kelas sabtu, akreditasi AkuBank MDP Palembang." />
+    <meta name="description"
+        content="Universitas Kepanjen, sebelumnya dikenal sebagai STIKes Kepanjen, merupakan institusi pendidikan tinggi yang berlokasi di Kepanjen, Kabupaten Malang. Universitas ini menawarkan berbagai program studi, termasuk S1 Keperawatan, D3 Keperawatan, Profesi Ners, S1 Administrasi Rumah Sakit, dan S1 Keselamatan dan Kesehatan Kerja." />
+    <meta name="keywords"
+        content="Edunitas, Universitas Kepanjen, STIKes Kepanjen, S1 Keperawatan, D3 Keperawatan, Profesi Ners, S1 Administrasi Rumah Sakit,
+         S1 Keselamatan dan Kesehatan Kerja, universitas di Malang, pendidikan tinggi kesehatan, program studi kesehatan, Universitas Brawijaya,
+          Universitas Negeri Malang, Universitas Islam Malang, Universitas Muhammadiyah Malang, STIKes Kendedes, STIKes Karya Husada Kediri,
+           universitas kesehatan di Jawa Timur, kuliah kesehatan di Malang, kampus favorit di Malang, universitas murah di Malang,
+            universitas swasta unggulan, kuliah profesi ners, kuliah keperawatan, kuliah jurusan kesehatan, daftar online universitas kepanjen,
+             kelas karyawan universitas kepanjen, daftar universitas kepanjen, jurusan universitas kepanjen, biaya jurusan universitas kepanjen">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    
-    <title>Mulia Darma Pratama (Kelas Karyawan)</title>
-    <meta property="og:title" content="Mulia Darma Pratama (Kelas Karyawan)">
+    <meta name="google-site-verification" content="lpdys1yc63aHMZaMMrx2kkJ5RYEPp-QyfHih4JMTxI0" />
+
+    <title>Universitas Kepanjen (Kelas Karyawan)</title>
+    <meta property="og:title" content="Universitas Kepanjen | UBY(Kelas Karyawan)">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="muliadarma.info">
-    <meta property="og:image" content="https://stie.muliadarma.info/images/banner-slider/Banner-stiemuliadarma.png">
+    <meta property="og:url" content="https://universitas-boyolali.info">
+    <meta property="og:image" content="https://universitas-boyolali.info/images/banner-slider/Baner-uby.png">
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:description" content="Mulia Darma Pratama atau yang biasa dikenal STIE MDP salah satu Perguruan Tinggi Swasta Terbaik di Palembang, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 510.000/Bulan dengan jurusan D3 Keuangan dan Perbankan, S1 Manajemen dan S1 Akuntansi">
+    <meta property="og:description"
+        content="Universitas Kepanjen adalah pilihan terbaik untuk pendidikan tinggi di Malang. Dengan program studi unggulan seperti S1 Keperawatan, D3 Keperawatan, Profesi Ners, S1 Administrasi Rumah Sakit, dan S1 Keselamatan dan Kesehatan Kerja, kampus ini menawarkan pendidikan berkualitas dengan dukungan fasilitas modern dan pengajar profesional. Lokasi strategis di Kepanjen menjadikan kampus ini pilihan utama bagi mahasiswa lokal dan nasional.">
+
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@_kuliahkaryawan">
     <meta name="twitter:site" content="@_kuliahkaryawan">
-    <meta name="twitter:title" content="Mulia Darma Pratama (Kelas Karyawan)">
-    <meta name="twitter:description" content="Mulia Darma Pratama atau yang biasa dikenal MDP salah satu Perguruan Tinggi Swasta Terbaik di Palembang, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 510.000/Bulan dengan jurusan D3 Keuangan dan Perbankan, S1 Manajemen dan S1 Akuntansi">
-    <meta name="twitter:domain" content="muliadarma.info">
-    <meta name="twitter:image:src" content="https://stie.muliadarma.info/images/banner-slider/Banner-stiemuliadarma.png">
+    <meta name="twitter:title" content="Universitas Kepanjen |UBY (Kelas Karyawan)">
+    <meta name="twitter:description"
+        content="Ingin kuliah sambil tetap bekerja? Universitas Kepanjen menyediakan fleksibilitas waktu dengan kelas reguler dan kelas karyawan. Program studi seperti Keperawatan, Profesi Ners, dan Administrasi Rumah Sakit dirancang untuk mendukung kesuksesan karier Anda dengan biaya terjangkau.">
+    <meta name="twitter:domain" content="https://universitas-boyolali.info">
+    <meta name="twitter:image:src" content="https://universitas-boyolali.info/images/banner-slider/Baner-uby.png">
     <meta name="author" content="Kuliah Karyawan Team" />
     <meta http-equiv="cache-control" content="public" />
-    <meta name="application-name" content="Mulia Darma Pratama | Kuliah Karyawan (K2)" />
+    <meta name="application-name" content="Universitas Kepanjen | Kuliah Karyawan K2" />
+    <meta name="msapplication-TileColor" content="#B12720" />
+    <meta name="theme-color" content="#B12720" />
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/favicons/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/favicons/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/favicons/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/favicons/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('images/favicons/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('images/favicons/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('images/favicons/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('images/favicons/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/favicons/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="{{ asset('images/favicons/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicons/favicons-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/favicons/favicons-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicons/favicons-16x16.png') }}">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
 
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
@@ -78,6 +111,12 @@
     <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
+    <script>
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+            alert('Right Click Disabled.');
+        });
+    </script>
 </body>
 
 </html>

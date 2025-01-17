@@ -1,3 +1,4 @@
+@section('title', $status['title'])
 @extends('Frontend.Layouts.app2')
 
 @section('content')
@@ -38,9 +39,8 @@
                         Jadilah Bagian dari Perjalanan Kami
                     </h1>
                     <p data-aos="fade-up" class="text-gray-700 mt-4 text-[14px] md:text-[16px] mb-6">
-                        MDP menghadirkan pengalaman belajar yang menginspirasi, dosen terbaik, dan fasilitas modern untuk
-                        mendukung
-                        cita-cita besar Anda.
+                        Temukan peluang dan potensi terbaik dirimu bersama Universitas Kepanjen, universitas yang selalu mendukung inovasi,
+                        kreativitas, dan pengembangan diri mahasiswanya.
                     </p>
                     <x-button url="/pendaftaran"
                         class="mt-6 bg-blue-700 hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-lg">

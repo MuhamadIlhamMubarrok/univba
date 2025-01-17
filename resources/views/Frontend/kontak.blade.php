@@ -1,6 +1,9 @@
+@section('title', 'kontak')
+
+
 @extends('Frontend.Layouts.app2')
 @section('content')
-    <x-header-section-page title="Contact Mulia Darma Pratama" breadcrumb-home="Home" breadcrumb-current="Contact Us" />
+    <x-header-section-page title="Contact Universitas Kepanjen" breadcrumb-home="Home" breadcrumb-current="Contact Us" />
 
     <div data-aos="fade-up" class="py-10 bg-gray-50 shadow-xl mt-10">
         <div data-aos="fade-up" class="container mx-auto px-4 lg:px-16">
@@ -66,7 +69,8 @@
                 <div data-aos="fade-up" class="bg-white shadow-md rounded-lg p-6">
                     <h3 data-aos="fade-up" class="text-xl font-semibold text-blue-900 mb-4 font-poppins">Alamat Kampus &
                         Sekretariat</h3>
-                    <p data-aos="fade-up" class="text-gray-600 mb-6 font-dmsans">Jl. Jenderal Ahmad Yani No.No, 13 Ulu, Kecamatan Seberang Ulu I, Kota Palembang, Sumatera Selatan 30252
+                    <p data-aos="fade-up" class="text-gray-600 mb-6 font-dmsans">Jl. Trunojoyo No.16, Krajan, Panggungrejo,
+                        Kec. Kepanjen, Kabupaten Malang, Jawa Timur 65163
                     </p>
                     <h3 data-aos="fade-up" class="text-xl font-semibold text-blue-900 mb-4 font-poppins">Call & SMS Center
                     </h3>
@@ -79,7 +83,7 @@
             <!-- Google Maps -->
             <div data-aos="fade-up" class="mt-10">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31874.945758350063!2d104.778929!3d-2.9951100000000004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e3b76207b8e09f5%3A0x515992fe6c741220!2sSTIE%20-%20Akubank%20Mulia%20Darma%20Pratama!5e0!3m2!1sen!2sid!4v1735617351827!5m2!1sen!2sid"
+                    src="https://www.google.com/maps/embed?pb=!3m2!1sid!2sid!4v1736923519915!5m2!1sid!2sid!6m8!1m7!1sLejbz5Oi_hg5qxXgZnpBFg!2m2!1d-8.145731664622701!2d112.5699607951321!3f46.62822408530638!4f-2.4982712376758798!5f0.4000000000000002"
                     width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade" data-aos="fade-up" class="rounded-lg shadow-md"></iframe>
             </div>

@@ -15,9 +15,29 @@ class POController extends Controller
         return view('admin/dashboard', compact('user'));
     }
 
-    public function daftar()
+    public function daftar(Request $request)
     {
-        $daftars = Daftar::paginate(5);
+        $query = Daftar::query();
+        
+        if ($request->filled('start_date') && $request->filled('end_date')) {
+            $query->whereBetween('created_at', [$request->start_date, $request->end_date]);
+        }
+    
+        if ($request->filled('search')) {
+            $search = $request->input('search');
+            $query->where(function($q) use ($search) {
+                $q->where('nama_leng', 'like', "%{$search}%")
+                  ->orWhere('no_hp', 'like', "%{$search}%")
+                  ->orWhere('email', 'like', "%{$search}%")
+                  ->orWhere('j_kel', 'like', "%{$search}%")
+                  ->orWhere('kampus', 'like', "%{$search}%")
+                  ->orWhere('kelas', 'like', "%{$search}%");
+            });
+        }
+    
+        $query->orderBy('created_at', 'desc');
+    
+        $daftars = $query->paginate(8);
         $user = auth()->user();
         return view('admin.daftar', compact('daftars', 'user'));
     }

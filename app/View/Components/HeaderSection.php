@@ -16,7 +16,7 @@ class HeaderSection extends Component
      *
      * @return void
      */
-    public function __construct($subtext, $subtextColor = '#6b7280', $title, $titleColor = '#1f2937')
+    public function __construct($subtext, $subtextColor = '#F9F51A', $title, $titleColor = '#1f2937')
     {
         $this->subtext = $subtext;
         $this->subtextColor = $subtextColor;

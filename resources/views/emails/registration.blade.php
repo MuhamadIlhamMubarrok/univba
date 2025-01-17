@@ -9,7 +9,7 @@
     <p><b>Kepada Yth Calon Mahasiswa di Tempat,</b></p>
     <p>Terima kasih Anda telah melakukan Pendaftaran Online di situs kami dengan data berikut:</p>
     <p>Nomor Pendaftaran: <b>{{ $data['no_daftar'] }}</b><br>
-        Perguruan Tinggi: <b>Mulia Darma Pratama</b><br>
+        Perguruan Tinggi: <b>Universitas Kepanjen</b><br>
         Jurusan: {{ $data['jurusan'] }}<br>
         Wawancara Via: Telepon (di {{ $data['no_wa'] }})</p>
 
@@ -23,7 +23,7 @@
         <li>No HP/WA: {{ $data['no_hp'] }}</li>
     </ul>
     <p>Setelah melakukan pembayaran, konfirmasi dapat dilakukan melalui WA ke: <a
-            href="https://api.whatsapp.com/send?phone=6287890198284&text=Halo%20Admin%20Saya%20Sudah%20Daftar%20Online%20di%20Mulia Darma Pratama.">6287890198284</a>.
+            href="https://api.whatsapp.com/send?phone=6287890198284&text=Halo%20Admin%20Saya%20Sudah%20Daftar%20Online%20di%20Universitas Kepanjen.">6287890198284</a>.
     </p>
 </body>
 

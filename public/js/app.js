@@ -2153,13 +2153,21 @@ var swiper = new Swiper(".mySwiper", {
       slidesPerView: 1,
       spaceBetween: 10
     },
+    640: {
+      slidesPerView: 1.5,
+      spaceBetween: 15
+    },
     768: {
       slidesPerView: 2,
-      spaceBetween: 15
+      spaceBetween: 20
     },
     1024: {
       slidesPerView: 3,
-      spaceBetween: 20
+      spaceBetween: 30
+    },
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 40
     }
   }
 });

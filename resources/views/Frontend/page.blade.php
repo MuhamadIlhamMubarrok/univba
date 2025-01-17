@@ -1,3 +1,4 @@
+@section('title', $page->judul)
 @extends('Frontend.Layouts.app2')
 @section('content')
     <x-header-section-page title="{{ $page->judul }}" breadcrumb-home="Home" breadcrumb-current="{{ $page->judul }}" />
@@ -37,8 +38,8 @@
                 Bergabunglah Bersama Kami
             </h1>
             <p data-aos="fade-up" class="text-gray-700 mt-4 text-[14px] md:text-[16px] mb-6">
-                Pilih MDP sebagai langkah awal menuju masa depan yang lebih cerah. Nikmati program pendidikan terbaik,
-                fasilitas unggulan, dan pengalaman belajar yang luar biasa bersama kami.
+                Universitas Kepanjen adalah tempat yang tepat untuk mewujudkan mimpimu, dengan berbagai program studi yang
+                dirancang untuk mempersiapkan masa depan yang penuh peluang.
             </p>
             <x-button url="/pendaftaran"
                 class="mt-6 bg-blue-800 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded-lg">

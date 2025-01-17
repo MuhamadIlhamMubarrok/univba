@@ -2,49 +2,58 @@
 <html lang="en">
 
 <head>
+    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="description"
-        content="Universitas PGRI Yogyakarta atau yang biasa dikenal UPY salah satu Perguruan Tinggi Swasta Terbaik di Yogyakarta, tersedia kelas karyawan dengan biaya murah dan terjangkau nulai dari  Rp 1.000.000/Bulan dengan jurusan  S1 Pendidikan Guru Sekolah Dasar, S1 Bimbingan dan Konseling, S1 PPKN, S1 Pendidikan Guru Paud, S1 Pendidikan Luar Biasa, S1 Pendidikan Matematika, S1 Pendidikan Bahasa dan Sastra Indonesia, S1 Pendidikan Sejarah, S1 Pendidikan B.Inggris, S1 Pendidikan Vokasional Teknologi Otomotif" />
+        content="Univeritas Boyolali atau biasa dikenal kampus Universitas Kepanjen salah satu kampus Terbaik dan favorit yang bisa kelas full online di Boyolali , tersedia kelas karyawan dan kelas online atau biasa kita kenal kelas jauh dengan terjangkau cukup Rp 650.000/Bulan dengan jurusan S1 Akuuntansi, Manajemen, Ilmu Komunikasi, Teknik Informatika, Peternakan, Agro Teknologi, dan S1 Ilmu Hukum" />
     <meta name="keywords"
-        content="Kelas karyawan, Kuliah karyawan, Universitas PGRI Yogyakarta, kampus UPY, biaya kuliah kampus UPY, UPY, biaya kuliah, kelas sabtu, akreditasi UPY, S1 Pendidikan Guru Sekolah Dasar, S1 Bimbingan dan Konseling, S1 PPKN, S1 Pendidikan Guru Paud, S1 Pendidikan Luar Biasa, S1 Pendidikan Matematika, S1 Pendidikan Bahasa dan Sastra Indonesia, S1 Pendidikan Sejarah, S1 Pendidikan B.Inggris, S1 Pendidikan Vokasional Teknologi Otomotif, kampus murah, kampus Yogyakarta, kampus Yogyakarta." />
+        content="Kelas karyawan, kuliah online, kelas online, kuliah jarak jauh, Kuliah karyawan, univesitas boyolali , Universitas Kepanjen, kampus terbaik jawa tengah, kampus terbaik di boyolali, kampus Universitas Kepanjen jawa tengah, kampus online di jateng, biaya kuliah kampus Universitas Kepanjen, kuliah murah di boyolali, biaya kuliah, kelas sabtu, akreditasi Universitas Kepanjen, S1 Akuuntansi, Manajemen, Ilmu Komunikasi, Teknik Informatika, Peternakan, Agro Teknologi, dan S1 Ilmu Hukum, kampus komputer terbaik di jawa tengah" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="google-site-verification" content="cYk75UAqQazvmINnhBZmGS7FNTQJwDab3ugNvSxp1cs" />
+    <meta name="google-site-verification" content="lpdys1yc63aHMZaMMrx2kkJ5RYEPp-QyfHih4JMTxI0" />
 
-    <title>Universitas PGRI Yogyakarta (Kelas Karyawan)</title>
-    <meta property="og:title" content="Universitas PGRI Yogyakarta (Kelas Karyawan)">
+    <title>Universitas Kepanjen (Kelas Karyawan)</title>
+    <meta property="og:title" content="Universitas Kepanjen | Universitas Kepanjen(Kelas Karyawan)">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.upy.web.id/">
-    <meta property="og:image" content="images/banner-slider/Baner-upy.png">
+    <meta property="og:url" content="https://universitas-boyolali.info">
+    <meta property="og:image"
+        content="https://universitas-boyolali.info/images/banner-slider/Baner-Universitas Kepanjen.png">
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:description"
-        content="Universitas PGRI Yogyakarta atau yang biasa dikenal UPY salah satu Perguruan Tinggi Swasta Terbaik di Yogyakarta, tersedia kelas karyawan dengan biaya murah dan terjangkau cukup Rp 1.000.000/Bulan dengan jurusan S1 Pendidikan Guru Sekolah Dasar, S1 Bimbingan dan Konseling, S1 PPKN, S1 Pendidikan Guru Paud, S1 Pendidikan Luar Biasa, S1 Pendidikan Matematika, S1 Pendidikan Bahasa dan Sastra Indonesia, S1 Pendidikan Sejarah, S1 Pendidikan B.Inggris, S1 Pendidikan Vokasional Teknologi Otomotif">
+        content="Kelas karyawan, kuliah online, kelas online, kuliah jarak jauh, Kuliah karyawan, Universitas Kepanjen, Universitas Kepanjen jawa tengah, kampus terbaik jawa tengah, kampus terbaik di boyolali, kampus Universitas Kepanjen jawa tengah, kampus online di jateng, biaya kuliah kampus Universitas Kepanjen, kuliah murah di jateng, biaya kuliah, kelas sabtu, akreditasi Universitas Kepanjen,S1 Akuuntansi, Manajemen, Ilmu Komunikasi, Teknik Informatika, Peternakan, Agro Teknologi, dan S1 Ilmu Hukum">
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@_kuliahkaryawan">
     <meta name="twitter:site" content="@_kuliahkaryawan">
-    <meta name="twitter:title" content="Universitas PGRI Yogyakarta (Kelas Karyawan)">
+    <meta name="twitter:title" content="Universitas Kepanjen |Universitas Kepanjen (Kelas Karyawan)">
     <meta name="twitter:description"
-        content="Universitas PGRI Yogyakarta atau yang biasa dikenal UPY salah satu Perguruan Tinggi Swasta Terbaik di Yogyakarta, tersedia kelas karyawan dengan biaya murah dan terjangkau cukup Rp 1.000.000/Bulan dengan jurusan S1 Pendidikan Guru Sekolah Dasar, S1 Bimbingan dan Konseling, S1 PPKN, S1 Pendidikan Guru Paud, S1 Pendidikan Luar Biasa, S1 Pendidikan Matematika, S1 Pendidikan Bahasa dan Sastra Indonesia, S1 Pendidikan Sejarah, S1 Pendidikan B.Inggris, S1 Pendidikan Vokasional Teknologi Otomotif">
-    <meta name="twitter:domain" content="https://upy.web.id">
-    <meta name="twitter:image:src" content="images/banner-slider/Baner-upy.png">
+        content="Kelas karyawan, kuliah online, kelas online, kuliah jarak jauh, Kuliah karyawan, Universitas Kepanjen, Universitas Kepanjen jawa tengah, kampus terbaik jawa tengah, kampus terbaik di boyolali, kampus Universitas Kepanjen jawa tengah, kampus online di jawa tengah, biaya kuliah kampus Universitas Kepanjen, kuliah murah di jateng, biaya kuliah, kelas sabtu, akreditasi Universitas Kepanjen, S1 Akuuntansi, Manajemen, Ilmu Komunikasi, Teknik Informatika, Peternakan, Agro Teknologi, dan S1 Ilmu Hukum">
+    <meta name="twitter:domain" content="https://universitas-boyolali.info">
+    <meta name="twitter:image:src"
+        content="https://universitas-boyolali.info/images/banner-slider/Baner-Universitas Kepanjen.png">
+    <meta name="author" content="Kuliah Karyawan Team" />
+    <meta http-equiv="cache-control" content="public" />
+    <meta name="application-name" content="Universitas Kepanjen | Kuliah Karyawan K2" />
+    <meta name="msapplication-TileColor" content="#B12720" />
+    <meta name="theme-color" content="#B12720" />
 
-    <link rel="apple-touch-icon" sizes="57x57" href="images/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="images/favicon/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/favicons/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/favicons/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/favicons/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/favicons/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('images/favicons/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('images/favicons/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('images/favicons/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('images/favicons/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/favicons/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="{{ asset('images/favicons/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicons/favicons-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/favicons/favicons-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicons/favicons-16x16.png') }}">
+    <link rel="manifest" href="images/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     {{-- flowbite --}}

@@ -5,51 +5,55 @@
     <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="description"
-        content="Institut Az Zuhra atau yang biasa dikenal IAZ Pekanbaru salah satu Perguruan Tinggi Swasta Terbaik di Pekanbaru, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 600.000/Bulan dengan jurusan D3 Manajemen Informatika, D3 Teknik Komputer, S1 Manajemen, S1 Akuntansi, S1 Pendidikan Bahasa Inggris, Pendidikan Matematika" />
+        content="Universitas Kepanjen  adalah perguruan tinggi terkemuka di Indonesia yang menawarkan program pendidikan berkualitas tinggi. Universitas Kepanjen menyediakan program studi S1, hingga program pendidikan profesi dengan fasilitas yang mendukung pembelajaran daring dan kelas karyawan. Kami memiliki jurusan seperti Kewirausahaan, Bisnis Digital, dan Informatika dengan biaya terjangkau untuk mencetak lulusan yang kompeten di dunia kerja." />
+
     <meta name="keywords"
-        content="Kelas karyawan, Kuliah karyawan, Institut Az Zuhra, kampus IAZ Pekanbaru, biaya kuliah kampus IAZ Pekanbaru, IAZ Pekanbaru, biaya kuliah, kelas sabtu, akreditasi IAZ Pekanbaru, kelas karyawan terjangkau Pekanbaru, D3 Manajemen Informatika, D3 Teknik Komputer, S1 Manajemen, S1 Akuntansi, S1 Pendidikan Bahasa Inggris, Pendidikan Matematika, kampus murah, kampus Pekanbaru, kampus Pekanbaru." />
+        content="Kelas karyawan, kuliah online, kuliah jarak jauh, kuliah malam, kuliah sabtu, kuliah murah, Universitas Kepanjen Cilacap, kampus terbaik Cilacap, kampus terbaik di Jawa Tengah, kampus dengan biaya terjangkau, kelas karyawan Cilacap, pendidikan tinggi Cilacap, kuliah online Cilacap, program sarjana S1, akreditasi Universitas Kepanjen, S1 Manajemen, S1 Kewirausahaan, S1 Bisnis Digital, S1 Informatika, S1 Ilmu Komunikasi, S1 Teknik Informatika, S1 Peternakan, S1 Agro Teknologi, S1 Hukum, kuliah karyawan Cilacap, pendidikan fleksibel, kuliah sambil bekerja, universitas terbaik di Cilacap, kuliah kelas malam Cilacap, kuliah jarak jauh Cilacap, Edunitas, kuliah karyawan Edunitas, biaya kuliah murah di Cilacap, universitas terjangkau di Cilacap" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="google-site-verification" content="oDvjTYHgQz18vzKMDJ7qNyH2uJ2GO481tEECPbcW978" />
+    <meta name="google-site-verification" content="lpdys1yc63aHMZaMMrx2kkJ5RYEPp-QyfHih4JMTxI0" />
 
-    <title>Institut Az Zuhra (Kelas Karyawan)</title>
-    <meta property="og:title" content="Institut Az Zuhra (Kelas Karyawan)">
+    <title>Universitas Kepanjen (Kelas Karyawan)</title>
+    <meta property="og:title" content="Universitas Kepanjen | Universitas Kepanjen (Kelas Karyawan)">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://institutazzuhra.info">
-    <meta property="og:image" content="https://institutazzuhra.info/images/banner-slider/Baner-Azzuhra.png">
+    <meta property="og:url" content="https://universitasalirsyad.info">
+    <meta property="og:image" content="https://universitasalirsyad.info/images/banner-slider/banner.png">
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:description"
-        content="Institut Az Zuhra atau yang biasa dikenal IAZ Pekanbaru salah satu Perguruan Tinggi Swasta Terbaik di Pekanbaru, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 600.000/Bulan dengan jurusan D3 Manajemen Informatika, D3 Teknik Komputer, S1 Manajemen, S1 Akuntansi, S1 Pendidikan Bahasa Inggris, Pendidikan Matematika">
+        content="Universitas Kepanjen  di Jawa Tengah menawarkan program studi unggulan di bidang Kewirausahaan, Bisnis Digital, dan Teknik Informatika. Dengan fasilitas kelas karyawan dan kuliah online yang fleksibel, Universitas Kepanjen memberikan pendidikan berkualitas dengan biaya terjangkau, mempersiapkan generasi muda yang siap berkompetisi di dunia bisnis dan teknologi." />
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:creator" content="@_kuliahkaryawan">
     <meta name="twitter:site" content="@_kuliahkaryawan">
-    <meta name="twitter:title" content="Institut Az Zuhra (Kelas Karyawan)">
+    <meta name="twitter:title" content="Universitas Kepanjen | Universitas Kepanjen (Kelas Karyawan)">
     <meta name="twitter:description"
-        content="Institut Az Zuhra atau yang biasa dikenal IAZ Pekanbaru salah satu Perguruan Tinggi Swasta Terbaik di Pekanbaru, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 600.000/Bulan dengan jurusan D3 Manajemen Informatika, D3 Teknik Komputer, S1 Manajemen, S1 Akuntansi, S1 Pendidikan Bahasa Inggris, Pendidikan Matematika">
-    <meta name="twitter:domain" content="https://institutazzuhra.info">
-    <meta name="twitter:image:src" content="https://institutazzuhra.info/images/banner-slider/Baner-Azzuhra.png">
+        content="Universitas Kepanjen  di Jawa Tengah menawarkan pendidikan fleksibel dengan program Kewirausahaan, Bisnis Digital, dan Teknik Informatika. Dapatkan pengalaman kuliah yang menyesuaikan jadwal Anda melalui kelas karyawan, kuliah online, dan biaya terjangkau. Universitas Kepanjen memberikan kesempatan bagi Anda untuk belajar sambil bekerja, dengan kualitas pendidikan yang siap mengantarkan Anda ke dunia bisnis dan teknologi." />
+    <meta name="twitter:domain" content="http://universitasalirsyad.info/">
+    <meta name="twitter:image:src" content="https://universitasalirsyad.info/images/banner-slider/banner.png">
     <meta name="author" content="Kuliah Karyawan Team" />
     <meta http-equiv="cache-control" content="public" />
-    <meta name="application-name" content="Institut Az Zuhra | Kuliah Karyawan (K2)" />
+    <meta name="application-name" content="Universitas Kepanjen | Kuliah Karyawan K2" />
+    <meta name="msapplication-TileColor" content="#B12720" />
+    <meta name="theme-color" content="#B12720" />
 
-    <link rel="apple-touch-icon" sizes="57x57" href="/images/favicons/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/images/favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/images/favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/images/favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/images/favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/images/favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/images/favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/images/favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicons/favicon-16x16.png">
-    <link rel="manifest" href="/images/favicons/manifest.json">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/favicons/apple-icon-57x57.png') }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/favicons/apple-icon-60x60.png') }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/favicons/apple-icon-72x72.png') }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/favicons/apple-icon-76x76.png') }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('images/favicons/apple-icon-114x114.png') }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('images/favicons/apple-icon-120x120.png') }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('images/favicons/apple-icon-144x144.png') }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('images/favicons/apple-icon-152x152.png') }}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/favicons/apple-icon-180x180.png') }}">
+    <link rel="icon" type="image/png" sizes="192x192"
+        href="{{ asset('images/favicons/android-icon-192x192.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicons/favicons-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/favicons/favicons-96x96.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicons/favicons-16x16.png') }}">
+    <link rel="manifest" href="images/favicons/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/images/favicons/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     <script>
@@ -110,6 +114,12 @@
     {{-- Script --}}
     @stack('prpend-script')
     @stack('addon-script')
+    <script>
+        document.addEventListener('contextmenu', function(event) {
+            event.preventDefault();
+            alert('Right Click Disabled.');
+        });
+    </script>
 
 </body>
 

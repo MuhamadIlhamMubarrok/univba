@@ -1,7 +1,9 @@
+@section('title', 'Daftar Online')
 @extends('Frontend.Layouts.app2')
 
 @section('content')
-    <x-header-section-page title="Daftar Online Mulia Darma Pratama" breadcrumb-home="Home" breadcrumb-current="Daftar Online" />
+    <x-header-section-page title="Daftar Online Universitas Kepanjen" breadcrumb-home="Home"
+        breadcrumb-current="Daftar Online" />
 
     <!-- Step 1 -->
     @if ($step == 1)
@@ -51,12 +53,12 @@
                                     </div>
                                     <div data-aos="fade-up" class="text-center">
                                         <h3 data-aos="fade-up"
-                                            class="text-lg font-poppins text-primary peer-checked:text-accent">Kelas RPL
+                                            class="text-lg font-poppins text-primary peer-checked:text-accent">Kelas Reguler
                                         </h3>
                                         <p data-aos="fade-up"
                                             class="text-sm text-gray-500 peer-checked:text-gray-700 font-poppins font-dmsans">
                                             Pilihan
-                                            kelas RPL untuk mahasiswa baru.</p>
+                                            kelas Reguler untuk mahasiswa baru.</p>
                                     </div>
                                 </label>
                             </div>
@@ -143,11 +145,8 @@
                                     class="mt-1 p-3 border border-gray-300 rounded-lg w-full focus:ring-primary focus:border-primary"
                                     required>
                                     <option value="">-- Pilih Kampus --</option>
-                                    <option value="STIE Muliadarma Pratama"
-                                        {{ old('kampus') == 'STIE Muliadarma Pratama' ? 'selected' : '' }}>STIE Muliadarma Pratama
-                                    </option>
-                                    <option value="AKUBANK Muliadarma Pratama"
-                                        {{ old('kampus') == 'AKUBANK Muliadarma Pratama' ? 'selected' : '' }}>AKUBANK Muliadarma Pratama
+                                    <option value="Universitas Kepanjen"
+                                        {{ old('kampus') == 'Universitas Kepanjen' ? 'selected' : '' }}>Universitas Kepanjen
                                     </option>
                                 </select>
                             </div>
@@ -286,15 +285,30 @@
                                         class="mt-1 p-3 border border-gray-300 rounded-lg w-full focus:ring-primary focus:border-primary"
                                         required>
                                         <option value="">-- Pilih Jurusan --</option>
-                                        <option value="D3 Keuangan dan Perbankan"
-                                            {{ old('jurusan') == 'D3 Keuangan dan Perbankan' ? 'selected' : '' }}>D3 Keuangan dan Perbankan
+                                        <option value="S1 Pariwisata"
+                                            {{ old('jurusan') == 'S1 Pariwisata' ? 'selected' : '' }}>S1 Pariwisata
                                         </option>
-                                        
-                                        <option value="S1 Manajemen"
-                                            {{ old('jurusan') == 'S1 Manajemen' ? 'selected' : '' }}>S1 Manajemen</option>
-                                        <option value="S1 Akuntansi"
-                                            {{ old('jurusan') == 'S1 Akuntansi' ? 'selected' : '' }}>S1 Akuntansi</option>
-                                        
+                                        <option value="S1 Bisnis Digital"
+                                            {{ old('jurusan') == 'S1 Bisnis Digital' ? 'selected' : '' }}>S1 Bisnis Digital
+                                        </option>
+                                        <option value="S1 Kewirausahaan"
+                                            {{ old('jurusan') == 'S1 Kewirausahaan' ? 'selected' : '' }}>S1 Kewirausahaan
+                                        </option>
+                                        <option value="S1 K3(Kesehatan Keselamatan Kerja)" {{ old('jurusan') == 'S1 K3(Kesehatan Keselamatan Kerja)' ? 'selected' : '' }}>S1 K3(Kesehatan Keselamatan Kerja)
+                                        </option>
+                                        <option value="S1 Keperawatan"
+                                            {{ old('jurusan') == 'S1 Keperawatan' ? 'selected' : '' }}>S1 Keperawatan
+                                        </option>
+                                        <option value="D3 Keperawatan"
+                                            {{ old('jurusan') == 'D3 Keperawatan' ? 'selected' : '' }}>D3 Keperawatan
+                                        </option>
+                                        <option value="S1 Administrasi Rumah Sakit"
+                                            {{ old('jurusan') == 'S1 Administrasi Rumah Sakit' ? 'selected' : '' }}>S1
+                                            Administrasi Rumah Sakit
+                                        </option>
+                                        <option value="Profesi Ners"
+                                            {{ old('jurusan') == 'Profesi Ners' ? 'selected' : '' }}>Profesi Ners
+                                        </option>
                                     </select>
                                 </div>
                             </div>
@@ -390,7 +404,7 @@
 
 
                             <div data-aos="fade-up"
-                                class="p-4 bg-accent/20 border-l-4 border-accent text-secondary rounded-lg mt-4">
+                                class="p-4 bg-accent/20 border-l-4 border-accent text-primary rounded-lg mt-4">
                                 <p data-aos="fade-up" class="text-sm font-dmsans font-medium">(KOSONGKAN FORMULIR DI BAWAH
                                     INI JIKA BELUM
                                     BEKERJA)</p>

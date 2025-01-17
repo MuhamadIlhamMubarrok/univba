@@ -3,7 +3,8 @@
     <div class="  flex flex-col md:items-start justify-center items-center w-full md:w-[40%] w-[100%] mt-4 md:mt-0"
         data-aos="fade-up">
 
-        <x-header-section subtext="BERITA" subtext-color="#6b7280" title="BERITA TENTANG UPY" title-color="#222764" />
+        <x-header-section subtext="BERITA" subtext-color="#6b7280" title="BERITA TENTANG Universitas Kepanjen"
+            title-color="#D48B01" />
         <div class="swiper mySwiper my-[50px] md:w-[1300px] w-full">
             <div class="swiper-wrapper md:space-x-[10px] px-8 pb-8">
                 @foreach ($berita as $index => $project)

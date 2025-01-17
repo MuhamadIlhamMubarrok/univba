@@ -1,7 +1,7 @@
 @extends('Frontend.Layouts.app2')
 
 @section('content')
-    <x-header-section-page title="Konfirmasi Pendaftaran Mulia Darma" breadcrumb-home="Home"
+    <x-header-section-page title="Konfirmasi Pendaftaran Universitas Kepanjen" breadcrumb-home="Home"
         breadcrumb-current="Konfirmasi Pendaftaran" />
 
     <div class="bg-gray-50 py-10">

@@ -1,3 +1,5 @@
+    @section('title', 'home')
+
     @extends('Frontend.Layouts.app')
     @section('content')
         @include('Frontend.landingpage.hero-section')

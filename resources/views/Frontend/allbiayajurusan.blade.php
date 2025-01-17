@@ -1,85 +1,86 @@
+@section('title', 'Biaya dan Jurusan')
 @extends('Frontend.Layouts.app2')
 
 @section('content')
     <div class="container mx-auto px-4 lg:px-16 py-10 font-poppins">
+        <x-header-section-page title="Biaya dan Jurusan Universitas Kepanjen" breadcrumb-home="Home"
+            breadcrumb-current="Biaya dan Jurusan" />
         <!-- Biaya Formulir -->
-        <div class="bg-gray-50 p-6 rounded-lg shadow-md">
-            <h2 class="text-xl font-bold text-primary">Biaya Formulir</h2>
-            <p class="text-gray-700 mt-2 font-dmsans">Rp. {{ number_format($data['form_fee'], 0, ',', '.') }},-</p>
-        </div>
+        <div class="swiper mySwiper max-w-[1300px] w-full mt-6">
+            <div class="swiper-wrapper space-x-[10px] pb-[20px] md:ps-[20px]">
+                <!-- SMA ke S1 -->
+                <!-- Loop through sma_ke_s1 data -->
+                <?php foreach ($data['sma_ke_s1'] as $program): ?>
+                <div
+                    class="swiper-slide bg-white shadow-lg rounded-lg p-5 w-full sm:w-[280px] md:w-[320px] flex flex-col space-y-4">
+                    <!-- Judul -->
+                    <h3 class="text-lg font-semibold text-primary font-poppins">
+                        <?= $program['jurusan'] ?> (SMA ke S1)
+                    </h3>
 
-        <!-- Biaya Awal Kuliah -->
-        <div class="bg-white p-6 mt-8 rounded-lg shadow-md">
-            <h2 class="text-xl font-bold text-primary">Biaya Awal Kuliah Universitas Mitra Bangsa</h2>
-            <ul class="list-disc list-inside mt-4">
-                <li class="text-gray-700 font-dmsans"><strong>S1:</strong> Rp.
-                    {{ number_format($data['initial_fee']['S1'], 0, ',', '.') }}</li>
-                <li class="text-gray-700 font-dmsans"><strong>S2:</strong> Rp.
-                    {{ number_format($data['initial_fee']['S2'], 0, ',', '.') }}</li>
-            </ul>
-            <p class="text-gray-700 mt-4 italic font-dmsans">
-                Pembayaran Biaya Kuliah Dapat Diangsur Bulanan (Biaya Tidak Ada Kenaikan Sampai Lulus Selama Masa Studi)
-            </p>
-        </div>
+                    <!-- Detail Biaya -->
+                    <div class="text-sm font-dmsans text-gray-600 space-y-1">
+                        <p>Biaya Pendaftaran: <span class="text-primary font-medium">Rp.
+                                <?= number_format($data['form_fee'], 0, ',', '.') ?></span></p>
+                        <p>Biaya Awal: <span class="text-primary font-medium">Rp.
+                                <?= number_format($data['initial_fee']['S1D3'], 0, ',', '.') ?></span></p>
+                        <p>Biaya Bulanan: <span class="text-accent font-medium">Rp. <?= $program['spp'] ?></span></p>
+                    </div>
 
-        <!-- Biaya S1 -->
-        <div class="bg-gray-50 p-6 mt-8 rounded-lg shadow-md">
-            <h2 class="text-xl font-bold text-primary">Daftar Biaya S1</h2>
-            <div class="overflow-x-auto">
-                <table class="w-full mt-4 border border-gray-300">
-                    <thead>
-                        <tr class="bg-secondary text-white">
-                            <th class="px-4 py-2 text-left">Jurusan</th>
-                            <th class="px-4 py-2">Gel 1</th>
-                            <th class="px-4 py-2">Gel 2</th>
-                            <th class="px-4 py-2">Gel 3</th>
-                            <th class="px-4 py-2">Semester</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach ($data['s1_fees'] as $fee)
-                            <tr>
-                                <td class="px-4 py-2 border">{{ $fee['jurusan'] }}</td>
-                                <td class="px-4 py-2 border">Rp. {{ $fee['gel1'] }}</td>
-                                <td class="px-4 py-2 border">Rp. {{ $fee['gel2'] }}</td>
-                                <td class="px-4 py-2 border">Rp. {{ $fee['gel3'] }}</td>
-                                <td class="px-4 py-2 border">Rp. {{ $fee['semester'] }}</td>
-                            </tr>
-                        @endforeach
-                    </tbody>
-                </table>
+                    <!-- Tombol -->
+                    <div class="flex justify-between items-center mt-3 gap-3">
+                        <a href="/pendaftaran"
+                            class="bg-primary hover:bg-secondary text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">Daftar
+                            Sekarang</a>
+                        <a href="/page/14"
+                            class="bg-secondary hover:bg-accent text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">Info
+                            Lanjut</a>
+                    </div>
+                </div>
+                <?php endforeach; ?>
+
+                <!-- D3 ke S1 -->
+                <!-- Loop through d3_ke_s1 data -->
+                <?php foreach ($data['d3_ke_s1'] as $program): ?>
+                <div
+                    class="swiper-slide bg-white shadow-lg rounded-lg p-5 w-full sm:w-[280px] md:w-[320px] flex flex-col space-y-4">
+                    <!-- Judul -->
+                    <h3 class="text-lg font-semibold text-primary font-poppins">
+                        <?= $program['jurusan'] ?> (D3 ke S1)
+                    </h3>
+
+                    <!-- Detail Biaya -->
+                    <div class="text-sm font-dmsans text-gray-600 space-y-1">
+                        <p>Biaya Pendaftaran: <span class="text-primary font-medium">Rp.
+                                <?= number_format($data['form_fee'], 0, ',', '.') ?></span></p>
+                        <p>Biaya Awal: <span class="text-primary font-medium">Rp.
+                                <?= number_format($data['initial_fee']['ners'], 0, ',', '.') ?></span></p>
+                        <p>Biaya Bulanan: <span class="text-accent font-medium">Rp. <?= $program['spp'] ?></span></p>
+                    </div>
+
+                    <!-- Tombol -->
+                    <div class="flex justify-between items-center mt-3 gap-3">
+                        <a href="/pendaftaran"
+                            class="bg-primary hover:bg-secondary text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">Daftar
+                            Sekarang</a>
+                        <a href="/page/14"
+                            class="bg-secondary hover:bg-accent text-white font-medium py-2 px-3 rounded-md text-sm transition-all w-full text-center">Info
+                            Lanjut</a>
+                    </div>
+                </div>
+                <?php endforeach; ?>
             </div>
+            <div class="swiper-pagination"></div>
         </div>
-
-        <!-- Biaya S2 -->
-        <div class="bg-white p-6 mt-8 rounded-lg shadow-md">
-            <h2 class="text-xl font-bold text-primary">Daftar Biaya S2</h2>
-            <div class="overflow-x-auto">
-                <table class="w-full mt-4 border border-gray-300">
-                    <thead>
-                        <tr class="bg-secondary text-white">
-                            <th class="px-4 py-2 text-left">Jurusan</th>
-                            <th class="px-4 py-2">Semester</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        @foreach ($data['s2_fees'] as $fee)
-                            <tr>
-                                <td class="px-4 py-2 border">{{ $fee['jurusan'] }}</td>
-                                <td class="px-4 py-2 border">Rp. {{ $fee['semester'] }}</td>
-                            </tr>
-                        @endforeach
-                    </tbody>
-                </table>
-            </div>
-        </div>
-
         <div data-aos="fade-up" class="text-center shadow-xl mt-8">
             <div data-aos="fade-up" class="bg-secondary py-8 rounded-lg">
-                <h2 data-aos="fade-up" class="text-xl font-poppins font-bold text-white mb-3">Ubah Masa Depanmu Bersama UPY
+                <h2 data-aos="fade-up" class="text-xl font-poppins font-bold text-white mb-3">Ubah Masa Depanmu Bersama
+                    Universitas Kepanjen
                 </h2>
-                <p data-aos="fade-up" class="text-white font-dmsans mb-5">Tentukan masa depanmu bersama Universitas PGRI
-                    Yogyakarta </p>
+                <p data-aos="fade-up" class="text-white font-dmsans mb-5">Jangan lewatkan kesempatan emas untuk menjadi
+                    mahasiswa Universitas Kepanjen, kampus yang memberikan pendidikan holistik untuk menciptakan lulusan
+                    yang siap bersaing
+                    global. </p>
                 <a href="/pendaftaran" data-aos="fade-up"
                     class="bg-white text-secondary font-poppins font-medium py-2 px-6 rounded-full shadow-md hover:bg-gray-100 transition">
                     Daftar Sekarang
