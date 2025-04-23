@@ -62,6 +62,7 @@
                             <div class="mb-3">
                                 <label for="file" class="form-label">gambar</label>
                                 <input type="file" class="form-control dropify" id="file"
+                                    value="{{ old('file') }}"
                                     data-default-file="{{ $images->file ? asset('storage/galleryFoto/' . $images->file) : 'https://kuliahkaryawan.net/assets/images/logok2-shadow.png' }}"
                                     name="file">
                             </div>

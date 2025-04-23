@@ -32,23 +32,10 @@
                     {{ $events->links('pagination::tailwind') }}
                 </div>
             </section>
-            <div data-aos="fade-up" class="bg-gray-100 py-8 mt-3">
-                <div class="container mx-auto px-4 lg:px-16 text-center">
-                    <div data-aos="fade-up" class="w-full h-[2px] bg-primary mb-6 mx-auto"></div>
-                    <h1 data-aos="fade-up" class="font-poppins text-[22px] md:text-[28px] font-semibold text-primary">
-                        Jadilah Bagian dari Perjalanan Kami
-                    </h1>
-                    <p data-aos="fade-up" class="text-gray-700 mt-4 text-[14px] md:text-[16px] mb-6">
-                        Temukan peluang dan potensi terbaik dirimu bersama Universitas Kepanjen, universitas yang selalu mendukung inovasi,
-                        kreativitas, dan pengembangan diri mahasiswanya.
-                    </p>
-                    <x-button url="/pendaftaran"
-                        class="mt-6 bg-blue-700 hover:bg-blue-500 text-white font-medium px-6 py-3 rounded-lg">
-                        Bergabung Sekarang
-                    </x-button>
-                </div>
-            </div>
 
+            <x-join-us-section title="Bergabunglah Bersama Universitas Banten"
+                description="Universitas Banten membuka jalan menuju kesuksesan bisnis! Bergabung dan kembangkan potensimu di dunia usaha."
+                buttonText="Daftar Sekarang" />
         </div>
     </div>
 @endsection

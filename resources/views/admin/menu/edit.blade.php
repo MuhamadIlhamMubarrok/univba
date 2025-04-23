@@ -35,7 +35,7 @@
                             <div class="form-group mb-3">
                                 <label class="form-label">Kelompok Menu</label>
                                 <select name="submenu_id" class="form-control">
-                                    <option value="">Tidak ada</option>
+                                    <option value="0">Tidak ada</option>
                                     @foreach ($parentMenus as $parent)
                                         <option value="{{ $parent->menu_id }}"
                                             {{ $menu->submenu_id == $parent->menu_id ? 'selected' : '' }}>

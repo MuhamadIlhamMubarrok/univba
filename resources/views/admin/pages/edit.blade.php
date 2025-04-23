@@ -42,18 +42,13 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="form-label">Ringkasan</label>
-                                <input type="text" class="form-control mb-3" name="short" value="{{ $page->short }}">
-                            </div>
-
-                            <div class="form-group">
                                 <label class="form-label">Isi Halaman</label>
                                 <textarea class="form-control mb-3" name="isi" id="editor" rows="5" required>{{ $page->isi }}</textarea>
                             </div>
 
                             <div class="form-group mt-3">
                                 <label class="form-label">Link</label>
-                                <input type="url" class="form-control mb-3" name="link" value="{{ $page->link }}">
+                                <input type="text" class="form-control mb-3" name="link" value="{{ $page->link }}">
                             </div>
 
                             <button type="submit" class="btn btn-primary mt-3">Update</button>

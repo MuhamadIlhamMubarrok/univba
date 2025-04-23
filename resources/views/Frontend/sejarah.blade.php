@@ -1,7 +1,7 @@
 @section('title', 'Sejarah')
 @extends('Frontend.Layouts.app2')
 @section('content')
-    <x-header-section-page title="Sejarah Universitas Kepanjen" breadcrumb-home="Home" breadcrumb-current="Sejarah Singkat" />
+    <x-header-section-page title="Sejarah Universitas Banten" breadcrumb-home="Home" breadcrumb-current="Sejarah Singkat" />
 
     <div data-aos="fade-up" class=" flex flex-col my-6 md:my-10 px-4 md:px-20 lg:px-32 xl:px-60">
         <!-- Gambar -->
@@ -11,46 +11,66 @@
         <div data-aos="fade-up"
             class="flex flex-col space-y-4 text-justify font-dmsans text-[14px] md:text-[16px] bg-white shadow-xl shadow rounded-lg p-6">
             <p class="first-line:pl-5">
-                Awal berdirinya Sekolah Tinggi Ilmu Kesehatan Kepanjen (STIKES Kepanjen) dimulai dari pengembangan Sekolah
-                Perawat Kesehatan (SPK) Kepanjen. SPK Kepanjen berdiri pada 1 Oktober 1985 yang diawali dari kelas Ekstensi
-                SPK Depkes Celaket Malang yang penyelenggaraannya dibawah pembinaan Rumah Sakit Umum Kanjuruhan Kepanjen,
-                sehingga fasilitas, tenaga, maupun sarana dan prasarana penunjangnya dibantu oleh Rumah Sakit Umum
-                Kanjuruhan Kepanjen.
+                Universitas Banten didirikan sebagai perguruan tinggi swasta yang berlokasi di kota Serang, Banten.
+                Universitas Banten tidak lahir begitu saja. Ia adalah hasil perjuangan dan kerja keras dari pendiri Yayasan
+                Pusat Pengembangan Pendidikan Banten, E. Rahmat Taufik, Ph.D. Sejak tahun 2004, STIE Banten telah berdiri
+                sebagai lembaga pendidikan tinggi yang mengutamakan kualitas dan relevansi. Namun, dengan visi yang lebih
+                besar dan semangat yang tak tergoyahkan, E. Rahmat Taufik, Ph.D memutuskan untuk mengubah STIE Banten
+                menjadi Universitas Banten, dengan tujuan untuk menyediakan pendidikan dan penelitian yang lebih baik dan
+                lebih luas bagi masyarakat Banten dan Indonesia.
             </p>
-            <p>
-                SPK Kepanjen secara resmi mendapatkan perijinan operasionalnya dari Menteri Kesehatan RI Nomor:
-                111/Kep/DIKNAKES/VII/88 dan Surat Keputusan Bupati Dati II Malang, Nomor: 151/1987. Berkembangnya SPK dari
-                tahun 1985 sampai 1998 dicapai tidak lepas dari peranan dan tugas Ketua SPK, pembinaan dari Bapak Bupati
-                Malang dan Kanwil Depkes Propinsi Jawa Timur. SPK Kepanjen mengalami beberapa pergantian kepemimpinan antara
-                lain selaku Ketua Sekolah adalah dr. Ibnu Fajar (1985-1989), dr. Tuti Hariyanto, MARS (1989-1992), dr.
-                Susilowati (1992-1998). Dengan dituntutnya perkembangan pendidikan tenaga kesehatan yang menuntut
-                peningkatan jenjang pendidikan bagi tenaga profesi keperawatan maka atas dasar persyaratan akreditasi pada
-                tahun 1998 status SPK Kepanjen telah menjadi Akademi Keperawatan Kabupaten Malang, berdasarkan Surat
-                Keputusan Ketua Pusat Pendidikan Tenaga Kesehatan Republik Indonesia Nomor: HK.00.06.1.3.5641 tanggal 23
-                Oktober 1998 dengan status kelembagaan pendidikan dibawah pembinaan Pemerintah Kabupaten Malang yang
-                dipimpin oleh Drs. Driatmojo, Bsc., MBA, MM (1998-2001), Yudiono, S.Kp., M.Kes. (2001-2008), Wiwit
-                Kurniawati, M.Kep., Sp.Mat. (2008-20010), dan H. dr. Abdurrachman, M.Kes. (2010-sekarang).
+            <p class="first-line:pl-5">
+                Perubahan bentuk STIE Banten menjadi Universitas Banten tidaklah mudah. , E. Rahmat Taufik, Ph.D dan timnya
+                harus melewati berbagai tantangan, mulai dari persiapan administrasi hingga peningkatan kualitas kurikulum
+                dan tenaga pengajar. Namun, dengan tekad yang kuat dan semangat yang tak kenal lelah, Universitas Banten
+                akhirnya didirikan pada tahun 2022, berdasarkan Surat Keputusan Menteri Pendidikan, Kebudayaan, Riset, Dan
+                Teknologi Republik Indonesia dengan Nomor 524/E/O/2022.
             </p>
-            <p>
-                Berdasarkan SK Mendiknas No. 259/D/O/2008 tanggal 23 Desember 2008, AKPER Kabupaten Malang berubah menjadi
-                Sekolah Tinggi Ilmu Kesehatan (STIKES) Kepanjen yang diresmikan oleh Bapak Bupati Malang tanggal 25 Juli
-                2009. Saat ini STIKES Kepanjen mempunyai 2 Program Studi yaitu S1 Keperawatan dan DIII Keperawatan.
+            <p class="first-line:pl-5">
+                Visi Universitas Banten adalah menjadi pusat pengembangan pendidikan dan penelitian yang unggul di Banten
+                dan Indonesia. Dalam mencapai visi tersebut, Universitas Banten menawarkan berbagai program studi yang telah
+                terakreditasi dan mengutamakan praktik dan aplikasi ilmu pengetahuan. Program studi Akuntansi dan Manajemen
+                telah terakreditasi “B”, sementara program studi Hukum, Kesehatan Masyarakat, Teknik Industri, Sistem, dan
+                Teknologi Informasi telah terakreditasi “BAIK”. Ini menunjukkan bahwa Universitas Banten memprioritaskan
+                kualitas pendidikan yang ditawarkan dan berupaya untuk terus meningkatkannya.
             </p>
+            <p class="first-line:pl-5">
+                Tidak hanya menawarkan pendidikan berkualitas, Universitas Banten juga berupaya untuk menjadi pusat
+                penelitian yang unggul dalam berbagai bidang. Melalui kerja sama dengan berbagai institusi dan perusahaan,
+                Universitas Banten menjalin riset dan inovasi yang bermanfaat bagi masyarakat. Universitas Banten berharap
+                dapat memberikan solusi untuk permasalahan yang dihadapi oleh masyarakat melalui riset dan inovasi yang
+                dilakukan.
+            </p>
+            <p class="first-line:pl-5">
+                Sebagai sebuah perguruan tinggi swasta yang baru didirikan, Universitas Banten telah menunjukkan komitmennya
+                untuk mendorong pengembangan masyarakat Banten dan Indonesia melalui pendidikan dan penelitian yang
+                berkualitas. Universitas Banten juga telah memperoleh pengakuan dari masyarakat dan lembaga pemerintah
+                setempat, seperti Pemprov Banten dan Dinas Pendidikan dan Kebudayaan Provinsi Banten.
+            </p>
+            <p class="first-line:pl-5">
+                Tak hanya itu, Universitas Banten juga memiliki berbagai kegiatan dan program yang bertujuan untuk
+                mempererat hubungan antara mahasiswa, dosen, dan masyarakat. Beberapa kegiatan yang diselenggarakan antara
+                lain seminar, workshop, dan pelatihan untuk meningkatkan kualitas dan kapasitas sumber daya manusia di
+                daerah Banten.
+            </p>
+            <p class="first-line:pl-5">
+                Selain itu, Universitas Banten juga memiliki program kewirausahaan yang bertujuan untuk menciptakan lapangan
+                kerja bagi lulusan dan masyarakat sekitar. Program kewirausahaan ini mencakup pelatihan dan bimbingan bagi
+                mahasiswa dan masyarakat dalam mengembangkan usaha.
 
 
+            </p>
+            <p class="first-line:pl-5">
+                Dengan tekad dan semangat yang menggelora, Universitas Banten terus berupaya untuk meningkatkan kualitas
+                pendidikan dan penelitian yang ditawarkannya, serta menjalin kerja sama dengan berbagai pihak untuk mencapai
+                tujuan visinya. Universitas Banten siap menjadi pelopor perguruan tinggi swasta yang unggul dan terdepan di
+                Banten dan di Indonesia.
+            </p>
         </div>
 
         <!-- Bagian Ajakan -->
-        <div data-aos="fade-up" class="flex items-center flex-col pt-10">
-            <div data-aos="fade-up" class="w-full h-[1px] bg-primary my-4"></div>
-            <h1 data-aos="fade-up" class="text-center font-poppins text-[20px] md:text-[30px] font-bold text-primary">DAFTAR
-                SEKARANG</h1>
-            <p data-aos="fade-up" class="text-center mb-5 text-[12px] md:text-[14px] lg:text-[16px]">
-                Bergabunglah dengan Universitas Kepanjen dan temukan pendidikan berkualitas yang akan
-                membimbingmu
-                menuju masa depan yang cemerlang dan penuh prestasi.
-            </p>
-            <x-button url="/pendaftaran">DAFTAR SEKARANG</x-button>
-        </div>
+        <x-join-us-section title="Bergabunglah Bersama Universitas Banten"
+            description="Jadilah pemimpin masa depan! Universitas Banten siap membentuk lulusan berdaya saing tinggi di era digital."
+            buttonText="Daftar Sekarang" buttonLink="/pendaftaran" />
     </div>
 @endsection

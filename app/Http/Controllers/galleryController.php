@@ -12,7 +12,7 @@ class galleryController extends Controller
 {
     function index()
     {
-        $image = Images::paginate(8);
+        $image = Images::orderBy('created_at', 'desc')->paginate(8);
         return view('admin.gallery.index', compact('image'));
     }
 
@@ -30,10 +30,18 @@ class galleryController extends Controller
     function store(Request $request)
     {
         // Validasi input
-        $validator = Validator::make($request->all(), [
-            'kategori' => 'required|string|max:255',
-            'file' => 'required|image|mimes:jpeg,png,jpg,webp|max:2048',
-        ]);
+        $validator = Validator::make(
+            $request->all(),
+            [
+                'kategori' => 'required|string|max:255',
+                'file' => 'required|image|mimes:jpeg,png,jpg,webp|max:2048',
+            ],
+            [
+                'file.mimes' => 'File harus berupa gambar dengan format jpeg, png, jpg, atau webp.',
+                'file.max' => 'Ukuran file tidak boleh lebih dari 2MB.',
+                'file.required' => 'File gambar harus diunggah.',
+            ],
+        );
 
         // Jika validasi gagal, kembali ke halaman sebelumnya dengan pesan error
         if ($validator->fails()) {
@@ -54,7 +62,6 @@ class galleryController extends Controller
             'file' => $gambar,
             'active' => $request->has('active') ? '1' : '0',
             'created_at' => now(),
-            'path' => "istigfar wahai hacker"
         ]);
 
         return redirect()->route('gallery.index')->with('message', 'Gambar berhasil ditambahkan ke galeri!')->with('alert-type', 'success');
@@ -69,10 +76,18 @@ class galleryController extends Controller
     public function update(Request $request, $id)
     {
         // Validasi input
-        $request->validate([
-            'kategori' => 'required|string|max:255',
-            'file' => 'nullable|image|mimes:jpeg,png,jpg,webp|max:2048', // File bersifat opsional saat update
-        ]);
+        $validator = Validator::make(
+            $request->all(),
+            [
+                'kategori' => 'required|string|max:255',
+                'file' => 'required|image|mimes:jpeg,png,jpg,webp|max:2048',
+            ],
+            [
+                'file.mimes' => 'File harus berupa gambar dengan format jpeg, png, jpg, atau webp.',
+                'file.max' => 'Ukuran file tidak boleh lebih dari 2MB.',
+                'file.required' => 'File gambar harus diunggah.',
+            ],
+        );
 
         // Mencari gambar berdasarkan ID
         $image = Images::findOrFail($id);

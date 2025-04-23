@@ -1,7 +1,7 @@
 @extends('Frontend.Layouts.app2')
 
 @section('content')
-    <x-header-section-page title="Konfirmasi Pendaftaran Universitas Kepanjen" breadcrumb-home="Home"
+    <x-header-section-page title="Konfirmasi Pendaftaran Universitas Banten" breadcrumb-home="Home"
         breadcrumb-current="Konfirmasi Pendaftaran" />
 
     <div class="bg-gray-50 py-10">
@@ -27,8 +27,8 @@
                     <div class="mb-6">
                         <h3 class="text-lg font-semibold font-poppins">Informasi Biaya Pendaftaran:</h3>
                         <ul class="list-disc list-inside text-sm mt-2">
-                            <li><strong>D3:</strong> Rp. 150.000,-</li>
-                            <li><strong>S1:</strong> Rp. 150.000,-</li>
+                            <li><strong>S1:</strong> Rp. 100.000,-</li>
+                            <li><strong>S2:</strong> Rp. 300.000,-</li>
                         </ul>
                     </div>
 
@@ -50,7 +50,7 @@
                             <p class="text-sm font-medium mt-2">2. Pilih salah satu cara konfirmasi:</p>
                             <ul class="list-disc list-inside mt-2 text-sm">
                                 <li>
-                                    <a href="https://api.whatsapp.com/send?phone=6287890198284&text=Halo%20Admin%20Saya%20Sudah%20Daftar%20Online%20di%20UPY."
+                                    <a href="https://api.whatsapp.com/send?phone=6289504586704&text=Halo%20Admin%20Saya%20Sudah%20Daftar%20Online%20di%20UPY."
                                         target="_blank" class="text-accent hover:underline font-semibold">
                                         Konfirmasi Via WhatsApp
                                     </a>

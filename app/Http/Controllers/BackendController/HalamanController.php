@@ -30,12 +30,11 @@ class HalamanController extends Controller
                 'judul' => 'required|string|max:255',
                 'short' => 'nullable|string|max:255',
                 'isi' => 'required|string',
-                'link' => 'nullable|url',
+                'link' => 'nullable',
             ],
             [
                 'judul.required' => 'Judul wajib diisi.',
                 'isi.required' => 'Isi wajib diisi.',
-                'link.url' => 'Link harus berupa URL yang valid.',
             ],
         );
 
@@ -71,7 +70,7 @@ class HalamanController extends Controller
                 'judul' => 'required|string|max:255',
                 'short' => 'nullable|string|max:255',
                 'isi' => 'required|string',
-                'link' => 'nullable|url', // 'link' bisa kosong namun harus berupa URL jika diisi
+                'link' => 'nullable',
             ],
             [
                 'judul.required' => 'Judul wajib diisi.',
@@ -81,7 +80,6 @@ class HalamanController extends Controller
                 'short.max' => 'Ringkasan tidak boleh lebih dari 255 karakter.',
                 'isi.required' => 'Isi halaman wajib diisi.',
                 'isi.string' => 'Isi halaman harus berupa teks.',
-                'link.url' => 'Link harus berupa URL yang valid (contoh: https://example.com).',
             ],
         );
 

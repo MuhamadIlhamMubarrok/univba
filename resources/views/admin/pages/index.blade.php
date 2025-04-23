@@ -32,7 +32,6 @@
                                 <thead>
                                     <tr>
                                         <th>Judul</th>
-                                        <th>Ringkasan</th>
                                         <th>Isi</th>
                                         <th>Aksi</th>
                                     </tr>
@@ -41,7 +40,6 @@
                                     @foreach ($pages as $page)
                                         <tr>
                                             <td>{{ $page->judul }}</td>
-                                            <td>{{ Str::limit($page->short, 20) }}</td>
                                             <td>{{ Str::limit($page->isi, 30) }}</td>
                                             <td>
                                                 <div class="d-flex flex-wrap gap-2">

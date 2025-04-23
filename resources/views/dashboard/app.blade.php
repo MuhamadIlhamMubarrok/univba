@@ -2,65 +2,43 @@
 <html lang="en">
 
 <head>
-    <!-- Meta tags -->
-    <meta charset="utf-8">
+   <meta charset="utf-8">
     <meta name="description"
-        content="Universitas Kepanjen  adalah perguruan tinggi terkemuka di Indonesia yang menawarkan program pendidikan berkualitas tinggi. Universitas Kepanjen menyediakan program studi S1, hingga program pendidikan profesi dengan fasilitas yang mendukung pembelajaran daring dan kelas karyawan. Kami memiliki jurusan seperti Kewirausahaan, Bisnis Digital, dan Informatika dengan biaya terjangkau untuk mencetak lulusan yang kompeten di dunia kerja." />
-
+        content="Universitas Banten atau yang biasa dikenal Univ Banten salah satu Perguruan Tinggi Swasta Terbaik di Banten, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 500.000/Bulan dengan jurusan S1 Manajemen, S1 Akuntansi, S1 Hukum, S1 Teknik Industri, S1 Kesehatan Masyarakat, S1 Sistem Teknologi Informasi" />
     <meta name="keywords"
-        content="Kelas karyawan, kuliah online, kuliah jarak jauh, kuliah malam, kuliah sabtu, kuliah murah, Universitas Kepanjen Cilacap, kampus terbaik Cilacap, kampus terbaik di Jawa Tengah, kampus dengan biaya terjangkau, kelas karyawan Cilacap, pendidikan tinggi Cilacap, kuliah online Cilacap, program sarjana S1, akreditasi Universitas Kepanjen, S1 Manajemen, S1 Kewirausahaan, S1 Bisnis Digital, S1 Informatika, S1 Ilmu Komunikasi, S1 Teknik Informatika, S1 Peternakan, S1 Agro Teknologi, S1 Hukum, kuliah karyawan Cilacap, pendidikan fleksibel, kuliah sambil bekerja, universitas terbaik di Cilacap, kuliah kelas malam Cilacap, kuliah jarak jauh Cilacap, Edunitas, kuliah karyawan Edunitas, biaya kuliah murah di Cilacap, universitas terjangkau di Cilacap" />
-
+        content="Kelas karyawan, Kuliah karyawan, Universitas Pelita Bangsa, Universitas Esa Unggul, Universitas Mercu Buana, Universitas Terbuka, Universitas Pamulang, Universitas Muhammadiyah Tangerang, Universitas Bina Sarana Informatika, Universitas Islam Syekh Yusuf, Universitas Raharja, Universitas Primagraha, Universitas Pancasila,
+         Universitas Insan Pembangunan, Universitas Multimedia Nusantara, Universitas Trisakti, Universitas Budi Luhur, biaya kuliah kelas karyawan, kampus kelas karyawan, kuliah sambil kerja, kelas sabtu minggu, kelas malam, akreditasi universitas, kampus murah, kampus terjangkau, S1 Manajemen, S1 Akuntansi, S1 Hukum, S1 Teknik Industri,
+          S1 Kesehatan Masyarakat, S1 Sistem Teknologi Informasi, kuliah online dan offline, kampus Tangerang, kampus Serang, kuliah fleksibel, edunitas.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="google-site-verification" content="lpdys1yc63aHMZaMMrx2kkJ5RYEPp-QyfHih4JMTxI0" />
 
-    <title>Universitas Kepanjen (Kelas Karyawan)</title>
-    <meta property="og:title" content="Universitas Kepanjen | Universitas Kepanjen (Kelas Karyawan)">
+    <title>@yield('title') &mdash; Universitas Banten(Kelas Karyawan)</title>
+    <meta property="og:title" content="Universitas Banten (Kelas Karyawan)">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://universitasalirsyad.info">
-    <meta property="og:image" content="https://universitasalirsyad.info/images/banner-slider/banner.png">
+    <meta property="og:url" content="https://univbanten.info/">
+    <meta property="og:image" content="https://univbanten.info/images/background/hero1.png">
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:description"
-        content="Universitas Kepanjen  di Jawa Tengah menawarkan program studi unggulan di bidang Kewirausahaan, Bisnis Digital, dan Teknik Informatika. Dengan fasilitas kelas karyawan dan kuliah online yang fleksibel, Universitas Kepanjen memberikan pendidikan berkualitas dengan biaya terjangkau, mempersiapkan generasi muda yang siap berkompetisi di dunia bisnis dan teknologi." />
+        content="Universitas Banten adalah perguruan tinggi yang berkomitmen pada pendidikan berkualitas dengan berbagai program studi unggulan. Menyediakan kelas karyawan dan reguler dengan fasilitas modern, tenaga pengajar berpengalaman, serta biaya kuliah yang terjangkau di Banten." />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:creator" content="@_kuliahkaryawan">
-    <meta name="twitter:site" content="@_kuliahkaryawan">
-    <meta name="twitter:title" content="Universitas Kepanjen | Universitas Kepanjen (Kelas Karyawan)">
+    <meta name="twitter:creator" content="@univbanten">
+    <meta name="twitter:site" content="@univbanten">
+    <meta name="twitter:title" content="Universitas Banten | Pendidikan Pertanian Berkualitas">
     <meta name="twitter:description"
-        content="Universitas Kepanjen  di Jawa Tengah menawarkan pendidikan fleksibel dengan program Kewirausahaan, Bisnis Digital, dan Teknik Informatika. Dapatkan pengalaman kuliah yang menyesuaikan jadwal Anda melalui kelas karyawan, kuliah online, dan biaya terjangkau. Universitas Kepanjen memberikan kesempatan bagi Anda untuk belajar sambil bekerja, dengan kualitas pendidikan yang siap mengantarkan Anda ke dunia bisnis dan teknologi." />
-    <meta name="twitter:domain" content="http://universitasalirsyad.info/">
-    <meta name="twitter:image:src" content="https://universitasalirsyad.info/images/banner-slider/banner.png">
-    <meta name="author" content="Kuliah Karyawan Team" />
+        content="Universitas Banten menawarkan berbagai program studi unggulan dengan pilihan kelas reguler dan kelas karyawan. Dengan fasilitas modern dan biaya kuliah terjangkau, kami mendukung fleksibilitas belajar bagi mahasiswa yang bekerja." />
+    <meta name="twitter:domain" content="https://univbanten.info/">
+    <meta name="twitter:image:src" content="https://univbanten.info/images/background/hero1.png">
+    <meta name="author" content="IT Kuliah Karyawan Team" />
     <meta http-equiv="cache-control" content="public" />
-    <meta name="application-name" content="Universitas Kepanjen | Kuliah Karyawan K2" />
-    <meta name="msapplication-TileColor" content="#B12720" />
-    <meta name="theme-color" content="#B12720" />
-
-    <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/favicons/apple-icon-57x57.png') }}">
-    <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/favicons/apple-icon-60x60.png') }}">
-    <link rel="apple-touch-icon" sizes="72x72" href="{{ asset('images/favicons/apple-icon-72x72.png') }}">
-    <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('images/favicons/apple-icon-76x76.png') }}">
-    <link rel="apple-touch-icon" sizes="114x114" href="{{ asset('images/favicons/apple-icon-114x114.png') }}">
-    <link rel="apple-touch-icon" sizes="120x120" href="{{ asset('images/favicons/apple-icon-120x120.png') }}">
-    <link rel="apple-touch-icon" sizes="144x144" href="{{ asset('images/favicons/apple-icon-144x144.png') }}">
-    <link rel="apple-touch-icon" sizes="152x152" href="{{ asset('images/favicons/apple-icon-152x152.png') }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/favicons/apple-icon-180x180.png') }}">
-    <link rel="icon" type="image/png" sizes="192x192"
-        href="{{ asset('images/favicons/android-icon-192x192.png') }}">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicons/favicons-32x32.png') }}">
-    <link rel="icon" type="image/png" sizes="96x96" href="{{ asset('images/favicons/favicons-96x96.png') }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/favicons/favicons-16x16.png') }}">
-    <link rel="manifest" href="images/favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="images/favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="application-name" content="Universitas Banten">
+    <meta name="msapplication-TileColor" content="#9E2A61" />
+    <meta name="theme-color" content="#9E2A61" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 
     <!-- End fonts -->
 
@@ -70,8 +48,7 @@
 
     <!-- Plugin css for this page -->
     <link rel="stylesheet" href="{{ asset('../assets/vendors/flatpickr/flatpickr.min.css') }}">
-    <link rel="stylesheet"
-        href="{{ asset('../../../assets/vendors/datatables.net-bs5/dataTables.bootstrap5.css') }}">
+    <link rel="stylesheet" href="{{ asset('../../../assets/vendors/datatables.net-bs5/dataTables.bootstrap5.css') }}">
     <link rel="stylesheet" href="{{ asset('../../../assets/vendors/dropify/dist/dropify.min.css') }}">
     <!-- End plugin css for this page -->
 

@@ -58,8 +58,7 @@
 
                             <div class="form-group mb-4">
                                 <label for="file" class="form-label">Gambar</label>
-                                <input type="file"
-                                    class="form-control dropify @error('file') is-invalid @enderror"
+                                <input type="file" class="form-control dropify @error('file') is-invalid @enderror"
                                     id="file" name="file" value="{{ old('file') }}">
                                 @error('file')
                                     <div class="invalid-feedback">{{ $message }}</div>

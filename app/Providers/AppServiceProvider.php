@@ -2,6 +2,8 @@
 
 namespace App\Providers;
 
+use App\Models\Berita;
+use App\Observers\PostObserver;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Pagination\Paginator;
 
@@ -25,5 +27,6 @@ class AppServiceProvider extends ServiceProvider
     public function boot()
     {
         Paginator::useBootstrap();
+        Berita::observe(PostObserver::class);
     }
 }

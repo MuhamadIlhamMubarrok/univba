@@ -1,6 +1,6 @@
 /* Navbar default */
 #navbar {
-    background-color: #f96d1e; /* Default warna navbar */
+    background-color: #4b410e; /* Default warna navbar */
     transition: background-color 0.3s ease-in-out;
     position: fixed;
     top: 0;
@@ -15,5 +15,5 @@
 
 /* Warna navbar saat di-scroll */
 #navbar.scrolled {
-    background-color: #f96d1e; /* Warna saat di-scroll */
+    background-color: #4b410e; /* Warna saat di-scroll */
 }

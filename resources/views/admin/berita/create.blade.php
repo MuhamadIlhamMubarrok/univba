@@ -35,24 +35,27 @@
 
                             <div class="form-group mb-3">
                                 <label class="form-label">Judul Berita</label>
-                                <input class="form-control" name="judul" placeholder="Masukan Judul" required>
+                                <input class="form-control" name="judul" value="{{ old('judul') }}"
+                                    placeholder="Masukan Judul" required>
                             </div>
                             <div class="form-group mb-3">
                                 <label class="form-label">Ringkasan</label>
-                                <input class="form-control" name="ringkasan" placeholder="Masukkan ringkasan" required>
+                                <input class="form-control" name="ringkasan" placeholder="Masukkan ringkasan"
+                                    value="{{ old('ringkasan') }}" required>
                             </div>
                             <div class="form-group mb-3">
                                 <label class="form-label">Tanggal Berita</label>
-                                <input type="date" class="form-control" name="tanggal_berita" required>
+                                <input type="date" class="form-control" name="tanggal_berita"
+                                    value="{{ old('tanggal_berita') }}" required>
                             </div>
                             <div class="form-group mb-3">
                                 <label class="form-label">Foto (file .webp)</label>
-                                <input type="file" name="file_foto"
+                                <input type="file" name="file_foto" value="{{ old('file_foto') }}"
                                     class="form-control dropify @error('file') is-invalid @enderror">
                             </div>
                             <div class="form-group mb-3">
                                 <label class="form-label">Isi Halaman</label>
-                                <textarea class="form-control" name="content" rows="20" id="editor" required></textarea>
+                                <textarea class="form-control" name="content" rows="20" id="editor" value="{{ old('content') }}" required></textarea>
                             </div>
                             <div class="form-group mb-3">
                                 <button type="submit" class="btn btn-primary">Simpan</button>

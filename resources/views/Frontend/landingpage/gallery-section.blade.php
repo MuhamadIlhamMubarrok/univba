@@ -3,18 +3,17 @@
     <di class="  flex flex-col md:items-start justify-center items-center w-full md:w-[40%] w-[100%] mt-4 md:mt-0"
         data-aos="fade-up">
 
-        <x-header-section subtext="GALLERY" subtext-color="#6b7280" title="EVENT KAMPUS Universitas Kepanjen"
+        <x-header-section subtext="GALLERY Universitas Banten" subtext-color="#6b7280" title=""
             title-color="#D48B01" />
         <div class=" swiper mySwiper mb-3 mb-[50px] md:w-[1300px] w-full">
             <div class="swiper-wrapper">
                 @foreach ($images as $index => $image)
                     <div class="swiper-slide">
-                        <img src="{{ asset('./storage/galleryFoto/' . $image->file) }}" />
+                        <img src="{{ asset('./storage/galleryFoto/' . $image->file) }}" class="w-[420px] h-[420px]" />
                     </div>
                 @endforeach
             </div>
             <div class="swiper-pagination"></div>
         </div>
-        <x-button url="/kegiatan-mahasiswa">GALLERY KAMPUS</x-button>
 </div>
 </div>

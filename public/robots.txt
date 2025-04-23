@@ -53,7 +53,7 @@ User-agent: EvilBot
 Disallow: /
 
 # Menyediakan sitemap untuk crawler yang sah
-Sitemap: http://www.universitas-boyolali.info/sitemap-uby.xml
+Sitemap: http://www.univbanten.info/sitemap-univba.xml
 
 # Menyediakan instruksi untuk crawler yang sah agar tidak mengindeks file atau direktori yang tidak diinginkan
 User-agent: *

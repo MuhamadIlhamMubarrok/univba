@@ -52,7 +52,9 @@ Route::namespace('Home')->group(function () {
     Route::get('/pendaftaran/success/{no_daftar}', [App\Http\Controllers\FrontendController\HomeController::class, 'showSuccessPage'])->name('registration.success');
 
     Route::get('/pendaftaran/cetak/{no_daftar}', [App\Http\Controllers\FrontendController\HomeController::class, 'cetak'])->name('cetak.confirm');
-
+    Route::get('/test-error', function () {
+    abort(500); // Memicu error 500
+});
 });
 
 Route::middleware('guest')->group(function () {
@@ -77,12 +79,6 @@ Route::middleware('auth')->group(function () {
     Route::get('/data-pendaftaran/detil/{id}', [POController::class, 'detil'])->name('daftar.detil');
     Route::get('/data-pendaftaran/{id}', [POController::class, 'hapus'])->name('daftar.hapus');
     Route::get('/data-pendaftaran/cetak', [POController::class, 'cetak'])->name('daftar.cetak');
-
-    Route::get('/beranda', [BerandaController::class, 'index'])->name('beranda');
-    Route::get('/beranda/create', [BerandaController::class, 'create'])->name('beranda.create');
-    Route::post('/beranda', [BerandaController::class, 'store'])->name('beranda.store');
-    Route::get('beranda/edit/{id}', [BerandaController::class, 'edit'])->name('beranda.edit');
-    Route::delete('/beranda', [BerandaController::class, 'destroy'])->name('beranda.destroy');
 
     Route::get('/menu', [MenuController::class, 'index'])->name('menu');
     Route::get('/menu/create', [MenuController::class, 'create'])->name('menu.create');

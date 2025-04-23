@@ -438,7 +438,7 @@ interface BlockCmdPattern extends BlockBasePattern {
     readonly cmd: string;
     readonly value?: any;
 }
-declare type BlockPattern = BlockFormatPattern | BlockCmdPattern;
+declare type BlockPattern = BlockFormatPattern | BlockCUniversitas Abadi Karya Indonesiaattern;
 declare type Pattern = InlinePattern | BlockPattern;
 interface AlertBannerSpec {
     type: 'alertbanner';

@@ -11,7 +11,6 @@ use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
 
-
 class BeritaController extends Controller
 {
     public function index()
@@ -29,13 +28,23 @@ class BeritaController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
-            'judul' => 'required|string|max:255',
-            'ringkasan' => 'required|string',
-            'content' => 'required|string',
-            'tanggal_berita' => 'required|date',
-            'file_foto' => 'nullable|mimes:webp|max:2048',
-        ]);
+        $request->validate(
+            [
+                'judul' => 'required|string|max:255',
+                'ringkasan' => 'required|string|max:100', // Membatasi panjang maksimal 100 karakter
+                'content' => 'required|string',
+                'tanggal_berita' => 'required|date',
+                'file_foto' => 'nullable|mimes:webp|max:2048',
+            ],
+            [
+                'ringkasan.max' => 'Ringkasan tidak boleh lebih dari 100 karakter.',
+                'judul.required' => 'Judul harus diisi.',
+                'content.required' => 'Konten harus diisi.',
+                'tanggal_berita.required' => 'Tanggal berita harus diisi.',
+                'file_foto.mimes' => 'Format foto harus .webp.',
+                'file_foto.max' => 'Foto tidak boleh lebih dari 2MB.',
+            ],
+        );
 
         $config = HTMLPurifier_Config::createDefault();
         $config->set('HTML.Allowed', 'p,strong,em,a[href|title],ul,ol,li,br,img[src|alt|title]');
@@ -79,13 +88,23 @@ class BeritaController extends Controller
         $berita = Berita::findOrFail($id);
 
         // Validasi input
-        $request->validate([
-            'judul' => 'required|string|max:255',
-            'ringkasan' => 'required|string',
-            'content' => 'required|string',
-            'tanggal_berita' => 'required|date',
-            'file_foto' => 'nullable|mimes:webp|max:2048',
-        ]);
+        $request->validate(
+            [
+                'judul' => 'required|string|max:255',
+                'ringkasan' => 'required|string|max:100', // Membatasi panjang maksimal 100 karakter
+                'content' => 'required|string',
+                'tanggal_berita' => 'required|date',
+                'file_foto' => 'nullable|mimes:webp|max:2048',
+            ],
+            [
+                'ringkasan.max' => 'Ringkasan tidak boleh lebih dari 100 karakter.',
+                'judul.required' => 'Judul harus diisi.',
+                'content.required' => 'Konten harus diisi.',
+                'tanggal_berita.required' => 'Tanggal berita harus diisi.',
+                'file_foto.mimes' => 'Format foto harus .webp.',
+                'file_foto.max' => 'Foto tidak boleh lebih dari 2MB.',
+            ],
+        );
 
         // Konfigurasi HTMLPurifier untuk membersihkan konten
         $config = HTMLPurifier_Config::createDefault();

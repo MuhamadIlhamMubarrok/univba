@@ -2,44 +2,38 @@
 <html lang="id">
 
 <head>
-    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="description"
-        content="Universitas Kepanjen, sebelumnya dikenal sebagai STIKes Kepanjen, merupakan institusi pendidikan tinggi yang berlokasi di Kepanjen, Kabupaten Malang. Universitas ini menawarkan berbagai program studi, termasuk S1 Keperawatan, D3 Keperawatan, Profesi Ners, S1 Administrasi Rumah Sakit, dan S1 Keselamatan dan Kesehatan Kerja." />
+        content="Universitas Banten atau yang biasa dikenal Univ Banten salah satu Perguruan Tinggi Swasta Terbaik di Banten, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 500.000/Bulan dengan jurusan S1 Manajemen, S1 Akuntansi, S1 Hukum, S1 Teknik Industri, S1 Kesehatan Masyarakat, S1 Sistem Teknologi Informasi" />
     <meta name="keywords"
-        content="Edunitas, Universitas Kepanjen, STIKes Kepanjen, S1 Keperawatan, D3 Keperawatan, Profesi Ners, S1 Administrasi Rumah Sakit,
-         S1 Keselamatan dan Kesehatan Kerja, universitas di Malang, pendidikan tinggi kesehatan, program studi kesehatan, Universitas Brawijaya,
-          Universitas Negeri Malang, Universitas Islam Malang, Universitas Muhammadiyah Malang, STIKes Kendedes, STIKes Karya Husada Kediri,
-           universitas kesehatan di Jawa Timur, kuliah kesehatan di Malang, kampus favorit di Malang, universitas murah di Malang,
-            universitas swasta unggulan, kuliah profesi ners, kuliah keperawatan, kuliah jurusan kesehatan, daftar online universitas kepanjen,
-             kelas karyawan universitas kepanjen, daftar universitas kepanjen, jurusan universitas kepanjen, biaya jurusan universitas kepanjen">
+        content="Kelas karyawan, Kuliah karyawan, Universitas Pelita Bangsa, Universitas Esa Unggul, Universitas Mercu Buana, Universitas Terbuka, Universitas Pamulang, Universitas Muhammadiyah Tangerang, Universitas Bina Sarana Informatika, Universitas Islam Syekh Yusuf, Universitas Raharja, Universitas Primagraha, Universitas Pancasila,
+         Universitas Insan Pembangunan, Universitas Multimedia Nusantara, Universitas Trisakti, Universitas Budi Luhur, biaya kuliah kelas karyawan, kampus kelas karyawan, kuliah sambil kerja, kelas sabtu minggu, kelas malam, akreditasi universitas, kampus murah, kampus terjangkau, S1 Manajemen, S1 Akuntansi, S1 Hukum, S1 Teknik Industri,
+          S1 Kesehatan Masyarakat, S1 Sistem Teknologi Informasi, kuliah online dan offline, kampus Tangerang, kampus Serang, kuliah fleksibel, edunitas.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="google-site-verification" content="lpdys1yc63aHMZaMMrx2kkJ5RYEPp-QyfHih4JMTxI0" />
 
-    <title>Universitas Kepanjen (Kelas Karyawan)</title>
-    <meta property="og:title" content="Universitas Kepanjen | UBY(Kelas Karyawan)">
+    <title>@yield('title') &mdash; Universitas Banten(Kelas Karyawan)</title>
+    <meta property="og:title" content="Universitas Banten (Kelas Karyawan)">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://universitas-boyolali.info">
-    <meta property="og:image" content="https://universitas-boyolali.info/images/banner-slider/Baner-uby.png">
+    <meta property="og:url" content="https://univbanten.info/">
+    <meta property="og:image" content="https://univbanten.info/images/background/hero1.png">
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:description"
-        content="Universitas Kepanjen adalah pilihan terbaik untuk pendidikan tinggi di Malang. Dengan program studi unggulan seperti S1 Keperawatan, D3 Keperawatan, Profesi Ners, S1 Administrasi Rumah Sakit, dan S1 Keselamatan dan Kesehatan Kerja, kampus ini menawarkan pendidikan berkualitas dengan dukungan fasilitas modern dan pengajar profesional. Lokasi strategis di Kepanjen menjadikan kampus ini pilihan utama bagi mahasiswa lokal dan nasional.">
-
+        content="Universitas Banten adalah perguruan tinggi yang berkomitmen pada pendidikan berkualitas dengan berbagai program studi unggulan. Menyediakan kelas karyawan dan reguler dengan fasilitas modern, tenaga pengajar berpengalaman, serta biaya kuliah yang terjangkau di Banten." />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:creator" content="@_kuliahkaryawan">
-    <meta name="twitter:site" content="@_kuliahkaryawan">
-    <meta name="twitter:title" content="Universitas Kepanjen |UBY (Kelas Karyawan)">
+    <meta name="twitter:creator" content="@univbanten">
+    <meta name="twitter:site" content="@univbanten">
+    <meta name="twitter:title" content="Universitas Banten | Pendidikan Pertanian Berkualitas">
     <meta name="twitter:description"
-        content="Ingin kuliah sambil tetap bekerja? Universitas Kepanjen menyediakan fleksibilitas waktu dengan kelas reguler dan kelas karyawan. Program studi seperti Keperawatan, Profesi Ners, dan Administrasi Rumah Sakit dirancang untuk mendukung kesuksesan karier Anda dengan biaya terjangkau.">
-    <meta name="twitter:domain" content="https://universitas-boyolali.info">
-    <meta name="twitter:image:src" content="https://universitas-boyolali.info/images/banner-slider/Baner-uby.png">
-    <meta name="author" content="Kuliah Karyawan Team" />
+        content="Universitas Banten menawarkan berbagai program studi unggulan dengan pilihan kelas reguler dan kelas karyawan. Dengan fasilitas modern dan biaya kuliah terjangkau, kami mendukung fleksibilitas belajar bagi mahasiswa yang bekerja." />
+    <meta name="twitter:domain" content="https://univbanten.info/">
+    <meta name="twitter:image:src" content="https://univbanten.info/images/background/hero1.png">
+    <meta name="author" content="IT Kuliah Karyawan Team" />
     <meta http-equiv="cache-control" content="public" />
-    <meta name="application-name" content="Universitas Kepanjen | Kuliah Karyawan K2" />
-    <meta name="msapplication-TileColor" content="#B12720" />
-    <meta name="theme-color" content="#B12720" />
+    <meta name="application-name" content="Universitas Banten">
+    <meta name="msapplication-TileColor" content="#9E2A61" />
+    <meta name="theme-color" content="#9E2A61" />
 
     <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/favicons/apple-icon-57x57.png') }}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/favicons/apple-icon-60x60.png') }}">
@@ -62,8 +56,12 @@
 
 
     <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=DM+Sans:wght@400;700&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=DM+Sans:wght@400;700;900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
     <link href="./css/app.css" rel="stylesheet">
     {{-- swiper --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -91,7 +89,7 @@
         </div>
 
         <!-- WhatsApp Icon -->
-        <a href="https://wa.me/6287890198284?text=Halo%20Admin%2C%20saya%20mau%20bertanya%20%0ASumber%20%3A%20{{ url()->current() }}"
+        <a href="https://wa.me/6289504586704?text=Halo%20Admin%2C%20saya%20mau%20bertanya%20%0ASumber%20%3A%20{{ url()->current() }}"
             target="_blank" rel="noopener noreferrer">
             <img src="{{ asset('images/logo/wa.jpg') }}" alt="WhatsApp" class="w-12 h-12 md:w-[70px] md:h-[70px]">
         </a>

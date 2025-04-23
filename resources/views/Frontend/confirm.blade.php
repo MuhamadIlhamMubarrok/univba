@@ -1,14 +1,14 @@
 @section('title', 'Confirm Pendaftaran')
 @extends('Frontend.Layouts.app2')
 @section('content')
-    <x-header-section-page title="Konfirmasi Pendaftaran Universitas Kepanjen" breadcrumb-home="Home"
+    <x-header-section-page title="Konfirmasi Pendaftaran Universitas Banten" breadcrumb-home="Home"
         breadcrumb-current="Konfirmasi Pendaftaran" />
 
     <div class="bg-gray-50 py-10">
         <div class="container mx-auto px-4 lg:px-20 max-w-screen-lg">
-            <div class="bg-white shadow-lg rounded-lg overflow-hidden border-t-4 border-primary">
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden border-t-4 border-accent">
                 <!-- Header -->
-                <div class="bg-primary text-white p-6 text-center">
+                <div class="bg-gradient-to-r from-[#E5C324] to-[#000000] text-white p-6 text-center">
                     <h1 class="text-2xl font-poppins font-bold">Terima Kasih Telah Mendaftar</h1>
                     <p class="text-sm mt-2 font-dmsans">
                         Kami telah mengirimkan email konfirmasi ke alamat Anda. Silakan periksa Inbox atau folder Spam.
@@ -27,8 +27,7 @@
                     <div class="mb-6">
                         <h3 class="text-lg font-semibold font-poppins">Informasi Biaya Pendaftaran:</h3>
                         <ul class="list-disc list-inside text-sm mt-2">
-                            <li><strong>D3:</strong> Rp. 150.000,-</li>
-                            <li><strong>S1:</strong> Rp. 150.000,-</li>
+                            <li><strong>S1</strong> Rp. 150.000,-</li>
                         </ul>
                     </div>
 
@@ -50,7 +49,7 @@
                             <p class="text-sm font-medium mt-2">2. Pilih salah satu cara konfirmasi:</p>
                             <ul class="list-disc list-inside mt-2 text-sm">
                                 <li>
-                                    <a href="https://api.whatsapp.com/send?phone=6287890198284&text=Halo%20Admin%20Saya%20Sudah%20Daftar%20Online%20di%20Universitas Kepanjen."
+                                    <a href="https://api.whatsapp.com/send?phone=6287890198284&text=Halo%20Admin%20Saya%20Sudah%20Daftar%20Online%20di%20Universitas Banten"
                                         target="_blank" class="text-accent hover:underline font-semibold">
                                         Konfirmasi Via WhatsApp
                                     </a>
@@ -69,7 +68,7 @@
                                         mencetak formulir
                                         pendaftaran Anda.</p>
                                     <a href="{{ route('cetak.confirm', $registration->daftar_id) }}" data-aos="fade-up"
-                                        class="bg-primary text-white text-sm font-poppins py-2 px-4 rounded-lg shadow-md hover:bg-accent transition">
+                                        class="bg-gradient-to-r from-[#E5C324] to-[#000000] hover:bg-gradient-to-br text-white text-sm font-poppins py-2 px-4 rounded-lg shadow-md hover:bg-accent transition">
                                         Cetak Formulir
                                     </a>
                                 </form>
@@ -89,8 +88,8 @@
 
                 <!-- Footer -->
                 <div class="bg-gray-100 p-6 text-center">
-                    <img src="{{ asset('./images/logo/logo1.png') }}" alt="Universitas Kepanjen" class="mx-auto w-32 mb-4">
-                    <p class="text-sm font-poppins text-gray-600">Universitas Kepanjen</p>
+                    <img src="{{ asset('./images/logo/logo1.png') }}" alt="Universitas Banten" class="mx-auto w-32 mb-4">
+                    <p class="text-sm font-poppins text-gray-600">Universitas Banten</p>
                 </div>
             </div>
         </div>

@@ -2,40 +2,38 @@
 <html lang="en">
 
 <head>
-    <!-- Meta tags -->
     <meta charset="utf-8">
     <meta name="description"
-        content="Univeritas Boyolali atau biasa dikenal kampus Universitas Kepanjen salah satu kampus Terbaik dan favorit yang bisa kelas full online di Boyolali , tersedia kelas karyawan dan kelas online atau biasa kita kenal kelas jauh dengan terjangkau cukup Rp 650.000/Bulan dengan jurusan S1 Akuuntansi, Manajemen, Ilmu Komunikasi, Teknik Informatika, Peternakan, Agro Teknologi, dan S1 Ilmu Hukum" />
+        content="Universitas Banten atau yang biasa dikenal Univ Banten salah satu Perguruan Tinggi Swasta Terbaik di Banten, tersedia kelas karyawan dengan biaya murah dan terjangkau mulai dari Rp 500.000/Bulan dengan jurusan S1 Manajemen, S1 Akuntansi, S1 Hukum, S1 Teknik Industri, S1 Kesehatan Masyarakat, S1 Sistem Teknologi Informasi" />
     <meta name="keywords"
-        content="Kelas karyawan, kuliah online, kelas online, kuliah jarak jauh, Kuliah karyawan, univesitas boyolali , Universitas Kepanjen, kampus terbaik jawa tengah, kampus terbaik di boyolali, kampus Universitas Kepanjen jawa tengah, kampus online di jateng, biaya kuliah kampus Universitas Kepanjen, kuliah murah di boyolali, biaya kuliah, kelas sabtu, akreditasi Universitas Kepanjen, S1 Akuuntansi, Manajemen, Ilmu Komunikasi, Teknik Informatika, Peternakan, Agro Teknologi, dan S1 Ilmu Hukum, kampus komputer terbaik di jawa tengah" />
+        content="Kelas karyawan, Kuliah karyawan, Universitas Pelita Bangsa, Universitas Esa Unggul, Universitas Mercu Buana, Universitas Terbuka, Universitas Pamulang, Universitas Muhammadiyah Tangerang, Universitas Bina Sarana Informatika, Universitas Islam Syekh Yusuf, Universitas Raharja, Universitas Primagraha, Universitas Pancasila,
+         Universitas Insan Pembangunan, Universitas Multimedia Nusantara, Universitas Trisakti, Universitas Budi Luhur, biaya kuliah kelas karyawan, kampus kelas karyawan, kuliah sambil kerja, kelas sabtu minggu, kelas malam, akreditasi universitas, kampus murah, kampus terjangkau, S1 Manajemen, S1 Akuntansi, S1 Hukum, S1 Teknik Industri,
+          S1 Kesehatan Masyarakat, S1 Sistem Teknologi Informasi, kuliah online dan offline, kampus Tangerang, kampus Serang, kuliah fleksibel, edunitas.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="google-site-verification" content="lpdys1yc63aHMZaMMrx2kkJ5RYEPp-QyfHih4JMTxI0" />
 
-    <title>Universitas Kepanjen (Kelas Karyawan)</title>
-    <meta property="og:title" content="Universitas Kepanjen | Universitas Kepanjen(Kelas Karyawan)">
+    <title>@yield('title') &mdash; Universitas Banten(Kelas Karyawan)</title>
+    <meta property="og:title" content="Universitas Banten (Kelas Karyawan)">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://universitas-boyolali.info">
-    <meta property="og:image"
-        content="https://universitas-boyolali.info/images/banner-slider/Baner-Universitas Kepanjen.png">
+    <meta property="og:url" content="https://univbanten.info/">
+    <meta property="og:image" content="https://univbanten.info/images/background/hero1.png">
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta property="og:description"
-        content="Kelas karyawan, kuliah online, kelas online, kuliah jarak jauh, Kuliah karyawan, Universitas Kepanjen, Universitas Kepanjen jawa tengah, kampus terbaik jawa tengah, kampus terbaik di boyolali, kampus Universitas Kepanjen jawa tengah, kampus online di jateng, biaya kuliah kampus Universitas Kepanjen, kuliah murah di jateng, biaya kuliah, kelas sabtu, akreditasi Universitas Kepanjen,S1 Akuuntansi, Manajemen, Ilmu Komunikasi, Teknik Informatika, Peternakan, Agro Teknologi, dan S1 Ilmu Hukum">
+        content="Universitas Banten adalah perguruan tinggi yang berkomitmen pada pendidikan berkualitas dengan berbagai program studi unggulan. Menyediakan kelas karyawan dan reguler dengan fasilitas modern, tenaga pengajar berpengalaman, serta biaya kuliah yang terjangkau di Banten." />
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:creator" content="@_kuliahkaryawan">
-    <meta name="twitter:site" content="@_kuliahkaryawan">
-    <meta name="twitter:title" content="Universitas Kepanjen |Universitas Kepanjen (Kelas Karyawan)">
+    <meta name="twitter:creator" content="@univbanten">
+    <meta name="twitter:site" content="@univbanten">
+    <meta name="twitter:title" content="Universitas Banten | Pendidikan Pertanian Berkualitas">
     <meta name="twitter:description"
-        content="Kelas karyawan, kuliah online, kelas online, kuliah jarak jauh, Kuliah karyawan, Universitas Kepanjen, Universitas Kepanjen jawa tengah, kampus terbaik jawa tengah, kampus terbaik di boyolali, kampus Universitas Kepanjen jawa tengah, kampus online di jawa tengah, biaya kuliah kampus Universitas Kepanjen, kuliah murah di jateng, biaya kuliah, kelas sabtu, akreditasi Universitas Kepanjen, S1 Akuuntansi, Manajemen, Ilmu Komunikasi, Teknik Informatika, Peternakan, Agro Teknologi, dan S1 Ilmu Hukum">
-    <meta name="twitter:domain" content="https://universitas-boyolali.info">
-    <meta name="twitter:image:src"
-        content="https://universitas-boyolali.info/images/banner-slider/Baner-Universitas Kepanjen.png">
-    <meta name="author" content="Kuliah Karyawan Team" />
+        content="Universitas Banten menawarkan berbagai program studi unggulan dengan pilihan kelas reguler dan kelas karyawan. Dengan fasilitas modern dan biaya kuliah terjangkau, kami mendukung fleksibilitas belajar bagi mahasiswa yang bekerja." />
+    <meta name="twitter:domain" content="https://univbanten.info/">
+    <meta name="twitter:image:src" content="https://univbanten.info/images/background/hero1.png">
+    <meta name="author" content="IT Kuliah Karyawan Team" />
     <meta http-equiv="cache-control" content="public" />
-    <meta name="application-name" content="Universitas Kepanjen | Kuliah Karyawan K2" />
-    <meta name="msapplication-TileColor" content="#B12720" />
-    <meta name="theme-color" content="#B12720" />
+    <meta name="application-name" content="Universitas Banten">
+    <meta name="msapplication-TileColor" content="#9E2A61" />
+    <meta name="theme-color" content="#9E2A61" />
 
     <link rel="apple-touch-icon" sizes="57x57" href="{{ asset('images/favicons/apple-icon-57x57.png') }}">
     <link rel="apple-touch-icon" sizes="60x60" href="{{ asset('images/favicons/apple-icon-60x60.png') }}">

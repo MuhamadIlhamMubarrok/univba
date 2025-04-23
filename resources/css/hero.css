@@ -1,8 +1,6 @@
 .bg-hero {
-    background-image: url("/images/background/hero1.png");
-   
+    background-image: url("/images/background/coba1.png");
 }
-
 
 /* Gambar untuk perangkat dengan ukuran layar kecil (HP) */
 @media (max-width: 768px) {

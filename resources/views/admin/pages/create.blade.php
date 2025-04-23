@@ -39,18 +39,13 @@
                             </div>
 
                             <div class="form-group">
-                                <label class="form-label">Ringkasan</label>
-                                <input type="text" class="form-control mb-3" name="short">
-                            </div>
-
-                            <div class="form-group">
                                 <label class="form-label">Isi Halaman</label>
                                 <textarea class="form-control mb-3" name="isi" id="editor" rows="5" required></textarea>
                             </div>
 
                             <div class="form-group mt-3">
                                 <label class="form-label">Link</label>
-                                <input type="url" class="form-control mb-3" name="link">
+                                <input type="text" class="form-control mb-3" name="link">
                             </div>
 
                             <button type="submit" class="btn btn-primary mt-3">Simpan</button>

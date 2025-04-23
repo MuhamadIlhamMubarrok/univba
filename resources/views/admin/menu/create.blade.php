@@ -33,7 +33,7 @@
                             <div class="form-group mb-2">
                                 <label class="mb-2 mt-2">Kelompok Menu</label>
                                 <select name="submenu_id" class="form-control">
-                                    <option value="">Tidak ada</option>
+                                    <option value="0">Tidak ada</option>
                                     @foreach ($menus as $menu)
                                         <option value="{{ $menu->menu_id }}">{{ $menu->menu }}</option>
                                     @endforeach

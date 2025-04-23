@@ -114,11 +114,10 @@
                             <p class="mb-2">untuk semua marketing dapat memfollow up langsung pendaftar melalu button wa
                                 di bawah ini :
                             </p>
-                            <a href="https://wa.me/{{ $no_wa_replaced }}?text={{ urlencode('Terimakasih sudah melakukan pendaftaran online di ' . $daftar->kampus . ' atas nama ' . $daftar->nama_leng . ' dengan nomor PO ' . $daftar->daftar_id . ', data sudah kami terima.') }}"
-                                target="_blank" rel="noopener noreferrer" class="btn btn-info">
-                                Follow Up Ya !
-                            </a>
-
+                            <a href="https://wa.me/{{ '62' . ltrim($daftar->no_wa, '0') }}?text={{ rawurlencode('Terimakasih sudah melakukan pendaftaran online di kampus ' . $daftar->kampus . " dengan data:\n- Nama : *" . $daftar->nama_leng . "*\n- NIK : *" . $daftar->no_ktp . "*\n- No.PO : *" . $daftar->daftar_id . "*\n\nData sudah kami terima, kapan dapat melakukan pembayaran biaya pendaftaran?") }}"
+                               target="_blank" rel="noopener noreferrer" class="btn btn-info">
+                               Follow Up By WA !
+                            </a>0
                         </div>
                         <div class="mt-3">
                             <button onclick="window.history.go(-1); return false;" class="btn btn-danger">Kembali</button>
